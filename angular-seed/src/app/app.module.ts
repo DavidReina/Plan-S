@@ -78,7 +78,7 @@ const ROUTES = [
     EventoService,
     AuthService,
     AppDataService,
-    UsuarioService,
+    UsersService,
     AppConfiguration],
   bootstrap: [AppComponent]
  })

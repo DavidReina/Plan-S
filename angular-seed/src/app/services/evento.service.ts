@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Evento } from '../models/Evento';
 import { APIService } from '../common/api.service';
 import { Observable } from "rxjs/Observable";
+import { Usuario } from "../models/Usuario";
 
 @Injectable()
 export class EventoService extends APIService{

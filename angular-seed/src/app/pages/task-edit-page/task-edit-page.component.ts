@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
-import { TodoService } from '../../services/todo.service';
+import { UsersService } from '../../services/usuario.service';
+import { Usuario } from "../../models/Usuario";
+
 
 @Component({
   selector: 'app-task-edit-page',
@@ -10,29 +12,46 @@ import { TodoService } from '../../services/todo.service';
   
 })
 export class TaskEditPageComponent implements OnInit {
-   todoForm: FormGroup; 
+   usuarioForm: FormGroup; 
   constructor(
-    public todoService: TodoService,
+    public usuarioService: UsersService,
     public formBuilder: FormBuilder,
     public router: Router,
   ) {
     
   }
-
+        private nombre: string;
+        private apellido: string;
+        private edad: Number;
+        private TI: string;
+	private identificacion: string;
+        private ciudad: string;
+	private mail: string;
+	private password: string;
   ngOnInit() {
-      this.todoForm = this.formBuilder.group({
-      description: '',
-      completed: '',
-      priority: ''
+      this.usuarioForm = this.formBuilder.group({
+      nombre: '',
+      apellido: '',
+      edad: '',
+      TI: '',
+      identificacion: '',
+      ciudad: '',
+      mail: '',
+      password: ''
     });
 
   }
 
   onSubmit() {
-    this.todoService.create(
-      this.todoForm.get('description').value,
-      this.todoForm.get('priority').value,
-      Boolean(this.todoForm.get('completed').value)
+    this.usuarioService.create(
+      this.usuarioForm.get('nombre').value,
+      this.usuarioForm.get('apellido').value,
+      this.usuarioForm.get('edad').value,
+      this.usuarioForm.get('TI').value,
+      this.usuarioForm.get('identificacion').value,
+      this.usuarioForm.get('ciudad').value,
+      this.usuarioForm.get('mail').value,
+      this.usuarioForm.get('password').value
     ).subscribe(serverResponse=>{
         this.router.navigate(['/tasks']);
     }, error=>{

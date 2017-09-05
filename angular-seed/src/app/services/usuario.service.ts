@@ -4,7 +4,10 @@ import { AppConfiguration } from '../common/config/app-configuration.service';
 import { AuthService } from '../common/auth.service';
 import { Http } from '@angular/http';
 import { Observable } from "rxjs/Observable";
-import { User } from "../models/user";
+import { Usuario } from "../models/Usuario";
+
+
+
 
 
 @Injectable()
@@ -17,7 +20,7 @@ export class UsersService extends APIService {
   ) {
     super(config, authService, http);
   }
-  create(value: string, value2: string, value3: Number, TI: value4, value5: string, value6: string, value7: string, value8: string):Observable<Usuario>{
+  create(value: string, value2: string, value3: Number, value4:string, value5: string, value6: string, value7: string, value8: string):Observable<Usuario>{
     return this.post(this.resourceUrl,new Usuario(value,value2,value3,value4,value5,value6,value7,value8));
 
   }
