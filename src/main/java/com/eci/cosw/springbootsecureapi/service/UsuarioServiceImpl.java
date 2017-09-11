@@ -3,11 +3,12 @@ package com.eci.cosw.springbootsecureapi.service;
 import com.eci.cosw.springbootsecureapi.model.Evento;
 import com.eci.cosw.springbootsecureapi.model.Usuario;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
-
+@Service
 public class UsuarioServiceImpl implements UsuarioService {
 
     private List<Usuario> users = new ArrayList<>();
