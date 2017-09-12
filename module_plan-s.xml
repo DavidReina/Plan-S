@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_plan-s" default="compile.module.plan-s">
+  <dirname property="module.plan-s.basedir" file="${ant.file.module_plan-s}"/>
+  
+  <property name="module.jdk.home.plan-s" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.plan-s" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.plan-s" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.plan-s" value="-encoding UTF-8 -source 1.8 -target 1.8 ${compiler.args}"/>
+  
+  <property name="plan-s.output.dir" value="${module.plan-s.basedir}/out/production/Plan-S"/>
+  <property name="plan-s.testoutput.dir" value="${module.plan-s.basedir}/out/test/Plan-S"/>
+  
+  <path id="plan-s.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="plan-s.module.production.classpath">
+    <path refid="${module.jdk.classpath.plan-s}"/>
+  </path>
+  
+  <path id="plan-s.runtime.production.module.classpath">
+    <pathelement location="${plan-s.output.dir}"/>
+  </path>
+  
+  <path id="plan-s.module.classpath">
+    <path refid="${module.jdk.classpath.plan-s}"/>
+    <pathelement location="${plan-s.output.dir}"/>
+  </path>
+  
+  <path id="plan-s.runtime.module.classpath">
+    <pathelement location="${plan-s.testoutput.dir}"/>
+    <pathelement location="${plan-s.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.plan-s">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.plan-s">
+    <patternset refid="excluded.from.module.plan-s"/>
+  </patternset>
+  
+  
+  <target name="compile.module.plan-s" depends="compile.module.plan-s.production,compile.module.plan-s.tests" description="Compile module Plan-S"/>
+  
+  <target name="compile.module.plan-s.production" depends="register.custom.compilers" description="Compile module Plan-S; production classes"/>
+  
+  <target name="compile.module.plan-s.tests" depends="register.custom.compilers,compile.module.plan-s.production" description="compile module Plan-S; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.plan-s" description="cleanup module">
+    <delete dir="${plan-s.output.dir}"/>
+    <delete dir="${plan-s.testoutput.dir}"/>
+  </target>
+</project>
