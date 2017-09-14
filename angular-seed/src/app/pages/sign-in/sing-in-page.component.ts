@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
-import { UsersService } from '../../services/usuario.service';
+import { UsersService } from '../../services/users.service';
 
 @Component({
   selector: 'app-sing-in-page',
@@ -21,14 +21,14 @@ export class SingInPageComponent implements OnInit {
 
   ngOnInit() {
     this.signInForm = this.formBuilder.group({
-      username: '',
+      email: '',
       password: '',
     });
   }
 
   doLogin() {
     this.usersService.login(
-      this.signInForm.get('username').value,
+      this.signInForm.get('email').value,
       this.signInForm.get('password').value).subscribe(loginResponse => {
         this.router.navigate(['tasks']);
       }, error => {

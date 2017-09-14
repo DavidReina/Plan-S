@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
-import { UsersService } from '../../services/usuario.service';
-import { Usuario } from "../../models/Usuario";
-
+import { TodoService } from '../../services/todo.service';
 
 @Component({
   selector: 'app-task-edit-page',
@@ -12,46 +10,29 @@ import { Usuario } from "../../models/Usuario";
   
 })
 export class TaskEditPageComponent implements OnInit {
-   usuarioForm: FormGroup; 
+   todoForm: FormGroup; 
   constructor(
-    public usuarioService: UsersService,
+    public todoService: TodoService,
     public formBuilder: FormBuilder,
     public router: Router,
   ) {
     
   }
-        private nombre: string;
-        private apellido: string;
-        private edad: Number;
-        private TI: string;
-	private identificacion: string;
-        private ciudad: string;
-	private mail: string;
-	private password: string;
+
   ngOnInit() {
-      this.usuarioForm = this.formBuilder.group({
-      nombre: '',
-      apellido: '',
-      edad: '',
-      TI: '',
-      identificacion: '',
-      ciudad: '',
-      mail: '',
-      password: ''
+      this.todoForm = this.formBuilder.group({
+      description: '',
+      completed: '',
+      priority: ''
     });
 
   }
 
   onSubmit() {
-    this.usuarioService.create(
-      this.usuarioForm.get('nombre').value,
-      this.usuarioForm.get('apellido').value,
-      this.usuarioForm.get('edad').value,
-      this.usuarioForm.get('TI').value,
-      this.usuarioForm.get('identificacion').value,
-      this.usuarioForm.get('ciudad').value,
-      this.usuarioForm.get('mail').value,
-      this.usuarioForm.get('password').value
+    this.todoService.create(
+      this.todoForm.get('description').value,
+      this.todoForm.get('priority').value,
+      Boolean(this.todoForm.get('completed').value)
     ).subscribe(serverResponse=>{
         this.router.navigate(['/tasks']);
     }, error=>{

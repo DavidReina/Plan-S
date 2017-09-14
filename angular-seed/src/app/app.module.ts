@@ -15,12 +15,12 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { EventoService } from './services/evento.service';
+import { TodoService } from './services/todo.service';
 import { HttpModule } from '@angular/http';
 import { SingInPageComponent } from './pages/sign-in/sing-in-page.component';
 import { AuthService } from './common/auth.service';
 import { AppDataService } from './common/app-data.service';
-import { UsersService } from './services/usuario.service';
+import { UsersService } from './services/users.service';
 import { UserEditPageComponent } from "./pages/user-edit-page/user-edit-page.component";
 import { UserListPageComponent } from "./pages/user-list-page/user-list-page.component";
 
@@ -75,7 +75,7 @@ const ROUTES = [
         apiURL: 'http://localhost:8080'
       }
     },
-    EventoService,
+    TodoService,
     AuthService,
     AppDataService,
     UsersService,

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { EventoService } from '../../services/evento.service';
-import { Evento } from '../../models/Evento';
+import { TodoService } from '../../services/todo.service';
+import { Todo } from '../../models/todo';
 
 @Component({
   selector: 'app-task-list-page',
@@ -8,15 +8,15 @@ import { Evento } from '../../models/Evento';
   styleUrls: ['./task-list-page.component.css']
 })
 export class TaskListPageComponent implements OnInit {
-  private eventos: Evento[] = [];
-  constructor(public eventoService: EventoService) {
+  private todos: Todo[] = [];
+  constructor(public todoService: TodoService) {
 
   }
 
 
   ngOnInit() {
-    this.eventoService.list().subscribe(eventosResponse => {
-      this.eventos = eventosResponse;
+    this.todoService.list().subscribe(todosResponse => {
+      this.todos = todosResponse;
     })
   }
 
