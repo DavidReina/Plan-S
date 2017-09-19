@@ -54,9 +54,15 @@ public class UserServiceImpl
     }
 
     @Override
-    public User getUser( Long id )
-    {
-        return users.get( 0 );
+    public User getUser(String username) {
+        System.out.println(username);
+        User a = null;
+        for (int i=0;i < users.size(); i++){
+            if(users.get(i).getEmail().equals(username)){
+                a= users.get(i);
+            }
+        }
+        return a;
     }
 
 

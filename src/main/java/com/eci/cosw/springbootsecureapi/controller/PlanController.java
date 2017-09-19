@@ -11,18 +11,18 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping( "api" )
+@RequestMapping( "plan" )
 public class PlanController {
     @Autowired
     private PlanService planService;
 
-    @RequestMapping( value = "/plan", method = RequestMethod.GET )
+    @RequestMapping( value = "/plans", method = RequestMethod.GET )
     public List<Plan> getPlan(){
         return planService.getPlanList();
 
     }
 
-    @RequestMapping( value = "/plan", method = RequestMethod.POST )
+    @RequestMapping( value = "/plans", method = RequestMethod.POST )
     public Plan setPlan(@RequestBody Plan plan){
         return planService.addPlan(plan);
     }

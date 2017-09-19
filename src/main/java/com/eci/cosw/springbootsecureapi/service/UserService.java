@@ -14,7 +14,7 @@ public interface UserService
 
     User registerUser(User user);
 
-    User getUser(Long id );
+    User getUser(String username );
 
     User createUser( User user );
 

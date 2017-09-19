@@ -25,7 +25,7 @@ public class PlanServiceImpl implements PlanService {
         String[] Amigos = new String[]{"Ludwing", "David", "Georgio", "Carlos"};
 
         plans.add(new Plan("estreno pelicula IT","Me gustan las peliculas de terror, ¿como no ver el remake de este gran clasico?","Cinecolombia, CC Santafé",
-                "19-Septiembre-2017","8.000", Amigos ));
+                "19-Septiembre-2017","8.000", null ));
     }
 
     @Override

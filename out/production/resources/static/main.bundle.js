@@ -103,17 +103,16 @@ var _a, _b;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_page_home_page_component__ = __webpack_require__("../../../../../src/app/pages/home-page/home-page.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_task_list_page_task_list_page_component__ = __webpack_require__("../../../../../src/app/pages/task-list-page/task-list-page.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_task_edit_page_task_edit_page_component__ = __webpack_require__("../../../../../src/app/pages/task-edit-page/task-edit-page.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_page_not_found_page_not_found_component__ = __webpack_require__("../../../../../src/app/pages/page-not-found/page-not-found.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ng_bootstrap_ng_bootstrap__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__services_todo_service__ = __webpack_require__("../../../../../src/app/services/todo.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_sign_in_sing_in_page_component__ = __webpack_require__("../../../../../src/app/pages/sign-in/sing-in-page.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__common_auth_service__ = __webpack_require__("../../../../../src/app/common/auth.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__common_app_data_service__ = __webpack_require__("../../../../../src/app/common/app-data.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__services_users_service__ = __webpack_require__("../../../../../src/app/services/users.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_user_edit_page_user_edit_page_component__ = __webpack_require__("../../../../../src/app/pages/user-edit-page/user-edit-page.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_user_list_page_user_list_page_component__ = __webpack_require__("../../../../../src/app/pages/user-list-page/user-list-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_page_not_found_page_not_found_component__ = __webpack_require__("../../../../../src/app/pages/page-not-found/page-not-found.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ng_bootstrap_ng_bootstrap__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_todo_service__ = __webpack_require__("../../../../../src/app/services/todo.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_sign_in_sing_in_page_component__ = __webpack_require__("../../../../../src/app/pages/sign-in/sing-in-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__common_auth_service__ = __webpack_require__("../../../../../src/app/common/auth.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__common_app_data_service__ = __webpack_require__("../../../../../src/app/common/app-data.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__services_users_service__ = __webpack_require__("../../../../../src/app/services/users.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_user_edit_page_user_edit_page_component__ = __webpack_require__("../../../../../src/app/pages/user-edit-page/user-edit-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_user_list_page_user_list_page_component__ = __webpack_require__("../../../../../src/app/pages/user-list-page/user-list-page.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -139,27 +138,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-
 var ROUTES = [
     { path: '', component: __WEBPACK_IMPORTED_MODULE_7__pages_home_page_home_page_component__["a" /* HomePageComponent */] },
-    { path: 'signin', component: __WEBPACK_IMPORTED_MODULE_14__pages_sign_in_sing_in_page_component__["a" /* SingInPageComponent */] },
+    { path: 'signin', component: __WEBPACK_IMPORTED_MODULE_13__pages_sign_in_sing_in_page_component__["a" /* SingInPageComponent */] },
     {
-        path: 'tasks', component: __WEBPACK_IMPORTED_MODULE_8__pages_task_list_page_task_list_page_component__["a" /* TaskListPageComponent */],
-        canActivate: [__WEBPACK_IMPORTED_MODULE_15__common_auth_service__["a" /* AuthService */]],
+        path: 'planes', component: __WEBPACK_IMPORTED_MODULE_8__pages_task_list_page_task_list_page_component__["a" /* TaskListPageComponent */],
+        canActivate: [__WEBPACK_IMPORTED_MODULE_14__common_auth_service__["a" /* AuthService */]],
     },
     {
-        path: 'edit', component: __WEBPACK_IMPORTED_MODULE_9__pages_task_edit_page_task_edit_page_component__["a" /* TaskEditPageComponent */],
-        canActivate: [__WEBPACK_IMPORTED_MODULE_15__common_auth_service__["a" /* AuthService */]],
+        path: 'users', component: __WEBPACK_IMPORTED_MODULE_18__pages_user_list_page_user_list_page_component__["a" /* UserListPageComponent */],
+        canActivate: [__WEBPACK_IMPORTED_MODULE_14__common_auth_service__["a" /* AuthService */]],
     },
     {
-        path: 'users', component: __WEBPACK_IMPORTED_MODULE_19__pages_user_list_page_user_list_page_component__["a" /* UserListPageComponent */],
-        canActivate: [__WEBPACK_IMPORTED_MODULE_15__common_auth_service__["a" /* AuthService */]],
+        path: 'register', component: __WEBPACK_IMPORTED_MODULE_17__pages_user_edit_page_user_edit_page_component__["a" /* UserEditPageComponent */],
     },
     {
-        path: 'register', component: __WEBPACK_IMPORTED_MODULE_18__pages_user_edit_page_user_edit_page_component__["a" /* UserEditPageComponent */],
-    },
-    {
-        path: '**', component: __WEBPACK_IMPORTED_MODULE_10__pages_page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */]
+        path: '**', component: __WEBPACK_IMPORTED_MODULE_9__pages_page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */]
     }
 ];
 var AppModule = (function () {
@@ -173,19 +167,18 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */],
             __WEBPACK_IMPORTED_MODULE_7__pages_home_page_home_page_component__["a" /* HomePageComponent */],
             __WEBPACK_IMPORTED_MODULE_8__pages_task_list_page_task_list_page_component__["a" /* TaskListPageComponent */],
-            __WEBPACK_IMPORTED_MODULE_9__pages_task_edit_page_task_edit_page_component__["a" /* TaskEditPageComponent */],
-            __WEBPACK_IMPORTED_MODULE_18__pages_user_edit_page_user_edit_page_component__["a" /* UserEditPageComponent */],
-            __WEBPACK_IMPORTED_MODULE_19__pages_user_list_page_user_list_page_component__["a" /* UserListPageComponent */],
-            __WEBPACK_IMPORTED_MODULE_10__pages_page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */],
-            __WEBPACK_IMPORTED_MODULE_14__pages_sign_in_sing_in_page_component__["a" /* SingInPageComponent */],
+            __WEBPACK_IMPORTED_MODULE_17__pages_user_edit_page_user_edit_page_component__["a" /* UserEditPageComponent */],
+            __WEBPACK_IMPORTED_MODULE_18__pages_user_list_page_user_list_page_component__["a" /* UserListPageComponent */],
+            __WEBPACK_IMPORTED_MODULE_9__pages_page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */],
+            __WEBPACK_IMPORTED_MODULE_13__pages_sign_in_sing_in_page_component__["a" /* SingInPageComponent */],
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-            __WEBPACK_IMPORTED_MODULE_11__ng_bootstrap_ng_bootstrap__["a" /* NgbModule */].forRoot(),
+            __WEBPACK_IMPORTED_MODULE_10__ng_bootstrap_ng_bootstrap__["a" /* NgbModule */].forRoot(),
             __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* RouterModule */].forRoot(ROUTES),
             __WEBPACK_IMPORTED_MODULE_3__angular_forms__["b" /* FormsModule */],
             __WEBPACK_IMPORTED_MODULE_3__angular_forms__["e" /* ReactiveFormsModule */],
-            __WEBPACK_IMPORTED_MODULE_13__angular_http__["c" /* HttpModule */]
+            __WEBPACK_IMPORTED_MODULE_12__angular_http__["c" /* HttpModule */]
         ],
         providers: [
             {
@@ -194,10 +187,10 @@ AppModule = __decorate([
                     apiURL: 'http://localhost:8080'
                 }
             },
-            __WEBPACK_IMPORTED_MODULE_12__services_todo_service__["a" /* TodoService */],
-            __WEBPACK_IMPORTED_MODULE_15__common_auth_service__["a" /* AuthService */],
-            __WEBPACK_IMPORTED_MODULE_16__common_app_data_service__["a" /* AppDataService */],
-            __WEBPACK_IMPORTED_MODULE_17__services_users_service__["a" /* UsersService */],
+            __WEBPACK_IMPORTED_MODULE_11__services_todo_service__["a" /* TodoService */],
+            __WEBPACK_IMPORTED_MODULE_14__common_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_15__common_app_data_service__["a" /* AppDataService */],
+            __WEBPACK_IMPORTED_MODULE_16__services_users_service__["a" /* UsersService */],
             __WEBPACK_IMPORTED_MODULE_4__common_config_app_configuration_service__["a" /* AppConfiguration */]
         ],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */]]
@@ -493,23 +486,23 @@ var User = (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/models/todo.ts":
+/***/ "../../../../../src/app/models/plan.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Todo; });
-var Todo = (function () {
-    function Todo(description, priority, completed) {
-        if (priority === void 0) { priority = 1; }
-        if (completed === void 0) { completed = false; }
-        this.description = description;
-        this.completed = completed;
-        this.priority = priority;
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Plan; });
+var Plan = (function () {
+    function Plan(nombre, descripcion, ubicacion, fecha, costo) {
+        this.nombre = nombre;
+        this.descripcion = descripcion;
+        this.ubicacion = ubicacion;
+        this.fecha = fecha;
+        this.costo = costo;
     }
-    return Todo;
+    return Plan;
 }());
 
-//# sourceMappingURL=todo.js.map
+//# sourceMappingURL=plan.js.map
 
 /***/ }),
 
@@ -698,7 +691,7 @@ var SingInPageComponent = (function () {
     SingInPageComponent.prototype.doLogin = function () {
         var _this = this;
         this.usersService.login(this.signInForm.get('email').value, this.signInForm.get('password').value).subscribe(function (loginResponse) {
-            _this.router.navigate(['tasks']);
+            _this.router.navigate(['planes']);
         }, function (error) {
             _this.loginError = 'Error Signing in: ' + (error && error.message ? error.message : '');
         });
@@ -716,91 +709,6 @@ SingInPageComponent = __decorate([
 
 var _a, _b, _c;
 //# sourceMappingURL=sing-in-page.component.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/pages/task-edit-page/task-edit-page.component.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ "../../../../../src/app/pages/task-edit-page/task-edit-page.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"container\">\n  <h2>Edit Task</h2>\n  <form [formGroup]=\"todoForm\" (ngSubmit)=\"onSubmit()\" novalidate>\n    <div class=\"form-group\">\n      <label for=\"description\">Description</label>\n      <input type=\"text\" class=\"form-control\" id=\"description\" formControlName=\"description\" required>\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"priority\">Priority</label>\n      <input type=\"number\" class=\"form-control\" id=\"alterEgo\" formControlName=\"priority\">\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"completed\">Completed</label>\n      <input type=\"checkbox\" class=\"form-control\" id=\"completed\" formControlName=\"completed\">\n    </div>\n\n    <button type=\"submit\" class=\"btn btn-success\">Save</button>\n\n  </form>\n</div>"
-
-/***/ }),
-
-/***/ "../../../../../src/app/pages/task-edit-page/task-edit-page.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TaskEditPageComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_todo_service__ = __webpack_require__("../../../../../src/app/services/todo.service.ts");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var TaskEditPageComponent = (function () {
-    function TaskEditPageComponent(todoService, formBuilder, router) {
-        this.todoService = todoService;
-        this.formBuilder = formBuilder;
-        this.router = router;
-    }
-    TaskEditPageComponent.prototype.ngOnInit = function () {
-        this.todoForm = this.formBuilder.group({
-            description: '',
-            completed: '',
-            priority: ''
-        });
-    };
-    TaskEditPageComponent.prototype.onSubmit = function () {
-        var _this = this;
-        this.todoService.create(this.todoForm.get('description').value, this.todoForm.get('priority').value, Boolean(this.todoForm.get('completed').value)).subscribe(function (serverResponse) {
-            _this.router.navigate(['/tasks']);
-        }, function (error) {
-            console.log(error);
-        });
-        this.router.navigate(['/tasks']);
-    };
-    return TaskEditPageComponent;
-}());
-TaskEditPageComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
-        selector: 'app-task-edit-page',
-        template: __webpack_require__("../../../../../src/app/pages/task-edit-page/task-edit-page.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/pages/task-edit-page/task-edit-page.component.css")],
-    }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_todo_service__["a" /* TodoService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_todo_service__["a" /* TodoService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _c || Object])
-], TaskEditPageComponent);
-
-var _a, _b, _c;
-//# sourceMappingURL=task-edit-page.component.js.map
 
 /***/ }),
 
@@ -825,7 +733,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/task-list-page/task-list-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h2>Tasks</h2>\n<table class=\"table table-bordered\">\n <thead>\n   <tr>\n     <th>Description</th>\n     <th>Priority</th>\n     <th>Completed</th>\n   </tr>\n </thead>\n <tr *ngFor=\"let todo of todos\">\n   <td>{{todo.description}}</td>\n   <td>{{todo.priority}}</td>\n   <td>{{todo.completed}}</td>\n </tr>\n</table>"
+module.exports = "<h2>Tus Planes</h2>\n<table class=\"table table-bordered\">\n <thead>\n   <tr>\n     <th>Nombre</th>\n     <th>Descripcion</th>\n     <th>Ubicacion</th>\n     <th>Fecha</th>\n     <th>Costo Promedio</th>\n     <th>Futuros Amigos</th>\n   </tr>\n </thead>\n <tr *ngFor=\"let plan of planes\">\n   <td>{{plan.nombre}}</td>\n   <td>{{plan.descripcion}}</td>\n   <td>{{plan.ubicacion}}</td>\n   <td>{{plan.fecha}}</td>\n   <td>{{plan.costo}}</td>\n </tr>\n</table>"
 
 /***/ }),
 
@@ -850,12 +758,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var TaskListPageComponent = (function () {
     function TaskListPageComponent(todoService) {
         this.todoService = todoService;
-        this.todos = [];
+        this.planes = [];
     }
     TaskListPageComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.todoService.list().subscribe(function (todosResponse) {
-            _this.todos = todosResponse;
+            _this.planes = todosResponse;
         });
     };
     return TaskListPageComponent;
@@ -895,7 +803,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/user-edit-page/user-edit-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <h2>Edit User</h2>\n  <form [formGroup]=\"userForm\" (ngSubmit)=\"onSubmit()\" novalidate>\n    \n\t<div class=\"form-group\">\n      <label for=\"email\">Email</label>\n      <input type=\"text\" class=\"form-control\" id=\"email\" formControlName=\"email\" required>\n    </div>\n\t\n\t<div class=\"form-group\">\n      <label for=\"username\">Username</label>\n      <input type=\"text\" class=\"form-control\" id=\"username\" formControlName=\"username\" required>\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"password\">Password</label>\n      <input type=\"password\" class=\"form-control\" id=\"password\" formControlName=\"password\" required>\n    </div>\n\t\n\t<div class=\"form-group\">\n      <label for=\"firstname\">Firstname</label>\n      <input type=\"text\" class=\"form-control\" id=\"firstname\" formControlName=\"firstname\" required>\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"lastname\">Lastname</label>\n      <input type=\"text\" class=\"form-control\" id=\"lastname\" formControlName=\"lastname\" required>\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"image\">Image</label>\n      <input type=\"text\" class=\"form-control\" id=\"image\" formControlName=\"image\" required>\n    </div>\n    \n<button type=\"submit\" class=\"btn btn-success\">Save</button>\n\n  </form>\n</div>\n"
+module.exports = "<div class=\"container\">\n  <h2>Registrarse</h2>\n  <form [formGroup]=\"userForm\" (ngSubmit)=\"onSubmit()\" novalidate>\n    \n\t<div class=\"form-group\">\n      <label for=\"email\">Email</label>\n      <input type=\"text\" class=\"form-control\" id=\"email\" formControlName=\"email\" required>\n    </div>\n\t\n\t<div class=\"form-group\">\n      <label for=\"password\">Password</label>\n      <input type=\"text\" class=\"form-control\" id=\"password\" formControlName=\"password\" required>\n    </div>\n\n  <div class=\"form-group\">\n      <label for=\"firstname\">Nombre</label>\n      <input type=\"text\" class=\"form-control\" id=\"firstname\" formControlName=\"firstname\" required>\n    </div>\n\t\n    <div class=\"form-group\">\n      <label for=\"lastname\">Apellido</label>\n      <input type=\"text\" class=\"form-control\" id=\"lastname\" formControlName=\"lastname\" required>\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"username\">Username</label>\n      <input type=\"text\" class=\"form-control\" id=\"username\" formControlName=\"username\" required>\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"ti\">Tipo Identificacion</label>\n      <input type=\"text\" class=\"form-control\" id=\"ti\" formControlName=\"ti\" required>\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"idnumber\">Numero Identificacion</label>\n      <input type=\"text\" class=\"form-control\" id=\"idnumber\" formControlName=\"idnumber\" required>\n    </div>\n    \n<button type=\"submit\" class=\"btn btn-success\">Save</button>\n\n  </form>\n</div>\n"
 
 /***/ }),
 
@@ -930,22 +838,22 @@ var UserEditPageComponent = (function () {
     UserEditPageComponent.prototype.ngOnInit = function () {
         this.userForm = this.formBuilder.group({
             email: '',
-            username: '',
             password: '',
             firstname: '',
             lastname: '',
+            username: '',
             ti: '',
-            identification: ''
+            idnumber: ''
         });
     };
     UserEditPageComponent.prototype.onSubmit = function () {
         var _this = this;
-        this.usersService.create(this.userForm.get('email').value, this.userForm.get('username').value, this.userForm.get('password').value, this.userForm.get('firstname').value, this.userForm.get('lastname').value, this.userForm.get('ti').value, this.userForm.get('identification').value).subscribe(function (serverResponse) {
-            _this.router.navigate(['/users']);
+        this.usersService.create(this.userForm.get('email').value, this.userForm.get('password').value, this.userForm.get('firstname').value, this.userForm.get('lastname').value, this.userForm.get('username').value, this.userForm.get('ti').value, this.userForm.get('idnumber').value).subscribe(function (serverResponse) {
+            _this.router.navigate(['/signin']);
         }, function (error) {
             console.log(error);
         });
-        this.router.navigate(['/users']);
+        this.router.navigate(['signin']);
     };
     return UserEditPageComponent;
 }());
@@ -1039,7 +947,7 @@ var _a;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TodoService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_todo__ = __webpack_require__("../../../../../src/app/models/todo.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_plan__ = __webpack_require__("../../../../../src/app/models/plan.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_api_service__ = __webpack_require__("../../../../../src/app/common/api.service.ts");
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
@@ -1064,11 +972,11 @@ var TodoService = (function (_super) {
     __extends(TodoService, _super);
     function TodoService() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.resourceUrl = 'api/todo';
+        _this.resourceUrl = 'api/plan';
         return _this;
     }
-    TodoService.prototype.create = function (value, value2, bool) {
-        return this.post(this.resourceUrl, new __WEBPACK_IMPORTED_MODULE_1__models_todo__["a" /* Todo */](value, value2, bool));
+    TodoService.prototype.create = function (nombre, descripcion, ubicacion, fecha, costo) {
+        return this.post(this.resourceUrl, new __WEBPACK_IMPORTED_MODULE_1__models_plan__["a" /* Plan */](nombre, descripcion, ubicacion, fecha, costo));
     };
     TodoService.prototype.list = function () {
         return this.get(this.resourceUrl);
@@ -1129,7 +1037,7 @@ var UsersService = (function (_super) {
         _this.resourceUrl = 'user/users';
         return _this;
     }
-    UsersService.prototype.create = function (email, username, firstname, lastname, password, ti, identification) {
+    UsersService.prototype.create = function (email, password, firstname, lastname, username, ti, identification) {
         return this.post(this.resourceUrl, new __WEBPACK_IMPORTED_MODULE_5__models_User__["a" /* User */](email, password, firstname, lastname, username, ti, identification));
     };
     UsersService.prototype.list = function () {

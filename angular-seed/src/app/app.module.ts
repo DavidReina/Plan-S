@@ -9,13 +9,12 @@ import { AppComponent } from './app.component';
 
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { TaskListPageComponent } from './pages/task-list-page/task-list-page.component';
-import { TaskEditPageComponent } from './pages/task-edit-page/task-edit-page.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { TodoService } from './services/plan.service';
+import { TodoService } from './services/todo.service';
 import { HttpModule } from '@angular/http';
 import { SingInPageComponent } from './pages/sign-in/sing-in-page.component';
 import { AuthService } from './common/auth.service';
@@ -28,11 +27,7 @@ const ROUTES = [
   { path: '', component: HomePageComponent },
   { path: 'signin', component: SingInPageComponent },
   {
-    path: 'tasks', component: TaskListPageComponent,
-    canActivate: [AuthService],
-  },
-  {
-    path: 'edit', component: TaskEditPageComponent,
+    path: 'planes', component: TaskListPageComponent,
     canActivate: [AuthService],
   },
   {
@@ -52,7 +47,6 @@ const ROUTES = [
     AppComponent,
     HomePageComponent,
     TaskListPageComponent,
-    TaskEditPageComponent,
     UserEditPageComponent,
     UserListPageComponent,
     PageNotFoundComponent,

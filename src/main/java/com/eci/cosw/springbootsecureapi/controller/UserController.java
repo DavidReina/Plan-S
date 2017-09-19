@@ -14,6 +14,8 @@ import javax.servlet.ServletException;
 import java.util.Date;
 import java.util.List;
 
+
+
 /**
  * @author Plan s
  * 8/21/17.
@@ -40,8 +42,9 @@ public class UserController
 
         String username = login.getUsername();
         String password = login.getPassword();
-
-        User user = userService.getUser( 0l );
+        System.out.println(username+"------"+ password);
+        User user = userService.getUser(username);
+        System.out.println(user.getUsername()+"---:::::::::::::::---");
 
         if ( user == null )
         {
@@ -53,6 +56,7 @@ public class UserController
         if ( !password.equals( pwd ) )
         {
             throw new ServletException( "Invalid login. Please check your name and password." );
+
         }
 
         jwtToken = Jwts.builder().setSubject( username ).claim( "roles", "user" ).setIssuedAt( new Date() ).signWith(

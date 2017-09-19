@@ -1,15 +1,20 @@
-<h2>Tasks</h2>
+<h2>Tus Planes</h2>
 <table class="table table-bordered">
  <thead>
    <tr>
-     <th>Description</th>
-     <th>Priority</th>
-     <th>Completed</th>
+     <th>Nombre</th>
+     <th>Descripcion</th>
+     <th>Ubicacion</th>
+     <th>Fecha</th>
+     <th>Costo Promedio</th>
+     <th>Futuros Amigos</th>
    </tr>
  </thead>
- <tr *ngFor="let plan of todos">
-   <td>{{plan.description}}</td>
-   <td>{{plan.priority}}</td>
-   <td>{{plan.completed}}</td>
+ <tr *ngFor="let plan of planes">
+   <td>{{plan.nombre}}</td>
+   <td>{{plan.descripcion}}</td>
+   <td>{{plan.ubicacion}}</td>
+   <td>{{plan.fecha}}</td>
+   <td>{{plan.costo}}</td>
  </tr>
 </table>

@@ -1,5 +1,5 @@
 <div class="container">
-  <h2>Edit User</h2>
+  <h2>Registrarse</h2>
   <form [formGroup]="userForm" (ngSubmit)="onSubmit()" novalidate>
     
 	<div class="form-group">
@@ -8,28 +8,33 @@
     </div>
 	
 	<div class="form-group">
+      <label for="password">Password</label>
+      <input type="text" class="form-control" id="password" formControlName="password" required>
+    </div>
+
+  <div class="form-group">
+      <label for="firstname">Nombre</label>
+      <input type="text" class="form-control" id="firstname" formControlName="firstname" required>
+    </div>
+	
+    <div class="form-group">
+      <label for="lastname">Apellido</label>
+      <input type="text" class="form-control" id="lastname" formControlName="lastname" required>
+    </div>
+
+    <div class="form-group">
       <label for="username">Username</label>
       <input type="text" class="form-control" id="username" formControlName="username" required>
     </div>
 
     <div class="form-group">
-      <label for="password">Password</label>
-      <input type="password" class="form-control" id="password" formControlName="password" required>
-    </div>
-	
-	<div class="form-group">
-      <label for="firstname">Firstname</label>
-      <input type="text" class="form-control" id="firstname" formControlName="firstname" required>
+      <label for="ti">Tipo Identificacion</label>
+      <input type="text" class="form-control" id="ti" formControlName="ti" required>
     </div>
 
     <div class="form-group">
-      <label for="lastname">Lastname</label>
-      <input type="text" class="form-control" id="lastname" formControlName="lastname" required>
-    </div>
-
-    <div class="form-group">
-      <label for="image">Image</label>
-      <input type="text" class="form-control" id="image" formControlName="image" required>
+      <label for="idnumber">Numero Identificacion</label>
+      <input type="text" class="form-control" id="idnumber" formControlName="idnumber" required>
     </div>
     
 <button type="submit" class="btn btn-success">Save</button>

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Todo } from '../models/plan';
+import { Plan } from '../models/plan';
 import { APIService } from '../common/api.service';
 import { Observable } from "rxjs/Observable";
 
@@ -8,12 +8,12 @@ export class TodoService extends APIService{
   private resourceUrl = 'api/plan';
 
   
-      create(value:string,value2:Number,bool:boolean):Observable<Todo>{
-        return this.post(this.resourceUrl,new Todo(value,value2,bool));
+      create(nombre:string,descripcion:string,ubicacion:string,fecha:string,costo:string):Observable<Plan>{
+        return this.post(this.resourceUrl,new Plan(nombre,descripcion,ubicacion,fecha,costo));
 
       }
       
-      list(): Observable<Todo[]> {
+      list(): Observable<Plan[]> {
         return this.get(this.resourceUrl);
       }
 
