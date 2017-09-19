@@ -38,6 +38,7 @@ const ROUTES = [
   },
   {
     path: 'newplan', component: CreatePlanPageComponent,
+    canActivate: [AuthService],
     
   },
   {

@@ -18,13 +18,10 @@ export class TaskListPageComponent implements OnInit {
 
 
   ngOnInit() {
-    this.planService.list().subscribe(todosResponse => {
-      this.planes = todosResponse;
+    this.planService.list().subscribe(planResponse => {
+      this.planes = planResponse;
     })
   }
 
-  onsubmit() {
-    this.router.navigate(['newplan']);
-  }
 
 }

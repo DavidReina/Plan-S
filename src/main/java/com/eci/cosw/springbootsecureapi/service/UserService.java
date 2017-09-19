@@ -20,5 +20,7 @@ public interface UserService
 
     User findUserByEmail( String email );
 
+    public void updateUser(User u);
+
     User findUserByEmailAndPassword( String email, String password );
 }

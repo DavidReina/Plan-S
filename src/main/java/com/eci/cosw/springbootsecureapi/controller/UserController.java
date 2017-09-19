@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.http.HttpStatus;
+
 
 import javax.servlet.ServletException;
 import java.util.Date;
@@ -73,6 +76,12 @@ public class UserController
     @RequestMapping( value = "/users", method = RequestMethod.POST )
     public User setUser(@RequestBody User user){
         return userService.registerUser(user);
+    }
+
+    @RequestMapping(method = RequestMethod.PUT)
+    public ResponseEntity<?> updatePerson(@RequestBody User u) {
+        userService.updateUser(u);
+        return new ResponseEntity<>(HttpStatus.ACCEPTED);
     }
 
     public class Token

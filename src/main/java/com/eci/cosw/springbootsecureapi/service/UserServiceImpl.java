@@ -65,6 +65,15 @@ public class UserServiceImpl
         return a;
     }
 
+    @Override
+    public void updateUser(User u) {
+        User a= u;
+        for (int i=0;i < users.size(); i++){
+            if(users.get(i).getEmail().equals(u.getEmail())){
+                users.set(i,a);
+            }
+        }
+    }
 
     @Override
     public User findUserByEmail( String email )

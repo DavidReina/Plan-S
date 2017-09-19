@@ -2,39 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e60b0989-3400-45cf-8ddc-4a55a5979a08" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/task-edit-page/task-edit-page.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/task-edit-page/task-edit-page.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/task-edit-page/task-edit-page.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/controller/TodoController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/model/Todo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/service/TodoService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/service/TodoServiceImpl.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/controller/UserController$Token.class" afterPath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/controller/UserController$Token.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/controller/UserController.class" afterPath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/controller/UserController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/service/UserService.class" afterPath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/service/UserService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.class" afterPath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/dist/index.html" afterPath="$PROJECT_DIR$/angular-seed/dist/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/dist/inline.bundle.js.map" afterPath="$PROJECT_DIR$/angular-seed/dist/inline.bundle.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/dist/main.bundle.js" afterPath="$PROJECT_DIR$/angular-seed/dist/main.bundle.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/dist/main.bundle.js.map" afterPath="$PROJECT_DIR$/angular-seed/dist/main.bundle.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/dist/polyfills.bundle.js.map" afterPath="$PROJECT_DIR$/angular-seed/dist/polyfills.bundle.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/dist/styles.bundle.js.map" afterPath="$PROJECT_DIR$/angular-seed/dist/styles.bundle.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/dist/vendor.bundle.js.map" afterPath="$PROJECT_DIR$/angular-seed/dist/vendor.bundle.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/app.module.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/app.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/models/plan.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/models/plan.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/create-plan-page/create-plan-page.component.html" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/create-plan-page/create-plan-page.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/create-plan-page/create-plan-page.component.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/create-plan-page/create-plan-page.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/home-page/home-page.component.html" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/home-page/home-page.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/task-list-page/task-list-page.component.html" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/task-list-page/task-list-page.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/task-list-page/task-list-page.component.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/task-list-page/task-list-page.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/user-edit-page/user-edit-page.component.html" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/user-edit-page/user-edit-page.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/update-user-page/update-user-page.component.css" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/update-user-page/update-user-page.component.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/update-user-page/update-user-page.component.html" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/update-user-page/update-user-page.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/update-user-page/update-user-page.component.spec.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/update-user-page/update-user-page.component.spec.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/update-user-page/update-user-page.component.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/update-user-page/update-user-page.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/services/plan.service.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/services/plan.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/services/todo.service.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/services/todo.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/index.html" afterPath="$PROJECT_DIR$/angular-seed/src/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/resources/static/index.html" afterPath="$PROJECT_DIR$/out/production/resources/static/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/resources/static/inline.bundle.js.map" afterPath="$PROJECT_DIR$/out/production/resources/static/inline.bundle.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/resources/static/main.bundle.js" afterPath="$PROJECT_DIR$/out/production/resources/static/main.bundle.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/resources/static/main.bundle.js.map" afterPath="$PROJECT_DIR$/out/production/resources/static/main.bundle.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/resources/static/polyfills.bundle.js.map" afterPath="$PROJECT_DIR$/out/production/resources/static/polyfills.bundle.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/resources/static/styles.bundle.js.map" afterPath="$PROJECT_DIR$/out/production/resources/static/styles.bundle.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/resources/static/vendor.bundle.js.map" afterPath="$PROJECT_DIR$/out/production/resources/static/vendor.bundle.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/UserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/inline.bundle.js.map" afterPath="$PROJECT_DIR$/src/main/resources/static/inline.bundle.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/main.bundle.js" afterPath="$PROJECT_DIR$/src/main/resources/static/main.bundle.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/main.bundle.js.map" afterPath="$PROJECT_DIR$/src/main/resources/static/main.bundle.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/polyfills.bundle.js.map" afterPath="$PROJECT_DIR$/src/main/resources/static/polyfills.bundle.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/styles.bundle.js.map" afterPath="$PROJECT_DIR$/src/main/resources/static/styles.bundle.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendor.bundle.js.map" afterPath="$PROJECT_DIR$/src/main/resources/static/vendor.bundle.js.map" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -56,8 +56,8 @@
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="43" column="45" lean-forward="false" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+            <state relative-caret-position="353">
+              <caret line="82" column="34" lean-forward="false" selection-start-line="82" selection-start-column="34" selection-end-line="82" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,11 +65,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlanController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlanController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/PlanController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state relative-caret-position="135">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -78,8 +88,8 @@
       <file leaf-file-name="Plan.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/model/Plan.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+            <state relative-caret-position="135">
+              <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -88,7 +98,7 @@
       <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/model/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1155">
+            <state relative-caret-position="624">
               <caret line="121" column="29" lean-forward="false" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="29" />
               <folding />
             </state>
@@ -115,21 +125,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="task-list-page.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/task-list-page/task-list-page.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="61" column="32" lean-forward="false" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+            <state relative-caret-position="360">
+              <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -148,8 +148,8 @@
       <file leaf-file-name="PlanServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/PlanServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state relative-caret-position="360">
+              <caret line="31" column="28" lean-forward="false" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -580,12 +580,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/PlanService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/model/Plan.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/PlanServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/angular-seed/src/app/pages/user-edit-page/user-edit-page.component.html" />
         <option value="$PROJECT_DIR$/angular-seed/src/app/services/users.service.ts" />
         <option value="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/PlanController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -1128,14 +1128,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/user-edit-page/user-edit-page.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1174,36 +1166,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="121" column="29" lean-forward="false" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="61" column="32" lean-forward="false" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="43" column="45" lean-forward="false" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+        <state relative-caret-position="353">
+          <caret line="82" column="34" lean-forward="false" selection-start-line="82" selection-start-column="34" selection-end-line="82" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/PlanController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="121" column="29" lean-forward="false" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/model/Plan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="135">
+          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -1218,16 +1210,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/PlanServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="360">
+          <caret line="31" column="28" lean-forward="false" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/PlanController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state relative-caret-position="300">
+          <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
           <folding />
         </state>
       </provider>
