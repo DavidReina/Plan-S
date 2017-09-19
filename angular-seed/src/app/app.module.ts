@@ -22,6 +22,8 @@ import { AppDataService } from './common/app-data.service';
 import { UsersService } from './services/users.service';
 import { UserEditPageComponent } from "./pages/user-edit-page/user-edit-page.component";
 import { UserListPageComponent } from "./pages/user-list-page/user-list-page.component";
+import { CreatePlanPageComponent } from './pages/src/app/pages/create-plan-page/create-plan-page.component';
+import { UpdateUserPageComponent } from './pages/src/app/pages/update-user-page/update-user-page.component';
 
 const ROUTES = [
   { path: '', component: HomePageComponent },
@@ -51,6 +53,8 @@ const ROUTES = [
     UserListPageComponent,
     PageNotFoundComponent,
     SingInPageComponent,
+    CreatePlanPageComponent,
+    UpdateUserPageComponent,
   ],
   imports: [
     BrowserModule,
