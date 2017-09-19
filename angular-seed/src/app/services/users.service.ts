@@ -17,7 +17,7 @@ export class UsersService extends APIService {
     super(config, authService, http);
   }
 
-create(email:string,username:string,firstname:string,lastname:string,password:string, ti:string, identification:identification):Observable<User>{
+create(email:string,username:string,firstname:string,lastname:string,password:string, ti:string, identification:string):Observable<User>{
 
 return this.post(this.resourceUrl, new User(email, password, firstname, lastname, username, ti, identification));
 

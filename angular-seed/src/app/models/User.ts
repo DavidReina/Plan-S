@@ -7,7 +7,7 @@
         private ti: string;
         private identification: string;
     
-        constructor(email: string, password: string, firstname: string, lastname: string, username: string, image: string, ti:string , identification: string) {
+        constructor(email: string, password: string, firstname: string, lastname: string, username: string, ti:string , identification: string) {
 			this.email = email;
 			this.password = password;            
 			this.firstname = firstname;

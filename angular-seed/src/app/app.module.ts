@@ -25,8 +25,8 @@ import { UserEditPageComponent } from "./pages/user-edit-page/user-edit-page.com
 import { UserListPageComponent } from "./pages/user-list-page/user-list-page.component";
 
 const ROUTES = [
-  { path: '', component: SingInPageComponent },
-  { path: 'home', component: HomePageComponent },
+  { path: '', component: HomePageComponent },
+  { path: 'signin', component: SingInPageComponent },
   {
     path: 'tasks', component: TaskListPageComponent,
     canActivate: [AuthService],
@@ -40,9 +40,7 @@ const ROUTES = [
     canActivate: [AuthService],
   },
   {
-    path: 'items', component: UserEditPageComponent,
-    
-    canActivate: [AuthService],
+    path: 'register', component: UserEditPageComponent,
   },
   {
     path: '**', component: PageNotFoundComponent

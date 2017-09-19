@@ -28,7 +28,7 @@ export class UserEditPageComponent implements OnInit {
 	  firstname: '',
 	  lastname: '',
 	  ti: '',
-	  identification''
+	  identification: ''
     });
 
   }
@@ -41,7 +41,7 @@ export class UserEditPageComponent implements OnInit {
 	  this.userForm.get('firstname').value,
 	  this.userForm.get('lastname').value,
 	  this.userForm.get('ti').value,
-	  this.userForm.get(identification).value
+	  this.userForm.get('identification').value
     ).subscribe(serverResponse=>{
         this.router.navigate(['/users']);
     }, error=>{
