@@ -9,19 +9,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/model/Todo.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/service/TodoService.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/service/TodoServiceImpl.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/boom/images/boom.png" afterPath="$PROJECT_DIR$/angular-seed/node_modules/boom/images/boom.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/directory-encoder/test/directory-files/dog.png" afterPath="$PROJECT_DIR$/angular-seed/node_modules/directory-encoder/test/directory-files/dog.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/directory-encoder/test/files/bear copy.png" afterPath="$PROJECT_DIR$/angular-seed/node_modules/directory-encoder/test/files/bear copy.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/dns-packet/node010" afterPath="$PROJECT_DIR$/angular-seed/node_modules/dns-packet/node010" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/hawk/images/hawk.png" afterPath="$PROJECT_DIR$/angular-seed/node_modules/hawk/images/hawk.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/hawk/images/logo.png" afterPath="$PROJECT_DIR$/angular-seed/node_modules/hawk/images/logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/m4/.gitkeep" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/m4/.gitkeep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/controller/UserController$Token.class" afterPath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/controller/UserController$Token.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/controller/UserController.class" afterPath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/model/Plan.class" afterPath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/model/Plan.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/service/PlanServiceImpl.class" afterPath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/service/PlanServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/service/UserService.class" afterPath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/service/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.class" afterPath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/dist/inline.bundle.js.map" afterPath="$PROJECT_DIR$/angular-seed/dist/inline.bundle.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/dist/main.bundle.js" afterPath="$PROJECT_DIR$/angular-seed/dist/main.bundle.js" />
@@ -29,546 +16,19 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/dist/polyfills.bundle.js.map" afterPath="$PROJECT_DIR$/angular-seed/dist/polyfills.bundle.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/dist/styles.bundle.js.map" afterPath="$PROJECT_DIR$/angular-seed/dist/styles.bundle.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/dist/vendor.bundle.js.map" afterPath="$PROJECT_DIR$/angular-seed/dist/vendor.bundle.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/@angular-devkit/build-optimizer/src/build-optimizer/cli.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/@angular-devkit/build-optimizer/src/build-optimizer/cli.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/@angular-devkit/build-optimizer/src/purify/cli.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/@angular-devkit/build-optimizer/src/purify/cli.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/@angular/cli/bin/ng" afterPath="$PROJECT_DIR$/angular-seed/node_modules/@angular/cli/bin/ng" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/@angular/cli/utilities/get-dependent-files.d.ts" afterPath="$PROJECT_DIR$/angular-seed/node_modules/@angular/cli/utilities/get-dependent-files.d.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/@angular/cli/utilities/module-resolver.d.ts" afterPath="$PROJECT_DIR$/angular-seed/node_modules/@angular/cli/utilities/module-resolver.d.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/@angular/compiler-cli/src/extract_i18n.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/@angular/compiler-cli/src/extract_i18n.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/@angular/compiler-cli/src/main.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/@angular/compiler-cli/src/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/@angular/core/@angular/core.es5.js.map" afterPath="$PROJECT_DIR$/angular-seed/node_modules/@angular/core/@angular/core.es5.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/@angular/core/@angular/core.js.map" afterPath="$PROJECT_DIR$/angular-seed/node_modules/@angular/core/@angular/core.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/@angular/core/bundles/core.umd.js.map" afterPath="$PROJECT_DIR$/angular-seed/node_modules/@angular/core/bundles/core.umd.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/@angular/core/bundles/core.umd.min.js.map" afterPath="$PROJECT_DIR$/angular-seed/node_modules/@angular/core/bundles/core.umd.min.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/acorn-dynamic-import/LICENSE" afterPath="$PROJECT_DIR$/angular-seed/node_modules/acorn-dynamic-import/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/acorn-dynamic-import/README.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/acorn-dynamic-import/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/acorn-dynamic-import/node_modules/acorn/bin/acorn" afterPath="$PROJECT_DIR$/angular-seed/node_modules/acorn-dynamic-import/node_modules/acorn/bin/acorn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/acorn/bin/acorn" afterPath="$PROJECT_DIR$/angular-seed/node_modules/acorn/bin/acorn" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/agent-base/node_modules/semver/bin/semver" afterPath="$PROJECT_DIR$/angular-seed/node_modules/agent-base/node_modules/semver/bin/semver" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/ajv/scripts/info" afterPath="$PROJECT_DIR$/angular-seed/node_modules/ajv/scripts/info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/ajv/scripts/prepare-tests" afterPath="$PROJECT_DIR$/angular-seed/node_modules/ajv/scripts/prepare-tests" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/ajv/scripts/travis-gh-pages" afterPath="$PROJECT_DIR$/angular-seed/node_modules/ajv/scripts/travis-gh-pages" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/ansi-html/bin/ansi-html" afterPath="$PROJECT_DIR$/angular-seed/node_modules/ansi-html/bin/ansi-html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/are-we-there-yet/README.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/are-we-there-yet/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/arr-diff/LICENSE" afterPath="$PROJECT_DIR$/angular-seed/node_modules/arr-diff/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/arr-flatten/LICENSE" afterPath="$PROJECT_DIR$/angular-seed/node_modules/arr-flatten/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/arr-flatten/README.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/arr-flatten/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/array-slice/LICENSE" afterPath="$PROJECT_DIR$/angular-seed/node_modules/array-slice/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/array-slice/README.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/array-slice/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/array-slice/index.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/array-slice/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/array-unique/LICENSE" afterPath="$PROJECT_DIR$/angular-seed/node_modules/array-unique/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/array-unique/README.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/array-unique/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/array-unique/index.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/array-unique/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/array-unique/package.json" afterPath="$PROJECT_DIR$/angular-seed/node_modules/array-unique/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/babel-generator/node_modules/jsesc/bin/jsesc" afterPath="$PROJECT_DIR$/angular-seed/node_modules/babel-generator/node_modules/jsesc/bin/jsesc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/babylon/CHANGELOG.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/babylon/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/babylon/bin/babylon.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/babylon/bin/babylon.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/boom/.travis.yml" afterPath="$PROJECT_DIR$/angular-seed/node_modules/boom/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/boom/LICENSE" afterPath="$PROJECT_DIR$/angular-seed/node_modules/boom/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/boom/README.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/boom/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/boom/lib/index.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/boom/lib/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/boom/test/index.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/boom/test/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/bootstrap/build/change-version.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/bootstrap/build/change-version.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/bootstrap/build/lint-vars.sh" afterPath="$PROJECT_DIR$/angular-seed/node_modules/bootstrap/build/lint-vars.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/bootstrap/build/upload-preview.sh" afterPath="$PROJECT_DIR$/angular-seed/node_modules/bootstrap/build/upload-preview.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/browserify-zlib/test/ignored/test-zlib-dictionary-fail.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/browserify-zlib/test/ignored/test-zlib-dictionary-fail.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/browserify-zlib/test/ignored/test-zlib-dictionary.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/browserify-zlib/test/ignored/test-zlib-dictionary.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/browserify-zlib/test/ignored/test-zlib-params.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/browserify-zlib/test/ignored/test-zlib-params.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/browserify-zlib/test/test-zlib-close-after-write.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/browserify-zlib/test/test-zlib-close-after-write.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/browserify-zlib/test/test-zlib-convenience-methods.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/browserify-zlib/test/test-zlib-convenience-methods.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/browserify-zlib/test/test-zlib-from-string.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/browserify-zlib/test/test-zlib-from-string.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/browserify-zlib/test/test-zlib-invalid-input.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/browserify-zlib/test/test-zlib-invalid-input.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/browserify-zlib/test/test-zlib-random-byte-pipes.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/browserify-zlib/test/test-zlib-random-byte-pipes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/browserify-zlib/test/test-zlib-write-after-flush.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/browserify-zlib/test/test-zlib-write-after-flush.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/browserify-zlib/test/test-zlib-zero-byte.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/browserify-zlib/test/test-zlib-zero-byte.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/browserslist/cli.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/browserslist/cli.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/buffer/bin/download-node-tests.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/buffer/bin/download-node-tests.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/buffer/bin/update-authors.sh" afterPath="$PROJECT_DIR$/angular-seed/node_modules/buffer/bin/update-authors.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/constants-browserify/build.sh" afterPath="$PROJECT_DIR$/angular-seed/node_modules/constants-browserify/build.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/cryptiles/.travis.yml" afterPath="$PROJECT_DIR$/angular-seed/node_modules/cryptiles/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/cryptiles/LICENSE" afterPath="$PROJECT_DIR$/angular-seed/node_modules/cryptiles/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/cryptiles/lib/index.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/cryptiles/lib/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/cryptiles/package.json" afterPath="$PROJECT_DIR$/angular-seed/node_modules/cryptiles/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/cryptiles/test/index.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/cryptiles/test/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/crypto-browserify/README.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/crypto-browserify/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/cssesc/bin/cssesc" afterPath="$PROJECT_DIR$/angular-seed/node_modules/cssesc/bin/cssesc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/csso/bin/csso" afterPath="$PROJECT_DIR$/angular-seed/node_modules/csso/bin/csso" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/directory-encoder/test/directory-files/bear-copy.svg" afterPath="$PROJECT_DIR$/angular-seed/node_modules/directory-encoder/test/directory-files/bear-copy.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/directory-encoder/test/directory-files/bear.svg" afterPath="$PROJECT_DIR$/angular-seed/node_modules/directory-encoder/test/directory-files/bear.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/directory-encoder/test/files/bear.svg" afterPath="$PROJECT_DIR$/angular-seed/node_modules/directory-encoder/test/files/bear.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/emojis-list/LICENSE.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/emojis-list/LICENSE.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/emojis-list/README.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/emojis-list/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/engine.io-client/lib/transports/index.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/engine.io-client/lib/transports/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/engine.io-client/lib/transports/polling-xhr.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/engine.io-client/lib/transports/polling-xhr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/errno/build.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/errno/build.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/errno/cli.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/errno/cli.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/errno/test.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/errno/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/esprima/bin/esparse.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/esprima/bin/esparse.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/esprima/bin/esvalidate.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/esprima/bin/esvalidate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/esrecurse/package.json" afterPath="$PROJECT_DIR$/angular-seed/node_modules/esrecurse/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/exit/test/fixtures/create-files.sh" afterPath="$PROJECT_DIR$/angular-seed/node_modules/exit/test/fixtures/create-files.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/fill-range/LICENSE" afterPath="$PROJECT_DIR$/angular-seed/node_modules/fill-range/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/fill-range/README.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/fill-range/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/handlebars/bin/handlebars" afterPath="$PROJECT_DIR$/angular-seed/node_modules/handlebars/bin/handlebars" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/handlebars/node_modules/async/lib/async.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/handlebars/node_modules/async/lib/async.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/handlebars/node_modules/source-map/test/run-tests.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/handlebars/node_modules/source-map/test/run-tests.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/handlebars/node_modules/uglify-js/bin/uglifyjs" afterPath="$PROJECT_DIR$/angular-seed/node_modules/handlebars/node_modules/uglify-js/bin/uglifyjs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/handlebars/node_modules/uglify-js/test/run-tests.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/handlebars/node_modules/uglify-js/test/run-tests.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/har-validator/node_modules/ajv/scripts/info" afterPath="$PROJECT_DIR$/angular-seed/node_modules/har-validator/node_modules/ajv/scripts/info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/har-validator/node_modules/ajv/scripts/prepare-tests" afterPath="$PROJECT_DIR$/angular-seed/node_modules/har-validator/node_modules/ajv/scripts/prepare-tests" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/har-validator/node_modules/ajv/scripts/travis-gh-pages" afterPath="$PROJECT_DIR$/angular-seed/node_modules/har-validator/node_modules/ajv/scripts/travis-gh-pages" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/hawk/.travis.yml" afterPath="$PROJECT_DIR$/angular-seed/node_modules/hawk/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/hawk/LICENSE" afterPath="$PROJECT_DIR$/angular-seed/node_modules/hawk/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/hawk/README.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/hawk/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/hawk/example/usage.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/hawk/example/usage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/hawk/lib/browser.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/hawk/lib/browser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/hawk/lib/client.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/hawk/lib/client.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/hawk/lib/crypto.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/hawk/lib/crypto.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/hawk/lib/index.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/hawk/lib/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/hawk/lib/server.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/hawk/lib/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/hawk/lib/utils.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/hawk/lib/utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/hawk/package.json" afterPath="$PROJECT_DIR$/angular-seed/node_modules/hawk/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/hawk/test/browser.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/hawk/test/browser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/hawk/test/client.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/hawk/test/client.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/hawk/test/crypto.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/hawk/test/crypto.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/hawk/test/index.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/hawk/test/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/hawk/test/readme.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/hawk/test/readme.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/hawk/test/server.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/hawk/test/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/hawk/test/uri.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/hawk/test/uri.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/hawk/test/utils.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/hawk/test/utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/he/bin/he" afterPath="$PROJECT_DIR$/angular-seed/node_modules/he/bin/he" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/hpack.js/bin/benchmark" afterPath="$PROJECT_DIR$/angular-seed/node_modules/hpack.js/bin/benchmark" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/html-minifier/cli.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/html-minifier/cli.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/image-size/bin/image-size.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/image-size/bin/image-size.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/img-stats/test/files/bear.svg" afterPath="$PROJECT_DIR$/angular-seed/node_modules/img-stats/test/files/bear.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/in-publish/in-install.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/in-publish/in-install.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/in-publish/in-publish.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/in-publish/in-publish.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/in-publish/not-in-install.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/in-publish/not-in-install.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/in-publish/not-in-publish.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/in-publish/not-in-publish.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/internal-ip/cli.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/internal-ip/cli.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/istanbul-reports/node_modules/handlebars/bin/handlebars" afterPath="$PROJECT_DIR$/angular-seed/node_modules/istanbul-reports/node_modules/handlebars/bin/handlebars" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/istanbul-reports/node_modules/handlebars/print-script" afterPath="$PROJECT_DIR$/angular-seed/node_modules/istanbul-reports/node_modules/handlebars/print-script" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/istanbul-reports/node_modules/optimist/test/_/bin.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/istanbul-reports/node_modules/optimist/test/_/bin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/istanbul-reports/node_modules/uglify-js/bin/uglifyjs" afterPath="$PROJECT_DIR$/angular-seed/node_modules/istanbul-reports/node_modules/uglify-js/bin/uglifyjs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/istanbul-reports/node_modules/yargs/CHANGELOG.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/istanbul-reports/node_modules/yargs/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jasmine/bin/jasmine.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jasmine/bin/jasmine.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/js-yaml/bin/js-yaml.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/js-yaml/bin/js-yaml.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/.npmignore" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/.npmignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/CONTRIBUTORS" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/CONTRIBUTORS" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/LICENSE" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/README.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/dist/jschardet.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/dist/jschardet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/dist/jschardet.min.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/dist/jschardet.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/index.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/package.json" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/big5freq.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/big5freq.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/big5prober.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/big5prober.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/chardistribution.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/chardistribution.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/charsetgroupprober.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/charsetgroupprober.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/charsetprober.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/charsetprober.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/codingstatemachine.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/codingstatemachine.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/constants.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/constants.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/escprober.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/escprober.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/escsm.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/escsm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/eucjpprober.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/eucjpprober.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/euckrfreq.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/euckrfreq.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/euckrprober.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/euckrprober.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/euctwfreq.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/euctwfreq.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/euctwprober.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/euctwprober.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/gb2312freq.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/gb2312freq.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/gb2312prober.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/gb2312prober.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/hebrewprober.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/hebrewprober.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/index.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/init.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/init.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/jisfreq.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/jisfreq.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/jpcntx.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/jpcntx.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/langbulgarianmodel.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/langbulgarianmodel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/langcyrillicmodel.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/langcyrillicmodel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/langgreekmodel.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/langgreekmodel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/langhebrewmodel.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/langhebrewmodel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/langhungarianmodel.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/langhungarianmodel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/langthaimodel.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/langthaimodel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/latin1prober.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/latin1prober.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/mbcharsetprober.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/mbcharsetprober.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/mbcsgroupprober.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/mbcsgroupprober.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/mbcssm.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/mbcssm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/sbcharsetprober.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/sbcharsetprober.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/sbcsgroupprober.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/sbcsgroupprober.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/sjisprober.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/sjisprober.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/universaldetector.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/universaldetector.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/utf8prober.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/src/utf8prober.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/tests/index.html" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/tests/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/tests/jschardet.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/tests/jschardet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/tests/qunit/qunit.css" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/tests/qunit/qunit.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/tests/qunit/qunit.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jschardet/tests/qunit/qunit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/jsesc/bin/jsesc" afterPath="$PROJECT_DIR$/angular-seed/node_modules/jsesc/bin/jsesc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/json5/lib/cli.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/json5/lib/cli.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/karma-cli/bin/karma" afterPath="$PROJECT_DIR$/angular-seed/node_modules/karma-cli/bin/karma" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/karma/bin/karma" afterPath="$PROJECT_DIR$/angular-seed/node_modules/karma/bin/karma" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/karma/lib/init.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/karma/lib/init.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/karma/node_modules/optimist/test/_/bin.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/karma/node_modules/optimist/test/_/bin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/karma/scripts/integration-tests.sh" afterPath="$PROJECT_DIR$/angular-seed/node_modules/karma/scripts/integration-tests.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/karma/scripts/validate-commit-msg.sh" afterPath="$PROJECT_DIR$/angular-seed/node_modules/karma/scripts/validate-commit-msg.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/less-loader/LICENSE" afterPath="$PROJECT_DIR$/angular-seed/node_modules/less-loader/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/less/bin/lessc" afterPath="$PROJECT_DIR$/angular-seed/node_modules/less/bin/lessc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/less/gradlew" afterPath="$PROJECT_DIR$/angular-seed/node_modules/less/gradlew" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/log4js/lib/appenders/clustered.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/log4js/lib/appenders/clustered.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/log4js/lib/appenders/fileSync.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/log4js/lib/appenders/fileSync.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/log4js/lib/connect-logger.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/log4js/lib/connect-logger.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/log4js/node_modules/semver/bin/semver" afterPath="$PROJECT_DIR$/angular-seed/node_modules/log4js/node_modules/semver/bin/semver" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/log4js/test/clusteredAppender-test.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/log4js/test/clusteredAppender-test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/log4js/test/fileSyncAppender-test.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/log4js/test/fileSyncAppender-test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/loose-envify/cli.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/loose-envify/cli.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/math-expression-evaluator/LICENSE" afterPath="$PROJECT_DIR$/angular-seed/node_modules/math-expression-evaluator/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/math-expression-evaluator/README.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/math-expression-evaluator/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/math-expression-evaluator/dist/browser/math-expression-evaluator.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/math-expression-evaluator/dist/browser/math-expression-evaluator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/math-expression-evaluator/dist/browser/math-expression-evaluator.min.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/math-expression-evaluator/dist/browser/math-expression-evaluator.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/math-expression-evaluator/package.json" afterPath="$PROJECT_DIR$/angular-seed/node_modules/math-expression-evaluator/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/math-expression-evaluator/src/formula_evaluator.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/math-expression-evaluator/src/formula_evaluator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/math-expression-evaluator/src/lexer.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/math-expression-evaluator/src/lexer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/math-expression-evaluator/src/math_function.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/math-expression-evaluator/src/math_function.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/math-expression-evaluator/src/postfix.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/math-expression-evaluator/src/postfix.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/math-expression-evaluator/src/postfix_evaluator.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/math-expression-evaluator/src/postfix_evaluator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/math-expression-evaluator/test/index.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/math-expression-evaluator/test/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/micromatch/LICENSE" afterPath="$PROJECT_DIR$/angular-seed/node_modules/micromatch/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/micromatch/index.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/micromatch/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/miller-rabin/bin/miller-rabin" afterPath="$PROJECT_DIR$/angular-seed/node_modules/miller-rabin/bin/miller-rabin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/mime/cli.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/mime/cli.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/mkdirp/bin/cmd.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/mkdirp/bin/cmd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/multicast-dns/cli.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/multicast-dns/cli.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/nan/tools/1to2.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/nan/tools/1to2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-forge/build-setup" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-forge/build-setup" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-forge/setup/install-sh" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-forge/setup/install-sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-forge/tests/policyserver.py" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-forge/tests/policyserver.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-forge/tests/server.py" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-forge/tests/server.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/bin/node-gyp.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/bin/node-gyp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/buildbot/buildbot_run.py" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/buildbot/buildbot_run.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/gyp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/gyp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/gyp_main.py" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/gyp_main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/gyptest.py" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/gyptest.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/pylib/gyp/MSVSSettings_test.py" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/pylib/gyp/MSVSSettings_test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/pylib/gyp/__init__.py" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/pylib/gyp/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/pylib/gyp/common_test.py" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/pylib/gyp/common_test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/pylib/gyp/easy_xml_test.py" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/pylib/gyp/easy_xml_test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/pylib/gyp/flock_tool.py" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/pylib/gyp/flock_tool.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/pylib/gyp/generator/msvs_test.py" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/pylib/gyp/generator/msvs_test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/pylib/gyp/input_test.py" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/pylib/gyp/input_test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/pylib/gyp/mac_tool.py" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/pylib/gyp/mac_tool.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/pylib/gyp/win_tool.py" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/pylib/gyp/win_tool.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/samples/samples" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/samples/samples" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/setup.py" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/setup.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/tools/Xcode/Specifications/gyp.xclangspec" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/tools/Xcode/Specifications/gyp.xclangspec" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/tools/emacs/run-unit-tests.sh" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/tools/emacs/run-unit-tests.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/tools/graphviz.py" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/tools/graphviz.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/tools/pretty_gyp.py" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/tools/pretty_gyp.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/tools/pretty_sln.py" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/tools/pretty_sln.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/tools/pretty_vcproj.py" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/gyp/tools/pretty_vcproj.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/node_modules/nopt/bin/nopt.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/node_modules/nopt/bin/nopt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/node_modules/nopt/examples/my-program.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/node_modules/nopt/examples/my-program.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/node_modules/semver/bin/semver" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/node_modules/semver/bin/semver" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/test/docker.sh" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-gyp/test/docker.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/bin/node-sass" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/bin/node-sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/.editorconfig" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/.editorconfig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/.gitattributes" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/.gitattributes" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/.github/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/.github/CONTRIBUTING.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/.github/ISSUE_TEMPLATE.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/.github/ISSUE_TEMPLATE.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/.npmignore" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/.npmignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/.travis.yml" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/COPYING" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/COPYING" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/GNUmakefile.am" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/GNUmakefile.am" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/INSTALL" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/INSTALL" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/LICENSE" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/Makefile" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/Makefile.conf" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/Makefile.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/Readme.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/Readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/SECURITY.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/SECURITY.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/appveyor.yml" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/appveyor.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/configure.ac" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/configure.ac" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/contrib/libsass.spec" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/contrib/libsass.spec" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/contrib/plugin.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/contrib/plugin.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/README.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/api-context-example.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/api-context-example.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/api-context-internal.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/api-context-internal.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/api-context.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/api-context.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/api-doc.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/api-doc.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/api-function-example.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/api-function-example.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/api-function-internal.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/api-function-internal.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/api-function.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/api-function.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/api-importer-example.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/api-importer-example.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/api-importer-internal.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/api-importer-internal.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/api-importer.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/api-importer.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/api-value-example.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/api-value-example.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/api-value-internal.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/api-value-internal.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/api-value.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/api-value.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/build-on-darwin.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/build-on-darwin.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/build-on-gentoo.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/build-on-gentoo.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/build-on-windows.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/build-on-windows.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/build-shared-library.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/build-shared-library.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/build-with-autotools.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/build-with-autotools.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/build-with-makefiles.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/build-with-makefiles.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/build-with-mingw.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/build-with-mingw.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/build-with-visual-studio.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/build-with-visual-studio.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/build.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/build.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/compatibility-plan.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/compatibility-plan.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/contributing.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/contributing.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/custom-functions-internal.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/custom-functions-internal.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/dev-ast-memory.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/dev-ast-memory.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/implementations.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/implementations.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/plugins.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/plugins.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/setup-environment.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/setup-environment.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/source-map-internals.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/source-map-internals.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/trace.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/trace.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/triage.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/triage.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/unicode.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/docs/unicode.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/extconf.rb" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/extconf.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/include/sass.h" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/include/sass.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/include/sass/base.h" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/include/sass/base.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/include/sass/context.h" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/include/sass/context.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/include/sass/functions.h" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/include/sass/functions.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/include/sass/values.h" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/include/sass/values.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/include/sass/version.h" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/include/sass/version.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/include/sass/version.h.in" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/include/sass/version.h.in" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/include/sass2scss.h" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/include/sass2scss.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/m4/m4-ax_cxx_compile_stdcxx_11.m4" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/m4/m4-ax_cxx_compile_stdcxx_11.m4" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/res/resource.rc" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/res/resource.rc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/script/bootstrap" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/script/bootstrap" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/script/branding" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/script/branding" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/script/ci-build-libsass" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/script/ci-build-libsass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/script/ci-build-plugin" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/script/ci-build-plugin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/script/ci-install-compiler" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/script/ci-install-compiler" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/script/ci-install-deps" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/script/ci-install-deps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/script/ci-report-coverage" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/script/ci-report-coverage" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/script/spec" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/script/spec" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/script/tap-driver" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/script/tap-driver" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/script/tap-runner" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/script/tap-runner" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/script/test-leaks.pl" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/script/test-leaks.pl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/GNUmakefile.am" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/GNUmakefile.am" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/ast.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/ast.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/ast.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/ast.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/ast_def_macros.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/ast_def_macros.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/ast_fwd_decl.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/ast_fwd_decl.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/ast_fwd_decl.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/ast_fwd_decl.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/b64/cencode.h" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/b64/cencode.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/b64/encode.h" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/b64/encode.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/backtrace.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/backtrace.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/base64vlq.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/base64vlq.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/base64vlq.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/base64vlq.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/bind.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/bind.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/bind.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/bind.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/c99func.c" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/c99func.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/cencode.c" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/cencode.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/check_nesting.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/check_nesting.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/check_nesting.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/check_nesting.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/color_maps.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/color_maps.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/color_maps.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/color_maps.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/constants.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/constants.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/constants.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/constants.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/context.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/context.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/context.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/context.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/cssize.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/cssize.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/cssize.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/cssize.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/debug.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/debug.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/debugger.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/debugger.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/emitter.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/emitter.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/emitter.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/emitter.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/environment.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/environment.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/environment.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/environment.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/error_handling.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/error_handling.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/error_handling.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/error_handling.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/eval.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/eval.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/eval.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/eval.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/expand.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/expand.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/expand.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/expand.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/extend.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/extend.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/extend.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/extend.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/file.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/file.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/file.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/file.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/functions.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/functions.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/functions.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/functions.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/inspect.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/inspect.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/inspect.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/inspect.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/json.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/json.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/json.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/json.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/kwd_arg_macros.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/kwd_arg_macros.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/lexer.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/lexer.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/lexer.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/lexer.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/listize.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/listize.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/listize.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/listize.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/mapping.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/mapping.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/memory/SharedPtr.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/memory/SharedPtr.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/memory/SharedPtr.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/memory/SharedPtr.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/node.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/node.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/node.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/node.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/operation.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/operation.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/output.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/output.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/output.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/output.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/parser.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/parser.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/parser.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/parser.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/paths.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/paths.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/plugins.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/plugins.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/plugins.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/plugins.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/position.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/position.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/position.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/position.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/prelexer.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/prelexer.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/prelexer.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/prelexer.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/remove_placeholders.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/remove_placeholders.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/remove_placeholders.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/remove_placeholders.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/sass.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/sass.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/sass.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/sass.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/sass2scss.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/sass2scss.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/sass_context.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/sass_context.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/sass_context.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/sass_context.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/sass_functions.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/sass_functions.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/sass_functions.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/sass_functions.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/sass_util.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/sass_util.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/sass_util.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/sass_util.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/sass_values.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/sass_values.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/sass_values.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/sass_values.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/source_map.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/source_map.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/source_map.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/source_map.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/subset_map.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/subset_map.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/subset_map.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/subset_map.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/support/libsass.pc.in" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/support/libsass.pc.in" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/to_c.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/to_c.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/to_c.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/to_c.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/to_value.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/to_value.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/to_value.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/to_value.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/units.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/units.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/units.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/units.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/utf8.h" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/utf8.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/utf8/checked.h" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/utf8/checked.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/utf8/core.h" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/utf8/core.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/utf8/unchecked.h" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/utf8/unchecked.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/utf8_string.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/utf8_string.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/utf8_string.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/utf8_string.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/util.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/util.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/util.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/util.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/values.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/values.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/values.hpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/src/values.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/test/test_node.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/test/test_node.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/test/test_paths.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/test/test_paths.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/test/test_selector_difference.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/test/test_selector_difference.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/test/test_specificity.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/test/test_specificity.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/test/test_subset_map.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/test/test_subset_map.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/test/test_superselector.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/test/test_superselector.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/test/test_unification.cpp" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/test/test_unification.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/version.sh" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/version.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/win/libsass.sln" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/win/libsass.sln" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/win/libsass.targets" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/win/libsass.targets" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/win/libsass.vcxproj" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/win/libsass.vcxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/win/libsass.vcxproj.filters" afterPath="$PROJECT_DIR$/angular-seed/node_modules/node-sass/src/libsass/win/libsass.vcxproj.filters" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/nopt/bin/nopt.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/nopt/bin/nopt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/nopt/examples/my-program.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/nopt/examples/my-program.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/npmlog/README.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/npmlog/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/opn/xdg-open" afterPath="$PROJECT_DIR$/angular-seed/node_modules/opn/xdg-open" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/optimist/test/_/bin.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/optimist/test/_/bin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/postcss-calc/CHANGELOG.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/postcss-calc/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/postcss-calc/LICENSE" afterPath="$PROJECT_DIR$/angular-seed/node_modules/postcss-calc/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/postcss-calc/README.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/postcss-calc/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/postcss-calc/index.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/postcss-calc/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/postcss-message-helpers/CHANGELOG.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/postcss-message-helpers/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/postcss-message-helpers/LICENSE" afterPath="$PROJECT_DIR$/angular-seed/node_modules/postcss-message-helpers/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/postcss-message-helpers/README.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/postcss-message-helpers/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/postcss-message-helpers/index.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/postcss-message-helpers/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/protractor/bin/elementexplorer.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/protractor/bin/elementexplorer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/protractor/bin/protractor" afterPath="$PROJECT_DIR$/angular-seed/node_modules/protractor/bin/protractor" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/protractor/bin/webdriver-manager" afterPath="$PROJECT_DIR$/angular-seed/node_modules/protractor/bin/webdriver-manager" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/protractor/exampleTypescript/asyncAwait/spec.ts" afterPath="$PROJECT_DIR$/angular-seed/node_modules/protractor/exampleTypescript/asyncAwait/spec.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/protractor/exampleTypescript/spec.ts" afterPath="$PROJECT_DIR$/angular-seed/node_modules/protractor/exampleTypescript/spec.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/protractor/node_modules/optimist/test/_/bin.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/protractor/node_modules/optimist/test/_/bin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/protractor/node_modules/webdriver-manager/bin/webdriver-manager" afterPath="$PROJECT_DIR$/angular-seed/node_modules/protractor/node_modules/webdriver-manager/bin/webdriver-manager" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/qjobs/tests/abort.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/qjobs/tests/abort.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/qjobs/tests/basic.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/qjobs/tests/basic.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/qjobs/tests/events.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/qjobs/tests/events.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/qjobs/tests/interval.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/qjobs/tests/interval.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/qjobs/tests/pause.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/qjobs/tests/pause.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/randomatic/LICENSE" afterPath="$PROJECT_DIR$/angular-seed/node_modules/randomatic/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/reduce-css-calc/CHANGELOG.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/reduce-css-calc/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/reduce-css-calc/LICENSE" afterPath="$PROJECT_DIR$/angular-seed/node_modules/reduce-css-calc/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/reduce-css-calc/README.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/reduce-css-calc/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/reduce-css-calc/index.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/reduce-css-calc/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/reduce-function-call/CHANGELOG.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/reduce-function-call/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/reduce-function-call/LICENSE" afterPath="$PROJECT_DIR$/angular-seed/node_modules/reduce-function-call/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/reduce-function-call/README.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/reduce-function-call/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/reduce-function-call/index.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/reduce-function-call/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/reduce-function-call/package.json" afterPath="$PROJECT_DIR$/angular-seed/node_modules/reduce-function-call/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/regjsparser/bin/parser" afterPath="$PROJECT_DIR$/angular-seed/node_modules/regjsparser/bin/parser" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/request/index.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/request/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/rimraf/bin.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/rimraf/bin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/sass-graph/bin/sassgraph" afterPath="$PROJECT_DIR$/angular-seed/node_modules/sass-graph/bin/sassgraph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/saucelabs/Makefile" afterPath="$PROJECT_DIR$/angular-seed/node_modules/saucelabs/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/selenium-webdriver/node_modules/tmp/cleanup.sh" afterPath="$PROJECT_DIR$/angular-seed/node_modules/selenium-webdriver/node_modules/tmp/cleanup.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/selenium-webdriver/node_modules/tmp/run-tests" afterPath="$PROJECT_DIR$/angular-seed/node_modules/selenium-webdriver/node_modules/tmp/run-tests" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/semver/bin/semver" afterPath="$PROJECT_DIR$/angular-seed/node_modules/semver/bin/semver" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/send/node_modules/mime/cli.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/send/node_modules/mime/cli.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/sha.js/bin.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/sha.js/bin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/sntp/.travis.yml" afterPath="$PROJECT_DIR$/angular-seed/node_modules/sntp/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/sntp/LICENSE" afterPath="$PROJECT_DIR$/angular-seed/node_modules/sntp/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/sntp/Makefile" afterPath="$PROJECT_DIR$/angular-seed/node_modules/sntp/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/sntp/README.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/sntp/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/sntp/examples/offset.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/sntp/examples/offset.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/sntp/examples/time.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/sntp/examples/time.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/sntp/index.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/sntp/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/sntp/lib/index.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/sntp/lib/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/sntp/package.json" afterPath="$PROJECT_DIR$/angular-seed/node_modules/sntp/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/sntp/test/index.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/sntp/test/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/sockjs-client/build.sh" afterPath="$PROJECT_DIR$/angular-seed/node_modules/sockjs-client/build.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/sockjs/node_modules/uuid/benchmark/bench.sh" afterPath="$PROJECT_DIR$/angular-seed/node_modules/sockjs/node_modules/uuid/benchmark/bench.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/source-map-loader/node_modules/async/support/sync-package-managers.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/source-map-loader/node_modules/async/support/sync-package-managers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/source-map-loader/node_modules/source-map/test/run-tests.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/source-map-loader/node_modules/source-map/test/run-tests.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/source-map-support/build.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/source-map-support/build.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/spdx-license-ids/README.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/spdx-license-ids/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/sshpk/bin/sshpk-conv" afterPath="$PROJECT_DIR$/angular-seed/node_modules/sshpk/bin/sshpk-conv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/sshpk/bin/sshpk-sign" afterPath="$PROJECT_DIR$/angular-seed/node_modules/sshpk/bin/sshpk-sign" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/sshpk/bin/sshpk-verify" afterPath="$PROJECT_DIR$/angular-seed/node_modules/sshpk/bin/sshpk-verify" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/strip-indent/cli.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/strip-indent/cli.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/stylus/bin/stylus" afterPath="$PROJECT_DIR$/angular-seed/node_modules/stylus/bin/stylus" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/stylus/node_modules/source-map/test/run-tests.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/stylus/node_modules/source-map/test/run-tests.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/svgo/bin/svgo" afterPath="$PROJECT_DIR$/angular-seed/node_modules/svgo/bin/svgo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/temp/node_modules/rimraf/bin.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/temp/node_modules/rimraf/bin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/ts-node/dist/_bin.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/ts-node/dist/_bin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/ts-node/dist/bin.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/ts-node/dist/bin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/tsickle/build/src/main.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/tsickle/build/src/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/tslint/bin/tslint" afterPath="$PROJECT_DIR$/angular-seed/node_modules/tslint/bin/tslint" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/tslint/node_modules/optimist/test/_/bin.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/tslint/node_modules/optimist/test/_/bin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/typescript/bin/tsc" afterPath="$PROJECT_DIR$/angular-seed/node_modules/typescript/bin/tsc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/typescript/bin/tsserver" afterPath="$PROJECT_DIR$/angular-seed/node_modules/typescript/bin/tsserver" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/uglify-js/bin/uglifyjs" afterPath="$PROJECT_DIR$/angular-seed/node_modules/uglify-js/bin/uglifyjs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/bin/uglifyjs" afterPath="$PROJECT_DIR$/angular-seed/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js/bin/uglifyjs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/uglifyjs-webpack-plugin/node_modules/yargs/CHANGELOG.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/uglifyjs-webpack-plugin/node_modules/yargs/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/user-home/cli.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/user-home/cli.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/useragent/bin/testfiles.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/useragent/bin/testfiles.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/useragent/bin/update.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/useragent/bin/update.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/uuid/bin/uuid" afterPath="$PROJECT_DIR$/angular-seed/node_modules/uuid/bin/uuid" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/webdriver-js-extender/node_modules/tmp/test-all.sh" afterPath="$PROJECT_DIR$/angular-seed/node_modules/webdriver-js-extender/node_modules/tmp/test-all.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/webpack-dev-server/bin/webpack-dev-server.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/webpack-dev-server/bin/webpack-dev-server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/webpack-dev-server/node_modules/opn/xdg-open" afterPath="$PROJECT_DIR$/angular-seed/node_modules/webpack-dev-server/node_modules/opn/xdg-open" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/webpack-dev-server/node_modules/yargs/CHANGELOG.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/webpack-dev-server/node_modules/yargs/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/webpack/bin/webpack.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/webpack/bin/webpack.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/webpack/node_modules/yargs/CHANGELOG.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/webpack/node_modules/yargs/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/which/bin/which" afterPath="$PROJECT_DIR$/angular-seed/node_modules/which/bin/which" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/wrap-ansi/index.js" afterPath="$PROJECT_DIR$/angular-seed/node_modules/wrap-ansi/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/node_modules/yargs/CHANGELOG.md" afterPath="$PROJECT_DIR$/angular-seed/node_modules/yargs/CHANGELOG.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/app.module.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/app.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/sign-in/sing-in-page.component.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/sign-in/sing-in-page.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/create-plan-page/create-plan-page.component.html" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/create-plan-page/create-plan-page.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/create-plan-page/create-plan-page.component.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/create-plan-page/create-plan-page.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/task-list-page/task-list-page.component.html" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/task-list-page/task-list-page.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/task-list-page/task-list-page.component.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/task-list-page/task-list-page.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/user-edit-page/user-edit-page.component.html" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/user-edit-page/user-edit-page.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/user-edit-page/user-edit-page.component.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/user-edit-page/user-edit-page.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/user-list-page/user-list-page.component.html" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/user-list-page/user-list-page.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/services/todo.service.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/services/todo.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/services/users.service.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/services/users.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/services/plan.service.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/services/plan.service.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/resources/static/inline.bundle.js.map" afterPath="$PROJECT_DIR$/out/production/resources/static/inline.bundle.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/resources/static/main.bundle.js" afterPath="$PROJECT_DIR$/out/production/resources/static/main.bundle.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/resources/static/main.bundle.js.map" afterPath="$PROJECT_DIR$/out/production/resources/static/main.bundle.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/resources/static/polyfills.bundle.js.map" afterPath="$PROJECT_DIR$/out/production/resources/static/polyfills.bundle.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/resources/static/styles.bundle.js.map" afterPath="$PROJECT_DIR$/out/production/resources/static/styles.bundle.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/resources/static/vendor.bundle.js.map" afterPath="$PROJECT_DIR$/out/production/resources/static/vendor.bundle.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/PlanController.java" afterPath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/PlanController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/PlanServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/PlanServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/inline.bundle.js.map" afterPath="$PROJECT_DIR$/src/main/resources/static/inline.bundle.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/main.bundle.js" afterPath="$PROJECT_DIR$/src/main/resources/static/main.bundle.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/main.bundle.js.map" afterPath="$PROJECT_DIR$/src/main/resources/static/main.bundle.js.map" />
@@ -592,12 +52,12 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-37">
-              <caret line="30" column="36" lean-forward="false" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+            <state relative-caret-position="465">
+              <caret line="43" column="45" lean-forward="false" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -605,15 +65,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlanController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PlanController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/PlanController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-              <folding>
-                <element signature="e#895#896#0" expanded="true" />
-                <element signature="e#943#944#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="330">
+              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Plan.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/model/Plan.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -621,8 +88,8 @@
       <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/model/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="121" column="29" lean-forward="true" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="29" />
+            <state relative-caret-position="1155">
+              <caret line="121" column="29" lean-forward="false" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -658,31 +125,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user-edit-page.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/user-edit-page/user-edit-page.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-315">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="61" column="32" lean-forward="true" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+            <state relative-caret-position="780">
+              <caret line="61" column="32" lean-forward="false" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -693,6 +140,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlanServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/PlanServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1154,8 +611,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1225,7 +680,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1365,36 +822,36 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1602" height="875" extended-state="6" />
+    <frame x="-1" y="0" width="1922" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988358" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26131955" sideWeight="0.5025" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26131955" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.218125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988358" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988358" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26131955" sideWeight="0.5025" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26050422" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21770833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988358" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -1405,49 +862,142 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/SpringBootSecureApiApplication.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/sign-in/sing-in-page.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/PlanServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="465">
+          <caret line="43" column="45" lean-forward="false" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
           <folding>
-            <element signature="e#949#950#0" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/model/Plan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
+        <state relative-caret-position="210">
           <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="e#706#707#0" expanded="true" />
-            <element signature="e#735#736#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/sign-in/sing-in-page.component.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="121" column="29" lean-forward="false" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/services/users.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="72" lean-forward="false" selection-start-line="19" selection-start-column="72" selection-end-line="19" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/task-list-page/task-list-page.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="9" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/task-list-page/task-list-page.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="61" column="32" lean-forward="false" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/PlanService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/PlanServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/PlanController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="30" column="36" lean-forward="false" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/PlanController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="121" column="29" lean-forward="false" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/services/users.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="72" lean-forward="false" selection-start-line="19" selection-start-column="72" selection-end-line="19" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/task-list-page/task-list-page.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="9" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/task-list-page/task-list-page.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/user-edit-page/user-edit-page.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1467,19 +1017,136 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/user-edit-page/user-edit-page.component.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        <state relative-caret-position="780">
+          <caret line="61" column="32" lean-forward="false" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="30" column="36" lean-forward="false" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/PlanController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="121" column="29" lean-forward="true" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/services/users.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="72" lean-forward="false" selection-start-line="19" selection-start-column="72" selection-end-line="19" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/task-list-page/task-list-page.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="9" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/task-list-page/task-list-page.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/user-edit-page/user-edit-page.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-315">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/PlanService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="61" column="32" lean-forward="true" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/SpringBootSecureApiApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/sign-in/sing-in-page.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/sign-in/sing-in-page.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/user-edit-page/user-edit-page.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/user-edit-page/user-edit-page.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1509,37 +1176,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="121" column="29" lean-forward="true" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="29" />
+        <state relative-caret-position="1155">
+          <caret line="121" column="29" lean-forward="false" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/PlanController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-          <folding>
-            <element signature="e#895#896#0" expanded="true" />
-            <element signature="e#943#944#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="780">
+          <caret line="61" column="32" lean-forward="false" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-37">
-          <caret line="30" column="36" lean-forward="false" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+        <state relative-caret-position="465">
+          <caret line="43" column="45" lean-forward="false" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/model/Plan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="61" column="32" lean-forward="true" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+        <state relative-caret-position="210">
+          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/PlanService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/PlanServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/PlanController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>

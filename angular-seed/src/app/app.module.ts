@@ -14,6 +14,7 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+import { PlanService } from './services/plan.service';
 import { TodoService } from './services/todo.service';
 import { HttpModule } from '@angular/http';
 import { SingInPageComponent } from './pages/sign-in/sing-in-page.component';
@@ -22,8 +23,8 @@ import { AppDataService } from './common/app-data.service';
 import { UsersService } from './services/users.service';
 import { UserEditPageComponent } from "./pages/user-edit-page/user-edit-page.component";
 import { UserListPageComponent } from "./pages/user-list-page/user-list-page.component";
-import { CreatePlanPageComponent } from './pages/src/app/pages/create-plan-page/create-plan-page.component';
-import { UpdateUserPageComponent } from './pages/src/app/pages/update-user-page/update-user-page.component';
+import { CreatePlanPageComponent } from './pages/create-plan-page/create-plan-page.component';
+import { UpdateUserPageComponent } from './pages/update-user-page/update-user-page.component';
 
 const ROUTES = [
   { path: '', component: HomePageComponent },
@@ -33,11 +34,11 @@ const ROUTES = [
     canActivate: [AuthService],
   },
   {
-    path: 'users', component: UserListPageComponent,
-    canActivate: [AuthService],
+    path: 'register', component: UserEditPageComponent,
   },
   {
-    path: 'register', component: UserEditPageComponent,
+    path: 'newplan', component: CreatePlanPageComponent,
+    
   },
   {
     path: '**', component: PageNotFoundComponent
@@ -71,6 +72,7 @@ const ROUTES = [
         apiURL: 'http://localhost:8080'
       }
     },
+    PlanService,
     TodoService,
     AuthService,
     AppDataService,

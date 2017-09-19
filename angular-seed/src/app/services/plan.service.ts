@@ -1,12 +1,11 @@
-import { Injectable } from '@angular/core';
 import { Plan } from '../models/plan';
+import { Injectable } from '@angular/core';
 import { APIService } from '../common/api.service';
 import { Observable } from "rxjs/Observable";
 
 @Injectable()
 export class PlanService extends APIService{
-  private resourceUrl = 'api/plan';
-
+  private resourceUrl = 'plan/plans';
   
       create(nombre:string,descripcion:string,ubicacion:string,fecha:string,costo:string):Observable<Plan>{
         return this.post(this.resourceUrl,new Plan(nombre,descripcion,ubicacion,fecha,costo));

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { TodoService } from '../../services/todo.service';
 import { Plan } from '../../models/plan';
+import { PlanService } from '../../services/plan.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-task-list-page',
@@ -9,15 +10,21 @@ import { Plan } from '../../models/plan';
 })
 export class TaskListPageComponent implements OnInit {
   private planes: Plan[] = [];
-  constructor(public todoService: TodoService) {
+  constructor(public planService: PlanService, public router: Router) {
+    
+
 
   }
 
 
   ngOnInit() {
-    this.todoService.list().subscribe(todosResponse => {
+    this.planService.list().subscribe(todosResponse => {
       this.planes = todosResponse;
     })
+  }
+
+  onsubmit() {
+    this.router.navigate(['newplan']);
   }
 
 }
