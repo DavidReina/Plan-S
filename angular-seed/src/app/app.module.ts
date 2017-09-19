@@ -15,7 +15,7 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { TodoService } from './services/todo.service';
+import { TodoService } from './services/plan.service';
 import { HttpModule } from '@angular/http';
 import { SingInPageComponent } from './pages/sign-in/sing-in-page.component';
 import { AuthService } from './common/auth.service';

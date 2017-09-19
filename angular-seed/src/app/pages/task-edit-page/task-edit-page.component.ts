@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
-import { TodoService } from '../../services/todo.service';
+import { TodoService } from '../../services/plan.service';
 
 @Component({
   selector: 'app-task-edit-page',

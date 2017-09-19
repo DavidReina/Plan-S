@@ -35,7 +35,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "body {\n  min-height: 75rem;\n  padding-top: 4.5rem;\n}\n", ""]);
+exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n/*!\n * Start Bootstrap - One Page Wonder (http://startbootstrap.com/template-overviews/one-page-wonder)\n * Copyright 2013-2017 Start Bootstrap\n * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-one-page-wonder/blob/master/LICENSE)\n */\n\nbody {\n    padding-top: 54px;\n}\n\n@media (min-width: 992px) {\n    body {\n        padding-top: 56px;\n    }\n}\n\nheader.masthead {\n    background: url('http://amorteca.com/wp-content/uploads/2015/03/amigos.jpg') no-repeat center center scroll;\n    background-size: cover;\n    -o-background-size: cover;\n}\n\nheader.masthead > .overlay {\n    padding: 5rem 0;\n    text-align: center;\n    background: rgba(0, 0, 0, 0.6);\n}\n\n@media (min-width: 992px) {\n    header.masthead > .overlay {\n        padding: 10rem 0;\n    }\n}\n", ""]);
 
 // exports
 

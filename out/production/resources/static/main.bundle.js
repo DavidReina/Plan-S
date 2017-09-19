@@ -1,6 +1,6 @@
 webpackJsonp(["main"],{
 
-/***/ "../../../../../src/$$_gendir lazy recursive":
+/***/ "../../../../../src lazy recursive":
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -9,7 +9,7 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = "../../../../../src/$$_gendir lazy recursive";
+webpackEmptyAsyncContext.id = "../../../../../src lazy recursive";
 
 /***/ }),
 
@@ -34,7 +34,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse\">\n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarCollapse\" aria-controls=\"navbarCollapse\"\n    aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n        <span class=\"navbar-toggler-icon\"></span>\n      </button>\n  <a class=\"navbar-brand\" href=\"#\">COSW Angular4</a>\n  <div class=\"collapse navbar-collapse\" id=\"navbarCollapse\">\n    <ul class=\"navbar-nav mr-auto\">\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/\" routerLink=\"/\">Home</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/tasks\" routerLink=\"/tasks\">Tasks</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/edit\" routerLink=\"/edit\">Edit</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/users\" routerLink=\"/users\">Users</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\" routerLinkActive=\"/items\" routerLink=\"/items\">Register</a>\n      </li>\n      <li *ngIf=\"isLoggedIn()\" class=\"nav-item\">\n        <a href=\"#\" class=\"nav-link\" (click)=\"signOut()\">(Sign Out)</a>\n      </li>\n \t\t <form class=\"form-inline my-2 my-lg-0\">\n          <input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Search\" aria-label=\"Search\">\n          <button class=\"btn btn-outline-success my-2 my-sm-0\" data-toggle=\"modal\" data-target=\"#myModal\" type=\"submit\">Search</button>\n        </form>\n    </ul>\n  </div>\n</nav>\n<!-- Modal -->\n<div id=\"myModal\" class=\"modal fade\" role=\"dialog\">\n  <div class=\"modal-dialog\">\n\n    <!-- Modal content-->\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\n        <h4 class=\"modal-title\">Sorry</h4>\n      </div>\n      <div class=\"modal-body\">\n        <p>This feature is not implemented yet. Sorry for the inconvenience</p>\n      </div>\n      <div class=\"modal-footer\">\n        <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\n      </div>\n    </div>\n\n  </div>\n</div>\n<div class=\"container\">\n  <router-outlet></router-outlet>\n</div>\n"
+module.exports = "<!-- Navigation -->\n    <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\">\n      <div class=\"container\">\n        <a class=\"navbar-brand\" routerLink=\"\" >PlanS</a>\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n          <span class=\"navbar-toggler-icon\"></span>\n        </button>\n        <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\n          <ul class=\"navbar-nav ml-auto\">\n            <li class=\"nav-item active\">\n              <a class=\"nav-link\" routerLink=\"signin\">Ingresa</a>\n            </li>\n            <li class=\"nav-item\">\n              <a class=\"nav-link\" routerLink=\"register\">Registrate</a>\n            </li>\n          </ul>\n        </div>\n      </div>\n    </nav>\n<!-- Modal -->\n<div id=\"myModal\" class=\"modal fade\" role=\"dialog\">\n  <div class=\"modal-dialog\">\n\n    <!-- Modal content-->\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\n        <h4 class=\"modal-title\">Sorry</h4>\n      </div>\n      <div class=\"modal-body\">\n        <p>This feature is not implemented yet. Sorry for the inconvenience</p>\n      </div>\n      <div class=\"modal-footer\">\n        <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\n      </div>\n    </div>\n\n  </div>\n</div>\n<div class=\"container\">\n  <router-outlet></router-outlet>\n</div>\n"
 
 /***/ }),
 
@@ -141,8 +141,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 var ROUTES = [
-    { path: '', component: __WEBPACK_IMPORTED_MODULE_14__pages_sign_in_sing_in_page_component__["a" /* SingInPageComponent */] },
-    { path: 'home', component: __WEBPACK_IMPORTED_MODULE_7__pages_home_page_home_page_component__["a" /* HomePageComponent */] },
+    { path: '', component: __WEBPACK_IMPORTED_MODULE_7__pages_home_page_home_page_component__["a" /* HomePageComponent */] },
+    { path: 'signin', component: __WEBPACK_IMPORTED_MODULE_14__pages_sign_in_sing_in_page_component__["a" /* SingInPageComponent */] },
     {
         path: 'tasks', component: __WEBPACK_IMPORTED_MODULE_8__pages_task_list_page_task_list_page_component__["a" /* TaskListPageComponent */],
         canActivate: [__WEBPACK_IMPORTED_MODULE_15__common_auth_service__["a" /* AuthService */]],
@@ -156,8 +156,7 @@ var ROUTES = [
         canActivate: [__WEBPACK_IMPORTED_MODULE_15__common_auth_service__["a" /* AuthService */]],
     },
     {
-        path: 'items', component: __WEBPACK_IMPORTED_MODULE_18__pages_user_edit_page_user_edit_page_component__["a" /* UserEditPageComponent */],
-        canActivate: [__WEBPACK_IMPORTED_MODULE_15__common_auth_service__["a" /* AuthService */]],
+        path: 'register', component: __WEBPACK_IMPORTED_MODULE_18__pages_user_edit_page_user_edit_page_component__["a" /* UserEditPageComponent */],
     },
     {
         path: '**', component: __WEBPACK_IMPORTED_MODULE_10__pages_page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */]
@@ -478,13 +477,14 @@ var INITIAL_CONFIG = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Inje
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return User; });
 var User = (function () {
-    function User(email, password, firstname, lastname, username, image) {
+    function User(email, password, firstname, lastname, username, ti, identification) {
         this.email = email;
         this.password = password;
         this.firstname = firstname;
         this.lastname = lastname;
         this.username = username;
-        this.image = image;
+        this.ti = ti;
+        this.identification = identification;
     }
     return User;
 }());
@@ -534,7 +534,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/home-page/home-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  Welcome to COSW angular seed\n</p>"
+module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n\n  <head>\n\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <meta name=\"description\" content=\"\">\n    <meta name=\"author\" content=\"\">\n\n    <title>One Page Wonder - Start Bootstrap Template</title>\n\n    <!-- Bootstrap core CSS -->\n    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css\" integrity=\"sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M\" crossorigin=\"anonymous\">\n\n  </head>\n\n  <body>\n\n    <header class=\"masthead\">\n      <div class=\"overlay\">\n        <div class=\"container\">\n          <h1 class=\"display-1 text-white\">PlanS</h1>\n          <h2 class=\"display-4 text-white\">Llego el momento de compartir con futuros amigos</h2>\n        </div>\n      </div>\n    </header>\n\n    <section>\n      <div class=\"container\">\n        <div class=\"row align-items-center\">\n          <div class=\"col-md-6 order-2\">\n            <div class=\"p-5\">\n              <img class=\"img-fluid rounded-circle\" src=\"https://ugc.kn3.net/i/origin/http://www.orangesmile.com/common/img_final_large/medellin_sightseeing.jpg\" alt=\"\">\n            </div>\n          </div>\n          <div class=\"col-md-6 order-1\">\n            <div class=\"p-5\">\n              <h2 class=\"display-4\">For those about to rock...</h2>\n              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n\n    <section>\n      <div class=\"container\">\n        <div class=\"row align-items-center\">\n          <div class=\"col-md-6\">\n            <div class=\"p-5\">\n              <img class=\"img-fluid rounded-circle\" src=\"https://unsplash.it/500/500?image=452\" alt=\"\">\n            </div>\n          </div>\n          <div class=\"col-md-6\">\n            <div class=\"p-5\">\n              <h2 class=\"display-4\">We salute you!</h2>\n              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n\n    <section>\n      <div class=\"container\">\n        <div class=\"row align-items-center\">\n          <div class=\"col-md-6 order-2\">\n            <div class=\"p-5\">\n              <img class=\"img-fluid rounded-circle\" src=\"https://unsplash.it/500/500?image=453\" alt=\"\">\n            </div>\n          </div>\n          <div class=\"col-md-6 order-1\">\n            <div class=\"p-5\">\n              <h2 class=\"display-4\">Let there be rock!</h2>\n              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n\n    <!-- Footer -->\n    <footer class=\"py-5 bg-dark\">\n      <div class=\"container\">\n        <p class=\"m-0 text-center text-white\">Copyright &copy; Your Website 2017</p>\n      </div>\n      <!-- /.container -->\n    </footer>\n\n    <!-- Bootstrap core JavaScript -->\n<script src=\"https://code.jquery.com/jquery-3.2.1.slim.min.js\" integrity=\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\" crossorigin=\"anonymous\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js\" integrity=\"sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4\" crossorigin=\"anonymous\"></script>\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js\" integrity=\"sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1\" crossorigin=\"anonymous\"></script>\n\n  </body>\n\n</html>"
 
 /***/ }),
 
@@ -563,6 +563,7 @@ var HomePageComponent = (function () {
 }());
 HomePageComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_19" /* ViewEncapsulation */].None,
         selector: 'app-home-page',
         template: __webpack_require__("../../../../../src/app/pages/home-page/home-page.component.html"),
         styles: [__webpack_require__("../../../../../src/app/pages/home-page/home-page.component.css")]
@@ -656,7 +657,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/sign-in/sing-in-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <h2>Sign In</h2>\n  <form [formGroup]=\"signInForm\" (ngSubmit)=\"doLogin()\" novalidate>\n    <div class=\"form-group\">\n      <label for=\"description\">Username</label>\n      <input type=\"text\" class=\"form-control\" id=\"description\" formControlName=\"username\" required>\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"priority\">Password</label>\n      <input type=\"password\" class=\"form-control\" id=\"alterEgo\" formControlName=\"password\">\n    </div>\n\n    <button type=\"submit\" class=\"btn btn-success\" [disabled]=\"!signInForm.valid\">Sign In</button>\n\n    <p class=\"text-danger mt-1\" *ngIf=\"loginError\">{{loginError}}</p>\n\n  </form>\n</div>\n"
+module.exports = "<div class=\"container\">\n  <h2>Sign In</h2>\n  <form [formGroup]=\"signInForm\" (ngSubmit)=\"doLogin()\" novalidate>\n    <div class=\"form-group\">\n      <label for=\"description\">Email</label>\n      <input type=\"text\" class=\"form-control\" id=\"description\" formControlName=\"email\" required>\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"priority\">Password</label>\n      <input type=\"password\" class=\"form-control\" id=\"alterEgo\" formControlName=\"password\">\n    </div>\n\n    <button type=\"submit\" class=\"btn btn-success\" [disabled]=\"!signInForm.valid\">Sign In</button>\n\n    <p class=\"text-danger mt-1\" *ngIf=\"loginError\">{{loginError}}</p>\n\n  </form>\n</div>\n"
 
 /***/ }),
 
@@ -690,13 +691,13 @@ var SingInPageComponent = (function () {
     }
     SingInPageComponent.prototype.ngOnInit = function () {
         this.signInForm = this.formBuilder.group({
-            username: '',
+            email: '',
             password: '',
         });
     };
     SingInPageComponent.prototype.doLogin = function () {
         var _this = this;
-        this.usersService.login(this.signInForm.get('username').value, this.signInForm.get('password').value).subscribe(function (loginResponse) {
+        this.usersService.login(this.signInForm.get('email').value, this.signInForm.get('password').value).subscribe(function (loginResponse) {
             _this.router.navigate(['tasks']);
         }, function (error) {
             _this.loginError = 'Error Signing in: ' + (error && error.message ? error.message : '');
@@ -933,12 +934,13 @@ var UserEditPageComponent = (function () {
             password: '',
             firstname: '',
             lastname: '',
-            image: ''
+            ti: '',
+            identification: ''
         });
     };
     UserEditPageComponent.prototype.onSubmit = function () {
         var _this = this;
-        this.usersService.create(this.userForm.get('email').value, this.userForm.get('username').value, this.userForm.get('password').value, this.userForm.get('firstname').value, this.userForm.get('lastname').value, this.userForm.get('image').value).subscribe(function (serverResponse) {
+        this.usersService.create(this.userForm.get('email').value, this.userForm.get('username').value, this.userForm.get('password').value, this.userForm.get('firstname').value, this.userForm.get('lastname').value, this.userForm.get('ti').value, this.userForm.get('identification').value).subscribe(function (serverResponse) {
             _this.router.navigate(['/users']);
         }, function (error) {
             console.log(error);
@@ -1127,8 +1129,8 @@ var UsersService = (function (_super) {
         _this.resourceUrl = 'user/users';
         return _this;
     }
-    UsersService.prototype.create = function (email, username, firstname, lastname, password, imagen) {
-        return this.post(this.resourceUrl, new __WEBPACK_IMPORTED_MODULE_5__models_User__["a" /* User */](email, password, firstname, lastname, username, imagen));
+    UsersService.prototype.create = function (email, username, firstname, lastname, password, ti, identification) {
+        return this.post(this.resourceUrl, new __WEBPACK_IMPORTED_MODULE_5__models_User__["a" /* User */](email, password, firstname, lastname, username, ti, identification));
     };
     UsersService.prototype.list = function () {
         return this.get(this.resourceUrl);

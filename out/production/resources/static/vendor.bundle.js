@@ -129,10 +129,6 @@ var NgbAccordion = (function () {
          */
         this.activeIds = [];
         /**
-         * Whether the closed panels should be hidden without destroying them
-         */
-        this.destroyOnHide = true;
-        /**
          * A panel change event fired right before the panel toggle happens. See NgbPanelChangeEvent for payload details
          */
         this.panelChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* EventEmitter */]();
@@ -203,7 +199,7 @@ NgbAccordion.decorators = [
                 selector: 'ngb-accordion',
                 exportAs: 'ngbAccordion',
                 host: { 'role': 'tablist', '[attr.aria-multiselectable]': '!closeOtherPanels' },
-                template: "\n    <ng-template ngFor let-panel [ngForOf]=\"panels\">\n      <div class=\"card\">\n        <div role=\"tab\" id=\"{{panel.id}}-header\"\n          [class]=\"'card-header ' + (panel.type ? 'card-'+panel.type: type ? 'card-'+type : '')\" [class.active]=\"isOpen(panel.id)\">\n          <a href (click)=\"!!toggle(panel.id)\" [class.text-muted]=\"panel.disabled\" [attr.tabindex]=\"(panel.disabled ? '-1' : null)\"\n            [attr.aria-expanded]=\"isOpen(panel.id)\" [attr.aria-controls]=\"(isOpen(panel.id) ? panel.id : null)\"\n            [attr.aria-disabled]=\"panel.disabled\">\n            {{panel.title}}<ng-template [ngTemplateOutlet]=\"panel.titleTpl?.templateRef\"></ng-template>\n          </a>\n        </div>\n        <div id=\"{{panel.id}}\" role=\"tabpanel\" [attr.aria-labelledby]=\"panel.id + '-header'\" \n             class=\"card-body {{isOpen(panel.id) ? 'show' : null}}\" *ngIf=\"!destroyOnHide || isOpen(panel.id)\">\n             <ng-template [ngTemplateOutlet]=\"panel.contentTpl.templateRef\"></ng-template>\n        </div>\n      </div>\n    </ng-template>\n  "
+                template: "\n  <div class=\"card\">\n    <ng-template ngFor let-panel [ngForOf]=\"panels\">\n      <div role=\"tab\" id=\"{{panel.id}}-header\"\n        [class]=\"'card-header ' + (panel.type ? 'card-'+panel.type: type ? 'card-'+type : '')\" [class.active]=\"isOpen(panel.id)\">\n        <a href (click)=\"!!toggle(panel.id)\" [class.text-muted]=\"panel.disabled\" [attr.tabindex]=\"(panel.disabled ? '-1' : null)\"\n          [attr.aria-expanded]=\"isOpen(panel.id)\" [attr.aria-controls]=\"(isOpen(panel.id) ? panel.id : null)\"\n          [attr.aria-disabled]=\"panel.disabled\">\n          {{panel.title}}<ng-template [ngTemplateOutlet]=\"panel.titleTpl?.templateRef\"></ng-template>\n        </a>\n      </div>\n      <div id=\"{{panel.id}}\" role=\"tabpanel\" [attr.aria-labelledby]=\"panel.id + '-header'\" class=\"card-body\" *ngIf=\"isOpen(panel.id)\">\n        <ng-template [ngTemplateOutlet]=\"panel.contentTpl.templateRef\"></ng-template>\n      </div>\n    </ng-template>\n  </div>\n"
             },] },
 ];
 /** @nocollapse */
@@ -214,7 +210,6 @@ NgbAccordion.propDecorators = {
     'panels': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ContentChildren */], args: [NgbPanel,] },],
     'activeIds': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */] },],
     'closeOtherPanels': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */], args: ['closeOthers',] },],
-    'destroyOnHide': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */] },],
     'type': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */] },],
     'panelChange': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* Output */] },],
 };
@@ -1513,7 +1508,7 @@ NgbDatepickerMonthView.decorators = [
                 selector: 'ngb-datepicker-month-view',
                 host: { 'class': 'd-block' },
                 styles: ["\n    .ngb-dp-weekday, .ngb-dp-week-number {\n      line-height: 2rem;\n    }\n    .ngb-dp-day, .ngb-dp-weekday, .ngb-dp-week-number {\n      width: 2rem;\n      height: 2rem;\n    }\n    .ngb-dp-day {\n      cursor: pointer;\n    }\n    .ngb-dp-day.disabled, .ngb-dp-day.hidden {\n      cursor: default;\n    }\n  "],
-                template: "\n    <div *ngIf=\"showWeekdays\" class=\"ngb-dp-week d-flex\">\n      <div *ngIf=\"showWeekNumbers\" class=\"ngb-dp-weekday\"></div>\n      <div *ngFor=\"let w of month.weekdays\" class=\"ngb-dp-weekday small text-center text-info font-italic\">\n        {{ i18n.getWeekdayShortName(w) }}\n      </div>\n    </div>\n    <ng-template ngFor let-week [ngForOf]=\"month.weeks\">\n      <div *ngIf=\"!isCollapsed(week)\" class=\"ngb-dp-week d-flex\">\n        <div *ngIf=\"showWeekNumbers\" class=\"ngb-dp-week-number small text-center font-italic text-muted\">{{ week.number }}</div>\n        <div *ngFor=\"let day of week.days\" (click)=\"doSelect(day)\" class=\"ngb-dp-day\" [class.disabled]=\"day.context.disabled\"\n         [class.hidden]=\"isHidden(day)\">\n          <ng-template [ngIf]=\"!isHidden(day)\">\n            <ng-template [ngTemplateOutlet]=\"dayTemplate\" [ngTemplateOutletContext]=\"day.context\"></ng-template>\n          </ng-template>\n        </div>\n      </div>\n    </ng-template>\n  "
+                template: "\n    <div *ngIf=\"showWeekdays\" class=\"ngb-dp-week d-flex\">\n      <div *ngIf=\"showWeekNumbers\" class=\"ngb-dp-weekday\"></div>\n      <div *ngFor=\"let w of month.weekdays\" class=\"ngb-dp-weekday small text-center text-info font-italic\">\n        {{ i18n.getWeekdayShortName(w) }}\n      </div>\n    </div>\n    <ng-template ngFor let-week [ngForOf]=\"month.weeks\">\n      <div *ngIf=\"!isCollapsed(week)\" class=\"ngb-dp-week d-flex\">\n        <div *ngIf=\"showWeekNumbers\" class=\"ngb-dp-week-number small text-center font-italic text-muted\">{{ week.number }}</div>\n        <div *ngFor=\"let day of week.days\" (click)=\"doSelect(day)\" class=\"ngb-dp-day\" [class.disabled]=\"day.context.disabled\"\n         [class.hidden]=\"isHidden(day)\">\n          <ng-template [ngIf]=\"!isHidden(day)\">\n            <ng-template [ngTemplateOutlet]=\"dayTemplate\" [ngOutletContext]=\"day.context\"></ng-template>\n          </ng-template>\n        </div>\n      </div>\n    </ng-template>\n  "
             },] },
 ];
 /** @nocollapse */
@@ -2792,8 +2787,8 @@ var NgbDate = (function () {
  */
 var NgbDropdownConfig = (function () {
     function NgbDropdownConfig() {
+        this.up = false;
         this.autoClose = true;
-        this.placement = 'bottom-left';
     }
     return NgbDropdownConfig;
 }());
@@ -2816,8 +2811,6 @@ NgbDropdownConfig.ctorParameters = function () { return []; };
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NgbDropdown; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dropdown_config__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/dropdown/dropdown-config.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util_positioning__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/util/positioning.js");
-
 
 
 /**
@@ -2829,7 +2822,6 @@ var NgbDropdownMenu = (function () {
         this.isOpen = false;
     }
     NgbDropdownMenu.prototype.isEventFrom = function ($event) { return this._elementRef.nativeElement.contains($event.target); };
-    NgbDropdownMenu.prototype.position = function (triggerEl, placement) { Object(__WEBPACK_IMPORTED_MODULE_2__util_positioning__["a" /* positionElements */])(triggerEl, this._elementRef.nativeElement, placement); };
     return NgbDropdownMenu;
 }());
 
@@ -2848,7 +2840,6 @@ var NgbDropdownToggle = (function () {
     function NgbDropdownToggle(dropdown, _elementRef) {
         this.dropdown = dropdown;
         this._elementRef = _elementRef;
-        this.anchorEl = _elementRef.nativeElement;
     }
     NgbDropdownToggle.prototype.toggleOpen = function () { this.dropdown.toggle(); };
     NgbDropdownToggle.prototype.isEventFrom = function ($event) { return this._elementRef.nativeElement.contains($event.target); };
@@ -2875,27 +2866,19 @@ NgbDropdownToggle.ctorParameters = function () { return [
  * Transforms a node into a dropdown.
  */
 var NgbDropdown = (function () {
-    function NgbDropdown(config, ngZone) {
-        var _this = this;
+    function NgbDropdown(config) {
         /**
          *  Defines whether or not the dropdown-menu is open initially.
          */
         this._open = false;
         /**
-         * Placement of a dropdown. Use "top-right" for dropups.
-         */
-        this.placement = '';
-        /**
          *  An event fired when the dropdown is opened or closed.
          *  Event's payload equals whether dropdown is open.
          */
         this.openChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* EventEmitter */]();
-        this.placement = config.placement;
+        this.up = config.up;
         this.autoClose = config.autoClose;
-        this._zoneSubscription = ngZone.onStable.subscribe(function () { _this._positionMenu(); });
     }
-    NgbDropdown.prototype.isUp = function () { return this.placement.indexOf('top') !== -1; };
-    NgbDropdown.prototype.isDown = function () { return this.placement.indexOf('bottom') !== -1; };
     /**
      * Checks if the dropdown menu is open or not.
      */
@@ -2906,7 +2889,6 @@ var NgbDropdown = (function () {
     NgbDropdown.prototype.open = function () {
         if (!this._open) {
             this._open = true;
-            this._positionMenu();
             this.openChange.emit(true);
         }
     };
@@ -2948,14 +2930,8 @@ var NgbDropdown = (function () {
             this.close();
         }
     };
-    NgbDropdown.prototype.ngOnDestroy = function () { this._zoneSubscription.unsubscribe(); };
     NgbDropdown.prototype._isEventFromToggle = function ($event) { return this._toggle ? this._toggle.isEventFrom($event) : false; };
     NgbDropdown.prototype._isEventFromMenu = function ($event) { return this._menu ? this._menu.isEventFrom($event) : false; };
-    NgbDropdown.prototype._positionMenu = function () {
-        if (this.isOpen() && this._menu && this._toggle) {
-            this._menu.position(this._toggle.anchorEl, this.placement);
-        }
-    };
     return NgbDropdown;
 }());
 
@@ -2964,8 +2940,8 @@ NgbDropdown.decorators = [
                 selector: '[ngbDropdown]',
                 exportAs: 'ngbDropdown',
                 host: {
-                    '[class.dropdown]': 'isDown()',
-                    '[class.dropup]': 'isUp()',
+                    '[class.dropdown]': '!up',
+                    '[class.dropup]': 'up',
                     '[class.show]': 'isOpen()',
                     '(keyup.esc)': 'closeFromOutsideEsc()',
                     '(document:click)': 'closeFromClick($event)'
@@ -2975,14 +2951,13 @@ NgbDropdown.decorators = [
 /** @nocollapse */
 NgbDropdown.ctorParameters = function () { return [
     { type: __WEBPACK_IMPORTED_MODULE_1__dropdown_config__["a" /* NgbDropdownConfig */], },
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["R" /* NgZone */], },
 ]; };
 NgbDropdown.propDecorators = {
     '_menu': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* ContentChild */], args: [NgbDropdownMenu,] },],
     '_toggle': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* ContentChild */], args: [NgbDropdownToggle,] },],
+    'up': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */] },],
     'autoClose': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */] },],
     '_open': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */], args: ['open',] },],
-    'placement': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */] },],
     'openChange': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* Output */] },],
 };
 //# sourceMappingURL=dropdown.js.map
@@ -4346,7 +4321,7 @@ NgbRating.decorators = [
                     '(keydown)': 'handleKeyDown($event)',
                     '(mouseleave)': 'reset()'
                 },
-                template: "\n    <ng-template #t let-fill=\"fill\">{{ fill === 100 ? '&#9733;' : '&#9734;' }}</ng-template>\n    <ng-template ngFor [ngForOf]=\"contexts\" let-index=\"index\">\n      <span class=\"sr-only\">({{ index < nextRate ? '*' : ' ' }})</span>\n      <span (mouseenter)=\"enter(index + 1)\" (click)=\"handleClick(index + 1)\" [style.cursor]=\"readonly || disabled ? 'default' : 'pointer'\">\n        <ng-template [ngTemplateOutlet]=\"starTemplate || t\" [ngTemplateOutletContext]=\"contexts[index]\"></ng-template>\n      </span>\n    </ng-template>\n  ",
+                template: "\n    <ng-template #t let-fill=\"fill\">{{ fill === 100 ? '&#9733;' : '&#9734;' }}</ng-template>\n    <ng-template ngFor [ngForOf]=\"contexts\" let-index=\"index\">\n      <span class=\"sr-only\">({{ index < nextRate ? '*' : ' ' }})</span>\n      <span (mouseenter)=\"enter(index + 1)\" (click)=\"handleClick(index + 1)\" [style.cursor]=\"readonly || disabled ? 'default' : 'pointer'\">\n        <ng-template [ngTemplateOutlet]=\"starTemplate || t\" [ngOutletContext]=\"contexts[index]\"></ng-template>\n      </span>\n    </ng-template>\n  ",
                 providers: [NGB_RATING_VALUE_ACCESSOR]
             },] },
 ];
@@ -4417,7 +4392,6 @@ NgbRatingModule.ctorParameters = function () { return []; };
 var NgbTabsetConfig = (function () {
     function NgbTabsetConfig() {
         this.justify = 'start';
-        this.orientation = 'horizontal';
         this.type = 'tabs';
     }
     return NgbTabsetConfig;
@@ -4523,25 +4497,7 @@ var NgbTabset = (function () {
         this.tabChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* EventEmitter */]();
         this.type = config.type;
         this.justify = config.justify;
-        this.orientation = config.orientation;
     }
-    Object.defineProperty(NgbTabset.prototype, "justify", {
-        /**
-         * The horizontal alignment of the nav with flexbox utilities. Can be one of 'start', 'center', 'end', 'fill' or
-         * 'justified'
-         * The default value is 'start'.
-         */
-        set: function (className) {
-            if (className === 'fill' || className === 'justified') {
-                this.justifyClass = "nav-" + className;
-            }
-            else {
-                this.justifyClass = "justify-content-" + className;
-            }
-        },
-        enumerable: true,
-        configurable: true
-    });
     /**
      * Selects the tab with the given id and shows its associated pane.
      * Any other tab that was previously selected becomes unselected and its associated pane is hidden.
@@ -4572,7 +4528,7 @@ NgbTabset.decorators = [
     { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */], args: [{
                 selector: 'ngb-tabset',
                 exportAs: 'ngbTabset',
-                template: "\n    <ul [class]=\"'nav nav-' + type + (orientation == 'horizontal'?  ' ' + justifyClass : ' flex-column')\" role=\"tablist\">\n      <li class=\"nav-item\" *ngFor=\"let tab of tabs\">\n        <a [id]=\"tab.id\" class=\"nav-link\" [class.active]=\"tab.id === activeId\" [class.disabled]=\"tab.disabled\"\n          href (click)=\"!!select(tab.id)\" role=\"tab\" [attr.tabindex]=\"(tab.disabled ? '-1': undefined)\"\n          [attr.aria-controls]=\"(!destroyOnHide || tab.id === activeId ? tab.id + '-panel' : null)\"\n          [attr.aria-expanded]=\"tab.id === activeId\" [attr.aria-disabled]=\"tab.disabled\">\n          {{tab.title}}<ng-template [ngTemplateOutlet]=\"tab.titleTpl?.templateRef\"></ng-template>\n        </a>\n      </li>\n    </ul>\n    <div class=\"tab-content\">\n      <ng-template ngFor let-tab [ngForOf]=\"tabs\">\n        <div\n          class=\"tab-pane {{tab.id === activeId ? 'active' : null}}\"\n          *ngIf=\"!destroyOnHide || tab.id === activeId\"\n          role=\"tabpanel\"\n          [attr.aria-labelledby]=\"tab.id\" id=\"{{tab.id}}-panel\"\n          [attr.aria-expanded]=\"tab.id === activeId\">\n          <ng-template [ngTemplateOutlet]=\"tab.contentTpl.templateRef\"></ng-template>\n        </div>\n      </ng-template>\n    </div>\n  "
+                template: "\n    <ul [class]=\"'nav nav-' + type + ' justify-content-' + justify\" role=\"tablist\">\n      <li class=\"nav-item\" *ngFor=\"let tab of tabs\">\n        <a [id]=\"tab.id\" class=\"nav-link\" [class.active]=\"tab.id === activeId\" [class.disabled]=\"tab.disabled\"\n          href (click)=\"!!select(tab.id)\" role=\"tab\" [attr.tabindex]=\"(tab.disabled ? '-1': undefined)\"\n          [attr.aria-controls]=\"(!destroyOnHide || tab.id === activeId ? tab.id + '-panel' : null)\"\n          [attr.aria-expanded]=\"tab.id === activeId\" [attr.aria-disabled]=\"tab.disabled\">\n          {{tab.title}}<ng-template [ngTemplateOutlet]=\"tab.titleTpl?.templateRef\"></ng-template>\n        </a>\n      </li>\n    </ul>\n    <div class=\"tab-content\">\n      <ng-template ngFor let-tab [ngForOf]=\"tabs\">\n        <div\n          class=\"tab-pane {{tab.id === activeId ? 'active' : null}}\"\n          *ngIf=\"!destroyOnHide || tab.id === activeId\"\n          role=\"tabpanel\"\n          [attr.aria-labelledby]=\"tab.id\" id=\"{{tab.id}}-panel\"\n          [attr.aria-expanded]=\"tab.id === activeId\">\n          <ng-template [ngTemplateOutlet]=\"tab.contentTpl.templateRef\"></ng-template>\n        </div>\n      </ng-template>\n    </div>\n  "
             },] },
 ];
 /** @nocollapse */
@@ -4584,7 +4540,6 @@ NgbTabset.propDecorators = {
     'activeId': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */] },],
     'destroyOnHide': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */] },],
     'justify': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */] },],
-    'orientation': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */] },],
     'type': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */] },],
     'tabChange': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* Output */] },],
 };
@@ -5281,7 +5236,7 @@ NgbTypeaheadWindow.decorators = [
                 selector: 'ngb-typeahead-window',
                 exportAs: 'ngbTypeaheadWindow',
                 host: { 'class': 'dropdown-menu', 'style': 'display: block', 'role': 'listbox', '[id]': 'id' },
-                template: "\n    <ng-template #rt let-result=\"result\" let-term=\"term\" let-formatter=\"formatter\">\n      <ngb-highlight [result]=\"formatter(result)\" [term]=\"term\"></ngb-highlight>\n    </ng-template>\n    <ng-template ngFor [ngForOf]=\"results\" let-result let-idx=\"index\">\n      <button type=\"button\" class=\"dropdown-item\" role=\"option\"\n        [id]=\"id + '-' + idx\"\n        [class.active]=\"idx === activeIdx\"\n        (mouseenter)=\"markActive(idx)\"\n        (click)=\"select(result)\">\n          <ng-template [ngTemplateOutlet]=\"resultTemplate || rt\"\n          [ngTemplateOutletContext]=\"{result: result, term: term, formatter: formatter}\"></ng-template>\n      </button>\n    </ng-template>\n  "
+                template: "\n    <ng-template #rt let-result=\"result\" let-term=\"term\" let-formatter=\"formatter\">\n      <ngb-highlight [result]=\"formatter(result)\" [term]=\"term\"></ngb-highlight>\n    </ng-template>\n    <ng-template ngFor [ngForOf]=\"results\" let-result let-idx=\"index\">\n      <button type=\"button\" class=\"dropdown-item\" role=\"option\"\n        [id]=\"id + '-' + idx\"\n        [class.active]=\"idx === activeIdx\"\n        (mouseenter)=\"markActive(idx)\"\n        (click)=\"select(result)\">\n          <ng-template [ngTemplateOutlet]=\"resultTemplate || rt\"\n          [ngOutletContext]=\"{result: result, term: term, formatter: formatter}\"></ng-template>\n      </button>\n    </ng-template>\n  "
             },] },
 ];
 /** @nocollapse */
@@ -11267,7 +11222,6 @@ module.exports = g;
 /* unused harmony export NgLocalization */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return parseCookieValue; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return CommonModule; });
-/* unused harmony export DeprecatedI18NPipesModule */
 /* unused harmony export NgClass */
 /* unused harmony export NgFor */
 /* unused harmony export NgForOf */
@@ -11317,7 +11271,7 @@ module.exports = g;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 
 /**
- * @license Angular v4.3.6
+ * @license Angular v4.3.4
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -15183,30 +15137,6 @@ CommonModule.decorators = [
  */
 CommonModule.ctorParameters = function () { return []; };
 /**
- * I18N pipes are being changed to move away from using the JS Intl API.
- *
- * The former pipes relying on the Intl API will be moved to this module while the `CommonModule`
- * will contain the new pipes that do not rely on Intl.
- *
- * As a first step this module is created empty to ease the migration.
- *
- * see https://github.com/angular/angular/pull/18284
- *
- * @deprecated from v5
- */
-var DeprecatedI18NPipesModule = (function () {
-    function DeprecatedI18NPipesModule() {
-    }
-    return DeprecatedI18NPipesModule;
-}());
-DeprecatedI18NPipesModule.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["M" /* NgModule */], args: [{ declarations: [], exports: [] },] },
-];
-/**
- * @nocollapse
- */
-DeprecatedI18NPipesModule.ctorParameters = function () { return []; };
-/**
  * @license
  * Copyright Google Inc. All Rights Reserved.
  *
@@ -15284,7 +15214,7 @@ function isPlatformWorkerUi(platformId) {
 /**
  * \@stable
  */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* Version */]('4.3.6');
+var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* Version */]('4.3.4');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -15553,7 +15483,7 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* Version *
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 
 /**
- * @license Angular v4.3.6
+ * @license Angular v4.3.4
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -15573,7 +15503,7 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* Version *
 /**
  * \@stable
  */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* Version */]('4.3.6');
+var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* Version */]('4.3.4');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -27875,7 +27805,7 @@ var BindingParser = (function () {
         // This will occur when a @trigger is not paired with an expression.
         // For animations it is valid to not have an expression since */void
         // states will be applied by angular when the element is attached/detached
-        var /** @type {?} */ ast = this._parseBinding(expression || 'undefined', false, sourceSpan);
+        var /** @type {?} */ ast = this._parseBinding(expression || 'null', false, sourceSpan);
         targetMatchableAttrs.push([name, /** @type {?} */ ((ast.source))]);
         targetProps.push(new BoundProperty(name, ast, BoundPropertyType.ANIMATION, sourceSpan));
     };
@@ -43400,7 +43330,7 @@ function _mergeArrays(parts) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__);
 
 /**
- * @license Angular v4.3.6
+ * @license Angular v4.3.4
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -44196,7 +44126,7 @@ var Version = (function () {
 /**
  * \@stable
  */
-var VERSION = new Version('4.3.6');
+var VERSION = new Version('4.3.4');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -48091,21 +48021,16 @@ var ApplicationRef_ = (function (_super) {
             });
         });
         var isStable = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"](function (observer) {
-            // Create the subscription to onStable outside the Angular Zone so that
-            // the callback is run outside the Angular Zone.
-            var stableSub;
-            _this._zone.runOutsideAngular(function () {
-                stableSub = _this._zone.onStable.subscribe(function () {
-                    NgZone.assertNotInAngularZone();
-                    // Check whether there are no pending macro/micro tasks in the next tick
-                    // to allow for NgZone to update the state.
-                    scheduleMicroTask(function () {
-                        if (!_this._stable && !_this._zone.hasPendingMacrotasks &&
-                            !_this._zone.hasPendingMicrotasks) {
-                            _this._stable = true;
-                            observer.next(true);
-                        }
-                    });
+            var stableSub = _this._zone.onStable.subscribe(function () {
+                NgZone.assertNotInAngularZone();
+                // Check whether there are no pending macro/micro tasks in the next tick
+                // to allow for NgZone to update the state.
+                scheduleMicroTask(function () {
+                    if (!_this._stable && !_this._zone.hasPendingMacrotasks &&
+                        !_this._zone.hasPendingMicrotasks) {
+                        _this._stable = true;
+                        observer.next(true);
+                    }
                 });
             });
             var unstableSub = _this._zone.onUnstable.subscribe(function () {
@@ -49048,7 +48973,7 @@ var SystemJsNgModuleLoader = (function () {
         if (exportName === undefined) {
             exportName = 'default';
         }
-        return __webpack_require__("../../../../../src/$$_gendir lazy recursive")(module)
+        return __webpack_require__("../../../../../src lazy recursive")(module)
             .then(function (module) { return module[exportName]; })
             .then(function (type) { return checkNotEmpty(type, module, exportName); })
             .then(function (type) { return _this._compiler.compileModuleAsync(type); });
@@ -49064,7 +48989,7 @@ var SystemJsNgModuleLoader = (function () {
             exportName = 'default';
             factoryClassSuffix = '';
         }
-        return __webpack_require__("../../../../../src/$$_gendir lazy recursive")(this._config.factoryPathPrefix + module + this._config.factoryPathSuffix)
+        return __webpack_require__("../../../../../src lazy recursive")(this._config.factoryPathPrefix + module + this._config.factoryPathSuffix)
             .then(function (module) { return module[exportName + factoryClassSuffix]; })
             .then(function (factory) { return checkNotEmpty(factory, module, exportName); });
     };
@@ -49306,7 +49231,7 @@ var ChangeDetectorRef = (function () {
      *
      *   constructor(private ref: ChangeDetectorRef) {
      *     setInterval(() => {
-     *       this.numberOfTicks++;
+     *       this.numberOfTicks ++
      *       // the following is required, otherwise the view will not be updated
      *       this.ref.markForCheck();
      *     }, 1000);
@@ -49357,11 +49282,11 @@ var ChangeDetectorRef = (function () {
      * \@Component({
      *   selector: 'giant-list',
      *   template: `
-     *     <li *ngFor="let d of dataProvider.data">Data {{d}}</li>
+     *     <li *ngFor="let d of dataProvider.data">Data {{d}}</lig>
      *   `,
      * })
      * class GiantList {
-     *   constructor(private ref: ChangeDetectorRef, private dataProvider: DataProvider) {
+     *   constructor(private ref: ChangeDetectorRef, private dataProvider:DataProvider) {
      *     ref.detach();
      *     setInterval(() => {
      *       this.ref.detectChanges();
@@ -49448,14 +49373,13 @@ var ChangeDetectorRef = (function () {
      *   template: 'Data: {{dataProvider.data}}'
      * })
      * class LiveData {
-     *   constructor(private ref: ChangeDetectorRef, private dataProvider: DataProvider) {}
+     *   constructor(private ref: ChangeDetectorRef, private dataProvider:DataProvider) {}
      *
      *   set live(value) {
-     *     if (value) {
+     *     if (value)
      *       this.ref.reattach();
-     *     } else {
+     *     else
      *       this.ref.detach();
-     *     }
      *   }
      * }
      *
@@ -53473,9 +53397,6 @@ var ViewContainerRef_ = (function () {
      * @return {?}
      */
     ViewContainerRef_.prototype.insert = function (viewRef, index) {
-        if (viewRef.destroyed) {
-            throw new Error('Cannot insert a destroyed View in a ViewContainer!');
-        }
         var /** @type {?} */ viewRef_ = (viewRef);
         var /** @type {?} */ viewData = viewRef_._view;
         attachEmbeddedView(this._view, this._data, index, viewData);
@@ -53488,9 +53409,6 @@ var ViewContainerRef_ = (function () {
      * @return {?}
      */
     ViewContainerRef_.prototype.move = function (viewRef, currentIndex) {
-        if (viewRef.destroyed) {
-            throw new Error('Cannot move a destroyed View in a ViewContainer!');
-        }
         var /** @type {?} */ previousIndex = this._embeddedViews.indexOf(viewRef._view);
         moveEmbeddedView(this._data, previousIndex, currentIndex);
         return viewRef;
@@ -54750,13 +54668,8 @@ function calcQueryValues(view, startIndex, endIndex, queryDef, values) {
         if (nodeDef.flags & 1 /* TypeElement */ && ((nodeDef.element)).template &&
             (((((nodeDef.element)).template)).nodeMatchedQueries & queryDef.filterId) ===
                 queryDef.filterId) {
+            // check embedded views that were attached at the place of their template.
             var /** @type {?} */ elementData = asElementData(view, i);
-            // check embedded views that were attached at the place of their template,
-            // but process child nodes first if some match the query (see issue #16568)
-            if ((nodeDef.childMatchedQueries & queryDef.filterId) === queryDef.filterId) {
-                calcQueryValues(view, i + 1, i + nodeDef.childCount, queryDef, values);
-                i += nodeDef.childCount;
-            }
             if (nodeDef.flags & 16777216 /* EmbeddedViews */) {
                 var /** @type {?} */ embeddedViews = ((elementData.viewContainer))._embeddedViews;
                 for (var /** @type {?} */ k = 0; k < embeddedViews.length; k++) {
@@ -57311,12 +57224,11 @@ var NgModuleFactory_ = (function (_super) {
  * <div [\@myAnimationTrigger]="myStatusExp">...</div>
  * ```
  *
- * ## Disable Animations
+ * ## Disable Child Animations
  * A special animation control binding called `\@.disabled` can be placed on an element which will
- * then disable animations for any inner animation triggers situated within the element as well as
- * any animations on the element itself.
+ * then disable animations for any inner animation triggers situated within the element.
  *
- * When true, the `\@.disabled` binding will prevent all animations from rendering. The example
+ * When true, the `\@.disabled` binding will prevent inner animations from rendering. The example
  * below shows how to use this feature:
  *
  * ```ts
@@ -57342,8 +57254,8 @@ var NgModuleFactory_ = (function (_super) {
  * The `\@childAnimation` trigger will not animate because `\@.disabled` prevents it from happening
  * (when true).
  *
- * Note that `\@.disbled` will only disable all animations (this means any animations running on
- * the same element will also be disabled).
+ * Note that `\@.disbled` will only disable inner animations (any animations running on the same
+ * element will not be disabled).
  *
  * ### Disabling Animations Application-wide
  * When an area of the template is set to have animations disabled, **all** inner components will
@@ -58300,7 +58212,7 @@ function transition$$1(stateChangeExpr, steps) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__ = __webpack_require__("../../../platform-browser/@angular/platform-browser.es5.js");
 
 /**
- * @license Angular v4.3.6
+ * @license Angular v4.3.4
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -58328,16 +58240,12 @@ var AbstractControlDirective = (function () {
     function AbstractControlDirective() {
     }
     /**
-     * The {\@link FormControl}, {\@link FormGroup}, or {\@link FormArray}
-     * that backs this directive. Most properties fall through to that
-     * instance.
      * @abstract
      * @return {?}
      */
     AbstractControlDirective.prototype.control = function () { };
     Object.defineProperty(AbstractControlDirective.prototype, "value", {
         /**
-         * The value of the control.
          * @return {?}
          */
         get: function () { return this.control ? this.control.value : null; },
@@ -58346,10 +58254,6 @@ var AbstractControlDirective = (function () {
     });
     Object.defineProperty(AbstractControlDirective.prototype, "valid", {
         /**
-         * A control is `valid` when its `status === VALID`.
-         *
-         * In order to have this status, the control must have passed all its
-         * validation checks.
          * @return {?}
          */
         get: function () { return this.control ? this.control.valid : null; },
@@ -58358,10 +58262,6 @@ var AbstractControlDirective = (function () {
     });
     Object.defineProperty(AbstractControlDirective.prototype, "invalid", {
         /**
-         * A control is `invalid` when its `status === INVALID`.
-         *
-         * In order to have this status, the control must have failed
-         * at least one of its validation checks.
          * @return {?}
          */
         get: function () { return this.control ? this.control.invalid : null; },
@@ -58370,45 +58270,14 @@ var AbstractControlDirective = (function () {
     });
     Object.defineProperty(AbstractControlDirective.prototype, "pending", {
         /**
-         * A control is `pending` when its `status === PENDING`.
-         *
-         * In order to have this status, the control must be in the
-         * middle of conducting a validation check.
          * @return {?}
          */
         get: function () { return this.control ? this.control.pending : null; },
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(AbstractControlDirective.prototype, "disabled", {
-        /**
-         * A control is `disabled` when its `status === DISABLED`.
-         *
-         * Disabled controls are exempt from validation checks and
-         * are not included in the aggregate value of their ancestor
-         * controls.
-         * @return {?}
-         */
-        get: function () { return this.control ? this.control.disabled : null; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(AbstractControlDirective.prototype, "enabled", {
-        /**
-         * A control is `enabled` as long as its `status !== DISABLED`.
-         *
-         * In other words, it has a status of `VALID`, `INVALID`, or
-         * `PENDING`.
-         * @return {?}
-         */
-        get: function () { return this.control ? this.control.enabled : null; },
-        enumerable: true,
-        configurable: true
-    });
     Object.defineProperty(AbstractControlDirective.prototype, "errors", {
         /**
-         * Returns any errors generated by failing validation. If there
-         * are no errors, it will return null.
          * @return {?}
          */
         get: function () { return this.control ? this.control.errors : null; },
@@ -58417,11 +58286,6 @@ var AbstractControlDirective = (function () {
     });
     Object.defineProperty(AbstractControlDirective.prototype, "pristine", {
         /**
-         * A control is `pristine` if the user has not yet changed
-         * the value in the UI.
-         *
-         * Note that programmatic changes to a control's value will
-         * *not* mark it dirty.
          * @return {?}
          */
         get: function () { return this.control ? this.control.pristine : null; },
@@ -58430,11 +58294,6 @@ var AbstractControlDirective = (function () {
     });
     Object.defineProperty(AbstractControlDirective.prototype, "dirty", {
         /**
-         * A control is `dirty` if the user has changed the value
-         * in the UI.
-         *
-         * Note that programmatic changes to a control's value will
-         * *not* mark it dirty.
          * @return {?}
          */
         get: function () { return this.control ? this.control.dirty : null; },
@@ -58443,8 +58302,6 @@ var AbstractControlDirective = (function () {
     });
     Object.defineProperty(AbstractControlDirective.prototype, "touched", {
         /**
-         * A control is marked `touched` once the user has triggered
-         * a `blur` event on it.
          * @return {?}
          */
         get: function () { return this.control ? this.control.touched : null; },
@@ -58453,18 +58310,30 @@ var AbstractControlDirective = (function () {
     });
     Object.defineProperty(AbstractControlDirective.prototype, "untouched", {
         /**
-         * A control is `untouched` if the user has not yet triggered
-         * a `blur` event on it.
          * @return {?}
          */
         get: function () { return this.control ? this.control.untouched : null; },
         enumerable: true,
         configurable: true
     });
+    Object.defineProperty(AbstractControlDirective.prototype, "disabled", {
+        /**
+         * @return {?}
+         */
+        get: function () { return this.control ? this.control.disabled : null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AbstractControlDirective.prototype, "enabled", {
+        /**
+         * @return {?}
+         */
+        get: function () { return this.control ? this.control.enabled : null; },
+        enumerable: true,
+        configurable: true
+    });
     Object.defineProperty(AbstractControlDirective.prototype, "statusChanges", {
         /**
-         * Emits an event every time the validation status of the control
-         * is re-calculated.
          * @return {?}
          */
         get: function () {
@@ -58475,8 +58344,6 @@ var AbstractControlDirective = (function () {
     });
     Object.defineProperty(AbstractControlDirective.prototype, "valueChanges", {
         /**
-         * Emits an event every time the value of the control changes, in
-         * the UI or programmatically.
          * @return {?}
          */
         get: function () {
@@ -58487,9 +58354,6 @@ var AbstractControlDirective = (function () {
     });
     Object.defineProperty(AbstractControlDirective.prototype, "path", {
         /**
-         * Returns an array that represents the path from the top-level form
-         * to this control. Each index is the string name of the control on
-         * that level.
          * @return {?}
          */
         get: function () { return null; },
@@ -58497,13 +58361,6 @@ var AbstractControlDirective = (function () {
         configurable: true
     });
     /**
-     * Resets the form control. This means by default:
-     *
-     * * it is marked as `pristine`
-     * * it is marked as `untouched`
-     * * value is set to null
-     *
-     * For more information, see {\@link AbstractControl}.
      * @param {?=} value
      * @return {?}
      */
@@ -58513,10 +58370,6 @@ var AbstractControlDirective = (function () {
             this.control.reset(value);
     };
     /**
-     * Returns true if the control with the given path has the error specified. Otherwise
-     * returns false.
-     *
-     * If no path is given, it checks for the error on the present control.
      * @param {?} errorCode
      * @param {?=} path
      * @return {?}
@@ -58525,10 +58378,6 @@ var AbstractControlDirective = (function () {
         return this.control ? this.control.hasError(errorCode, path) : false;
     };
     /**
-     * Returns error data if the control with the given path has the error specified. Otherwise
-     * returns null or undefined.
-     *
-     * If no path is given, it checks for the error on the present control.
      * @param {?} errorCode
      * @param {?=} path
      * @return {?}
@@ -59647,8 +59496,8 @@ var SelectControlValueAccessor = (function () {
     SelectControlValueAccessor.prototype.registerOnChange = function (fn) {
         var _this = this;
         this.onChange = function (valueString) {
-            _this.value = _this._getOptionValue(valueString);
-            fn(_this.value);
+            _this.value = valueString;
+            fn(_this._getOptionValue(valueString));
         };
     };
     /**
@@ -61088,7 +60937,7 @@ var AbstractControl = (function () {
      */
     AbstractControl.prototype.get = function (path) { return _find(this, path, '.'); };
     /**
-     * Returns error data if the control with the given path has the error specified. Otherwise
+     * Returns true if the control with the given path has the error specified. Otherwise
      * returns null or undefined.
      *
      * If no path is given, it checks for the error on the present control.
@@ -64224,7 +64073,7 @@ FormBuilder.ctorParameters = function () { return []; };
 /**
  * \@stable
  */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* Version */]('4.3.6');
+var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* Version */]('4.3.4');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -64437,7 +64286,7 @@ ReactiveFormsModule.ctorParameters = function () { return []; };
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__ = __webpack_require__("../../../platform-browser/@angular/platform-browser.es5.js");
 
 /**
- * @license Angular v4.3.6
+ * @license Angular v4.3.4
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -66592,7 +66441,7 @@ JsonpModule.ctorParameters = function () { return []; };
 /**
  * \@stable
  */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* Version */]('4.3.6');
+var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* Version */]('4.3.4');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -66638,7 +66487,7 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["_15" /* Version *
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser__ = __webpack_require__("../../../platform-browser/@angular/platform-browser.es5.js");
 
 /**
- * @license Angular v4.3.6
+ * @license Angular v4.3.4
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -66771,7 +66620,7 @@ var CachedResourceLoader = (function (_super) {
 /**
  * @stable
  */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["_15" /* Version */]('4.3.6');
+var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["_15" /* Version */]('4.3.4');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -66859,7 +66708,7 @@ var platformBrowserDynamic = Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__[
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 
 /**
- * @license Angular v4.3.6
+ * @license Angular v4.3.4
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -71266,7 +71115,7 @@ var By = (function () {
 /**
  * \@stable
  */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["_15" /* Version */]('4.3.6');
+var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["_15" /* Version */]('4.3.4');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -71397,7 +71246,7 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["_15" /* Version *
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_rxjs_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_21_rxjs_operator_filter__);
 
 /**
- * @license Angular v4.3.6
+ * @license Angular v4.3.4
  * (c) 2010-2017 Google, Inc. https://angular.io/
  * License: MIT
  */
@@ -77650,7 +77499,7 @@ function provideRouterInitializer() {
 /**
  * \@stable
  */
-var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["_15" /* Version */]('4.3.6');
+var VERSION = new __WEBPACK_IMPORTED_MODULE_2__angular_core__["_15" /* Version */]('4.3.4');
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
