@@ -1,6 +1,7 @@
 package com.eci.cosw.springbootsecureapi.service;
 
 import com.eci.cosw.springbootsecureapi.model.User;
+import com.eci.cosw.springbootsecureapi.model.UsuarioEntity;
 
 import java.util.List;
 
@@ -10,17 +11,15 @@ import java.util.List;
  */
 public interface UserService
 {
-    List<User> getUsers();
+    List<UsuarioEntity> getUsers();
 
-    User registerUser(User user);
+    void registerUser(UsuarioEntity user);
 
-    User getUser(String username );
+    UsuarioEntity getUser(String username );
 
-    User createUser( User user );
+    UsuarioEntity findUserByEmail( String email );
 
-    User findUserByEmail( String email );
+    void updateUser(UsuarioEntity u);
 
-    public void updateUser(User u);
-
-    User findUserByEmailAndPassword( String email, String password );
+    UsuarioEntity findUserByEmailAndPassword( String email, String password );
 }

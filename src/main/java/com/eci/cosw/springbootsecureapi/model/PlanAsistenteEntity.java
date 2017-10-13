@@ -2,6 +2,8 @@ package com.eci.cosw.springbootsecureapi.model;
 
 import javax.persistence.*;
 
+import static javax.persistence.GenerationType.IDENTITY;
+
 @Entity
 @Table(name = "plan_asistente", schema = "bd2092964", catalog = "")
 @IdClass(PlanAsistenteEntityPK.class)
@@ -11,6 +13,7 @@ public class PlanAsistenteEntity {
 
     @Id
     @Column(name = "plan_Id")
+    @GeneratedValue(strategy = IDENTITY)
     public int getPlanId() {
         return planId;
     }

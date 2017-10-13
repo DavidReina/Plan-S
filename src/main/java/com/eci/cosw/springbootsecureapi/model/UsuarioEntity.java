@@ -3,6 +3,8 @@ package com.eci.cosw.springbootsecureapi.model;
 import javax.persistence.*;
 import java.util.Arrays;
 
+import static javax.persistence.GenerationType.IDENTITY;
+
 @Entity
 @Table(name = "usuario", schema = "bd2092964", catalog = "")
 public class UsuarioEntity {
@@ -14,9 +16,11 @@ public class UsuarioEntity {
     private String usuario;
     private String tipoId;
     private byte[] fotoPerfil;
+    private String numeroId;
 
     @Id
     @Column(name = "id_usuario")
+    @GeneratedValue(strategy = IDENTITY)
     public long getIdUsuario() {
         return idUsuario;
     }
@@ -83,6 +87,16 @@ public class UsuarioEntity {
 
     public void setTipoId(String tipoId) {
         this.tipoId = tipoId;
+    }
+
+    @Basic
+    @Column(name = "numero_id")
+    public String getNumeroId() {
+        return numeroId;
+    }
+
+    public void setNumeroId(String numeroId) {
+        this.numeroId = numeroId;
     }
 
     @Basic

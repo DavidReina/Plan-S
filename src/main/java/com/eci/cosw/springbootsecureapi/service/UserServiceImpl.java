@@ -1,10 +1,11 @@
 package com.eci.cosw.springbootsecureapi.service;
 
 import com.eci.cosw.springbootsecureapi.model.User;
+import com.eci.cosw.springbootsecureapi.model.UsuarioEntity;
+import com.eci.cosw.springbootsecureapi.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,78 +14,42 @@ import java.util.List;
  * 8/21/17.
  */
 @Service
-public class UserServiceImpl
-    implements UserService
-{
-
-    private List<User> users = new ArrayList<>();
+public class UserServiceImpl implements UserService {
 
 
     @Autowired
-    public UserServiceImpl()
-    {
-    }
+    private UsuarioRepository userRepo;
 
-    @PostConstruct
-    private void populateSampleData()
-    {
-        users.add( new User( "usuario@mail.com", "1234", "Ludwing", "Acevedo", "a", "CC" , "1016077128" ) );
+
+    @Override
+    public List<UsuarioEntity> getUsers() {
+        return userRepo.findAll();
     }
 
 
     @Override
-    public List<User> getUsers()
-    {
-        return users;
+    public void registerUser(UsuarioEntity user) {
+        userRepo.save(user);
     }
 
     @Override
-    public User createUser( User user ){
-        users.add(user);
-        return users.get(users.size()-1);
-
+    public UsuarioEntity getUser(String username) {
+        return userRepo.getUsuarioByUsername(username);
     }
 
     @Override
-    public User registerUser( User user ){
-
-        users.add(user);
-        return users.get(users.size()-1);
-
+    public void updateUser(UsuarioEntity u) {
+        userRepo.save(u);
     }
 
     @Override
-    public User getUser(String username) {
-        System.out.println(username);
-        User a = null;
-        for (int i=0;i < users.size(); i++){
-            if(users.get(i).getEmail().equals(username)){
-                a= users.get(i);
-            }
-        }
-        return a;
+    public UsuarioEntity findUserByEmail(String email) {
+        return userRepo.getUsuarioByEmail(email);
     }
 
     @Override
-    public void updateUser(User u) {
-        User a= u;
-        for (int i=0;i < users.size(); i++){
-            if(users.get(i).getEmail().equals(u.getEmail())){
-                users.set(i,a);
-            }
-        }
-    }
-
-    @Override
-    public User findUserByEmail( String email )
-    {
-        return users.get( 0 );
-    }
-
-    @Override
-    public User findUserByEmailAndPassword( String email, String password )
-    {
-        return users.get( 0 );
+    public UsuarioEntity findUserByEmailAndPassword(String email, String password) {
+        return userRepo.getUsuarioByEmailAndPass(email,password);
     }
 
 }

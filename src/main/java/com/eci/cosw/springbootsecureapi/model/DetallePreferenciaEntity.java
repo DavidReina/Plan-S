@@ -2,6 +2,8 @@ package com.eci.cosw.springbootsecureapi.model;
 
 import javax.persistence.*;
 
+import static javax.persistence.GenerationType.IDENTITY;
+
 @Entity
 @Table(name = "detalle_preferencia", schema = "bd2092964", catalog = "")
 public class DetallePreferenciaEntity {
@@ -11,6 +13,7 @@ public class DetallePreferenciaEntity {
 
     @Id
     @Column(name = "id_detalle")
+    @GeneratedValue(strategy = IDENTITY)
     public long getIdDetalle() {
         return idDetalle;
     }

@@ -1,14 +1,12 @@
 package com.eci.cosw.springbootsecureapi.controller;
 
 import com.eci.cosw.springbootsecureapi.model.User;
+import com.eci.cosw.springbootsecureapi.model.UsuarioEntity;
 import com.eci.cosw.springbootsecureapi.service.UserService;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.HttpStatus;
 
@@ -46,15 +44,15 @@ public class UserController
         String username = login.getUsername();
         String password = login.getPassword();
         System.out.println(username+"------"+ password);
-        User user = userService.getUser(username);
-        System.out.println(user.getUsername()+"---:::::::::::::::---");
+        UsuarioEntity user = userService.getUser(username);
+        System.out.println(user.getUsuario()+"---:::::::::::::::---");
 
         if ( user == null )
         {
             throw new ServletException( "User username not found." );
         }
 
-        String pwd = user.getPassword();
+        String pwd = user.getContrasena();
 
         if ( !password.equals( pwd ) )
         {
@@ -69,19 +67,22 @@ public class UserController
     }
 
     @RequestMapping( value = "/users", method = RequestMethod.GET )
-    public List<User> getUsers(){
-        return userService.getUsers();
+    @ResponseBody
+    public ResponseEntity<List<UsuarioEntity> > getUsers(){
+        List<UsuarioEntity> listaUsuarioEntities = userService.getUsers();
+        return new ResponseEntity<List<UsuarioEntity>>(listaUsuarioEntities,HttpStatus.OK);
     }
 
     @RequestMapping( value = "/users", method = RequestMethod.POST )
-    public User setUser(@RequestBody User user){
-        return userService.registerUser(user);
+    public ResponseEntity<UsuarioEntity> setUser(@RequestBody UsuarioEntity user){
+            userService.registerUser(user);
+             return new ResponseEntity<UsuarioEntity>(HttpStatus.CREATED);
     }
 
-    @RequestMapping(method = RequestMethod.PUT)
-    public ResponseEntity<?> updatePerson(@RequestBody User u) {
-        userService.updateUser(u);
-        return new ResponseEntity<>(HttpStatus.ACCEPTED);
+    @RequestMapping(method = RequestMethod.PUT, value = "/update ")
+    public ResponseEntity<?> updatePerson(@RequestBody UsuarioEntity user) {
+        userService.registerUser(user);
+        return new ResponseEntity<UsuarioEntity>(HttpStatus.CREATED);
     }
 
     public class Token

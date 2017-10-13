@@ -4,7 +4,7 @@ import { AppConfiguration } from '../common/config/app-configuration.service';
 import { AuthService } from '../common/auth.service';
 import { Http } from '@angular/http';
 import { Observable } from "rxjs/Observable";
-import { User } from "../models/User";
+import {UsuarioEntity} from "../models/UsuarioEntity";
 
 @Injectable()
 export class UsersService extends APIService {
@@ -17,19 +17,19 @@ export class UsersService extends APIService {
     super(config, authService, http);
   }
 
-create(email:string, password:string, firstname:string,lastname:string, username:string, ti:string, identification:string):Observable<User>{
+create(email:string, contrasena:string, nombres:string,apellidos:string, usuario:string, tipo_id:string, numero_id:string):Observable<UsuarioEntity>{
 
-return this.post(this.resourceUrl, new User(email, password, firstname, lastname, username, ti, identification));
+return this.post(this.resourceUrl, new UsuarioEntity(email, contrasena, nombres, apellidos, usuario, tipo_id, numero_id));
 
 }
 
- list(): Observable<User[]> {
+ list(): Observable<UsuarioEntity[]> {
       
         return this.get(this.resourceUrl);
 	}
 
-  login(username: string, password: string) {
-    return this.post('user/login', { username, password }, { credentials: false }).map(loginResponse => {
+  login(nombres: string, contrasena: string) {
+    return this.post('user/login', { nombres, contrasena }, { credentials: false }).map(loginResponse => {
       if (loginResponse) {
         this.authService.accessToken = loginResponse.accessToken;
       }
