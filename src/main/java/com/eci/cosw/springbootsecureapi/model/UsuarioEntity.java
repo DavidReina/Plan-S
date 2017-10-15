@@ -1,6 +1,9 @@
 package com.eci.cosw.springbootsecureapi.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
+import java.sql.Blob;
 import java.util.Arrays;
 
 import static javax.persistence.GenerationType.IDENTITY;
@@ -15,7 +18,7 @@ public class UsuarioEntity {
     private String apellidos;
     private String usuario;
     private String tipoId;
-    private byte[] fotoPerfil;
+    private Blob fotoPerfil;
     private String numeroId;
 
     @Id
@@ -99,13 +102,14 @@ public class UsuarioEntity {
         this.numeroId = numeroId;
     }
 
-    @Basic
     @Column(name = "foto_perfil")
-    public byte[] getFotoPerfil() {
+    @JsonIgnore
+    public Blob getFotoPerfil() {
         return fotoPerfil;
     }
 
-    public void setFotoPerfil(byte[] fotoPerfil) {
+    @JsonIgnore
+    public void setFotoPerfil(Blob fotoPerfil) {
         this.fotoPerfil = fotoPerfil;
     }
 
@@ -123,7 +127,6 @@ public class UsuarioEntity {
         if (apellidos != null ? !apellidos.equals(that.apellidos) : that.apellidos != null) return false;
         if (usuario != null ? !usuario.equals(that.usuario) : that.usuario != null) return false;
         if (tipoId != null ? !tipoId.equals(that.tipoId) : that.tipoId != null) return false;
-        if (!Arrays.equals(fotoPerfil, that.fotoPerfil)) return false;
 
         return true;
     }
@@ -137,7 +140,6 @@ public class UsuarioEntity {
         result = 31 * result + (apellidos != null ? apellidos.hashCode() : 0);
         result = 31 * result + (usuario != null ? usuario.hashCode() : 0);
         result = 31 * result + (tipoId != null ? tipoId.hashCode() : 0);
-        result = 31 * result + Arrays.hashCode(fotoPerfil);
         return result;
     }
 }

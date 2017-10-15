@@ -12,6 +12,7 @@ import {UsuarioEntity} from '../../models/UsuarioEntity';
 })
 export class UserEditPageComponent implements OnInit {
     userForm: FormGroup;
+    responseStatus:Object= [];
 
     constructor(public usersService: UsersService,
                 public formBuilder: FormBuilder,
@@ -33,17 +34,22 @@ export class UserEditPageComponent implements OnInit {
     }
 
     onSubmit() {
+
         this.usersService.create(
+            0,
             this.userForm.get('email').value,
             this.userForm.get('contrasena').value,
             this.userForm.get('nombres').value,
             this.userForm.get('apellidos').value,
             this.userForm.get('usuario').value,
             this.userForm.get('tipo_id').value,
+            new Blob,
             this.userForm.get('numero_id').value
         ).subscribe(serverResponse => {
-            this.router.navigate(['/signin']);
-        }, error => {
+            this.router.navigate(
+                ['/signin']);
+        },
+            error => {
             console.log(error);
         });
 

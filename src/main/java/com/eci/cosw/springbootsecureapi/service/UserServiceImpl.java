@@ -1,13 +1,12 @@
 package com.eci.cosw.springbootsecureapi.service;
 
-import com.eci.cosw.springbootsecureapi.model.User;
 import com.eci.cosw.springbootsecureapi.model.UsuarioEntity;
-import com.eci.cosw.springbootsecureapi.repository.UsuarioRepository;
+import com.eci.cosw.springbootsecureapi.reposotories.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
+
 
 /**
  * @author Santiago Carrillo
@@ -29,11 +28,21 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void registerUser(UsuarioEntity user) {
-        userRepo.save(user);
+        int registros = userRepo.numeroRegistros()+1;
+        userRepo.registrarUsuario(registros, user.getApellidos(),user.getContrasena(),user.getEmail(),user.getNombres(),user.getNumeroId(),user.getTipoId(),user.getUsuario());
     }
 
     @Override
-    public UsuarioEntity getUser(String username) {
+    public UsuarioEntity getUserById(int id) {
+
+            UsuarioEntity usuario = userRepo.getUsuarioById(id);
+            System.out.println(usuario.getEmail());
+            return usuario;
+
+    }
+
+    @Override
+    public UsuarioEntity getUserByUsername(String username) {
         return userRepo.getUsuarioByUsername(username);
     }
 
@@ -43,7 +52,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public UsuarioEntity findUserByEmail(String email) {
+    public UsuarioEntity getUserByEmail(String email) {
         return userRepo.getUsuarioByEmail(email);
     }
 

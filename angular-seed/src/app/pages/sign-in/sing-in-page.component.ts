@@ -27,6 +27,10 @@ export class SingInPageComponent implements OnInit {
   }
 
   doLogin() {
+
+    console.log(this.signInForm.get('email').value);
+    console.log(this.signInForm.get('password').value);
+
     this.usersService.login(
       this.signInForm.get('email').value,
       this.signInForm.get('password').value).subscribe(loginResponse => {

@@ -1,6 +1,7 @@
 package com.eci.cosw.springbootsecureapi.controller;
 
 import com.eci.cosw.springbootsecureapi.model.Plan;
+import com.eci.cosw.springbootsecureapi.model.PlanEntity;
 import com.eci.cosw.springbootsecureapi.service.PlanService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,14 +18,13 @@ public class PlanController {
     private PlanService planService;
 
     @RequestMapping( value = "/plans", method = RequestMethod.GET )
-    public List<Plan> getPlan(){
+    public List<PlanEntity> getPlan(){
         return planService.getPlanList();
-
     }
 
     @RequestMapping( value = "/plans", method = RequestMethod.POST )
-    public Plan setPlan(@RequestBody Plan plan){
-        return planService.addPlan(plan);
+    public void setPlan(@RequestBody PlanEntity plan){
+        planService.addPlan(plan);
     }
 
 

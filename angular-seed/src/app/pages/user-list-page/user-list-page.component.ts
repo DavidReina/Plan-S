@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UsersService } from '../../services/users.service';
-import { User } from '../../models/UsuarioEntity';
+import { UsuarioEntity } from '../../models/UsuarioEntity';
 
 @Component({
   selector: 'app-user-list-page',
@@ -8,7 +8,7 @@ import { User } from '../../models/UsuarioEntity';
   styleUrls: ['./user-list-page.component.css']
 })
 export class UserListPageComponent implements OnInit {
-  private users: User[] = [];
+  private users: UsuarioEntity[] = [];
   constructor(public userService: UsersService) {
 
   }

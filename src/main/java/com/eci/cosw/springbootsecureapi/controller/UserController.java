@@ -1,6 +1,5 @@
 package com.eci.cosw.springbootsecureapi.controller;
 
-import com.eci.cosw.springbootsecureapi.model.User;
 import com.eci.cosw.springbootsecureapi.model.UsuarioEntity;
 import com.eci.cosw.springbootsecureapi.service.UserService;
 import io.jsonwebtoken.Jwts;
@@ -13,8 +12,7 @@ import org.springframework.http.HttpStatus;
 
 import javax.servlet.ServletException;
 import java.util.Date;
-import java.util.List;
-
+import java.util.Optional;
 
 
 /**
@@ -30,22 +28,20 @@ public class UserController
     private UserService userService;
 
     @RequestMapping( value = "/login", method = RequestMethod.POST )
-    public Token login( @RequestBody User login )
+    public Token login( @RequestBody UsuarioEntity login )
         throws ServletException
     {
-
         String jwtToken = "";
-
-        if ( login.getUsername() == null || login.getPassword() == null )
+        System.out.println(login.getContrasena()+"-------++++++++++++------------"+login.getEmail());
+        if ( login.getEmail() == null || login.getContrasena() == null )
         {
             throw new ServletException( "Please fill in username and password" );
         }
 
-        String username = login.getUsername();
-        String password = login.getPassword();
-        System.out.println(username+"------"+ password);
-        UsuarioEntity user = userService.getUser(username);
-        System.out.println(user.getUsuario()+"---:::::::::::::::---");
+        String username = login.getEmail();
+        String password = login.getContrasena();
+
+        UsuarioEntity user = userService.getUserByEmail(username);
 
         if ( user == null )
         {
@@ -66,17 +62,24 @@ public class UserController
         return new Token( jwtToken );
     }
 
-    @RequestMapping( value = "/users", method = RequestMethod.GET )
+    @RequestMapping( value = "/users/{id}", method = RequestMethod.GET )
     @ResponseBody
-    public ResponseEntity<List<UsuarioEntity> > getUsers(){
-        List<UsuarioEntity> listaUsuarioEntities = userService.getUsers();
-        return new ResponseEntity<List<UsuarioEntity>>(listaUsuarioEntities,HttpStatus.OK);
+    public ResponseEntity<UsuarioEntity> getUser(@PathVariable("id") Integer id){
+
+        UsuarioEntity usuario = userService.getUserById(id);
+
+        if(usuario == null){
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+
+        return new ResponseEntity<UsuarioEntity>(usuario,HttpStatus.OK);
+
     }
 
     @RequestMapping( value = "/users", method = RequestMethod.POST )
-    public ResponseEntity<UsuarioEntity> setUser(@RequestBody UsuarioEntity user){
+    public void setUser(@RequestBody UsuarioEntity user){
+            System.out.println(user.getNombres());
             userService.registerUser(user);
-             return new ResponseEntity<UsuarioEntity>(HttpStatus.CREATED);
     }
 
     @RequestMapping(method = RequestMethod.PUT, value = "/update ")

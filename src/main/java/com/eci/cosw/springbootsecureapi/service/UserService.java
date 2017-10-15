@@ -1,9 +1,9 @@
 package com.eci.cosw.springbootsecureapi.service;
 
-import com.eci.cosw.springbootsecureapi.model.User;
 import com.eci.cosw.springbootsecureapi.model.UsuarioEntity;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * @author Santiago Carrillo
@@ -15,9 +15,11 @@ public interface UserService
 
     void registerUser(UsuarioEntity user);
 
-    UsuarioEntity getUser(String username );
+    UsuarioEntity getUserById(int id);
 
-    UsuarioEntity findUserByEmail( String email );
+    UsuarioEntity getUserByUsername(String username);
+
+    UsuarioEntity getUserByEmail( String email );
 
     void updateUser(UsuarioEntity u);
 

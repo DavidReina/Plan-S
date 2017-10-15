@@ -1,48 +1,32 @@
 package com.eci.cosw.springbootsecureapi.service;
 
 import com.eci.cosw.springbootsecureapi.model.Plan;
-import com.eci.cosw.springbootsecureapi.model.User;
+import com.eci.cosw.springbootsecureapi.model.PlanEntity;
+import com.eci.cosw.springbootsecureapi.reposotories.PlanRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.PostConstruct;
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
 public class PlanServiceImpl implements PlanService {
 
-    private List<Plan> plans =new ArrayList<Plan>();
-
     @Autowired
-    public PlanServiceImpl(){
-        
-    }
+    private PlanRepository plans;
 
-    @PostConstruct
-    private void populateSampleData() {
-
-        String[] Amigos = new String[]{"Ludwing", "David", "Georgio", "Carlos"};
-
-        plans.add(new Plan("estreno pelicula IT","Me gustan las peliculas de terror, ¿como no ver el remake de este gran clasico?","Cinecolombia, CC Santafé",
-                "19-Septiembre-2017","8.000", null ));
+    @Override
+    public List<PlanEntity> getPlanList() {
+        return plans.findAll();
     }
 
     @Override
-    public List<Plan> getPlanList() {
-        return plans;
+    public void addPlan(PlanEntity plan) {
+        plans.save(plan);
     }
 
     @Override
-    public Plan addPlan(Plan plan) {
-        plans.add(plan);
-        return plans.get(plans.size()-1);
-    }
-
-    @Override
-    public Plan RegisterPlan(Plan plan) {
-        plans.add(plan);
-        return plans.get(plans.size()-1);
+    public PlanEntity getPlanByName(String nombre) {
+        return plans.getPlanByname(nombre);
     }
 
 

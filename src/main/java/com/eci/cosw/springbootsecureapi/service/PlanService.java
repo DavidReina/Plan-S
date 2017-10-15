@@ -1,11 +1,16 @@
 package com.eci.cosw.springbootsecureapi.service;
 
 import com.eci.cosw.springbootsecureapi.model.Plan;
+import com.eci.cosw.springbootsecureapi.model.PlanEntity;
 
 import java.util.List;
 
 public interface PlanService {
-    List<Plan> getPlanList();
-    Plan addPlan(Plan plan);
-    Plan RegisterPlan (Plan plan);
+
+    List<PlanEntity> getPlanList();
+
+    void addPlan(PlanEntity plan);
+
+    PlanEntity getPlanByName (String nombre);
+
 }

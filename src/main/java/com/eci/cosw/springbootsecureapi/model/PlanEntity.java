@@ -1,6 +1,9 @@
 package com.eci.cosw.springbootsecureapi.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
+import java.sql.Blob;
 import java.sql.Timestamp;
 import java.util.Arrays;
 
@@ -8,14 +11,15 @@ import java.util.Arrays;
 @Table(name = "plan", schema = "bd2092964", catalog = "")
 public class PlanEntity {
     private long idPlan;
+    private String nombre;
     private String descripcion;
     private String ubicacion;
     private Timestamp fechaInicio;
     private Timestamp fechaFinal;
     private int costoPromedio;
-    private byte[] imagenPlan;
     private int creadorPlan;
     private int detallePreferencia;
+    private Blob imagenPlan;
 
     @Id
     @Column(name = "id_plan")
@@ -25,6 +29,16 @@ public class PlanEntity {
 
     public void setIdPlan(long idPlan) {
         this.idPlan = idPlan;
+    }
+
+    @Basic
+    @Column(name = "nombre")
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     @Basic
@@ -78,16 +92,6 @@ public class PlanEntity {
     }
 
     @Basic
-    @Column(name = "imagen_plan")
-    public byte[] getImagenPlan() {
-        return imagenPlan;
-    }
-
-    public void setImagenPlan(byte[] imagenPlan) {
-        this.imagenPlan = imagenPlan;
-    }
-
-    @Basic
     @Column(name = "creador_plan")
     public int getCreadorPlan() {
         return creadorPlan;
@@ -107,6 +111,16 @@ public class PlanEntity {
         this.detallePreferencia = detallePreferencia;
     }
 
+    @Column(name = "imagen_plan")
+    @JsonIgnore
+    public Blob getImagenPlan() {
+        return imagenPlan;
+    }
+
+    public void setImagenPlan(Blob imagenPlan) {
+        this.imagenPlan = imagenPlan;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -118,24 +132,22 @@ public class PlanEntity {
         if (costoPromedio != that.costoPromedio) return false;
         if (creadorPlan != that.creadorPlan) return false;
         if (detallePreferencia != that.detallePreferencia) return false;
+        if (nombre != null ? !nombre.equals(that.nombre) : that.nombre != null) return false;
         if (descripcion != null ? !descripcion.equals(that.descripcion) : that.descripcion != null) return false;
         if (ubicacion != null ? !ubicacion.equals(that.ubicacion) : that.ubicacion != null) return false;
         if (fechaInicio != null ? !fechaInicio.equals(that.fechaInicio) : that.fechaInicio != null) return false;
-        if (fechaFinal != null ? !fechaFinal.equals(that.fechaFinal) : that.fechaFinal != null) return false;
-        if (!Arrays.equals(imagenPlan, that.imagenPlan)) return false;
-
-        return true;
+        return fechaFinal != null ? fechaFinal.equals(that.fechaFinal) : that.fechaFinal == null;
     }
 
     @Override
     public int hashCode() {
         int result = (int) (idPlan ^ (idPlan >>> 32));
+        result = 31 * result + (nombre != null ? nombre.hashCode() : 0);
         result = 31 * result + (descripcion != null ? descripcion.hashCode() : 0);
         result = 31 * result + (ubicacion != null ? ubicacion.hashCode() : 0);
         result = 31 * result + (fechaInicio != null ? fechaInicio.hashCode() : 0);
         result = 31 * result + (fechaFinal != null ? fechaFinal.hashCode() : 0);
         result = 31 * result + costoPromedio;
-        result = 31 * result + Arrays.hashCode(imagenPlan);
         result = 31 * result + creadorPlan;
         result = 31 * result + detallePreferencia;
         return result;

@@ -8,31 +8,31 @@ import {UsuarioEntity} from "../models/UsuarioEntity";
 
 @Injectable()
 export class UsersService extends APIService {
-	private resourceUrl = 'user/users';
-  constructor(
-    public config: AppConfiguration,
-    public authService: AuthService,
-    public http: Http
-  ) {
-    super(config, authService, http);
-  }
+    private resourceUrl = 'user/users';
 
-create(email:string, contrasena:string, nombres:string,apellidos:string, usuario:string, tipo_id:string, numero_id:string):Observable<UsuarioEntity>{
+    constructor(public config: AppConfiguration,
+                public authService: AuthService,
+                public http: Http) {
+        super(config, authService, http);
+    }
 
-return this.post(this.resourceUrl, new UsuarioEntity(email, contrasena, nombres, apellidos, usuario, tipo_id, numero_id));
+    create(idUsuario: number, email: string, contrasena: string, nombres: string, apellidos: string, usuario: string, tipoId: string, fotoPerfil: Blob, numeroId: string):
+    Observable<UsuarioEntity> {
 
+        return this.post(this.resourceUrl, new UsuarioEntity(idUsuario, email, contrasena, nombres, apellidos, usuario, tipoId, fotoPerfil, numeroId));}
+
+
+        list(): Observable<UsuarioEntity[]> {
+
+               return this.get(this.resourceUrl);
+           }
+
+        login(email:string, contrasena:string){
+            return this.post('user/login', {email, contrasena}, {credentials: false}).map(loginResponse => {
+                if (loginResponse) {
+                    this.authService.accessToken = loginResponse.accessToken;
+                }
+            });
+        }
 }
 
- list(): Observable<UsuarioEntity[]> {
-      
-        return this.get(this.resourceUrl);
-	}
-
-  login(nombres: string, contrasena: string) {
-    return this.post('user/login', { nombres, contrasena }, { credentials: false }).map(loginResponse => {
-      if (loginResponse) {
-        this.authService.accessToken = loginResponse.accessToken;
-      }
-    });
-  }
-}

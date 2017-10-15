@@ -34,7 +34,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Navigation -->\n    <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\">\n      <div class=\"container\">\n        <a class=\"navbar-brand\" routerLink=\"\" >PlanS</a>\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n          <span class=\"navbar-toggler-icon\"></span>\n        </button>\n        <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\n          <ul class=\"navbar-nav ml-auto\">\n            <li class=\"nav-item active\">\n              <a class=\"nav-link\" routerLink=\"signin\">Ingresa</a>\n            </li>\n            <li class=\"nav-item\">\n              <a class=\"nav-link\" routerLink=\"register\">Registrate</a>\n            </li>\n          </ul>\n        </div>\n      </div>\n    </nav>\n<!-- Modal -->\n<div id=\"myModal\" class=\"modal fade\" role=\"dialog\">\n  <div class=\"modal-dialog\">\n\n    <!-- Modal content-->\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\n        <h4 class=\"modal-title\">Sorry</h4>\n      </div>\n      <div class=\"modal-body\">\n        <p>This feature is not implemented yet. Sorry for the inconvenience</p>\n      </div>\n      <div class=\"modal-footer\">\n        <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\n      </div>\n    </div>\n\n  </div>\n</div>\n<div class=\"container\">\n  <router-outlet></router-outlet>\n</div>\n"
+module.exports = "<!-- Navigation -->\r\n    <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\">\r\n      <div class=\"container\">\r\n        <a class=\"navbar-brand\" routerLink=\"\" >PlanS</a>\r\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n          <span class=\"navbar-toggler-icon\"></span>\r\n        </button>\r\n        <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\r\n          <ul class=\"navbar-nav ml-auto\">\r\n            <li class=\"nav-item active\">\r\n              <a class=\"nav-link\" routerLink=\"signin\">Ingresa</a>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n              <a class=\"nav-link\" routerLink=\"register\">Registrate</a>\r\n            </li>\r\n          </ul>\r\n        </div>\r\n      </div>\r\n    </nav>\r\n<!-- Modal -->\r\n<div id=\"myModal\" class=\"modal fade\" role=\"dialog\">\r\n  <div class=\"modal-dialog\">\r\n\r\n    <!-- Modal content-->\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n        <h4 class=\"modal-title\">Sorry</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        <p>This feature is not implemented yet. Sorry for the inconvenience</p>\r\n      </div>\r\n      <div class=\"modal-footer\">\r\n        <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\r\n      </div>\r\n    </div>\r\n\r\n  </div>\r\n</div>\r\n<div class=\"container\">\r\n  <router-outlet></router-outlet>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -473,25 +473,27 @@ var INITIAL_CONFIG = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Inje
 
 /***/ }),
 
-/***/ "../../../../../src/app/models/User.ts":
+/***/ "../../../../../src/app/models/UsuarioEntity.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return User; });
-var User = (function () {
-    function User(email, password, firstname, lastname, username, ti, identification) {
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UsuarioEntity; });
+var UsuarioEntity = (function () {
+    function UsuarioEntity(idUsuario, email, contrasena, nombres, apellidos, usuario, tipoId, fotoPerfil, numeroId) {
+        this.idUsuario = idUsuario;
         this.email = email;
-        this.password = password;
-        this.firstname = firstname;
-        this.lastname = lastname;
-        this.username = username;
-        this.ti = ti;
-        this.identification = identification;
+        this.contrasena = contrasena;
+        this.nombres = nombres;
+        this.apellidos = apellidos;
+        this.usuario = usuario;
+        this.tipoId = tipoId;
+        this.fotoPerfil = fotoPerfil;
+        this.numeroId = numeroId;
     }
-    return User;
+    return UsuarioEntity;
 }());
 
-//# sourceMappingURL=User.js.map
+//# sourceMappingURL=UsuarioEntity.js.map
 
 /***/ }),
 
@@ -536,7 +538,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/create-plan-page/create-plan-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <h2>Nuevo Plan</h2>\n  <form [formGroup]=\"userForm\" (ngSubmit)=\"onSubmit()\" novalidate>\n    \n\t<div class=\"form-group\">\n      <label for=\"nombre\">Nombre</label>\n      <input type=\"text\" class=\"form-control\" id=\"nombre\" formControlName=\"nombre\" required>\n    </div>\n\t\n\t<div class=\"form-group\">\n      <label for=\"descripcion\">Descripcion</label>\n      <input type=\"text\" class=\"form-control\" id=\"descripcion\" formControlName=\"descripcion\" required>\n    </div>\n\n  <div class=\"form-group\">\n      <label for=\"ubicacion\">Ubicacion</label>\n      <input type=\"text\" class=\"form-control\" id=\"ubicacion\" formControlName=\"ubicacion\" required>\n    </div>\n\n  <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.9262020762617!2d-74.0447827846346!3d4.782680842271478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f85e32ae0ca4b%3A0x5edd4c74e8f7220c!2sEscuela+Colombiana+de+Ingenier%C3%ADa+Julio+Garavito!5e0!3m2!1ses-419!2ses!4v1505859265531\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>\n\t\n    <div class=\"form-group\">\n      <label for=\"fecha\">Fecha</label>\n      <input type=\"text\" class=\"form-control\" id=\"fecha\" formControlName=\"fecha\" required>\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"costo\">Costo Promedio</label>\n      <input type=\"number\" class=\"form-control\" id=\"costo\" formControlName=\"costo\" required>\n    </div>\n    \n<button type=\"submit\" class=\"btn btn-success\">Crear</button>\n\n  </form>\n</div>\n"
+module.exports = "<div class=\"container\">\r\n  <h2>Nuevo Plan</h2>\r\n  <form [formGroup]=\"userForm\" (ngSubmit)=\"onSubmit()\" novalidate>\r\n    \r\n\t<div class=\"form-group\">\r\n      <label for=\"nombre\">Nombre</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"nombre\" formControlName=\"nombre\" required>\r\n    </div>\r\n\t\r\n\t<div class=\"form-group\">\r\n      <label for=\"descripcion\">Descripcion</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"descripcion\" formControlName=\"descripcion\" required>\r\n    </div>\r\n\r\n  <div class=\"form-group\">\r\n      <label for=\"ubicacion\">Ubicacion</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"ubicacion\" formControlName=\"ubicacion\" required>\r\n    </div>\r\n\r\n  <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.9262020762617!2d-74.0447827846346!3d4.782680842271478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f85e32ae0ca4b%3A0x5edd4c74e8f7220c!2sEscuela+Colombiana+de+Ingenier%C3%ADa+Julio+Garavito!5e0!3m2!1ses-419!2ses!4v1505859265531\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>\r\n\t\r\n    <div class=\"form-group\">\r\n      <label for=\"fecha\">Fecha</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"fecha\" formControlName=\"fecha\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"costo\">Costo Promedio</label>\r\n      <input type=\"number\" class=\"form-control\" id=\"costo\" formControlName=\"costo\" required>\r\n    </div>\r\n    \r\n<button type=\"submit\" class=\"btn btn-success\">Crear</button>\r\n\r\n  </form>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -623,7 +625,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/home-page/home-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n\n  <head>\n\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <meta name=\"description\" content=\"\">\n    <meta name=\"author\" content=\"\">\n\n    <title>Plan S</title>\n\n    <!-- Bootstrap core CSS -->\n    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css\" integrity=\"sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M\" crossorigin=\"anonymous\">\n\n  </head>\n\n  <body>\n\n    <header class=\"masthead\">\n      <div class=\"overlay\">\n        <div class=\"container\">\n          <h1 class=\"display-1 text-white\">PlanS</h1>\n          <h2 class=\"display-4 text-white\">Llego el momento de compartir tus gustos</h2>\n          <h4 class=\"display-4 text-white\">Unete al plan</h4>\n        </div>\n      </div>\n    </header>\n\n    <section>\n      <div class=\"container\">\n        <div class=\"row align-items-center\">\n          <div class=\"col-md-6 order-2\">\n            <div class=\"p-5\">\n              <img class=\"img-fluid rounded-circle\" src=\"https://ugc.kn3.net/i/origin/http://www.orangesmile.com/common/img_final_large/medellin_sightseeing.jpg\" alt=\"\">\n            </div>\n          </div>\n          <div class=\"col-md-6 order-1\">\n            <div class=\"p-5\">\n              <h2 class=\"display-4\">Cera tu plan...</h2>\n              <p>Puedes crear diferentes tipos de planes y comparte con las personsa que en realidad les apaciona los mismo</p>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n\n    <section>\n      <div class=\"container\">\n        <div class=\"row align-items-center\">\n          <div class=\"col-md-6\">\n            <div class=\"p-5\">\n              <img class=\"img-fluid rounded-circle\" src=\"https://unsplash.it/500/500?image=452\" alt=\"\">\n            </div>\n          </div>\n          <div class=\"col-md-6\">\n            <div class=\"p-5\">\n              <h2 class=\"display-4\">Suscribete a un plan</h2>\n              <p> Busca planes de tu interes y disfrutalos con personas que tambien les gusta este tipo de planes, mira quien asistira, que tipo de plan es, hora y lugares de donde se realizara</p>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n\n    <section>\n      <div class=\"container\">\n        <div class=\"row align-items-center\">\n          <div class=\"col-md-6 order-2\">\n            <div class=\"p-5\">\n              <img class=\"img-fluid rounded-circle\" src=\"https://unsplash.it/500/500?image=453\" alt=\"\">\n            </div>\n          </div>\n          <div class=\"col-md-6 order-1\">\n            <div class=\"p-5\">\n              <h2 class=\"display-4\">Agranda tu circulo de amigos</h2>\n              <p>Isgresa tus gustos y PLAN S te sugerira los mejoraes palanes segun tu gusto</p>\n            </div>\n          </div>\n        </div>\n      </div>\n    </section>\n\n    <!-- Footer -->\n    <footer class=\"py-5 bg-dark\">\n      <div class=\"container\">\n        <p class=\"m-0 text-center text-white\">Copyright &copy; Your Website 2017</p>\n      </div>\n      <!-- /.container -->\n    </footer>\n\n    <!-- Bootstrap core JavaScript -->\n<script src=\"https://code.jquery.com/jquery-3.2.1.slim.min.js\" integrity=\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\" crossorigin=\"anonymous\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js\" integrity=\"sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4\" crossorigin=\"anonymous\"></script>\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js\" integrity=\"sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1\" crossorigin=\"anonymous\"></script>\n\n  </body>\n\n</html>"
+module.exports = "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n  <head>\r\n\r\n    <meta charset=\"utf-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\r\n    <meta name=\"description\" content=\"\">\r\n    <meta name=\"author\" content=\"\">\r\n\r\n    <title>Plan S</title>\r\n\r\n    <!-- Bootstrap core CSS -->\r\n    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css\" integrity=\"sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M\" crossorigin=\"anonymous\">\r\n\r\n  </head>\r\n\r\n  <body>\r\n\r\n    <header class=\"masthead\">\r\n      <div class=\"overlay\">\r\n        <div class=\"container\">\r\n          <h1 class=\"display-1 text-white\">PlanS</h1>\r\n          <h2 class=\"display-4 text-white\">Llego el momento de compartir tus gustos</h2>\r\n          <h4 class=\"display-4 text-white\">Unete al plan</h4>\r\n        </div>\r\n      </div>\r\n    </header>\r\n\r\n    <section>\r\n      <div class=\"container\">\r\n        <div class=\"row align-items-center\">\r\n          <div class=\"col-md-6 order-2\">\r\n            <div class=\"p-5\">\r\n              <img class=\"img-fluid rounded-circle\" src=\"https://ugc.kn3.net/i/origin/http://www.orangesmile.com/common/img_final_large/medellin_sightseeing.jpg\" alt=\"\">\r\n            </div>\r\n          </div>\r\n          <div class=\"col-md-6 order-1\">\r\n            <div class=\"p-5\">\r\n              <h2 class=\"display-4\">Cera tu plan...</h2>\r\n              <p>Puedes crear diferentes tipos de planes y comparte con las personsa que en realidad les apaciona los mismo</p>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </section>\r\n\r\n    <section>\r\n      <div class=\"container\">\r\n        <div class=\"row align-items-center\">\r\n          <div class=\"col-md-6\">\r\n            <div class=\"p-5\">\r\n              <img class=\"img-fluid rounded-circle\" src=\"https://unsplash.it/500/500?image=452\" alt=\"\">\r\n            </div>\r\n          </div>\r\n          <div class=\"col-md-6\">\r\n            <div class=\"p-5\">\r\n              <h2 class=\"display-4\">Suscribete a un plan</h2>\r\n              <p> Busca planes de tu interes y disfrutalos con personas que tambien les gusta este tipo de planes, mira quien asistira, que tipo de plan es, hora y lugares de donde se realizara</p>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </section>\r\n\r\n    <section>\r\n      <div class=\"container\">\r\n        <div class=\"row align-items-center\">\r\n          <div class=\"col-md-6 order-2\">\r\n            <div class=\"p-5\">\r\n              <img class=\"img-fluid rounded-circle\" src=\"https://unsplash.it/500/500?image=453\" alt=\"\">\r\n            </div>\r\n          </div>\r\n          <div class=\"col-md-6 order-1\">\r\n            <div class=\"p-5\">\r\n              <h2 class=\"display-4\">Agranda tu circulo de amigos</h2>\r\n              <p>Isgresa tus gustos y PLAN S te sugerira los mejoraes palanes segun tu gusto</p>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </section>\r\n\r\n    <!-- Footer -->\r\n    <footer class=\"py-5 bg-dark\">\r\n      <div class=\"container\">\r\n        <p class=\"m-0 text-center text-white\">Copyright &copy; Your Website 2017</p>\r\n      </div>\r\n      <!-- /.container -->\r\n    </footer>\r\n\r\n    <!-- Bootstrap core JavaScript -->\r\n<script src=\"https://code.jquery.com/jquery-3.2.1.slim.min.js\" integrity=\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\" crossorigin=\"anonymous\"></script>\r\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js\" integrity=\"sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4\" crossorigin=\"anonymous\"></script>\r\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js\" integrity=\"sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1\" crossorigin=\"anonymous\"></script>\r\n\r\n  </body>\r\n\r\n</html>"
 
 /***/ }),
 
@@ -685,7 +687,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/page-not-found/page-not-found.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  The page you were looking for was not found\n</p>\n<p>\n  <a routerLink=\"/\">Back to Home</a>\n</p>"
+module.exports = "<p>\r\n  The page you were looking for was not found\r\n</p>\r\n<p>\r\n  <a routerLink=\"/\">Back to Home</a>\r\n</p>"
 
 /***/ }),
 
@@ -746,7 +748,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/sign-in/sing-in-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <h2>Sign In</h2>\n  <form [formGroup]=\"signInForm\" (ngSubmit)=\"doLogin()\" novalidate>\n    <div class=\"form-group\">\n      <label for=\"description\">Email</label>\n      <input type=\"text\" class=\"form-control\" id=\"description\" formControlName=\"email\" required>\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"priority\">Password</label>\n      <input type=\"password\" class=\"form-control\" id=\"alterEgo\" formControlName=\"password\">\n    </div>\n\n    <button type=\"submit\" class=\"btn btn-success\" [disabled]=\"!signInForm.valid\">Sign In</button>\n\n    <p class=\"text-danger mt-1\" *ngIf=\"loginError\">{{loginError}}</p>\n\n  </form>\n</div>\n"
+module.exports = "<div class=\"container\">\r\n  <h2>Sign In</h2>\r\n  <form [formGroup]=\"signInForm\" (ngSubmit)=\"doLogin()\" novalidate>\r\n    <div class=\"form-group\">\r\n      <label for=\"description\">Email</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"description\" formControlName=\"email\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"priority\">Password</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"alterEgo\" formControlName=\"password\">\r\n    </div>\r\n\r\n    <button type=\"submit\" class=\"btn btn-success\" [disabled]=\"!signInForm.valid\">Sign In</button>\r\n\r\n    <p class=\"text-danger mt-1\" *ngIf=\"loginError\">{{loginError}}</p>\r\n\r\n  </form>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -786,6 +788,8 @@ var SingInPageComponent = (function () {
     };
     SingInPageComponent.prototype.doLogin = function () {
         var _this = this;
+        console.log(this.signInForm.get('email').value);
+        console.log(this.signInForm.get('password').value);
         this.usersService.login(this.signInForm.get('email').value, this.signInForm.get('password').value).subscribe(function (loginResponse) {
             _this.router.navigate(['planes']);
         }, function (error) {
@@ -829,7 +833,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/task-list-page/task-list-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h2>Tus Planes</h2>\n<table class=\"table table-bordered\">\n <thead>\n   <tr>\n     <th>Nombre</th>\n     <th>Descripcion</th>\n     <th>Ubicacion</th>\n     <th>Fecha</th>\n     <th>Costo Promedio</th>\n     <th>Futuros Amigos</th>\n   </tr>\n </thead>\n <tr *ngFor=\"let plan of planes\">\n   <td>{{plan.nombre}}</td>\n   <td>{{plan.descripcion}}</td>\n   <td>{{plan.ubicacion}}</td>\n   <td>{{plan.fecha}}</td>\n   <td>{{plan.costo}}</td>\n </tr>\n</table>\n\n<a class=\"nav-link\" routerLink=\"../newplan\">Crea tu plan</a>"
+module.exports = "<h2>Tus Planes</h2>\r\n<table class=\"table table-bordered\">\r\n <thead>\r\n   <tr>\r\n     <th>Nombre</th>\r\n     <th>Descripcion</th>\r\n     <th>Ubicacion</th>\r\n     <th>Fecha</th>\r\n     <th>Costo Promedio</th>\r\n     <th>Futuros Amigos</th>\r\n   </tr>\r\n </thead>\r\n <tr *ngFor=\"let plan of planes\">\r\n   <td>{{plan.nombre}}</td>\r\n   <td>{{plan.descripcion}}</td>\r\n   <td>{{plan.ubicacion}}</td>\r\n   <td>{{plan.fecha}}</td>\r\n   <td>{{plan.costo}}</td>\r\n </tr>\r\n</table>\r\n\r\n<a class=\"nav-link\" routerLink=\"../newplan\">Crea tu plan</a>"
 
 /***/ }),
 
@@ -902,7 +906,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/update-user-page/update-user-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <h2>Actualizar datos</h2>\n  <form [formGroup]=\"userForm\" (ngSubmit)=\"onSubmit()\" novalidate>\n\n\n\n\n    <div class=\"form-group\">\n      <label for=\"firstname\">Nombre</label>\n      <input type=\"text\" class=\"form-control\" id=\"firstname\" formControlName=\"firstname\" required>\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"lastname\">Apellido</label>\n      <input type=\"text\" class=\"form-control\" id=\"lastname\" formControlName=\"lastname\" required>\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"password\">Password</label>\n      <input type=\"text\" class=\"form-control\" id=\"password\" formControlName=\"password\" required>\n    </div>\n\n    <button type=\"submit\" class=\"btn btn-success\">Save</button>\n\n  </form>\n</div>\n"
+module.exports = "<div class=\"container\">\r\n  <h2>Actualizar datos</h2>\r\n  <form [formGroup]=\"userForm\" (ngSubmit)=\"onSubmit()\" novalidate>\r\n\r\n\r\n\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"firstname\">Nombre</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"firstname\" formControlName=\"firstname\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"lastname\">Apellido</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"lastname\" formControlName=\"lastname\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"password\">Password</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"password\" formControlName=\"password\" required>\r\n    </div>\r\n\r\n    <button type=\"submit\" class=\"btn btn-success\">Save</button>\r\n\r\n  </form>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -978,7 +982,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/user-edit-page/user-edit-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <h2>Registrarse</h2>\n  <form [formGroup]=\"userForm\" (ngSubmit)=\"onSubmit()\" novalidate>\n    \n\t<div class=\"form-group\">\n      <label for=\"email\">Email</label>\n      <input type=\"text\" class=\"form-control\" id=\"email\" formControlName=\"email\" required>\n    </div>\n\t\n\t<div class=\"form-group\">\n      <label for=\"password\">Password</label>\n      <input type=\"text\" class=\"form-control\" id=\"password\" formControlName=\"password\" required>\n    </div>\n\n  <div class=\"form-group\">\n      <label for=\"firstname\">Nombre</label>\n      <input type=\"text\" class=\"form-control\" id=\"firstname\" formControlName=\"firstname\" required>\n    </div>\n\t\n    <div class=\"form-group\">\n      <label for=\"lastname\">Apellido</label>\n      <input type=\"text\" class=\"form-control\" id=\"lastname\" formControlName=\"lastname\" required>\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"username\">Username</label>\n      <input type=\"text\" class=\"form-control\" id=\"username\" formControlName=\"username\" required>\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"ti\">Tipo Identificacion</label>\n      <input type=\"text\" class=\"form-control\" id=\"ti\" formControlName=\"ti\" required>\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"idnumber\">Numero Identificacion</label>\n      <input type=\"text\" class=\"form-control\" id=\"idnumber\" formControlName=\"idnumber\" required>\n    </div>\n    \n<button type=\"submit\" class=\"btn btn-success\">Registrarse</button>\n\n  </form>\n</div>\n"
+module.exports = "<div class=\"container\">\r\n  <h2>Registrarse</h2>\r\n  <form [formGroup]=\"userForm\" (ngSubmit)=\"onSubmit()\" novalidate>\r\n    \r\n\t<div class=\"form-group\">\r\n      <label for=\"email\">Email</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"email\" formControlName=\"email\" required>\r\n    </div>\r\n\t\r\n\t<div class=\"form-group\">\r\n      <label for=\"contrasena\">Password</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"contrasena\" formControlName=\"contrasena\" required>\r\n    </div>\r\n\r\n  <div class=\"form-group\">\r\n      <label for=\"nombres\">Nombre</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"nombres\" formControlName=\"nombres\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"apellidos\">Apellido</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"apellidos\" formControlName=\"apellidos\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"usuario\">Username</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"usuario\" formControlName=\"usuario\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"tipo_id\">Tipo Identificacion</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"tipo_id\" formControlName=\"tipo_id\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"numero_id\">Numero Identificacion</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"numero_id\" formControlName=\"numero_id\" required>\r\n    </div>\r\n    \r\n<button type=\"submit\" class=\"btn btn-success\">Registrarse</button>\r\n\r\n  </form>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -1009,21 +1013,22 @@ var UserEditPageComponent = (function () {
         this.usersService = usersService;
         this.formBuilder = formBuilder;
         this.router = router;
+        this.responseStatus = [];
     }
     UserEditPageComponent.prototype.ngOnInit = function () {
         this.userForm = this.formBuilder.group({
             email: '',
-            password: '',
-            firstname: '',
-            lastname: '',
-            username: '',
-            ti: '',
-            idnumber: ''
+            contrasena: '',
+            nombres: '',
+            apellidos: '',
+            usuario: '',
+            tipo_id: '',
+            numero_id: ''
         });
     };
     UserEditPageComponent.prototype.onSubmit = function () {
         var _this = this;
-        this.usersService.create(this.userForm.get('email').value, this.userForm.get('password').value, this.userForm.get('firstname').value, this.userForm.get('lastname').value, this.userForm.get('username').value, this.userForm.get('ti').value, this.userForm.get('idnumber').value).subscribe(function (serverResponse) {
+        this.usersService.create(0, this.userForm.get('email').value, this.userForm.get('contrasena').value, this.userForm.get('nombres').value, this.userForm.get('apellidos').value, this.userForm.get('usuario').value, this.userForm.get('tipo_id').value, new Blob, this.userForm.get('numero_id').value).subscribe(function (serverResponse) {
             _this.router.navigate(['/signin']);
         }, function (error) {
             console.log(error);
@@ -1067,7 +1072,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/user-list-page/user-list-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h2>Users</h2>\n<table class=\"table table-bordered\">\n <thead>\n   <tr>\n     <th>Firstname</th>\n     <th>Lastname</th>\n\t<th>Username</th>\n\t<th>Email</th>\n     <th>Image</th>\n   </tr>\n </thead>\n <tr *ngFor=\"let todo of todos\">\n   <td>{{user.firstname}}</td>\n   <td>{{user.lastname}}</td>\n\t<td>{{user.username}}</td>\n\t<td>{{user.email}}</td>\n   <td><img [src]=\"user.image\" width=\"150\" height=\"150\" /></td>\n </tr>\n</table>\n\n"
+module.exports = "<h2>Users</h2>\r\n<table class=\"table table-bordered\">\r\n <thead>\r\n   <tr>\r\n     <th>Firstname</th>\r\n     <th>Lastname</th>\r\n\t<th>Username</th>\r\n\t<th>Email</th>\r\n     <th>Image</th>\r\n   </tr>\r\n </thead>\r\n <tr *ngFor=\"let todo of todos\">\r\n   <td>{{user.firstname}}</td>\r\n   <td>{{user.lastname}}</td>\r\n\t<td>{{user.username}}</td>\r\n\t<td>{{user.email}}</td>\r\n   <td><img [src]=\"user.image\" width=\"150\" height=\"150\" /></td>\r\n </tr>\r\n</table>\r\n\r\n"
 
 /***/ }),
 
@@ -1226,7 +1231,7 @@ TodoService = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_config_app_configuration_service__ = __webpack_require__("../../../../../src/app/common/config/app-configuration.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_auth_service__ = __webpack_require__("../../../../../src/app/common/auth.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_User__ = __webpack_require__("../../../../../src/app/models/User.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_UsuarioEntity__ = __webpack_require__("../../../../../src/app/models/UsuarioEntity.ts");
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1262,15 +1267,15 @@ var UsersService = (function (_super) {
         _this.resourceUrl = 'user/users';
         return _this;
     }
-    UsersService.prototype.create = function (email, password, firstname, lastname, username, ti, identification) {
-        return this.post(this.resourceUrl, new __WEBPACK_IMPORTED_MODULE_5__models_User__["a" /* User */](email, password, firstname, lastname, username, ti, identification));
+    UsersService.prototype.create = function (idUsuario, email, contrasena, nombres, apellidos, usuario, tipoId, fotoPerfil, numeroId) {
+        return this.post(this.resourceUrl, new __WEBPACK_IMPORTED_MODULE_5__models_UsuarioEntity__["a" /* UsuarioEntity */](idUsuario, email, contrasena, nombres, apellidos, usuario, tipoId, fotoPerfil, numeroId));
     };
     UsersService.prototype.list = function () {
         return this.get(this.resourceUrl);
     };
-    UsersService.prototype.login = function (username, password) {
+    UsersService.prototype.login = function (email, contrasena) {
         var _this = this;
-        return this.post('user/login', { username: username, password: password }, { credentials: false }).map(function (loginResponse) {
+        return this.post('user/login', { email: email, contrasena: contrasena }, { credentials: false }).map(function (loginResponse) {
             if (loginResponse) {
                 _this.authService.accessToken = loginResponse.accessToken;
             }
