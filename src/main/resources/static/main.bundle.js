@@ -497,26 +497,6 @@ var UsuarioEntity = (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/models/plan.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Plan; });
-var Plan = (function () {
-    function Plan(nombre, descripcion, ubicacion, fecha, costo) {
-        this.nombre = nombre;
-        this.descripcion = descripcion;
-        this.ubicacion = ubicacion;
-        this.fecha = fecha;
-        this.costo = costo;
-    }
-    return Plan;
-}());
-
-//# sourceMappingURL=plan.js.map
-
-/***/ }),
-
 /***/ "../../../../../src/app/pages/create-plan-page/create-plan-page.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -578,15 +558,6 @@ var CreatePlanPageComponent = (function () {
             fecha: '',
             costo: ''
         });
-    };
-    CreatePlanPageComponent.prototype.onSubmit = function () {
-        var _this = this;
-        this.usersService.create(this.userForm.get('nombre').value, this.userForm.get('descripcion').value, this.userForm.get('ubicacion').value, this.userForm.get('fecha').value, this.userForm.get('costo').value).subscribe(function (serverResponse) {
-            _this.router.navigate(['/planes']);
-        }, function (error) {
-            console.log(error);
-        });
-        this.router.navigate(['planes']);
     };
     return CreatePlanPageComponent;
 }());
@@ -833,7 +804,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/task-list-page/task-list-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h2>Tus Planes</h2>\r\n<table class=\"table table-bordered\">\r\n <thead>\r\n   <tr>\r\n     <th>Nombre</th>\r\n     <th>Descripcion</th>\r\n     <th>Ubicacion</th>\r\n     <th>Fecha</th>\r\n     <th>Costo Promedio</th>\r\n     <th>Futuros Amigos</th>\r\n   </tr>\r\n </thead>\r\n <tr *ngFor=\"let plan of planes\">\r\n   <td>{{plan.nombre}}</td>\r\n   <td>{{plan.descripcion}}</td>\r\n   <td>{{plan.ubicacion}}</td>\r\n   <td>{{plan.fecha}}</td>\r\n   <td>{{plan.costo}}</td>\r\n </tr>\r\n</table>\r\n\r\n<a class=\"nav-link\" routerLink=\"../newplan\">Crea tu plan</a>"
+module.exports = "<h2>Planes Recomendados Para ti:</h2><br>\r\n<table class=\"table table-bordered\">\r\n <thead>\r\n   <tr>\r\n     <th>Nombre</th>\r\n     <th>Ubicacion</th>\r\n     <th>Fecha (MM/DD/AAAA)</th>\r\n     <th>Costo Promedio</th>\r\n   </tr>\r\n </thead>\r\n <tr *ngFor=\"let plan of planes\">\r\n   <td>{{plan.nombre}}</td>\r\n   <td>{{plan.ubicacion}}</td>\r\n   <td>{{plan.fechaInicio | date:'short'}}</td>\r\n   <td>{{plan.costoPromedio}}</td>\r\n </tr>\r\n</table>\r\n\r\n<a class=\"nav-link\" routerLink=\"../newplan\">Crea tu plan</a>"
 
 /***/ }),
 
@@ -1126,9 +1097,8 @@ var _a;
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PlanService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__models_plan__ = __webpack_require__("../../../../../src/app/models/plan.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_api_service__ = __webpack_require__("../../../../../src/app/common/api.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_api_service__ = __webpack_require__("../../../../../src/app/common/api.service.ts");
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1147,7 +1117,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 
 
-
 var PlanService = (function (_super) {
     __extends(PlanService, _super);
     function PlanService() {
@@ -1155,16 +1124,17 @@ var PlanService = (function (_super) {
         _this.resourceUrl = 'plan/plans';
         return _this;
     }
-    PlanService.prototype.create = function (nombre, descripcion, ubicacion, fecha, costo) {
-        return this.post(this.resourceUrl, new __WEBPACK_IMPORTED_MODULE_0__models_plan__["a" /* Plan */](nombre, descripcion, ubicacion, fecha, costo));
-    };
+    /*create(nombre:string,descripcion:string,ubicacion:string,fecha:string,costo:number):Observable<Plan>{
+      return this.post(this.resourceUrl,new Plan(nombre,descripcion,ubicacion,fecha,costo));
+
+    }*/
     PlanService.prototype.list = function () {
         return this.get(this.resourceUrl);
     };
     return PlanService;
-}(__WEBPACK_IMPORTED_MODULE_2__common_api_service__["a" /* APIService */]));
+}(__WEBPACK_IMPORTED_MODULE_1__common_api_service__["a" /* APIService */]));
 PlanService = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["C" /* Injectable */])()
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])()
 ], PlanService);
 
 //# sourceMappingURL=plan.service.js.map
@@ -1177,8 +1147,7 @@ PlanService = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TodoService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_plan__ = __webpack_require__("../../../../../src/app/models/plan.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_api_service__ = __webpack_require__("../../../../../src/app/common/api.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_api_service__ = __webpack_require__("../../../../../src/app/common/api.service.ts");
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1197,7 +1166,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 
 
-
 var TodoService = (function (_super) {
     __extends(TodoService, _super);
     function TodoService() {
@@ -1205,14 +1173,15 @@ var TodoService = (function (_super) {
         _this.resourceUrl = 'api/plan';
         return _this;
     }
-    TodoService.prototype.create = function (nombre, descripcion, ubicacion, fecha, costo) {
-        return this.post(this.resourceUrl, new __WEBPACK_IMPORTED_MODULE_1__models_plan__["a" /* Plan */](nombre, descripcion, ubicacion, fecha, costo));
-    };
+    /*create(nombre:string,descripcion:string,ubicacion:string,fecha:string,costo:number):Observable<Plan>{
+      return this.post(this.resourceUrl,new Plan(nombre,descripcion,ubicacion,fecha,costo));
+
+    }*/
     TodoService.prototype.list = function () {
         return this.get(this.resourceUrl);
     };
     return TodoService;
-}(__WEBPACK_IMPORTED_MODULE_2__common_api_service__["a" /* APIService */]));
+}(__WEBPACK_IMPORTED_MODULE_1__common_api_service__["a" /* APIService */]));
 TodoService = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])()
 ], TodoService);

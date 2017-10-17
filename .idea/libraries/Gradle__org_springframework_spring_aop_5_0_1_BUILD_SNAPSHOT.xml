@@ -2,10 +2,12 @@
   <library name="Gradle: org.springframework:spring-aop:5.0.1.BUILD-SNAPSHOT">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.0.1.BUILD-SNAPSHOT/86ff653ccbe2b0281c975e1b744676170b45eebf/spring-aop-5.0.1.BUILD-SNAPSHOT.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.0.1.BUILD-SNAPSHOT/83e41e8ee36100840629d803ed7f7dbbaae134c0/spring-aop-5.0.1.BUILD-SNAPSHOT.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.0.1.BUILD-SNAPSHOT/bfaca8735f39979a03bb2ae390aeb696e2dd2952/spring-aop-5.0.1.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.0.1.BUILD-SNAPSHOT/d94fe7ca7e41ca1aa7506aef31bfbdfa965f33c4/spring-aop-5.0.1.BUILD-SNAPSHOT-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

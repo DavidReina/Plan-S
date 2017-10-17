@@ -30,7 +30,7 @@ export class CreatePlanPageComponent implements OnInit {
 
   }
 
-  onSubmit() {
+  /*onSubmit() {
     this.usersService.create(
       this.userForm.get('nombre').value,
       this.userForm.get('descripcion').value,
@@ -45,6 +45,6 @@ export class CreatePlanPageComponent implements OnInit {
   
  
     this.router.navigate(['planes']);
-  }
+  }*/
 
 }

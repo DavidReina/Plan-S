@@ -2,10 +2,12 @@
   <library name="Gradle: org.springframework:spring-orm:5.0.1.BUILD-SNAPSHOT">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/5.0.1.BUILD-SNAPSHOT/8e6b5fb04de8d2d24e6fb58a8a5e5ae63c7a138e/spring-orm-5.0.1.BUILD-SNAPSHOT.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/5.0.1.BUILD-SNAPSHOT/3c48cbe5f827ba2f1dabebecb51f06983d9c8671/spring-orm-5.0.1.BUILD-SNAPSHOT.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/5.0.1.BUILD-SNAPSHOT/1c6fa74f86598e9af0e6232f2fff6967a6fb9292/spring-orm-5.0.1.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/5.0.1.BUILD-SNAPSHOT/aefa53417fba06cb76e4eb87426fa71d88a4b8fd/spring-orm-5.0.1.BUILD-SNAPSHOT-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
