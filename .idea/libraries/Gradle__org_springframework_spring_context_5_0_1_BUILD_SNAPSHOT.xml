@@ -1,13 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: org.springframework:spring-context:5.0.1.BUILD-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.0.1.BUILD-SNAPSHOT/7d9a815c71a6becd70ca1e172ab862c0fc0f258e/spring-context-5.0.1.BUILD-SNAPSHOT.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.0.1.BUILD-SNAPSHOT/691a50afb8f21f528743bfb830acb88573e756a0/spring-context-5.0.1.BUILD-SNAPSHOT.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.0.1.BUILD-SNAPSHOT/d98eaa85fc7726a953b0695b8310c618e834af9/spring-context-5.0.1.BUILD-SNAPSHOT.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.0.1.BUILD-SNAPSHOT/664e68bc62f01fadd4e161c02f1b4de52cb6abd/spring-context-5.0.1.BUILD-SNAPSHOT-sources.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.0.1.BUILD-SNAPSHOT/1ff91160d794c7e8b25bd5b9b1c72fe925484e69/spring-context-5.0.1.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.0.1.BUILD-SNAPSHOT/b3ca000e918134737b430502ffc621a61d6a9b33/spring-context-5.0.1.BUILD-SNAPSHOT-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
