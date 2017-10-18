@@ -34,7 +34,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Navigation -->\r\n    <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\">\r\n      <div class=\"container\">\r\n        <a class=\"navbar-brand\" routerLink=\"\" >PlanS</a>\r\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n          <span class=\"navbar-toggler-icon\"></span>\r\n        </button>\r\n        <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\r\n          <ul class=\"navbar-nav ml-auto\">\r\n            <li class=\"nav-item active\">\r\n              <a class=\"nav-link\" routerLink=\"signin\">Ingresa</a>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n              <a class=\"nav-link\" routerLink=\"register\">Registrate</a>\r\n            </li>\r\n          </ul>\r\n        </div>\r\n      </div>\r\n    </nav>\r\n<!-- Modal -->\r\n<div id=\"myModal\" class=\"modal fade\" role=\"dialog\">\r\n  <div class=\"modal-dialog\">\r\n\r\n    <!-- Modal content-->\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n        <h4 class=\"modal-title\">Sorry</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        <p>This feature is not implemented yet. Sorry for the inconvenience</p>\r\n      </div>\r\n      <div class=\"modal-footer\">\r\n        <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\r\n      </div>\r\n    </div>\r\n\r\n  </div>\r\n</div>\r\n<div class=\"container\">\r\n  <router-outlet></router-outlet>\r\n</div>\r\n"
+module.exports = "<!-- Navigation -->\r\n    <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\">\r\n      <div class=\"container\">\r\n        <a class=\"navbar-brand\" routerLink=\"\" >PlanS</a>\r\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n          <span class=\"navbar-toggler-icon\"></span>\r\n        </button>\r\n        <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\r\n          <ul class=\"navbar-nav ml-auto\">\r\n\r\n              <li class=\"nav-item active\">\r\n                <div ng-show=\"login\" *ngIf=\"!isLoggedIn()\">\r\n                <a class=\"nav-link\" routerLink=\"signin\">Ingresa</a>\r\n                </div>\r\n              </li>\r\n              <li class=\"nav-item\">\r\n                <div ng-show=\"login\" *ngIf=\"!isLoggedIn()\">\r\n                  <a class=\"nav-link\" routerLink=\"register\">Registrate</a>\r\n                </div>\r\n              </li>\r\n            <li class=\"nav-item\">\r\n              <div ng-show=\"login\" *ngIf=\"isLoggedIn()\">\r\n                <a class=\"nav-link\" routerLink=\"register\">Funciona!</a>\r\n              </div>\r\n            </li>\r\n\r\n          </ul>\r\n        </div>\r\n      </div>\r\n    </nav>\r\n<!-- Modal -->\r\n<div id=\"myModal\" class=\"modal fade\" role=\"dialog\">\r\n  <div class=\"modal-dialog\">\r\n\r\n    <!-- Modal content-->\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n        <h4 class=\"modal-title\">Sorry</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        <p>This feature is not implemented yet. Sorry for the inconvenience</p>\r\n      </div>\r\n      <div class=\"modal-footer\">\r\n        <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\r\n      </div>\r\n    </div>\r\n\r\n  </div>\r\n</div>\r\n<div class=\"container\">\r\n  <router-outlet></router-outlet>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -68,6 +68,7 @@ var AppComponent = (function () {
         }
     }
     AppComponent.prototype.isLoggedIn = function () {
+        console.log("Respuesta Log in: " + this.authService.isLoggedIn());
         return this.authService.isLoggedIn();
     };
     AppComponent.prototype.signOut = function () {
@@ -314,7 +315,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var AppDataService = (function () {
     function AppDataService() {
-        this._accessToken = null;
+        this._accessToken = "none";
     }
     Object.defineProperty(AppDataService.prototype, "accessToken", {
         get: function () {
@@ -331,7 +332,7 @@ var AppDataService = (function () {
         configurable: true
     });
     AppDataService.prototype.removeAccessToken = function () {
-        this._accessToken = null;
+        this._accessToken = "none";
         localStorage.removeItem('AT');
     };
     return AppDataService;
@@ -381,7 +382,7 @@ var AuthService = (function () {
         configurable: true
     });
     AuthService.prototype.isLoggedIn = function () {
-        return this.appData.accessToken != null && this.appData.accessToken !== undefined;
+        return this.appData.accessToken != "none";
     };
     AuthService.prototype.signOut = function () {
         this.appData.removeAccessToken();
@@ -1246,7 +1247,9 @@ var UsersService = (function (_super) {
         var _this = this;
         return this.post('user/login', { email: email, contrasena: contrasena }, { credentials: false }).map(function (loginResponse) {
             if (loginResponse) {
+                console.log("Login Resposnse antes: " + _this.authService.accessToken);
                 _this.authService.accessToken = loginResponse.accessToken;
+                console.log("Login Resposnse desppues: " + _this.authService.accessToken);
             }
         });
     };

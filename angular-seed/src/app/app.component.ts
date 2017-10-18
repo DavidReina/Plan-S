@@ -19,10 +19,13 @@ export class AppComponent {
   }
 
   isLoggedIn() {
+    console.log("Respuesta Log in: "+this.authService.isLoggedIn());
     return this.authService.isLoggedIn();
   }
 
   signOut() {
     this.authService.signOut();
   }
+
+
 }

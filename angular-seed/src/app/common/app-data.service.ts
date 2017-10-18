@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class AppDataService {
-  private _accessToken: string | null = null;
+  private _accessToken: string = "none";
 
   public set accessToken(accessToken: string) {
     this._accessToken = accessToken;
@@ -19,7 +19,7 @@ export class AppDataService {
   constructor() { }
 
   public removeAccessToken() {
-    this._accessToken = null;
+    this._accessToken = "none";
     localStorage.removeItem('AT');
   }
 }

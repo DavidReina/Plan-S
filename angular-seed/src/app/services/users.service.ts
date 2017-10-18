@@ -30,7 +30,9 @@ export class UsersService extends APIService {
         login(email:string, contrasena:string){
             return this.post('user/login', {email, contrasena}, {credentials: false}).map(loginResponse => {
                 if (loginResponse) {
+                    console.log("Login Resposnse antes: "+this.authService.accessToken);
                     this.authService.accessToken = loginResponse.accessToken;
+                    console.log("Login Resposnse desppues: "+this.authService.accessToken);
                 }
             });
         }

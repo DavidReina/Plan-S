@@ -18,7 +18,7 @@ export class AuthService implements CanActivate {
   }
 
   public isLoggedIn(): boolean {
-    return this.appData.accessToken != null && this.appData.accessToken !== undefined;
+    return this.appData.accessToken != "none";
   }
 
   public signOut() {
@@ -33,4 +33,6 @@ export class AuthService implements CanActivate {
     }
     return true;
   }
+
+
 }
