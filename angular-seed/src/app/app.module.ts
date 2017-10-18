@@ -24,7 +24,10 @@ import { UsersService } from './services/users.service';
 import { UserEditPageComponent } from "./pages/user-edit-page/user-edit-page.component";
 import { UserListPageComponent } from "./pages/user-list-page/user-list-page.component";
 import { CreatePlanPageComponent } from './pages/create-plan-page/create-plan-page.component';
-import { UpdateUserPageComponent } from './pages/update-user-page/update-user-page.component';
+import { UserReviewPageComponent } from './pages/user-review-page/user-review-page.component';
+import { YourPlansPageComponent } from './pages/your-plans-page/your-plans-page.component';
+import { ModifyUserPageComponent } from './pages/modify-user-page/modify-user-page.component';
+import { SignoutPageComponent } from './pages/signout-page/signout-page.component';
 
 const ROUTES = [
   { path: '', component: HomePageComponent },
@@ -41,6 +44,26 @@ const ROUTES = [
     canActivate: [AuthService],
     
   },
+    {
+        path: 'yourplans', component: YourPlansPageComponent,
+        canActivate: [AuthService],
+
+    },
+    {
+        path: 'userreview', component: UserReviewPageComponent,
+        canActivate: [AuthService],
+
+    },
+    {
+        path: 'modifyuser', component: ModifyUserPageComponent,
+        canActivate: [AuthService],
+
+    },
+    {
+        path: 'signout', component: SignoutPageComponent,
+        canActivate: [AuthService],
+
+    },
   {
     path: '**', component: PageNotFoundComponent
   }
@@ -56,7 +79,10 @@ const ROUTES = [
     PageNotFoundComponent,
     SingInPageComponent,
     CreatePlanPageComponent,
-    UpdateUserPageComponent,
+    UserReviewPageComponent,
+    YourPlansPageComponent,
+    ModifyUserPageComponent,
+    SignoutPageComponent,
   ],
   imports: [
     BrowserModule,

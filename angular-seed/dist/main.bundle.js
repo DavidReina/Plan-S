@@ -34,7 +34,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Navigation -->\r\n    <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\">\r\n      <div class=\"container\">\r\n        <a class=\"navbar-brand\" routerLink=\"\" >PlanS</a>\r\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n          <span class=\"navbar-toggler-icon\"></span>\r\n        </button>\r\n        <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\r\n          <ul class=\"navbar-nav ml-auto\">\r\n\r\n              <li class=\"nav-item active\">\r\n                <div ng-show=\"login\" *ngIf=\"!isLoggedIn()\">\r\n                <a class=\"nav-link\" routerLink=\"signin\">Ingresa</a>\r\n                </div>\r\n              </li>\r\n              <li class=\"nav-item\">\r\n                <div ng-show=\"login\" *ngIf=\"!isLoggedIn()\">\r\n                  <a class=\"nav-link\" routerLink=\"register\">Registrate</a>\r\n                </div>\r\n              </li>\r\n            <li class=\"nav-item\">\r\n              <div ng-show=\"login\" *ngIf=\"isLoggedIn()\">\r\n                <a class=\"nav-link\" routerLink=\"register\">Funciona!</a>\r\n              </div>\r\n            </li>\r\n\r\n          </ul>\r\n        </div>\r\n      </div>\r\n    </nav>\r\n<!-- Modal -->\r\n<div id=\"myModal\" class=\"modal fade\" role=\"dialog\">\r\n  <div class=\"modal-dialog\">\r\n\r\n    <!-- Modal content-->\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n        <h4 class=\"modal-title\">Sorry</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        <p>This feature is not implemented yet. Sorry for the inconvenience</p>\r\n      </div>\r\n      <div class=\"modal-footer\">\r\n        <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\r\n      </div>\r\n    </div>\r\n\r\n  </div>\r\n</div>\r\n<div class=\"container\">\r\n  <router-outlet></router-outlet>\r\n</div>\r\n"
+module.exports = "<!-- Navigation -->\r\n    <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\">\r\n        <a class=\"navbar-brand\" routerLink=\"\" >PlanS</a>\r\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n          <span class=\"navbar-toggler-icon\"></span>\r\n        </button>\r\n        <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\r\n          <ul class=\"navbar-nav ml-auto\">\r\n\r\n              <li class=\"nav-item active\">\r\n                <div ng-show=\"login\" *ngIf=\"!isLoggedIn()\">\r\n                <a class=\"nav-link\" routerLink=\"signin\">Ingresa</a>\r\n                </div>\r\n              </li>\r\n              <li class=\"nav-item\">\r\n                <div ng-show=\"login\" *ngIf=\"!isLoggedIn()\">\r\n                  <a class=\"nav-link\" routerLink=\"register\">Registrate</a>\r\n                </div>\r\n              </li>\r\n            <li class=\"nav-item\">\r\n              <div ng-show=\"login\" *ngIf=\"isLoggedIn()\">\r\n                <a class=\"nav-link\" routerLink=\"userreview\">Bienvenido, User</a>\r\n              </div>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n              <div ng-show=\"login\" *ngIf=\"isLoggedIn()\">\r\n                <a class=\"nav-link\" routerLink=\"yourplans\">Tus Planes</a>\r\n              </div>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n              <div ng-show=\"login\" *ngIf=\"isLoggedIn()\">\r\n                <a class=\"nav-link\" routerLink=\"newplan\">Crea Tu Plan</a>\r\n              </div>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n              <div ng-show=\"login\" *ngIf=\"isLoggedIn()\">\r\n                <a class=\"nav-link\" routerLink=\"planes\">Planes Recomendados</a>\r\n              </div>\r\n            </li>\r\n              <li class=\"nav-item\">\r\n                  <div ng-show=\"login\" *ngIf=\"isLoggedIn()\">\r\n                      <a class=\"nav-link\" routerLink=\"signout\">Cerrar Sesion</a>\r\n                  </div>\r\n              </li>\r\n\r\n          </ul>\r\n        </div>\r\n    </nav>\r\n\r\n<!-- Modal -->\r\n<div id=\"myModal\" class=\"modal fade\" role=\"dialog\">\r\n  <div class=\"modal-dialog\">\r\n\r\n    <!-- Modal content-->\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n        <h4 class=\"modal-title\">Sorry</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        <p>This feature is not implemented yet. Sorry for the inconvenience</p>\r\n      </div>\r\n      <div class=\"modal-footer\">\r\n        <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\r\n      </div>\r\n    </div>\r\n\r\n  </div>\r\n</div>\r\n<div class=\"container\">\r\n  <router-outlet></router-outlet>\r\n</div>\r\n<br>\r\n"
 
 /***/ }),
 
@@ -116,13 +116,19 @@ var _a, _b;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_user_edit_page_user_edit_page_component__ = __webpack_require__("../../../../../src/app/pages/user-edit-page/user-edit-page.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_user_list_page_user_list_page_component__ = __webpack_require__("../../../../../src/app/pages/user-list-page/user-list-page.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_create_plan_page_create_plan_page_component__ = __webpack_require__("../../../../../src/app/pages/create-plan-page/create-plan-page.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_update_user_page_update_user_page_component__ = __webpack_require__("../../../../../src/app/pages/update-user-page/update-user-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_user_review_page_user_review_page_component__ = __webpack_require__("../../../../../src/app/pages/user-review-page/user-review-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_your_plans_page_your_plans_page_component__ = __webpack_require__("../../../../../src/app/pages/your-plans-page/your-plans-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_modify_user_page_modify_user_page_component__ = __webpack_require__("../../../../../src/app/pages/modify-user-page/modify-user-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_signout_page_signout_page_component__ = __webpack_require__("../../../../../src/app/pages/signout-page/signout-page.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
 
 
 
@@ -160,6 +166,22 @@ var ROUTES = [
         canActivate: [__WEBPACK_IMPORTED_MODULE_15__common_auth_service__["a" /* AuthService */]],
     },
     {
+        path: 'yourplans', component: __WEBPACK_IMPORTED_MODULE_22__pages_your_plans_page_your_plans_page_component__["a" /* YourPlansPageComponent */],
+        canActivate: [__WEBPACK_IMPORTED_MODULE_15__common_auth_service__["a" /* AuthService */]],
+    },
+    {
+        path: 'userreview', component: __WEBPACK_IMPORTED_MODULE_21__pages_user_review_page_user_review_page_component__["a" /* UserReviewPageComponent */],
+        canActivate: [__WEBPACK_IMPORTED_MODULE_15__common_auth_service__["a" /* AuthService */]],
+    },
+    {
+        path: 'modifyuser', component: __WEBPACK_IMPORTED_MODULE_23__pages_modify_user_page_modify_user_page_component__["a" /* ModifyUserPageComponent */],
+        canActivate: [__WEBPACK_IMPORTED_MODULE_15__common_auth_service__["a" /* AuthService */]],
+    },
+    {
+        path: 'signout', component: __WEBPACK_IMPORTED_MODULE_24__pages_signout_page_signout_page_component__["a" /* SignoutPageComponent */],
+        canActivate: [__WEBPACK_IMPORTED_MODULE_15__common_auth_service__["a" /* AuthService */]],
+    },
+    {
         path: '**', component: __WEBPACK_IMPORTED_MODULE_9__pages_page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */]
     }
 ];
@@ -179,7 +201,10 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_9__pages_page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */],
             __WEBPACK_IMPORTED_MODULE_14__pages_sign_in_sing_in_page_component__["a" /* SingInPageComponent */],
             __WEBPACK_IMPORTED_MODULE_20__pages_create_plan_page_create_plan_page_component__["a" /* CreatePlanPageComponent */],
-            __WEBPACK_IMPORTED_MODULE_21__pages_update_user_page_update_user_page_component__["a" /* UpdateUserPageComponent */],
+            __WEBPACK_IMPORTED_MODULE_21__pages_user_review_page_user_review_page_component__["a" /* UserReviewPageComponent */],
+            __WEBPACK_IMPORTED_MODULE_22__pages_your_plans_page_your_plans_page_component__["a" /* YourPlansPageComponent */],
+            __WEBPACK_IMPORTED_MODULE_23__pages_modify_user_page_modify_user_page_component__["a" /* ModifyUserPageComponent */],
+            __WEBPACK_IMPORTED_MODULE_24__pages_signout_page_signout_page_component__["a" /* SignoutPageComponent */],
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -597,7 +622,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/home-page/home-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n  <head>\r\n\r\n    <meta charset=\"utf-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\r\n    <meta name=\"description\" content=\"\">\r\n    <meta name=\"author\" content=\"\">\r\n\r\n    <title>Plan S</title>\r\n\r\n    <!-- Bootstrap core CSS -->\r\n    <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css\" integrity=\"sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M\" crossorigin=\"anonymous\">\r\n\r\n  </head>\r\n\r\n  <body>\r\n\r\n    <header class=\"masthead\">\r\n      <div class=\"overlay\">\r\n        <div class=\"container\">\r\n          <h1 class=\"display-1 text-white\">PlanS</h1>\r\n          <h2 class=\"display-4 text-white\">Llego el momento de compartir tus gustos</h2>\r\n          <h4 class=\"display-4 text-white\">Unete al plan</h4>\r\n        </div>\r\n      </div>\r\n    </header>\r\n\r\n    <section>\r\n      <div class=\"container\">\r\n        <div class=\"row align-items-center\">\r\n          <div class=\"col-md-6 order-2\">\r\n            <div class=\"p-5\">\r\n              <img class=\"img-fluid rounded-circle\" src=\"https://ugc.kn3.net/i/origin/http://www.orangesmile.com/common/img_final_large/medellin_sightseeing.jpg\" alt=\"\">\r\n            </div>\r\n          </div>\r\n          <div class=\"col-md-6 order-1\">\r\n            <div class=\"p-5\">\r\n              <h2 class=\"display-4\">Cera tu plan...</h2>\r\n              <p>Puedes crear diferentes tipos de planes y comparte con las personsa que en realidad les apaciona los mismo</p>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </section>\r\n\r\n    <section>\r\n      <div class=\"container\">\r\n        <div class=\"row align-items-center\">\r\n          <div class=\"col-md-6\">\r\n            <div class=\"p-5\">\r\n              <img class=\"img-fluid rounded-circle\" src=\"https://unsplash.it/500/500?image=452\" alt=\"\">\r\n            </div>\r\n          </div>\r\n          <div class=\"col-md-6\">\r\n            <div class=\"p-5\">\r\n              <h2 class=\"display-4\">Suscribete a un plan</h2>\r\n              <p> Busca planes de tu interes y disfrutalos con personas que tambien les gusta este tipo de planes, mira quien asistira, que tipo de plan es, hora y lugares de donde se realizara</p>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </section>\r\n\r\n    <section>\r\n      <div class=\"container\">\r\n        <div class=\"row align-items-center\">\r\n          <div class=\"col-md-6 order-2\">\r\n            <div class=\"p-5\">\r\n              <img class=\"img-fluid rounded-circle\" src=\"https://unsplash.it/500/500?image=453\" alt=\"\">\r\n            </div>\r\n          </div>\r\n          <div class=\"col-md-6 order-1\">\r\n            <div class=\"p-5\">\r\n              <h2 class=\"display-4\">Agranda tu circulo de amigos</h2>\r\n              <p>Isgresa tus gustos y PLAN S te sugerira los mejoraes palanes segun tu gusto</p>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </section>\r\n\r\n    <!-- Footer -->\r\n    <footer class=\"py-5 bg-dark\">\r\n      <div class=\"container\">\r\n        <p class=\"m-0 text-center text-white\">Copyright &copy; Your Website 2017</p>\r\n      </div>\r\n      <!-- /.container -->\r\n    </footer>\r\n\r\n    <!-- Bootstrap core JavaScript -->\r\n<script src=\"https://code.jquery.com/jquery-3.2.1.slim.min.js\" integrity=\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\" crossorigin=\"anonymous\"></script>\r\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js\" integrity=\"sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4\" crossorigin=\"anonymous\"></script>\r\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js\" integrity=\"sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1\" crossorigin=\"anonymous\"></script>\r\n\r\n  </body>\r\n\r\n</html>"
+module.exports = "\r\n<title>Plan S</title>\r\n\r\n\r\n<header class=\"masthead\">\r\n  <div class=\"overlay\">\r\n    <div class=\"container\">\r\n      <h1 class=\"display-1 text-white\">PlanS</h1>\r\n      <h2 class=\"display-4 text-white\">Llego el momento de compartir tus gustos</h2>\r\n      <h4 class=\"display-4 text-white\">Unete al plan</h4>\r\n    </div>\r\n  </div>\r\n</header>\r\n\r\n<section>\r\n  <div class=\"container\">\r\n    <div class=\"row align-items-center\">\r\n      <div class=\"col-md-6 order-2\">\r\n        <div class=\"p-5\">\r\n          <img class=\"img-fluid rounded-circle\" src=\"https://ugc.kn3.net/i/origin/http://www.orangesmile.com/common/img_final_large/medellin_sightseeing.jpg\" alt=\"\">\r\n        </div>\r\n      </div>\r\n      <div class=\"col-md-6 order-1\">\r\n        <div class=\"p-5\">\r\n          <h2 class=\"display-4\">Cera tu plan...</h2>\r\n          <p>Puedes crear diferentes tipos de planes y comparte con las personsa que en realidad les apaciona los mismo</p>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</section>\r\n\r\n<section>\r\n  <div class=\"container\">\r\n    <div class=\"row align-items-center\">\r\n      <div class=\"col-md-6\">\r\n        <div class=\"p-5\">\r\n          <img class=\"img-fluid rounded-circle\" src=\"https://unsplash.it/500/500?image=452\" alt=\"\">\r\n        </div>\r\n      </div>\r\n      <div class=\"col-md-6\">\r\n        <div class=\"p-5\">\r\n          <h2 class=\"display-4\">Suscribete a un plan</h2>\r\n          <p> Busca planes de tu interes y disfrutalos con personas que tambien les gusta este tipo de planes, mira quien asistira, que tipo de plan es, hora y lugares de donde se realizara</p>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</section>\r\n\r\n<section>\r\n  <div class=\"container\">\r\n    <div class=\"row align-items-center\">\r\n      <div class=\"col-md-6 order-2\">\r\n        <div class=\"p-5\">\r\n          <img class=\"img-fluid rounded-circle\" src=\"https://unsplash.it/500/500?image=453\" alt=\"\">\r\n        </div>\r\n      </div>\r\n      <div class=\"col-md-6 order-1\">\r\n        <div class=\"p-5\">\r\n          <h2 class=\"display-4\">Agranda tu circulo de amigos</h2>\r\n          <p>Isgresa tus gustos y PLAN S te sugerira los mejoraes palanes segun tu gusto</p>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</section>\r\n\r\n<!-- Footer -->\r\n<footer class=\"py-5 bg-dark\">\r\n  <div class=\"container\">\r\n    <p class=\"m-0 text-center text-white\">Copyright &copy; Your Website 2017</p>\r\n  </div>\r\n  <!-- /.container -->\r\n</footer>\r\n"
 
 /***/ }),
 
@@ -635,6 +660,67 @@ HomePageComponent = __decorate([
 ], HomePageComponent);
 
 //# sourceMappingURL=home-page.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/modify-user-page/modify-user-page.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/modify-user-page/modify-user-page.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  modify-user-page works!\r\n</p>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/modify-user-page/modify-user-page.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModifyUserPageComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ModifyUserPageComponent = (function () {
+    function ModifyUserPageComponent() {
+    }
+    ModifyUserPageComponent.prototype.ngOnInit = function () {
+    };
+    return ModifyUserPageComponent;
+}());
+ModifyUserPageComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-modify-user-page',
+        template: __webpack_require__("../../../../../src/app/pages/modify-user-page/modify-user-page.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/pages/modify-user-page/modify-user-page.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], ModifyUserPageComponent);
+
+//# sourceMappingURL=modify-user-page.component.js.map
 
 /***/ }),
 
@@ -784,6 +870,78 @@ var _a, _b, _c;
 
 /***/ }),
 
+/***/ "../../../../../src/app/pages/signout-page/signout-page.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/signout-page/signout-page.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  signout-page works!\r\n</p>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/signout-page/signout-page.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SignoutPageComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__common_auth_service__ = __webpack_require__("../../../../../src/app/common/auth.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var SignoutPageComponent = (function () {
+    function SignoutPageComponent(authService, router) {
+        this.authService = authService;
+        this.router = router;
+        console.log("log off antes: " + this.authService.accessToken);
+        this.authService.signOut();
+        console.log("log off despues: " + this.authService.accessToken);
+        this.router.navigate(['/']);
+    }
+    SignoutPageComponent.prototype.ngOnInit = function () {
+    };
+    return SignoutPageComponent;
+}());
+SignoutPageComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-signout-page',
+        template: __webpack_require__("../../../../../src/app/pages/signout-page/signout-page.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/pages/signout-page/signout-page.component.css")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__common_auth_service__["a" /* AuthService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__common_auth_service__["a" /* AuthService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === "function" && _b || Object])
+], SignoutPageComponent);
+
+var _a, _b;
+//# sourceMappingURL=signout-page.component.js.map
+
+/***/ }),
+
 /***/ "../../../../../src/app/pages/task-list-page/task-list-page.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -854,82 +1012,6 @@ TaskListPageComponent = __decorate([
 
 var _a, _b;
 //# sourceMappingURL=task-list-page.component.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/pages/update-user-page/update-user-page.component.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ "../../../../../src/app/pages/update-user-page/update-user-page.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"container\">\r\n  <h2>Actualizar datos</h2>\r\n  <form [formGroup]=\"userForm\" (ngSubmit)=\"onSubmit()\" novalidate>\r\n\r\n\r\n\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"firstname\">Nombre</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"firstname\" formControlName=\"firstname\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"lastname\">Apellido</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"lastname\" formControlName=\"lastname\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"password\">Password</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"password\" formControlName=\"password\" required>\r\n    </div>\r\n\r\n    <button type=\"submit\" class=\"btn btn-success\">Save</button>\r\n\r\n  </form>\r\n</div>\r\n"
-
-/***/ }),
-
-/***/ "../../../../../src/app/pages/update-user-page/update-user-page.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UpdateUserPageComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_users_service__ = __webpack_require__("../../../../../src/app/services/users.service.ts");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var UpdateUserPageComponent = (function () {
-    function UpdateUserPageComponent(usersService, formBuilder, router) {
-        this.usersService = usersService;
-        this.formBuilder = formBuilder;
-        this.router = router;
-    }
-    UpdateUserPageComponent.prototype.ngOnInit = function () {
-        this.userForm = this.formBuilder.group({
-            password: '',
-            firstname: '',
-            lastname: '',
-        });
-    };
-    return UpdateUserPageComponent;
-}());
-UpdateUserPageComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
-        selector: 'app-update-user-page',
-        template: __webpack_require__("../../../../../src/app/pages/update-user-page/update-user-page.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/pages/update-user-page/update-user-page.component.css")]
-    }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_users_service__["a" /* UsersService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_users_service__["a" /* UsersService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _c || Object])
-], UpdateUserPageComponent);
-
-var _a, _b, _c;
-//# sourceMappingURL=update-user-page.component.js.map
 
 /***/ }),
 
@@ -1090,6 +1172,128 @@ UserListPageComponent = __decorate([
 
 var _a;
 //# sourceMappingURL=user-list-page.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/user-review-page/user-review-page.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/user-review-page/user-review-page.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  user-review-page works!\r\n</p>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/user-review-page/user-review-page.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserReviewPageComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var UserReviewPageComponent = (function () {
+    function UserReviewPageComponent() {
+    }
+    UserReviewPageComponent.prototype.ngOnInit = function () {
+    };
+    return UserReviewPageComponent;
+}());
+UserReviewPageComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-user-review-page',
+        template: __webpack_require__("../../../../../src/app/pages/user-review-page/user-review-page.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/pages/user-review-page/user-review-page.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], UserReviewPageComponent);
+
+//# sourceMappingURL=user-review-page.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/your-plans-page/your-plans-page.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/your-plans-page/your-plans-page.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\r\n  your-plans-page works!\r\n</p>\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/pages/your-plans-page/your-plans-page.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return YourPlansPageComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var YourPlansPageComponent = (function () {
+    function YourPlansPageComponent() {
+    }
+    YourPlansPageComponent.prototype.ngOnInit = function () {
+    };
+    return YourPlansPageComponent;
+}());
+YourPlansPageComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
+        selector: 'app-your-plans-page',
+        template: __webpack_require__("../../../../../src/app/pages/your-plans-page/your-plans-page.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/pages/your-plans-page/your-plans-page.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], YourPlansPageComponent);
+
+//# sourceMappingURL=your-plans-page.component.js.map
 
 /***/ }),
 
