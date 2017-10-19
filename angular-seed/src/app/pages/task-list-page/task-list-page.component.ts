@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Plan } from '../../models/plan';
 import { PlanService } from '../../services/plan.service';
 import { Router } from '@angular/router';
+import {GlobalUserService} from "../../common/global-user.service";
 import { DatePipe } from '@angular/common';
 
 @Component({
@@ -11,8 +12,8 @@ import { DatePipe } from '@angular/common';
 })
 export class TaskListPageComponent implements OnInit {
   private planes: Plan[] = [];
-  constructor(public planService: PlanService, public router: Router) {
-    
+  constructor(public planService: PlanService, public router: Router, public globaluser:GlobalUserService) {
+
 
 
   }
@@ -21,7 +22,10 @@ export class TaskListPageComponent implements OnInit {
   ngOnInit() {
     this.planService.list().subscribe(planResponse => {
       this.planes = planResponse;
+        console.log("Usuario Login: "+this.globaluser.usuarioLogin.idUsuario);
     })
+
+
   }
 
 

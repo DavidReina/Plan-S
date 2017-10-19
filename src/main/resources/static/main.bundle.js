@@ -34,7 +34,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Navigation -->\r\n    <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\">\r\n        <a class=\"navbar-brand\" routerLink=\"\" >PlanS</a>\r\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n          <span class=\"navbar-toggler-icon\"></span>\r\n        </button>\r\n        <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\r\n          <ul class=\"navbar-nav ml-auto\">\r\n\r\n              <li class=\"nav-item active\">\r\n                <div ng-show=\"login\" *ngIf=\"!isLoggedIn()\">\r\n                <a class=\"nav-link\" routerLink=\"signin\">Ingresa</a>\r\n                </div>\r\n              </li>\r\n              <li class=\"nav-item\">\r\n                <div ng-show=\"login\" *ngIf=\"!isLoggedIn()\">\r\n                  <a class=\"nav-link\" routerLink=\"register\">Registrate</a>\r\n                </div>\r\n              </li>\r\n            <li class=\"nav-item\">\r\n              <div ng-show=\"login\" *ngIf=\"isLoggedIn()\">\r\n                <a class=\"nav-link\" routerLink=\"userreview\">Bienvenido, User</a>\r\n              </div>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n              <div ng-show=\"login\" *ngIf=\"isLoggedIn()\">\r\n                <a class=\"nav-link\" routerLink=\"yourplans\">Tus Planes</a>\r\n              </div>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n              <div ng-show=\"login\" *ngIf=\"isLoggedIn()\">\r\n                <a class=\"nav-link\" routerLink=\"newplan\">Crea Tu Plan</a>\r\n              </div>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n              <div ng-show=\"login\" *ngIf=\"isLoggedIn()\">\r\n                <a class=\"nav-link\" routerLink=\"planes\">Planes Recomendados</a>\r\n              </div>\r\n            </li>\r\n              <li class=\"nav-item\">\r\n                  <div ng-show=\"login\" *ngIf=\"isLoggedIn()\">\r\n                      <a class=\"nav-link\" routerLink=\"signout\">Cerrar Sesion</a>\r\n                  </div>\r\n              </li>\r\n\r\n          </ul>\r\n        </div>\r\n    </nav>\r\n\r\n<!-- Modal -->\r\n<div id=\"myModal\" class=\"modal fade\" role=\"dialog\">\r\n  <div class=\"modal-dialog\">\r\n\r\n    <!-- Modal content-->\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n        <h4 class=\"modal-title\">Sorry</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        <p>This feature is not implemented yet. Sorry for the inconvenience</p>\r\n      </div>\r\n      <div class=\"modal-footer\">\r\n        <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\r\n      </div>\r\n    </div>\r\n\r\n  </div>\r\n</div>\r\n<div class=\"container\">\r\n  <router-outlet></router-outlet>\r\n</div>\r\n<br>\r\n"
+module.exports = "<!-- Navigation -->\r\n    <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\">\r\n        <a class=\"navbar-brand\" routerLink=\"\" >PlanS</a>\r\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n          <span class=\"navbar-toggler-icon\"></span>\r\n        </button>\r\n        <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\r\n          <ul class=\"navbar-nav ml-auto\">\r\n\r\n              <li class=\"nav-item active\">\r\n                <div ng-show=\"login\" *ngIf=\"!isLoggedIn()\">\r\n                <a class=\"nav-link\" routerLink=\"signin\">Ingresa</a>\r\n                </div>\r\n              </li>\r\n              <li class=\"nav-item\">\r\n                <div ng-show=\"login\" *ngIf=\"!isLoggedIn()\">\r\n                  <a class=\"nav-link\" routerLink=\"register\">Registrate</a>\r\n                </div>\r\n              </li>\r\n            <li class=\"nav-item\">\r\n              <div ng-show=\"login\" *ngIf=\"isLoggedIn()\">\r\n                <a class=\"nav-link\" routerLink=\"userreview\">Bienvenido, {{globalUser.getUserLogin().usuario}}</a>\r\n              </div>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n              <div ng-show=\"login\" *ngIf=\"isLoggedIn()\">\r\n                <a class=\"nav-link\" routerLink=\"yourplans\">Tus Planes</a>\r\n              </div>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n              <div ng-show=\"login\" *ngIf=\"isLoggedIn()\">\r\n                <a class=\"nav-link\" routerLink=\"newplan\">Crea Tu Plan</a>\r\n              </div>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n              <div ng-show=\"login\" *ngIf=\"isLoggedIn()\">\r\n                <a class=\"nav-link\" routerLink=\"planes\">Planes Recomendados</a>\r\n              </div>\r\n            </li>\r\n              <li class=\"nav-item\">\r\n                  <div ng-show=\"login\" *ngIf=\"isLoggedIn()\">\r\n                      <a class=\"nav-link\" routerLink=\"signout\">Cerrar Sesion</a>\r\n                  </div>\r\n              </li>\r\n\r\n          </ul>\r\n        </div>\r\n    </nav>\r\n\r\n<!-- Modal -->\r\n<div id=\"myModal\" class=\"modal fade\" role=\"dialog\">\r\n  <div class=\"modal-dialog\">\r\n\r\n    <!-- Modal content-->\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\r\n        <h4 class=\"modal-title\">Sorry</h4>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        <p>This feature is not implemented yet. Sorry for the inconvenience</p>\r\n      </div>\r\n      <div class=\"modal-footer\">\r\n        <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>\r\n      </div>\r\n    </div>\r\n\r\n  </div>\r\n</div>\r\n<div class=\"container\">\r\n  <router-outlet></router-outlet>\r\n</div>\r\n<br>\r\n"
 
 /***/ }),
 
@@ -46,6 +46,7 @@ module.exports = "<!-- Navigation -->\r\n    <nav class=\"navbar navbar-expand-l
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_auth_service__ = __webpack_require__("../../../../../src/app/common/auth.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_global_user_service__ = __webpack_require__("../../../../../src/app/common/global-user.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -58,10 +59,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var AppComponent = (function () {
-    function AppComponent(authService, router) {
+    function AppComponent(authService, router, globalUser) {
         this.authService = authService;
         this.router = router;
+        this.globalUser = globalUser;
         this.title = 'app';
         if (!this.authService.isLoggedIn()) {
             this.router.navigate(['/']);
@@ -82,10 +85,10 @@ AppComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/app.component.html"),
         styles: [__webpack_require__("../../../../../src/app/app.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__common_auth_service__["a" /* AuthService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__common_auth_service__["a" /* AuthService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__common_auth_service__["a" /* AuthService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__common_auth_service__["a" /* AuthService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__common_global_user_service__["a" /* GlobalUserService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__common_global_user_service__["a" /* GlobalUserService */]) === "function" && _c || Object])
 ], AppComponent);
 
-var _a, _b;
+var _a, _b, _c;
 //# sourceMappingURL=app.component.js.map
 
 /***/ }),
@@ -120,12 +123,16 @@ var _a, _b;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_your_plans_page_your_plans_page_component__ = __webpack_require__("../../../../../src/app/pages/your-plans-page/your-plans-page.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_modify_user_page_modify_user_page_component__ = __webpack_require__("../../../../../src/app/pages/modify-user-page/modify-user-page.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_signout_page_signout_page_component__ = __webpack_require__("../../../../../src/app/pages/signout-page/signout-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__common_global_user_service__ = __webpack_require__("../../../../../src/app/common/global-user.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__models_UsuarioEntity__ = __webpack_require__("../../../../../src/app/models/UsuarioEntity.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -226,6 +233,8 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_15__common_auth_service__["a" /* AuthService */],
             __WEBPACK_IMPORTED_MODULE_16__common_app_data_service__["a" /* AppDataService */],
             __WEBPACK_IMPORTED_MODULE_17__services_users_service__["a" /* UsersService */],
+            __WEBPACK_IMPORTED_MODULE_25__common_global_user_service__["a" /* GlobalUserService */],
+            __WEBPACK_IMPORTED_MODULE_26__models_UsuarioEntity__["a" /* UsuarioEntity */],
             __WEBPACK_IMPORTED_MODULE_4__common_config_app_configuration_service__["a" /* AppConfiguration */]
         ],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */]]
@@ -499,23 +508,163 @@ var INITIAL_CONFIG = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Inje
 
 /***/ }),
 
+/***/ "../../../../../src/app/common/global-user.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GlobalUserService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_UsuarioEntity__ = __webpack_require__("../../../../../src/app/models/UsuarioEntity.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var GlobalUserService = (function () {
+    function GlobalUserService(usuarioLogin) {
+        this.usuarioLogin = usuarioLogin;
+        this.resourceUrl = "";
+    }
+    GlobalUserService.prototype.setUserLogin = function (usuarioEntity) {
+        this.usuarioLogin.idUsuario = usuarioEntity.idUsuario;
+        this.usuarioLogin.email = usuarioEntity.email;
+        this.usuarioLogin.usuario = usuarioEntity.usuario;
+        this.usuarioLogin.apellidos = usuarioEntity.apellidos;
+        this.usuarioLogin.nombres = usuarioEntity.nombres;
+        this.usuarioLogin.tipoId = usuarioEntity.tipoId;
+        this.usuarioLogin.numeroId = usuarioEntity.numeroId;
+        console.log("IdUsuarioGlobal: " + this.usuarioLogin.idUsuario);
+    };
+    GlobalUserService.prototype.getUserLogin = function () {
+        return this.usuarioLogin;
+    };
+    return GlobalUserService;
+}());
+GlobalUserService = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__models_UsuarioEntity__["a" /* UsuarioEntity */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__models_UsuarioEntity__["a" /* UsuarioEntity */]) === "function" && _a || Object])
+], GlobalUserService);
+
+var _a;
+//# sourceMappingURL=global-user.service.js.map
+
+/***/ }),
+
 /***/ "../../../../../src/app/models/UsuarioEntity.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UsuarioEntity; });
 var UsuarioEntity = (function () {
-    function UsuarioEntity(idUsuario, email, contrasena, nombres, apellidos, usuario, tipoId, fotoPerfil, numeroId) {
-        this.idUsuario = idUsuario;
-        this.email = email;
-        this.contrasena = contrasena;
-        this.nombres = nombres;
-        this.apellidos = apellidos;
-        this.usuario = usuario;
-        this.tipoId = tipoId;
-        this.fotoPerfil = fotoPerfil;
-        this.numeroId = numeroId;
+    function UsuarioEntity() {
     }
+    UsuarioEntity.prototype.setUsuario = function (idUsuario, email, contrasena, nombres, apellidos, usuario, tipoId, fotoPerfil, numeroId) {
+        this._idUsuario = idUsuario;
+        this._email = email;
+        this._contrasena = contrasena;
+        this._nombres = nombres;
+        this._apellidos = apellidos;
+        this._usuario = usuario;
+        this._tipoId = tipoId;
+        this._fotoPerfil = fotoPerfil;
+        this._numeroId = numeroId;
+    };
+    Object.defineProperty(UsuarioEntity.prototype, "idUsuario", {
+        get: function () {
+            return this._idUsuario;
+        },
+        set: function (value) {
+            this._idUsuario = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(UsuarioEntity.prototype, "email", {
+        get: function () {
+            return this._email;
+        },
+        set: function (value) {
+            this._email = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(UsuarioEntity.prototype, "contrasena", {
+        get: function () {
+            return this._contrasena;
+        },
+        set: function (value) {
+            this._contrasena = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(UsuarioEntity.prototype, "nombres", {
+        get: function () {
+            return this._nombres;
+        },
+        set: function (value) {
+            this._nombres = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(UsuarioEntity.prototype, "apellidos", {
+        get: function () {
+            return this._apellidos;
+        },
+        set: function (value) {
+            this._apellidos = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(UsuarioEntity.prototype, "usuario", {
+        get: function () {
+            return this._usuario;
+        },
+        set: function (value) {
+            this._usuario = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(UsuarioEntity.prototype, "tipoId", {
+        get: function () {
+            return this._tipoId;
+        },
+        set: function (value) {
+            this._tipoId = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(UsuarioEntity.prototype, "fotoPerfil", {
+        get: function () {
+            return this._fotoPerfil;
+        },
+        set: function (value) {
+            this._fotoPerfil = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(UsuarioEntity.prototype, "numeroId", {
+        get: function () {
+            return this._numeroId;
+        },
+        set: function (value) {
+            this._numeroId = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
     return UsuarioEntity;
 }());
 
@@ -819,6 +968,8 @@ module.exports = "<div class=\"container\">\r\n  <h2>Sign In</h2>\r\n  <form [fo
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_users_service__ = __webpack_require__("../../../../../src/app/services/users.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__common_global_user_service__ = __webpack_require__("../../../../../src/app/common/global-user.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_UsuarioEntity__ = __webpack_require__("../../../../../src/app/models/UsuarioEntity.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -832,11 +983,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
 var SingInPageComponent = (function () {
-    function SingInPageComponent(usersService, formBuilder, router) {
+    function SingInPageComponent(usersService, formBuilder, router, globalUser, usuarioEntity) {
         this.usersService = usersService;
         this.formBuilder = formBuilder;
         this.router = router;
+        this.globalUser = globalUser;
+        this.usuarioEntity = usuarioEntity;
     }
     SingInPageComponent.prototype.ngOnInit = function () {
         this.signInForm = this.formBuilder.group({
@@ -849,6 +1004,7 @@ var SingInPageComponent = (function () {
         console.log(this.signInForm.get('email').value);
         console.log(this.signInForm.get('password').value);
         this.usersService.login(this.signInForm.get('email').value, this.signInForm.get('password').value).subscribe(function (loginResponse) {
+            _this.usersService.getUserbyEmail(_this.signInForm.get('email').value).subscribe();
             _this.router.navigate(['planes']);
         }, function (error) {
             _this.loginError = 'Error Signing in: ' + (error && error.message ? error.message : '');
@@ -862,10 +1018,10 @@ SingInPageComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/pages/sign-in/sing-in-page.component.html"),
         styles: [__webpack_require__("../../../../../src/app/pages/sign-in/sing-in-page.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_users_service__["a" /* UsersService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_users_service__["a" /* UsersService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _c || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_users_service__["a" /* UsersService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_users_service__["a" /* UsersService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__common_global_user_service__["a" /* GlobalUserService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__common_global_user_service__["a" /* GlobalUserService */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_5__models_UsuarioEntity__["a" /* UsuarioEntity */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__models_UsuarioEntity__["a" /* UsuarioEntity */]) === "function" && _e || Object])
 ], SingInPageComponent);
 
-var _a, _b, _c;
+var _a, _b, _c, _d, _e;
 //# sourceMappingURL=sing-in-page.component.js.map
 
 /***/ }),
@@ -975,6 +1131,7 @@ module.exports = "<h2>Planes Recomendados Para ti:</h2><br>\r\n<table class=\"ta
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_plan_service__ = __webpack_require__("../../../../../src/app/services/plan.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_global_user_service__ = __webpack_require__("../../../../../src/app/common/global-user.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -987,16 +1144,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var TaskListPageComponent = (function () {
-    function TaskListPageComponent(planService, router) {
+    function TaskListPageComponent(planService, router, globaluser) {
         this.planService = planService;
         this.router = router;
+        this.globaluser = globaluser;
         this.planes = [];
     }
     TaskListPageComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.planService.list().subscribe(function (planResponse) {
             _this.planes = planResponse;
+            console.log("Usuario Login: " + _this.globaluser.usuarioLogin.idUsuario);
         });
     };
     return TaskListPageComponent;
@@ -1007,10 +1167,10 @@ TaskListPageComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/pages/task-list-page/task-list-page.component.html"),
         styles: [__webpack_require__("../../../../../src/app/pages/task-list-page/task-list-page.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_plan_service__["a" /* PlanService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_plan_service__["a" /* PlanService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_plan_service__["a" /* PlanService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_plan_service__["a" /* PlanService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__common_global_user_service__["a" /* GlobalUserService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__common_global_user_service__["a" /* GlobalUserService */]) === "function" && _c || Object])
 ], TaskListPageComponent);
 
-var _a, _b;
+var _a, _b, _c;
 //# sourceMappingURL=task-list-page.component.js.map
 
 /***/ }),
@@ -1406,6 +1566,7 @@ TodoService = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_auth_service__ = __webpack_require__("../../../../../src/app/common/auth.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_UsuarioEntity__ = __webpack_require__("../../../../../src/app/models/UsuarioEntity.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_global_user_service__ = __webpack_require__("../../../../../src/app/common/global-user.service.ts");
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1431,18 +1592,32 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var UsersService = (function (_super) {
     __extends(UsersService, _super);
-    function UsersService(config, authService, http) {
+    function UsersService(config, authService, http, globalUser) {
         var _this = _super.call(this, config, authService, http) || this;
         _this.config = config;
         _this.authService = authService;
         _this.http = http;
+        _this.globalUser = globalUser;
         _this.resourceUrl = 'user/users';
         return _this;
     }
     UsersService.prototype.create = function (idUsuario, email, contrasena, nombres, apellidos, usuario, tipoId, fotoPerfil, numeroId) {
-        return this.post(this.resourceUrl, new __WEBPACK_IMPORTED_MODULE_5__models_UsuarioEntity__["a" /* UsuarioEntity */](idUsuario, email, contrasena, nombres, apellidos, usuario, tipoId, fotoPerfil, numeroId));
+        return this.post(this.resourceUrl, new __WEBPACK_IMPORTED_MODULE_5__models_UsuarioEntity__["a" /* UsuarioEntity */]().setUsuario(idUsuario, email, contrasena, nombres, apellidos, usuario, tipoId, fotoPerfil, numeroId));
+    };
+    UsersService.prototype.update = function (idUsuario, email, contrasena, nombres, apellidos, usuario, tipoId, fotoPerfil, numeroId) {
+        return this.post(this.resourceUrl + "/update/" + idUsuario, new __WEBPACK_IMPORTED_MODULE_5__models_UsuarioEntity__["a" /* UsuarioEntity */]().setUsuario(idUsuario, email, contrasena, nombres, apellidos, usuario, tipoId, fotoPerfil, numeroId));
+    };
+    UsersService.prototype.getUserbyEmail = function (email) {
+        var _this = this;
+        return this.post(this.resourceUrl + "/email", { email: email }, { credentials: false }).map(function (userResponse) {
+            if (userResponse) {
+                _this.globalUser.setUserLogin(userResponse);
+                console.log("global user: " + _this.globalUser.getUserLogin().nombres);
+            }
+        });
     };
     UsersService.prototype.list = function () {
         return this.get(this.resourceUrl);
@@ -1461,10 +1636,10 @@ var UsersService = (function (_super) {
 }(__WEBPACK_IMPORTED_MODULE_1__common_api_service__["a" /* APIService */]));
 UsersService = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Injectable */])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__common_config_app_configuration_service__["a" /* AppConfiguration */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__common_config_app_configuration_service__["a" /* AppConfiguration */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__common_auth_service__["a" /* AuthService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__common_auth_service__["a" /* AuthService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* Http */]) === "function" && _c || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__common_config_app_configuration_service__["a" /* AppConfiguration */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__common_config_app_configuration_service__["a" /* AppConfiguration */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__common_auth_service__["a" /* AuthService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__common_auth_service__["a" /* AuthService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* Http */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_6__common_global_user_service__["a" /* GlobalUserService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__common_global_user_service__["a" /* GlobalUserService */]) === "function" && _d || Object])
 ], UsersService);
 
-var _a, _b, _c;
+var _a, _b, _c, _d;
 //# sourceMappingURL=users.service.js.map
 
 /***/ }),

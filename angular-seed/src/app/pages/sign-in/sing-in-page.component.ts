@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
 import { UsersService } from '../../services/users.service';
-import { AppComponent} from "../../app.component";
+import { GlobalUserService } from "../../common/global-user.service";
+import {UsuarioEntity} from "../../models/UsuarioEntity";
 
 @Component({
   selector: 'app-sing-in-page',
@@ -16,6 +17,8 @@ export class SingInPageComponent implements OnInit {
     public usersService: UsersService,
     public formBuilder: FormBuilder,
     public router: Router,
+    public globalUser: GlobalUserService,
+    public usuarioEntity: UsuarioEntity
   ) { 
     
   }
@@ -35,6 +38,7 @@ export class SingInPageComponent implements OnInit {
     this.usersService.login(
       this.signInForm.get('email').value,
       this.signInForm.get('password').value).subscribe(loginResponse => {
+        this.usersService.getUserbyEmail(this.signInForm.get('email').value).subscribe();
         this.router.navigate(['planes']);
       }, error => {
         this.loginError = 'Error Signing in: ' + (error && error.message ? error.message : '');

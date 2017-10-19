@@ -88,6 +88,8 @@ public class UserController
         return new ResponseEntity<UsuarioEntity>(HttpStatus.CREATED);
     }
 
+
+
     public class Token
     {
 
@@ -109,6 +111,26 @@ public class UserController
         {
             this.access_token = access_token;
         }
+    }
+
+    @RequestMapping( value = "/users/email", method = RequestMethod.POST )
+    @ResponseBody
+    public ResponseEntity<UsuarioEntity> getUserByEmail(@RequestBody UsuarioEntity user){
+
+        String email = user.getEmail();
+
+        System.out.println("Get By Email: "+email);
+
+        UsuarioEntity usuario = userService.getUserByEmail(email);
+
+        System.out.println(usuario.getNombres());
+
+        if(usuario == null){
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+
+        return new ResponseEntity<UsuarioEntity>(usuario,HttpStatus.OK);
+
     }
 
 }

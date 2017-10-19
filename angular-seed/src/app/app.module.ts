@@ -28,6 +28,8 @@ import { UserReviewPageComponent } from './pages/user-review-page/user-review-pa
 import { YourPlansPageComponent } from './pages/your-plans-page/your-plans-page.component';
 import { ModifyUserPageComponent } from './pages/modify-user-page/modify-user-page.component';
 import { SignoutPageComponent } from './pages/signout-page/signout-page.component';
+import {GlobalUserService} from "./common/global-user.service";
+import {UsuarioEntity} from "./models/UsuarioEntity";
 
 const ROUTES = [
   { path: '', component: HomePageComponent },
@@ -104,6 +106,8 @@ const ROUTES = [
     AuthService,
     AppDataService,
     UsersService,
+    GlobalUserService,
+      UsuarioEntity,
     AppConfiguration],
   bootstrap: [AppComponent]
  })

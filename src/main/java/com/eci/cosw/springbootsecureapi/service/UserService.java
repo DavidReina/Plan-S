@@ -23,5 +23,4 @@ public interface UserService
 
     void updateUser(UsuarioEntity u);
 
-    UsuarioEntity findUserByEmailAndPassword( String email, String password );
 }

@@ -20,8 +20,6 @@ public interface UsuarioRepository extends JpaRepository<UsuarioEntity,Integer>{
     @Query(value ="SELECT * FROM usuario WHERE email = :email", nativeQuery = true)
     UsuarioEntity getUsuarioByEmail(@Param("email") String email);
 
-    @Query(value ="from UsuarioEntity where email = :email and contrasena =:pass", nativeQuery = true )
-    UsuarioEntity getUsuarioByEmailAndPass(@Param("email") String email, @Param("pass") String pass);
 
     @Modifying
     @Query(value ="insert into usuario (id_usuario, apellidos, contrasena, email, nombres, numero_id, tipo_id, usuario) values (:id_usuario, :apellidos, :contrasena, :email, :nombres, :numero_id, :tipo_id, :usuario)", nativeQuery = true )

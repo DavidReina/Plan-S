@@ -5,6 +5,7 @@ import { AuthService } from '../common/auth.service';
 import { Http } from '@angular/http';
 import { Observable } from "rxjs/Observable";
 import {UsuarioEntity} from "../models/UsuarioEntity";
+import {GlobalUserService} from "../common/global-user.service";
 
 @Injectable()
 export class UsersService extends APIService {
@@ -12,15 +13,34 @@ export class UsersService extends APIService {
 
     constructor(public config: AppConfiguration,
                 public authService: AuthService,
-                public http: Http) {
+                public http: Http,
+                public globalUser: GlobalUserService) {
         super(config, authService, http);
     }
 
     create(idUsuario: number, email: string, contrasena: string, nombres: string, apellidos: string, usuario: string, tipoId: string, fotoPerfil: Blob, numeroId: string):
     Observable<UsuarioEntity> {
 
-        return this.post(this.resourceUrl, new UsuarioEntity(idUsuario, email, contrasena, nombres, apellidos, usuario, tipoId, fotoPerfil, numeroId));}
+        return this.post(this.resourceUrl, new UsuarioEntity().setUsuario(idUsuario, email, contrasena, nombres, apellidos, usuario, tipoId, fotoPerfil, numeroId));}
 
+
+    update(idUsuario: number, email: string, contrasena: string, nombres: string, apellidos: string, usuario: string, tipoId: string, fotoPerfil: Blob, numeroId: string):Observable<UsuarioEntity>{
+
+        return this.post(this.resourceUrl+"/update/"+idUsuario, new UsuarioEntity().setUsuario(idUsuario, email, contrasena, nombres, apellidos, usuario, tipoId, fotoPerfil, numeroId));
+
+    }
+
+    getUserbyEmail(email:string){
+        return this.post(this.resourceUrl+"/email", {email}, {credentials:false}).map(
+            userResponse => {
+                if (userResponse) {
+
+                    this.globalUser.setUserLogin(userResponse);
+                    console.log("global user: "+this.globalUser.getUserLogin().nombres)
+                }
+            }
+        );
+    }
 
         list(): Observable<UsuarioEntity[]> {
 

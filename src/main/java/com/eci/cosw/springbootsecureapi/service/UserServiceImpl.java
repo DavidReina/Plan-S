@@ -58,9 +58,5 @@ public class UserServiceImpl implements UserService {
         return userRepo.getUsuarioByEmail(email);
     }
 
-    @Override
-    public UsuarioEntity findUserByEmailAndPassword(String email, String password) {
-        return userRepo.getUsuarioByEmailAndPass(email,password);
-    }
 
 }
