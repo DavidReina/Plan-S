@@ -1,3 +1,38 @@
-<p>
-  user-review-page works!
-</p>
+<div class="container">
+  <h2>Tu Perfil</h2>
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()" novalidate>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="text" class="form-control" id="email" formControlName="email" readonly>
+    </div>
+
+    <div class="form-group">
+      <label for="nombres">Nombre</label>
+      <input type="text" class="form-control" id="nombres" formControlName="nombres" readonly>
+    </div>
+
+    <div class="form-group">
+      <label for="apellidos">Apellido</label>
+      <input type="text" class="form-control" id="apellidos" formControlName="apellidos" readonly>
+    </div>
+
+    <div class="form-group">
+      <label for="usuario">Username</label>
+      <input type="text" class="form-control" id="usuario" formControlName="usuario" readonly>
+    </div>
+
+    <div class="form-group">
+      <label for="tipo_id">Tipo Identificacion</label>
+      <input type="text" class="form-control" id="tipo_id" formControlName="tipo_id" readonly>
+    </div>
+
+    <div class="form-group">
+      <label for="numero_id">Numero Identificacion</label>
+      <input type="text" class="form-control" id="numero_id" formControlName="numero_id" readonly>
+    </div>
+
+    <button type="submit" class="btn btn-success">Edita Tu Perfil</button>
+
+  </form>
+</div>

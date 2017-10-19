@@ -123,6 +123,8 @@ public class UserController
 
         UsuarioEntity usuario = userService.getUserByEmail(email);
 
+        usuario.setContrasena("undefined");
+
         System.out.println(usuario.getNombres());
 
         if(usuario == null){

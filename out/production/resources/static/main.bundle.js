@@ -1356,7 +1356,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/user-review-page/user-review-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\r\n  user-review-page works!\r\n</p>\r\n"
+module.exports = "<div class=\"container\">\r\n  <h2>Tu Perfil</h2>\r\n  <form [formGroup]=\"userForm\" (ngSubmit)=\"onSubmit()\" novalidate>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"email\">Email</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"email\" formControlName=\"email\" readonly>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"nombres\">Nombre</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"nombres\" formControlName=\"nombres\" readonly>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"apellidos\">Apellido</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"apellidos\" formControlName=\"apellidos\" readonly>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"usuario\">Username</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"usuario\" formControlName=\"usuario\" readonly>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"tipo_id\">Tipo Identificacion</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"tipo_id\" formControlName=\"tipo_id\" readonly>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"numero_id\">Numero Identificacion</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"numero_id\" formControlName=\"numero_id\" readonly>\r\n    </div>\r\n\r\n    <button type=\"submit\" class=\"btn btn-success\">Edita Tu Perfil</button>\r\n\r\n  </form>\r\n</div>"
 
 /***/ }),
 
@@ -1366,6 +1366,9 @@ module.exports = "<p>\r\n  user-review-page works!\r\n</p>\r\n"
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserReviewPageComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__common_global_user_service__ = __webpack_require__("../../../../../src/app/common/global-user.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1376,10 +1379,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
+
 var UserReviewPageComponent = (function () {
-    function UserReviewPageComponent() {
+    function UserReviewPageComponent(globalUser, formBuilder, router) {
+        this.globalUser = globalUser;
+        this.formBuilder = formBuilder;
+        this.router = router;
     }
     UserReviewPageComponent.prototype.ngOnInit = function () {
+        this.userForm = this.formBuilder.group({
+            email: this.globalUser.usuarioLogin.email,
+            nombres: this.globalUser.usuarioLogin.nombres,
+            apellidos: this.globalUser.usuarioLogin.apellidos,
+            usuario: this.globalUser.usuarioLogin.usuario,
+            tipo_id: this.globalUser.usuarioLogin.tipoId,
+            numero_id: this.globalUser.usuarioLogin.numeroId
+        });
+    };
+    UserReviewPageComponent.prototype.onSubmit = function () {
+        this.router.navigate(['modifyuser']);
     };
     return UserReviewPageComponent;
 }());
@@ -1389,9 +1409,10 @@ UserReviewPageComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/pages/user-review-page/user-review-page.component.html"),
         styles: [__webpack_require__("../../../../../src/app/pages/user-review-page/user-review-page.component.css")]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__common_global_user_service__["a" /* GlobalUserService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__common_global_user_service__["a" /* GlobalUserService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */]) === "function" && _c || Object])
 ], UserReviewPageComponent);
 
+var _a, _b, _c;
 //# sourceMappingURL=user-review-page.component.js.map
 
 /***/ }),

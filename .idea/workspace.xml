@@ -2,30 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe76ed5a-e4db-43b5-9367-7411e1d9615d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular-seed/src/app/common/global-user.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/controller/UserController$Token.class" afterPath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/controller/UserController$Token.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/controller/UserController.class" afterPath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/reposotories/UsuarioRepository.class" afterPath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/reposotories/UsuarioRepository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/service/UserService.class" afterPath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/service/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.class" afterPath="$PROJECT_DIR$/out/production/classes/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/dist/inline.bundle.js.map" afterPath="$PROJECT_DIR$/angular-seed/dist/inline.bundle.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/dist/main.bundle.js" afterPath="$PROJECT_DIR$/angular-seed/dist/main.bundle.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/dist/main.bundle.js.map" afterPath="$PROJECT_DIR$/angular-seed/dist/main.bundle.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/app.component.html" afterPath="$PROJECT_DIR$/angular-seed/src/app/app.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/app.component.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/app.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/app.module.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/app.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/models/UsuarioEntity.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/models/UsuarioEntity.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/sign-in/sing-in-page.component.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/sign-in/sing-in-page.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/task-list-page/task-list-page.component.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/task-list-page/task-list-page.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/services/users.service.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/services/users.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/user-review-page/user-review-page.component.html" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/user-review-page/user-review-page.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/user-review-page/user-review-page.component.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/user-review-page/user-review-page.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/resources/static/inline.bundle.js.map" afterPath="$PROJECT_DIR$/out/production/resources/static/inline.bundle.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/resources/static/main.bundle.js" afterPath="$PROJECT_DIR$/out/production/resources/static/main.bundle.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/resources/static/main.bundle.js.map" afterPath="$PROJECT_DIR$/out/production/resources/static/main.bundle.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/reposotories/UsuarioRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/reposotories/UsuarioRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/inline.bundle.js.map" afterPath="$PROJECT_DIR$/src/main/resources/static/inline.bundle.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/main.bundle.js" afterPath="$PROJECT_DIR$/src/main/resources/static/main.bundle.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/main.bundle.js.map" afterPath="$PROJECT_DIR$/src/main/resources/static/main.bundle.js.map" />
@@ -40,46 +27,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="2">
-      <content type="file-editors">
-        <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file leaf-file-name="global-user.service.ts" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/angular-seed/src/app/common/global-user.service.ts">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="425">
-                    <caret line="25" column="41" lean-forward="false" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
-                    <folding>
-                      <element signature="e#0#43#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file leaf-file-name="UsuarioEntity.ts" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/angular-seed/src/app/models/UsuarioEntity.ts">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="425">
-                    <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -90,8 +37,8 @@
       <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/angular-seed/src/app/app.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="109" column="20" lean-forward="false" selection-start-line="109" selection-start-column="20" selection-end-line="109" selection-end-column="20" />
+            <state relative-caret-position="494">
+              <caret line="59" column="25" lean-forward="false" selection-start-line="59" selection-start-column="15" selection-end-line="59" selection-end-column="25" />
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
               </folding>
@@ -99,100 +46,56 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/app.component.ts">
+      <file leaf-file-name="user-review-page.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/user-review-page/user-review-page.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="21" />
+            <state relative-caret-position="425">
+              <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
               <folding>
-                <element signature="e#0#42#0" expanded="true" />
+                <element signature="e#0#50#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.component.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/app.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="107" lean-forward="false" selection-start-line="21" selection-start-column="107" selection-end-line="21" selection-end-column="107" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users.service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/services/users.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="38" column="35" lean-forward="false" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="task-list-page.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/task-list-page/task-list-page.component.html">
+      <file leaf-file-name="user-review-page.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/user-review-page/user-review-page.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="37" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="task-list-page.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/task-list-page/task-list-page.component.ts">
+      <file leaf-file-name="user-edit-page.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/user-edit-page/user-edit-page.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="78" lean-forward="false" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="78" />
+            <state relative-caret-position="306">
+              <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="37" />
               <folding>
-                <element signature="e#0#50#0" expanded="true" />
+                <element signature="e#0#48#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.java">
+      <file leaf-file-name="user-edit-page.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/user-edit-page/user-edit-page.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+            <state relative-caret-position="663">
+              <caret line="39" column="23" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1655">
-              <caret line="121" column="8" lean-forward="false" selection-start-line="121" selection-start-column="8" selection-end-line="121" selection-end-column="51" />
+            <state relative-caret-position="261">
+              <caret line="125" column="43" lean-forward="false" selection-start-line="125" selection-start-column="43" selection-end-line="125" selection-end-column="43" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sing-in-page.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/sign-in/sing-in-page.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="42" column="19" lean-forward="false" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -630,12 +533,14 @@
         <option value="$PROJECT_DIR$/angular-seed/src/app/models/UsuarioEntity.ts" />
         <option value="$PROJECT_DIR$/angular-seed/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/angular-seed/src/app/common/global-user.service.ts" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/UserController.java" />
         <option value="$PROJECT_DIR$/angular-seed/src/app/pages/sign-in/sing-in-page.component.ts" />
         <option value="$PROJECT_DIR$/angular-seed/src/app/services/users.service.ts" />
         <option value="$PROJECT_DIR$/angular-seed/src/app/pages/task-list-page/task-list-page.component.ts" />
         <option value="$PROJECT_DIR$/angular-seed/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/angular-seed/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/angular-seed/src/app/pages/user-review-page/user-review-page.component.html" />
+        <option value="$PROJECT_DIR$/angular-seed/src/app/pages/user-review-page/user-review-page.component.ts" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/UserController.java" />
       </list>
     </option>
   </component>
@@ -669,7 +574,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -761,6 +667,33 @@
               <item name="angular-seed" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="update-user-page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Plan-S" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Plan-S" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="angular-seed" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="user-edit-page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Plan-S" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Plan-S" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="angular-seed" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="user-review-page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Plan-S" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Plan-S" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="angular-seed" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -829,9 +762,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -967,14 +899,16 @@
       <workItem from="1508362303838" duration="797000" />
       <workItem from="1508372403820" duration="10832000" />
       <workItem from="1508386429518" duration="1725000" />
+      <workItem from="1508390155336" duration="1961000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13354000" />
+    <option name="totallyTimeSpent" value="15315000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -992,7 +926,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1020,6 +954,76 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/task-list-page/task-list-page.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/task-list-page/task-list-page.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" column="78" lean-forward="false" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="78" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1700">
+          <caret line="121" column="8" lean-forward="false" selection-start-line="121" selection-start-column="8" selection-end-line="121" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/sign-in/sing-in-page.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="42" column="19" lean-forward="false" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="107" lean-forward="false" selection-start-line="21" selection-start-column="107" selection-end-line="21" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/common/global-user.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/angular-seed/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1326">
@@ -1044,7 +1048,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1140,7 +1143,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1148,9 +1150,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#51#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1158,9 +1157,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#47#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1215,7 +1211,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1231,7 +1226,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1253,7 +1247,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
+        <state relative-caret-position="748">
           <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding />
         </state>
@@ -1267,17 +1261,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1655">
-          <caret line="121" column="8" lean-forward="false" selection-start-line="121" selection-start-column="8" selection-end-line="121" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/sign-in/sing-in-page.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
+        <state relative-caret-position="629">
           <caret line="42" column="19" lean-forward="false" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
@@ -1287,27 +1273,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/angular-seed/src/app/services/users.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
+        <state relative-caret-position="527">
           <caret line="38" column="35" lean-forward="false" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/task-list-page/task-list-page.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/models/UsuarioEntity.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1321,23 +1291,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/task-list-page/task-list-page.component.ts">
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/models/UsuarioEntity.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="78" lean-forward="false" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="78" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="109" column="20" lean-forward="false" selection-start-line="109" selection-start-column="20" selection-end-line="109" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="425">
+          <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1355,6 +1313,86 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="107" lean-forward="false" selection-start-line="21" selection-start-column="107" selection-end-line="21" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/user-edit-page/user-edit-page.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/task-list-page/task-list-page.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/task-list-page/task-list-page.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="78" lean-forward="false" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="78" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/user-edit-page/user-edit-page.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="23" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/user-edit-page/user-edit-page.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="59" column="25" lean-forward="false" selection-start-line="59" selection-start-column="15" selection-end-line="59" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/user-review-page/user-review-page.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/user-review-page/user-review-page.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="37" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="125" column="43" lean-forward="false" selection-start-line="125" selection-start-column="43" selection-end-line="125" selection-end-column="43" />
           <folding />
         </state>
       </provider>
