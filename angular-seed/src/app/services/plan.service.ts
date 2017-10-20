@@ -2,6 +2,7 @@ import { Plan } from '../models/plan';
 import { Injectable } from '@angular/core';
 import { APIService } from '../common/api.service';
 import { Observable } from "rxjs/Observable";
+import {GlobalUserService} from "../common/global-user.service";
 
 @Injectable()
 export class PlanService extends APIService{
@@ -13,7 +14,11 @@ export class PlanService extends APIService{
       }*/
       
       list(): Observable<Plan[]> {
-        return this.get(this.resourceUrl);
+          return this.get(this.resourceUrl);
+      }
+
+      listYourPlans(id: number): Observable<Plan[]>{
+          return this.get(this.resourceUrl+"/"+id);
       }
 
 }

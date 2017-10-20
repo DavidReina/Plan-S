@@ -29,6 +29,10 @@ public class PlanServiceImpl implements PlanService {
         return plans.getPlanByname(nombre);
     }
 
+    @Override
+    public List<PlanEntity> getUserPlanList(Long userid) {
+        return plans.getPlansByIdUser(userid);
+    }
 
 }
 

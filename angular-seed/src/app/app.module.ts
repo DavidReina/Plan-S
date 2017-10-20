@@ -8,7 +8,7 @@ import { INITIAL_CONFIG } from './common/config/initial-config';
 import { AppComponent } from './app.component';
 
 import { HomePageComponent } from './pages/home-page/home-page.component';
-import { TaskListPageComponent } from './pages/task-list-page/task-list-page.component';
+import { TaskListPageComponent } from './pages/planes-recomendados-page/task-list-page.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 
@@ -21,7 +21,7 @@ import { SingInPageComponent } from './pages/sign-in/sing-in-page.component';
 import { AuthService } from './common/auth.service';
 import { AppDataService } from './common/app-data.service';
 import { UsersService } from './services/users.service';
-import { UserEditPageComponent } from "./pages/user-edit-page/user-edit-page.component";
+import { UserEditPageComponent } from "./pages/register-user-page/user-edit-page.component";
 import { UserListPageComponent } from "./pages/user-list-page/user-list-page.component";
 import { CreatePlanPageComponent } from './pages/create-plan-page/create-plan-page.component';
 import { UserReviewPageComponent } from './pages/user-review-page/user-review-page.component';

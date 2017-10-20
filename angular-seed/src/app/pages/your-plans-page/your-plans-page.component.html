@@ -1,3 +1,17 @@
-<p>
-  your-plans-page works!
-</p>
+<h2>Planes Recomendados Para ti:</h2><br>
+<table class="table table-bordered">
+  <thead>
+  <tr>
+    <th>Nombre</th>
+    <th>Ubicacion</th>
+    <th>Fecha (MM/DD/AAAA)</th>
+    <th>Costo Promedio</th>
+  </tr>
+  </thead>
+  <tr *ngFor="let plan of planes">
+    <td>{{plan.nombre}}</td>
+    <td>{{plan.ubicacion}}</td>
+    <td>{{plan.fechaInicio | date:'short'}}</td>
+    <td>{{plan.costoPromedio}}</td>
+  </tr>
+</table>

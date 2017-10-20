@@ -14,19 +14,26 @@ export class UsersService extends APIService {
     constructor(public config: AppConfiguration,
                 public authService: AuthService,
                 public http: Http,
-                public globalUser: GlobalUserService) {
+                public globalUser: GlobalUserService,
+                public user: UsuarioEntity) {
         super(config, authService, http);
     }
 
     create(idUsuario: number, email: string, contrasena: string, nombres: string, apellidos: string, usuario: string, tipoId: string, fotoPerfil: Blob, numeroId: string):
     Observable<UsuarioEntity> {
+        this.user = new UsuarioEntity;
+        this.user.setUsuarioCompleto(idUsuario, email, contrasena, nombres, apellidos, usuario, tipoId, fotoPerfil, numeroId);
+        console.log("Register User JSON: "+JSON.stringify(this.user));
+        return this.post(this.resourceUrl, {idUsuario, email, contrasena, nombres, apellidos, usuario, tipoId, fotoPerfil, numeroId},  {credentials:false});}
 
-        return this.post(this.resourceUrl, new UsuarioEntity().setUsuario(idUsuario, email, contrasena, nombres, apellidos, usuario, tipoId, fotoPerfil, numeroId));}
 
-
-    update(idUsuario: number, email: string, contrasena: string, nombres: string, apellidos: string, usuario: string, tipoId: string, fotoPerfil: Blob, numeroId: string):Observable<UsuarioEntity>{
-
-        return this.post(this.resourceUrl+"/update/"+idUsuario, new UsuarioEntity().setUsuario(idUsuario, email, contrasena, nombres, apellidos, usuario, tipoId, fotoPerfil, numeroId));
+    update(idUsuario: number, email: string, contrasena: string, nombres: string, apellidos: string, usuario: string, tipoId: string, fotoPerfil: Blob, numeroId: string):
+    Observable<UsuarioEntity>{
+        console.log("Update Url: "+this.resourceUrl+"/update");
+        this.user = new UsuarioEntity;
+        this.user.setUsuarioCompleto(idUsuario, email, contrasena, nombres, apellidos, usuario, tipoId, fotoPerfil, numeroId);
+        console.log("Update JSON: "+JSON.stringify(this.user));
+        return this.post(this.resourceUrl+"/update", JSON.stringify(this.user));
 
     }
 
@@ -36,7 +43,7 @@ export class UsersService extends APIService {
                 if (userResponse) {
 
                     this.globalUser.setUserLogin(userResponse);
-                    console.log("global user: "+this.globalUser.getUserLogin().nombres)
+                    console.log("global user: "+this.globalUser.usuarioLogin.nombres)
                 }
             }
         );

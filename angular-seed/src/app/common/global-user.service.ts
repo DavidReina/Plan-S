@@ -8,25 +8,18 @@ import { UsuarioEntity } from '../models/UsuarioEntity';
 @Injectable()
 export class GlobalUserService {
 
-    private resourceUrl:string = "";
-
     constructor(public usuarioLogin: UsuarioEntity) { }
 
     public setUserLogin(usuarioEntity: UsuarioEntity) {
-        this.usuarioLogin.idUsuario = usuarioEntity.idUsuario;
-        this.usuarioLogin.email = usuarioEntity.email;
-        this.usuarioLogin.usuario = usuarioEntity.usuario;
+        console.log("id Usuario respuesta: "+usuarioEntity.nombres);
+        this.usuarioLogin.idUsuario=usuarioEntity.idUsuario;
+        this.usuarioLogin.email=usuarioEntity.email;
+        this.usuarioLogin.usuario=usuarioEntity.usuario;
         this.usuarioLogin.apellidos=usuarioEntity.apellidos;
         this.usuarioLogin.nombres=usuarioEntity.nombres;
-        this.usuarioLogin.tipoId= usuarioEntity.tipoId;
-        this.usuarioLogin.numeroId = usuarioEntity.numeroId;
-        console.log("IdUsuarioGlobal: "+this.usuarioLogin.idUsuario)
+        this.usuarioLogin.tipoId=usuarioEntity.tipoId;
+        this.usuarioLogin.numeroId=usuarioEntity.numeroId;
+        console.log("IdUsuarioGlobal Mrda!: "+this.usuarioLogin.usuario);
     }
-
-    public getUserLogin(): UsuarioEntity{
-        return this.usuarioLogin;
-    }
-
-
 
 }

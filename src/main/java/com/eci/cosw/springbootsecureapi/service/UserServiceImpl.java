@@ -49,14 +49,13 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void updateUser(UsuarioEntity u) {
-        userRepo.save(u);
+    public void updateUser(UsuarioEntity user) {
+        userRepo.updateUser(user.getIdUsuario(),user.getApellidos(),user.getContrasena(),user.getEmail(),user.getNombres(),user.getNumeroId(),user.getTipoId(),user.getUsuario());
     }
 
     @Override
     public UsuarioEntity getUserByEmail(String email) {
         return userRepo.getUsuarioByEmail(email);
     }
-
 
 }

@@ -77,15 +77,17 @@ public class UserController
     }
 
     @RequestMapping( value = "/users", method = RequestMethod.POST )
-    public void setUser(@RequestBody UsuarioEntity user){
+    public ResponseEntity<UsuarioEntity> setUser(@RequestBody UsuarioEntity user){
             System.out.println(user.getNombres());
             userService.registerUser(user);
+            return new ResponseEntity<UsuarioEntity>(user,HttpStatus.OK);
     }
 
-    @RequestMapping(method = RequestMethod.PUT, value = "/update ")
-    public ResponseEntity<?> updatePerson(@RequestBody UsuarioEntity user) {
-        userService.registerUser(user);
-        return new ResponseEntity<UsuarioEntity>(HttpStatus.CREATED);
+    @RequestMapping(method = RequestMethod.POST, value = "/users/update")
+    public ResponseEntity<UsuarioEntity> updateUser(@RequestBody UsuarioEntity user) {
+        System.out.println("Update id: "+user.getIdUsuario());
+        userService.updateUser(user);
+        return new ResponseEntity<UsuarioEntity>(user,HttpStatus.OK);
     }
 
 

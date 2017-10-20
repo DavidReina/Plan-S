@@ -4,10 +4,7 @@ import com.eci.cosw.springbootsecureapi.model.Plan;
 import com.eci.cosw.springbootsecureapi.model.PlanEntity;
 import com.eci.cosw.springbootsecureapi.service.PlanService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -25,6 +22,11 @@ public class PlanController {
     @RequestMapping( value = "/plans", method = RequestMethod.POST )
     public void setPlan(@RequestBody PlanEntity plan){
         planService.addPlan(plan);
+    }
+
+    @RequestMapping( value = "/plans/{id}", method = RequestMethod.GET )
+    public List<PlanEntity> getPlan(@PathVariable("id") Long id){
+        return planService.getUserPlanList(id);
     }
 
 

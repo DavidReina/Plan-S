@@ -9,6 +9,8 @@ public interface PlanService {
 
     List<PlanEntity> getPlanList();
 
+    List<PlanEntity> getUserPlanList(Long userid);
+
     void addPlan(PlanEntity plan);
 
     PlanEntity getPlanByName (String nombre);
