@@ -38,8 +38,7 @@ export class SingInPageComponent implements OnInit {
     this.usersService.login(
       this.signInForm.get('email').value,
       this.signInForm.get('password').value).subscribe(loginResponse => {
-        this.usersService.getUserbyEmail(this.signInForm.get('email').value).subscribe();
-        this.router.navigate(['planes']);
+        this.usersService.getUserbyEmail(this.signInForm.get('email').value).subscribe(response => this.router.navigate(['planes']));
       }, error => {
         this.loginError = 'Error Signing in: ' + (error && error.message ? error.message : '');
       })

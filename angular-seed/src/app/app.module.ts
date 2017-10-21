@@ -30,6 +30,13 @@ import { ModifyUserPageComponent } from './pages/modify-user-page/modify-user-pa
 import { SignoutPageComponent } from './pages/signout-page/signout-page.component';
 import {GlobalUserService} from "./common/global-user.service";
 import {UsuarioEntity} from "./models/UsuarioEntity";
+import {Plan} from "./models/plan";
+import { ReviewPlanSubscribePageComponent } from './pages/review-plan-subscribe-page/review-plan-subscribe-page.component';
+import {GlobalPlanService} from "./common/global-plan.service";
+import {NumberPair} from "./models/NumberPair";
+import {DatePipe} from "@angular/common";
+import { ReviewPlanUnsubscribePageComponent } from './pages/review-plan-unsubscribe-page/review-plan-unsubscribe-page.component';
+import { YourSubscribedPlanPageComponent } from './pages/your-subscribed-plan-page/your-subscribed-plan-page.component';
 
 const ROUTES = [
   { path: '', component: HomePageComponent },
@@ -66,6 +73,21 @@ const ROUTES = [
         canActivate: [AuthService],
 
     },
+    {
+        path: 'reviewplansubscribe', component: ReviewPlanSubscribePageComponent,
+        canActivate: [AuthService],
+
+    },
+    {
+        path: 'planssubscribed', component: YourSubscribedPlanPageComponent,
+        canActivate: [AuthService],
+
+    },
+    {
+        path: 'reviewplanunsubscribed', component: ReviewPlanUnsubscribePageComponent,
+        canActivate: [AuthService],
+
+    },
   {
     path: '**', component: PageNotFoundComponent
   }
@@ -85,6 +107,9 @@ const ROUTES = [
     YourPlansPageComponent,
     ModifyUserPageComponent,
     SignoutPageComponent,
+    ReviewPlanSubscribePageComponent,
+    ReviewPlanUnsubscribePageComponent,
+    YourSubscribedPlanPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -108,6 +133,10 @@ const ROUTES = [
     UsersService,
     GlobalUserService,
       UsuarioEntity,
+      GlobalPlanService,
+      Plan,
+      NumberPair,
+      DatePipe,
     AppConfiguration],
   bootstrap: [AppComponent]
  })

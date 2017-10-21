@@ -22,16 +22,21 @@
                 <a class="nav-link" routerLink="userreview">Bienvenido, {{globalUser.usuarioLogin.usuario}}</a>
               </div>
             </li>
+              <li class="nav-item">
+                  <div ng-show="login" *ngIf="isLoggedIn()">
+                      <a class="nav-link" routerLink="newplan">Crea Tu Plan</a>
+                  </div>
+              </li>
             <li class="nav-item">
               <div ng-show="login" *ngIf="isLoggedIn()">
-                <a class="nav-link" routerLink="yourplans">Tus Planes</a>
+                <a class="nav-link" routerLink="yourplans">Tus Planes Creados</a>
               </div>
             </li>
-            <li class="nav-item">
-              <div ng-show="login" *ngIf="isLoggedIn()">
-                <a class="nav-link" routerLink="newplan">Crea Tu Plan</a>
-              </div>
-            </li>
+              <li class="nav-item">
+                  <div ng-show="login" *ngIf="isLoggedIn()">
+                      <a class="nav-link" routerLink="planssubscribed">Planes Suscritos</a>
+                  </div>
+              </li>
             <li class="nav-item">
               <div ng-show="login" *ngIf="isLoggedIn()">
                 <a class="nav-link" routerLink="planes">Planes Recomendados</a>
@@ -42,7 +47,6 @@
                       <a class="nav-link" routerLink="signout">Cerrar Sesion</a>
                   </div>
               </li>
-
           </ul>
         </div>
     </nav>

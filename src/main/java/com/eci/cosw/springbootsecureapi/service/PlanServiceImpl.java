@@ -1,6 +1,5 @@
 package com.eci.cosw.springbootsecureapi.service;
 
-import com.eci.cosw.springbootsecureapi.model.Plan;
 import com.eci.cosw.springbootsecureapi.model.PlanEntity;
 import com.eci.cosw.springbootsecureapi.reposotories.PlanRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,12 +14,12 @@ public class PlanServiceImpl implements PlanService {
     private PlanRepository plans;
 
     @Override
-    public List<PlanEntity> getPlanList() {
-        return plans.findAll();
+    public List<PlanEntity> getPlanNotUserList(Long userid) {
+        return plans.getPlansByNotIdUser(userid);
     }
 
     @Override
-    public void addPlan(PlanEntity plan) {
+    public void createPlan(PlanEntity plan) {
         plans.save(plan);
     }
 
@@ -32,6 +31,26 @@ public class PlanServiceImpl implements PlanService {
     @Override
     public List<PlanEntity> getUserPlanList(Long userid) {
         return plans.getPlansByIdUser(userid);
+    }
+
+    @Override
+    public List<PlanEntity> isSubscribed (Long id_usuario, Long id_plan){
+        return plans.isSubscribedPlan(id_usuario,id_plan);
+    }
+
+    @Override
+    public void subscribePlan(Long id_usuario, Long id_plan){
+        plans.subscribePlan(id_usuario,id_plan);
+    }
+
+    @Override
+    public List<PlanEntity> getUserSubscribeList(Long userid){
+       return plans.subscribedPlans(userid);
+    }
+
+    @Override
+    public void unsubscribePlan(Long id_usuario, Long id_plan){
+        plans.unsubscribePlan(id_usuario,id_plan);
     }
 
 }

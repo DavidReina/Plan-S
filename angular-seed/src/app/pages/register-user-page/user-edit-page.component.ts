@@ -13,10 +13,12 @@ import {UsuarioEntity} from '../../models/UsuarioEntity';
 export class UserEditPageComponent implements OnInit {
     userForm: FormGroup;
     responseStatus:Object= [];
+    private errorString: String;
+    private errorCreate: String;
 
     constructor(public usersService: UsersService,
                 public formBuilder: FormBuilder,
-                public router: Router,) {
+                public router: Router) {
 
     }
 
@@ -24,6 +26,7 @@ export class UserEditPageComponent implements OnInit {
         this.userForm = this.formBuilder.group({
             email: '',
             contrasena: '',
+            confirmcontrasena: '',
             nombres: '',
             apellidos: '',
             usuario: '',
@@ -35,26 +38,31 @@ export class UserEditPageComponent implements OnInit {
 
     onSubmit() {
 
-        this.usersService.create(
-            0,
-            this.userForm.get('email').value,
-            this.userForm.get('contrasena').value,
-            this.userForm.get('nombres').value,
-            this.userForm.get('apellidos').value,
-            this.userForm.get('usuario').value,
-            this.userForm.get('tipo_id').value,
-            new Blob,
-            this.userForm.get('numero_id').value
-        ).subscribe(serverResponse => {
-            this.router.navigate(
-                ['/signin']);
-        },
-            error => {
-            console.log(error);
-        });
+        if(this.userForm.get('contrasena').value!=this.userForm.get('confirmcontrasena').value){
+            this.errorString = "Porfavor asegurese que el campo de nueva contraseña y confirmar contraseña sean iguales";
+        }
+        else{
+            this.usersService.create(
+                0,
+                this.userForm.get('email').value,
+                this.userForm.get('contrasena').value,
+                this.userForm.get('nombres').value,
+                this.userForm.get('apellidos').value,
+                this.userForm.get('usuario').value,
+                this.userForm.get('tipo_id').value,
+                new Blob,
+                this.userForm.get('numero_id').value
+            ).subscribe(serverResponse => {
+                    this.router.navigate(
+                        ['/signin']);
+                },
+                error => {
+                    this.errorCreate = "Error Registrando: "+error.message;
+                });
+
+        }
 
 
-        this.router.navigate(['signin']);
     }
 
 }

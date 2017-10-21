@@ -120,19 +120,13 @@ public class UserController
     public ResponseEntity<UsuarioEntity> getUserByEmail(@RequestBody UsuarioEntity user){
 
         String email = user.getEmail();
-
         System.out.println("Get By Email: "+email);
-
         UsuarioEntity usuario = userService.getUserByEmail(email);
-
         usuario.setContrasena("undefined");
-
         System.out.println(usuario.getNombres());
-
         if(usuario == null){
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-
         return new ResponseEntity<UsuarioEntity>(usuario,HttpStatus.OK);
 
     }

@@ -11,7 +11,6 @@ export class GlobalUserService {
     constructor(public usuarioLogin: UsuarioEntity) { }
 
     public setUserLogin(usuarioEntity: UsuarioEntity) {
-        console.log("id Usuario respuesta: "+usuarioEntity.nombres);
         this.usuarioLogin.idUsuario=usuarioEntity.idUsuario;
         this.usuarioLogin.email=usuarioEntity.email;
         this.usuarioLogin.usuario=usuarioEntity.usuario;
@@ -19,7 +18,6 @@ export class GlobalUserService {
         this.usuarioLogin.nombres=usuarioEntity.nombres;
         this.usuarioLogin.tipoId=usuarioEntity.tipoId;
         this.usuarioLogin.numeroId=usuarioEntity.numeroId;
-        console.log("IdUsuarioGlobal Mrda!: "+this.usuarioLogin.usuario);
     }
 
 }
