@@ -52,6 +52,14 @@ public class PlanController {
         return new ResponseEntity<NumberPair>(pair, HttpStatus.OK);
     }
 
+    @RequestMapping( value = "/plans/update", method = RequestMethod.POST )
+    public ResponseEntity<PlanEntity> updatePlan(@RequestBody PlanEntity plan){
+        //System.out.println("id ususario: "+pair.getIdUser()+" id plan: "+ pair.getIdPlan());
+        planService.updatePlan(plan);
+        System.out.println("fecha inicial update: "+plan.getFechaInicio());
+        return new ResponseEntity<PlanEntity>(plan, HttpStatus.OK);
+    }
+
 
 
 }

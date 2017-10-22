@@ -42,6 +42,9 @@ export class CreatePlanPageComponent implements OnInit {
     this.plan.nombre = this.userForm.get('nombre').value;
     this.plan.descripcion = this.userForm.get('descripcion').value;
     this.plan.ubicacion = this.userForm.get('ubicacion').value;
+
+    console.log(this.userForm.get('fechainicio').value);
+
     this.plan.fechaInicio = new Date(this.userForm.get('fechainicio').value).getTime();
     this.plan.fechaFinal = new Date(this.userForm.get('fechafinal').value).getTime()
     this.plan.costoPromedio = this.userForm.get('costo').value;
@@ -50,7 +53,7 @@ export class CreatePlanPageComponent implements OnInit {
     this.plan.imagenPlan= new Blob;
 
     this.planService.createPlan(this.plan).subscribe(serverResponse=>{
-        this.router.navigate(['/planes']);
+        this.router.navigate(['/yourplans']);
     }, error=>{
         this.errorString = "Error Suscribiendo: "+error.message;
     });

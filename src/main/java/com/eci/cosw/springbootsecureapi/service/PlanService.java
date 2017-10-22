@@ -22,5 +22,7 @@ public interface PlanService {
 
     void unsubscribePlan(Long id_usuario, Long id_plan);
 
+    void updatePlan(PlanEntity plan);
+
 
 }

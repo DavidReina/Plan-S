@@ -6,6 +6,7 @@ import {PlanService} from "../../services/plan.service";
 import {GlobalUserService} from "../../common/global-user.service";
 import {NumberPair} from "../../models/NumberPair";
 import { DatePipe } from '@angular/common';
+import {UsuarioEntity} from "../../models/UsuarioEntity";
 
 @Component({
   selector: 'app-review-plan-subscribe-page',
@@ -15,6 +16,7 @@ import { DatePipe } from '@angular/common';
 export class ReviewPlanSubscribePageComponent implements OnInit {
     private userForm:FormGroup;
     private errorString: String;
+    private usuarios: UsuarioEntity[] = [];
 
   constructor(public globalPlan:GlobalPlanService, public formBuilder:FormBuilder, public router: Router, public planService: PlanService, public globalUser: GlobalUserService,
               public numberPair:NumberPair, public date: DatePipe) {

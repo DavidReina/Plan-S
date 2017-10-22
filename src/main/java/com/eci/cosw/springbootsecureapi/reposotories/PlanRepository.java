@@ -7,6 +7,8 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 import javax.transaction.Transactional;
+import java.sql.Blob;
+import java.sql.Timestamp;
 import java.util.List;
 
 public interface PlanRepository extends JpaRepository<PlanEntity,Integer> {
@@ -36,6 +38,11 @@ public interface PlanRepository extends JpaRepository<PlanEntity,Integer> {
     @Transactional
     void unsubscribePlan(@Param("id_usuario") long id_usuario, @Param("id_plan") long id_plan);
 
+    @Modifying
+    @Query(value ="UPDATE plan SET nombre=:nombre, descripcion=:descripcion, ubicacion=:ubicacion, fecha_inicio=:fecha_inicio, fecha_final=:fecha_final, costo_promedio=:costo_promedio, detalle_preferencia=:detalle_preferencia, imagen_plan=:imagen_plan WHERE id_plan=:id_plan", nativeQuery = true )
+    @Transactional
+    void updatePlan(@Param("id_plan") long id, @Param("nombre") String nombre, @Param("descripcion") String descripcion, @Param("ubicacion") String ubicacion, @Param("fecha_inicio") Timestamp fecha_inicio, @Param("fecha_final") Timestamp fecha_final,
+                    @Param("costo_promedio") int costo_promedio, @Param("detalle_preferencia") int detalle_preferencia, @Param("imagen_plan") Blob imagen_plan);
 
 
 }

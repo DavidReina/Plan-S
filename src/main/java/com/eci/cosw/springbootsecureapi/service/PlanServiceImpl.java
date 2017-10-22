@@ -53,5 +53,11 @@ public class PlanServiceImpl implements PlanService {
         plans.unsubscribePlan(id_usuario,id_plan);
     }
 
+    @Override
+    public void updatePlan(PlanEntity plan){
+        plans.updatePlan(plan.getIdPlan(),plan.getNombre(),plan.getDescripcion(),plan.getUbicacion(),plan.getFechaInicio(),plan.getFechaFinal(),plan.getCostoPromedio(),plan.getDetallePreferencia()
+        ,plan.getImagenPlan());
+    }
+
 }
 

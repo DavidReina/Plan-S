@@ -37,6 +37,7 @@ import {NumberPair} from "./models/NumberPair";
 import {DatePipe} from "@angular/common";
 import { ReviewPlanUnsubscribePageComponent } from './pages/review-plan-unsubscribe-page/review-plan-unsubscribe-page.component';
 import { YourSubscribedPlanPageComponent } from './pages/your-subscribed-plan-page/your-subscribed-plan-page.component';
+import { YourPlanEditPageComponent } from './pages/your-plan-edit-page/your-plan-edit-page.component';
 
 const ROUTES = [
   { path: '', component: HomePageComponent },
@@ -88,6 +89,11 @@ const ROUTES = [
         canActivate: [AuthService],
 
     },
+    {
+        path: 'yourplanedit', component: YourPlanEditPageComponent,
+        canActivate: [AuthService],
+
+    },
   {
     path: '**', component: PageNotFoundComponent
   }
@@ -110,6 +116,7 @@ const ROUTES = [
     ReviewPlanSubscribePageComponent,
     ReviewPlanUnsubscribePageComponent,
     YourSubscribedPlanPageComponent,
+    YourPlanEditPageComponent,
   ],
   imports: [
     BrowserModule,

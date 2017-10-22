@@ -43,6 +43,10 @@ export class PlanService extends APIService{
         return this.post(this.resourceUrl, JSON.stringify(plan));
     }
 
+    updatePlan(plan:Plan){
+        return this.post(this.resourceUrl+"/update", JSON.stringify(plan));
+    }
+
 
 
 }

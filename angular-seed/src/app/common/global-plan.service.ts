@@ -16,8 +16,8 @@ export class GlobalPlanService {
         this.plan.creadorPlan = setplan.creadorPlan;
         this.plan.descripcion = setplan.descripcion;
         this.plan.detallePreferencia = setplan.detallePreferencia;
-        this.plan.fechaFinal = setplan.fechaFinal;
-        this.plan.fechaInicio = setplan.fechaInicio;
+        this.plan.fechaFinal = new Date(setplan.fechaFinal).getTime();
+        this.plan.fechaInicio = new Date(setplan.fechaInicio).getTime();
         this.plan.nombre = setplan.nombre;
         this.plan.ubicacion = setplan.ubicacion;
     }

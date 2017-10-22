@@ -1,0 +1,39 @@
+<div class="container">
+  <h2>Edita: {{this.globalPlan.plan.nombre}}</h2>
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()" novalidate>
+
+    <div class="form-group">
+      <label for="nombre">Nombre</label>
+      <input type="text" class="form-control" id="nombre" formControlName="nombre" required>
+    </div>
+
+    <div class="form-group">
+      <label for="descripcion">Descripcion</label>
+      <input type="text" class="form-control" id="descripcion" formControlName="descripcion" required>
+    </div>
+
+    <div class="form-group">
+      <label for="ubicacion">Ubicacion</label>
+      <input type="text" class="form-control" id="ubicacion" formControlName="ubicacion" required>
+    </div>
+
+    <div class="form-group">
+      <label for="fechainicio">Fecha Inicio</label>
+      <input type="datetime-local" class="form-control" id="fechainicio" formControlName="fechainicio" required>
+    </div>
+
+    <div class="form-group">
+      <label for="fechafinal">Fecha Final</label>
+      <input type="datetime-local" class="form-control" id="fechafinal" formControlName="fechafinal" required>
+    </div>
+
+    <div class="form-group">
+      <label for="costo">Costo Promedio</label>
+      <input type="text" class="form-control" id="costo" formControlName="costo" required>
+    </div>
+
+    <button type="submit" class="btn btn-success">Guardar tu edicion</button>
+    <p class="text-danger mt-1" *ngIf="errorString">{{errorString}}</p>
+
+  </form>
+</div>
