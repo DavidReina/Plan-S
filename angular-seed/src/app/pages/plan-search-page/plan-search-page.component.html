@@ -1,0 +1,17 @@
+<h2>Resultado Busqueda {{this.globalsearch.search.search}}</h2><br>
+<table class="table table-bordered">
+  <thead>
+  <tr>
+    <th>Nombre</th>
+    <th>Ubicacion</th>
+    <th>Fecha (MM/DD/AAAA)</th>
+    <th>Costo Promedio</th>
+  </tr>
+  </thead>
+  <tr *ngFor="let plan of planes; let i = index" (click)="setClickedRow(i)" [class.active]="i == selectedRow" >
+    <td>{{plan.nombre}}</td>
+    <td>{{plan.ubicacion}}</td>
+    <td>{{plan.fechaInicio | date:'short'}}</td>
+    <td>{{plan.costoPromedio}}</td>
+  </tr>
+</table>

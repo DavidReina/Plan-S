@@ -12,8 +12,7 @@ import org.springframework.http.HttpStatus;
 
 import javax.servlet.ServletException;
 import java.util.Date;
-import java.util.Optional;
-
+import java.util.List;
 
 /**
  * @author Plan s
@@ -129,6 +128,11 @@ public class UserController
         }
         return new ResponseEntity<UsuarioEntity>(usuario,HttpStatus.OK);
 
+    }
+
+    @RequestMapping( value = "/users/asistentes/{idplan}", method = RequestMethod.GET )
+    public List<UsuarioEntity> getUserSubscribedList(@PathVariable("idplan") Long idplan){
+        return userService.getAsistentes(idplan);
     }
 
 }

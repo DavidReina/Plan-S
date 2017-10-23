@@ -6,6 +6,8 @@ import {PlanService} from "../../services/plan.service";
 import {GlobalUserService} from "../../common/global-user.service";
 import {NumberPair} from "../../models/NumberPair";
 import { DatePipe } from '@angular/common';
+import {UsuarioEntity} from "../../models/UsuarioEntity";
+import {UsersService} from "../../services/users.service";
 
 @Component({
   selector: 'app-review-plan-unsubscribe-page',
@@ -15,9 +17,10 @@ import { DatePipe } from '@angular/common';
 export class ReviewPlanUnsubscribePageComponent implements OnInit {
     private userForm:FormGroup;
     private errorString: String;
+    private usuarios: UsuarioEntity[] = [];
 
     constructor(public globalPlan:GlobalPlanService, public formBuilder:FormBuilder, public router: Router, public planService: PlanService, public globalUser: GlobalUserService,
-                public numberPair:NumberPair, public date: DatePipe) {
+                public numberPair:NumberPair, public date: DatePipe, public userService: UsersService) {
 
 
     }
@@ -31,6 +34,10 @@ export class ReviewPlanUnsubscribePageComponent implements OnInit {
             fechafinal: this.date.transform(this.globalPlan.plan.fechaFinal, 'short'),
             costo: this.globalPlan.plan.costoPromedio
         });
+
+        this.userService.getAsistentesPlan(this.globalPlan.plan.idPlan).subscribe(usuarioResponse => {
+            this.usuarios = usuarioResponse;
+        })
     }
 
     onSubmit(){

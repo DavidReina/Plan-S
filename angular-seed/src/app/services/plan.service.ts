@@ -47,6 +47,10 @@ export class PlanService extends APIService{
         return this.post(this.resourceUrl+"/update", JSON.stringify(plan));
     }
 
+    planSearch(search:string, id:number): Observable<Plan[]>{
+        return this.get(this.resourceUrl+"/search/"+search+"/"+id);
+    }
+
 
 
 }

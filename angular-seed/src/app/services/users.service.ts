@@ -63,5 +63,10 @@ export class UsersService extends APIService {
                 }
             });
         }
+
+    getAsistentesPlan(idplan: number): Observable<UsuarioEntity[]> {
+
+        return this.get(this.resourceUrl+"/asistentes/"+idplan);
+    }
 }
 

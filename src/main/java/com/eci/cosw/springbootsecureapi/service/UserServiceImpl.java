@@ -22,8 +22,8 @@ public class UserServiceImpl implements UserService {
 
 
     @Override
-    public List<UsuarioEntity> getUsers() {
-        return userRepo.findAll();
+    public List<UsuarioEntity> getAsistentes(Long idPlan) {
+        return userRepo.asistentesPlan(idPlan);
     }
 
 

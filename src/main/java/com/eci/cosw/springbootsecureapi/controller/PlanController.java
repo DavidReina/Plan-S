@@ -60,6 +60,9 @@ public class PlanController {
         return new ResponseEntity<PlanEntity>(plan, HttpStatus.OK);
     }
 
-
+    @RequestMapping( value = "/plans/search/{planname}/{iduser}", method = RequestMethod.GET )
+    public List<PlanEntity> getUserSubscribedList(@PathVariable("planname") String planname, @PathVariable("iduser") Long iduser){
+        return planService.searchPlan(planname,iduser);
+    }
 
 }

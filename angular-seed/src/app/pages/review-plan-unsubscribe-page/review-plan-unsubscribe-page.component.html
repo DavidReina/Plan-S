@@ -36,4 +36,23 @@
     <p class="text-danger mt-1" *ngIf="errorString">{{errorString}}</p>
 
   </form>
+
+  <h2>Asistentes al plan</h2>
+  <table class="table table-bordered">
+    <thead>
+    <tr>
+      <th>Usuario</th>
+      <th>Correo</th>
+      <th>Nombres</th>
+      <th>Apellidos</th>
+    </tr>
+    </thead>
+    <tr *ngFor="let user of usuarios" >
+      <td>{{user.usuario}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.nombres}}</td>
+      <td>{{user.apellidos}}</td>
+    </tr>
+  </table>
+
 </div>

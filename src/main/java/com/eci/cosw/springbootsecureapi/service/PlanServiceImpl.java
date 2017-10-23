@@ -24,11 +24,6 @@ public class PlanServiceImpl implements PlanService {
     }
 
     @Override
-    public PlanEntity getPlanByName(String nombre) {
-        return plans.getPlanByname(nombre);
-    }
-
-    @Override
     public List<PlanEntity> getUserPlanList(Long userid) {
         return plans.getPlansByIdUser(userid);
     }
@@ -57,6 +52,10 @@ public class PlanServiceImpl implements PlanService {
     public void updatePlan(PlanEntity plan){
         plans.updatePlan(plan.getIdPlan(),plan.getNombre(),plan.getDescripcion(),plan.getUbicacion(),plan.getFechaInicio(),plan.getFechaFinal(),plan.getCostoPromedio(),plan.getDetallePreferencia()
         ,plan.getImagenPlan());
+    }
+
+    public List<PlanEntity> searchPlan(String planname, Long iduser){
+        return plans.getPlanByname(planname, iduser);
     }
 
 }

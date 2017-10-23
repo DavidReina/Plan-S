@@ -11,7 +11,7 @@ import java.util.Optional;
  */
 public interface UserService
 {
-    List<UsuarioEntity> getUsers();
+    List<UsuarioEntity> getAsistentes(Long idplan);
 
     void registerUser(UsuarioEntity user);
 
@@ -22,5 +22,6 @@ public interface UserService
     UsuarioEntity getUserByEmail( String email );
 
     void updateUser(UsuarioEntity u);
+
 
 }

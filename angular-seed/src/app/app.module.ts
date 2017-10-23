@@ -33,11 +33,15 @@ import {UsuarioEntity} from "./models/UsuarioEntity";
 import {Plan} from "./models/plan";
 import { ReviewPlanSubscribePageComponent } from './pages/review-plan-subscribe-page/review-plan-subscribe-page.component';
 import {GlobalPlanService} from "./common/global-plan.service";
+import {GlobalSearchService} from "./common/global-search.service";
 import {NumberPair} from "./models/NumberPair";
 import {DatePipe} from "@angular/common";
 import { ReviewPlanUnsubscribePageComponent } from './pages/review-plan-unsubscribe-page/review-plan-unsubscribe-page.component';
 import { YourSubscribedPlanPageComponent } from './pages/your-subscribed-plan-page/your-subscribed-plan-page.component';
 import { YourPlanEditPageComponent } from './pages/your-plan-edit-page/your-plan-edit-page.component';
+import { PlanSearchPageComponent } from './pages/plan-search-page/plan-search-page.component';
+import {Search} from "./models/search";
+import { RefreshSearchPageComponent } from './pages/refresh-search-page/refresh-search-page.component';
 
 const ROUTES = [
   { path: '', component: HomePageComponent },
@@ -94,6 +98,16 @@ const ROUTES = [
         canActivate: [AuthService],
 
     },
+    {
+        path: 'plansearch', component: PlanSearchPageComponent,
+        canActivate: [AuthService],
+
+    },
+    {
+        path: 'refreshsearchpage', component: RefreshSearchPageComponent,
+        canActivate: [AuthService],
+
+    },
   {
     path: '**', component: PageNotFoundComponent
   }
@@ -117,6 +131,8 @@ const ROUTES = [
     ReviewPlanUnsubscribePageComponent,
     YourSubscribedPlanPageComponent,
     YourPlanEditPageComponent,
+    PlanSearchPageComponent,
+    RefreshSearchPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -144,6 +160,8 @@ const ROUTES = [
       Plan,
       NumberPair,
       DatePipe,
+      GlobalSearchService,
+      Search,
     AppConfiguration],
   bootstrap: [AppComponent]
  })

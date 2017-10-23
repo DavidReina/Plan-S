@@ -1,5 +1,6 @@
 package com.eci.cosw.springbootsecureapi.reposotories;
 
+import com.eci.cosw.springbootsecureapi.model.PlanEntity;
 import com.eci.cosw.springbootsecureapi.model.UsuarioEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
@@ -7,6 +8,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 import javax.transaction.Transactional;
+import java.util.List;
 
 
 public interface UsuarioRepository extends JpaRepository<UsuarioEntity,Integer>{
@@ -34,4 +36,7 @@ public interface UsuarioRepository extends JpaRepository<UsuarioEntity,Integer>{
 
     @Query(value ="SELECT COUNT(id_usuario) FROM usuario", nativeQuery = true )
     int numeroRegistros();
+
+    @Query(value ="SELECT id_usuario,email,contrasena,nombres,apellidos,usuario,tipo_id,numero_id,foto_perfil FROM usuario LEFT JOIN plan_asistente ON id_usuario=usuario_id WHERE plan_id=:idplan", nativeQuery = true)
+    List<UsuarioEntity> asistentesPlan(@Param("idplan") Long idplan);
 }

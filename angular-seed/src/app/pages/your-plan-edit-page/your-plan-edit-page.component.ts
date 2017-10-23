@@ -7,6 +7,8 @@ import {GlobalUserService} from "../../common/global-user.service";
 import {NumberPair} from "../../models/NumberPair";
 import {DatePipe} from "@angular/common";
 import {Plan} from "../../models/plan";
+import {UsuarioEntity} from "../../models/UsuarioEntity";
+import {UsersService} from "../../services/users.service";
 
 @Component({
   selector: 'app-your-plan-edit-page',
@@ -19,10 +21,11 @@ export class YourPlanEditPageComponent implements OnInit {
     private errorString: String;
     private fechainicio: String;
     private fechafinal: String;
+    private usuarios: UsuarioEntity[] = [];
 
 
     constructor(public globalPlan:GlobalPlanService, public formBuilder:FormBuilder, public router: Router, public planService: PlanService, public globalUser: GlobalUserService,
-                public numberPair:NumberPair, public plan:Plan) {
+                public numberPair:NumberPair, public plan:Plan, public userService: UsersService) {
 
 
     }
@@ -40,6 +43,10 @@ export class YourPlanEditPageComponent implements OnInit {
             fechafinal: this.fechafinal,
             costo: this.globalPlan.plan.costoPromedio
         });
+
+        this.userService.getAsistentesPlan(this.globalPlan.plan.idPlan).subscribe(usuarioResponse => {
+            this.usuarios = usuarioResponse;
+        })
     }
 
     onSubmit(){

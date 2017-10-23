@@ -13,8 +13,8 @@ import java.util.List;
 
 public interface PlanRepository extends JpaRepository<PlanEntity,Integer> {
 
-    @Query(value ="from PlanEntity where nombre like '%'||:name||'%'", nativeQuery = true)
-    PlanEntity getPlanByname(@Param("name") String name);
+    @Query(value ="SELECT  id_plan, nombre, descripcion, ubicacion, fecha_inicio, fecha_final, costo_promedio, creador_plan, detalle_preferencia, imagen_plan FROM plan LEFT JOIN plan_asistente ON plan_id=id_plan WHERE nombre LIKE CONCAT('%',:nombreplan,'%') AND (NOT usuario_id=:iduser OR usuario_id IS NULL) AND NOT creador_plan=:iduser", nativeQuery = true)
+    List<PlanEntity> getPlanByname(@Param("nombreplan") String nombreplan, @Param("iduser") long iduser);
 
     @Query(value ="SELECT * FROM plan WHERE creador_plan=:id", nativeQuery = true)
     List<PlanEntity> getPlansByIdUser(@Param("id") long id);

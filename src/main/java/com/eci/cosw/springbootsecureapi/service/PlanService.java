@@ -14,8 +14,6 @@ public interface PlanService {
 
     void createPlan(PlanEntity plan);
 
-    PlanEntity getPlanByName (String nombre);
-
     List<PlanEntity> isSubscribed (Long id_usuario, Long id_plan);
 
     void subscribePlan(Long id_usuario, Long id_plan);
@@ -23,6 +21,9 @@ public interface PlanService {
     void unsubscribePlan(Long id_usuario, Long id_plan);
 
     void updatePlan(PlanEntity plan);
+
+    List<PlanEntity> searchPlan(String planname, Long iduser);
+
 
 
 }
