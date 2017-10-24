@@ -291,7 +291,7 @@ AppModule = __decorate([
             {
                 provide: __WEBPACK_IMPORTED_MODULE_5__common_config_initial_config__["a" /* INITIAL_CONFIG */],
                 useValue: {
-                    apiURL: 'http://localhost:8080'
+                    apiURL: 'http://plan-s.herokuapp.com'
                 }
             },
             __WEBPACK_IMPORTED_MODULE_11__services_plan_service__["a" /* PlanService */],

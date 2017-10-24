@@ -146,7 +146,7 @@ const ROUTES = [
     {
       provide: INITIAL_CONFIG,
       useValue: {
-        apiURL: 'http://localhost:8080'
+        apiURL: 'http://plan-s.herokuapp.com'
       }
     },
     PlanService,
