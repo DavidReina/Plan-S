@@ -5,6 +5,7 @@ import { PlanService } from '../../services/plan.service';
 import { Plan } from '../../models/plan';
 import {GlobalUserService} from "../../common/global-user.service";
 import {DatePipe} from "@angular/common";
+import {PreferenciaEntity} from "../../models/PreferenciaEntity";
 
 @Component({
   selector: 'app-create-plan-page',
@@ -14,6 +15,7 @@ import {DatePipe} from "@angular/common";
 export class CreatePlanPageComponent implements OnInit {
    private userForm: FormGroup;
    private errorString: String;
+    private preferencias: PreferenciaEntity[] = [];
 
   constructor(
     public globaluser: GlobalUserService,
@@ -27,14 +29,22 @@ export class CreatePlanPageComponent implements OnInit {
   }
 
   ngOnInit() {
+
+      this.planService.getPreferences().subscribe(planResponse => {
+          this.preferencias = planResponse;
+      })
+
       this.userForm = this.formBuilder.group({
       nombre: '',
       descripcion: '',
       ubicacion: '',
       fechainicio: '',
       fechafinal: '',
-      costo: ''
+      costo: '',
+      preferencia: ['']
     });
+
+
 
   }
 
@@ -49,7 +59,7 @@ export class CreatePlanPageComponent implements OnInit {
     this.plan.fechaFinal = new Date(this.userForm.get('fechafinal').value).getTime()
     this.plan.costoPromedio = this.userForm.get('costo').value;
     this.plan.creadorPlan = this.globaluser.usuarioLogin.idUsuario;
-    this.plan.detallePreferencia=1;
+    this.plan.detallePreferencia=this.userForm.get('preferencia').value;
     this.plan.imagenPlan= new Blob;
 
     this.planService.createPlan(this.plan).subscribe(serverResponse=>{

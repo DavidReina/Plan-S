@@ -1,6 +1,7 @@
 package com.eci.cosw.springbootsecureapi.service;
 
 import com.eci.cosw.springbootsecureapi.model.PlanEntity;
+import com.eci.cosw.springbootsecureapi.model.PreferenciaEntity;
 
 import java.util.List;
 
@@ -23,6 +24,8 @@ public interface PlanService {
     void updatePlan(PlanEntity plan);
 
     List<PlanEntity> searchPlan(String planname, Long iduser);
+
+    List<PreferenciaEntity> getPreferencias ();
 
 
 

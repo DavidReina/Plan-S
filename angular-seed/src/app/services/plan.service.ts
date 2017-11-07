@@ -4,6 +4,7 @@ import { APIService } from '../common/api.service';
 import { Observable } from "rxjs/Observable";
 import {GlobalUserService} from "../common/global-user.service";
 import {NumberPair} from "../models/NumberPair";
+import {PreferenciaEntity} from "../models/PreferenciaEntity";
 
 @Injectable()
 export class PlanService extends APIService{
@@ -49,6 +50,10 @@ export class PlanService extends APIService{
 
     planSearch(search:string, id:number): Observable<Plan[]>{
         return this.get(this.resourceUrl+"/search/"+search+"/"+id);
+    }
+
+    getPreferences(): Observable<PreferenciaEntity[]>{
+        return this.get(this.resourceUrl+"/preferences");
     }
 
 

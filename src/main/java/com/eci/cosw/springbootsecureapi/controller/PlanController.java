@@ -2,6 +2,7 @@ package com.eci.cosw.springbootsecureapi.controller;
 
 import com.eci.cosw.springbootsecureapi.model.NumberPair;
 import com.eci.cosw.springbootsecureapi.model.PlanEntity;
+import com.eci.cosw.springbootsecureapi.model.PreferenciaEntity;
 import com.eci.cosw.springbootsecureapi.service.PlanService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -63,6 +64,14 @@ public class PlanController {
     @RequestMapping( value = "/plans/search/{planname}/{iduser}", method = RequestMethod.GET )
     public List<PlanEntity> getUserSubscribedList(@PathVariable("planname") String planname, @PathVariable("iduser") Long iduser){
         return planService.searchPlan(planname,iduser);
+    }
+
+    @RequestMapping( value = "/plans/preferences", method = RequestMethod.GET )
+    public List<PreferenciaEntity> getPreferencias(){
+
+        System.out.println("getpreferencias controller");
+        return planService.getPreferencias();
+
     }
 
 }

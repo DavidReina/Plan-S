@@ -1,6 +1,7 @@
 package com.eci.cosw.springbootsecureapi.reposotories;
 
 import com.eci.cosw.springbootsecureapi.model.PlanEntity;
+import com.eci.cosw.springbootsecureapi.model.PreferenciaEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
@@ -43,6 +44,9 @@ public interface PlanRepository extends JpaRepository<PlanEntity,Integer> {
     @Transactional
     void updatePlan(@Param("id_plan") long id, @Param("nombre") String nombre, @Param("descripcion") String descripcion, @Param("ubicacion") String ubicacion, @Param("fecha_inicio") Timestamp fecha_inicio, @Param("fecha_final") Timestamp fecha_final,
                     @Param("costo_promedio") int costo_promedio, @Param("detalle_preferencia") int detalle_preferencia, @Param("imagen_plan") Blob imagen_plan);
+
+    @Query(value ="SELECT * FROM preferencia", nativeQuery = true )
+    List<Object[]> getPreferencias ();
 
 
 }
