@@ -2015,7 +2015,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/your-plan-edit-page/your-plan-edit-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n  <h2>Edita: {{this.globalPlan.plan.nombre}}</h2>\r\n  <form [formGroup]=\"userForm\" (ngSubmit)=\"onSubmit()\" novalidate>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"nombre\">Nombre</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"nombre\" formControlName=\"nombre\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"descripcion\">Descripcion</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"descripcion\" formControlName=\"descripcion\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"ubicacion\">Ubicacion</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"ubicacion\" formControlName=\"ubicacion\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"fechainicio\">Fecha Inicio</label>\r\n      <input type=\"datetime-local\" class=\"form-control\" id=\"fechainicio\" formControlName=\"fechainicio\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"fechafinal\">Fecha Final</label>\r\n      <input type=\"datetime-local\" class=\"form-control\" id=\"fechafinal\" formControlName=\"fechafinal\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"costo\">Costo Promedio</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"costo\" formControlName=\"costo\" required>\r\n    </div>\r\n\r\n    <button type=\"submit\" class=\"btn btn-success\">Guardar tu edicion</button>\r\n    <p class=\"text-danger mt-1\" *ngIf=\"errorString\">{{errorString}}</p>\r\n\r\n  </form>\r\n\r\n  <h2>Asistentes al plan</h2>\r\n  <table class=\"table table-bordered\">\r\n    <thead>\r\n    <tr>\r\n      <th>Usuario</th>\r\n      <th>Correo</th>\r\n      <th>Nombres</th>\r\n      <th>Apellidos</th>\r\n    </tr>\r\n    </thead>\r\n    <tr *ngFor=\"let user of usuarios\" >\r\n      <td>{{user.usuario}}</td>\r\n      <td>{{user.email}}</td>\r\n      <td>{{user.nombres}}</td>\r\n      <td>{{user.apellidos}}</td>\r\n    </tr>\r\n  </table>\r\n\r\n</div>\r\n"
+module.exports = "<div class=\"container\">\r\n  <h2>Edita: {{this.globalPlan.plan.nombre}}</h2>\r\n  <form [formGroup]=\"userForm\" (ngSubmit)=\"onSubmit()\" novalidate>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"nombre\">Nombre</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"nombre\" formControlName=\"nombre\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"descripcion\">Descripcion</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"descripcion\" formControlName=\"descripcion\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"ubicacion\">Ubicacion</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"ubicacion\" formControlName=\"ubicacion\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"fechainicio\">Fecha Inicio</label>\r\n      <input type=\"datetime-local\" class=\"form-control\" id=\"fechainicio\" formControlName=\"fechainicio\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"fechafinal\">Fecha Final</label>\r\n      <input type=\"datetime-local\" class=\"form-control\" id=\"fechafinal\" formControlName=\"fechafinal\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"costo\">Costo Promedio</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"costo\" formControlName=\"costo\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"preferencia\">Preferencia Plan</label>\r\n      <select  formControlName=\"preferencia\" class=\"form-control input-lg\" id=\"preferencia\">\r\n        <option *ngFor=\"let preferencia of preferencias; let i = index\" [ngValue]=\"preferencia.idPreferencia\" [selected]=\"true ? true : null\">{{preferencia.nombre}}</option>\r\n      </select>\r\n    </div>\r\n\r\n    <button type=\"submit\" class=\"btn btn-success\">Guardar tu edicion</button>\r\n    <p class=\"text-danger mt-1\" *ngIf=\"errorString\">{{errorString}}</p>\r\n\r\n  </form>\r\n\r\n  <h2>Asistentes al plan</h2>\r\n  <table class=\"table table-bordered\">\r\n    <thead>\r\n    <tr>\r\n      <th>Usuario</th>\r\n      <th>Correo</th>\r\n      <th>Nombres</th>\r\n      <th>Apellidos</th>\r\n    </tr>\r\n    </thead>\r\n    <tr *ngFor=\"let user of usuarios\" >\r\n      <td>{{user.usuario}}</td>\r\n      <td>{{user.email}}</td>\r\n      <td>{{user.nombres}}</td>\r\n      <td>{{user.apellidos}}</td>\r\n    </tr>\r\n  </table>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -2062,9 +2062,16 @@ var YourPlanEditPageComponent = (function () {
         this.plan = plan;
         this.userService = userService;
         this.usuarios = [];
+        this.preferencias = [];
     }
     YourPlanEditPageComponent.prototype.ngOnInit = function () {
         var _this = this;
+        this.planService.getPreferences().subscribe(function (planResponse) {
+            _this.preferencias = planResponse;
+            _this.preferenciaSeleccionada = _this.preferencias[_this.globalPlan.plan.detallePreferencia - 1];
+            _this.preferencias.splice(_this.globalPlan.plan.detallePreferencia - 1, 1);
+            _this.preferencias.splice(_this.preferencias.length, 0, _this.preferenciaSeleccionada);
+        });
         this.fechainicio = new Date(this.globalPlan.plan.fechaInicio - 18000000).toISOString().slice(0, 16);
         this.fechafinal = new Date(this.globalPlan.plan.fechaFinal - 18000000).toISOString().slice(0, 16);
         this.userForm = this.formBuilder.group({
@@ -2073,7 +2080,8 @@ var YourPlanEditPageComponent = (function () {
             ubicacion: this.globalPlan.plan.ubicacion,
             fechainicio: this.fechainicio,
             fechafinal: this.fechafinal,
-            costo: this.globalPlan.plan.costoPromedio
+            costo: this.globalPlan.plan.costoPromedio,
+            preferencia: ['']
         });
         this.userService.getAsistentesPlan(this.globalPlan.plan.idPlan).subscribe(function (usuarioResponse) {
             _this.usuarios = usuarioResponse;
@@ -2088,6 +2096,8 @@ var YourPlanEditPageComponent = (function () {
         this.plan.fechaInicio = new Date(this.userForm.get('fechainicio').value).getTime();
         this.plan.fechaFinal = new Date(this.userForm.get('fechafinal').value).getTime();
         this.plan.costoPromedio = this.userForm.get('costo').value;
+        console.log(this.userForm.get('preferencia').value);
+        this.plan.detallePreferencia = this.userForm.get('preferencia').value;
         this.planService.updatePlan(this.plan).subscribe(function (serverResponse) {
             _this.router.navigate(['../yourplans']);
         }, function (error) {
@@ -2346,6 +2356,9 @@ var PlanService = (function (_super) {
     };
     PlanService.prototype.getPreferences = function () {
         return this.get(this.resourceUrl + "/preferences");
+    };
+    PlanService.prototype.getPreferenceById = function (id) {
+        return this.get(this.resourceUrl + "/preferences/" + id);
     };
     return PlanService;
 }(__WEBPACK_IMPORTED_MODULE_1__common_api_service__["a" /* APIService */]));

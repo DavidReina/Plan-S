@@ -27,6 +27,8 @@ public interface PlanService {
 
     List<PreferenciaEntity> getPreferencias ();
 
+    PreferenciaEntity getPreferenciasById (Long id);
+
 
 
 }

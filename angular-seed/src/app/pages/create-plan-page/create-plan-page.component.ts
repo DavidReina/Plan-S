@@ -15,7 +15,7 @@ import {PreferenciaEntity} from "../../models/PreferenciaEntity";
 export class CreatePlanPageComponent implements OnInit {
    private userForm: FormGroup;
    private errorString: String;
-    private preferencias: PreferenciaEntity[] = [];
+   private preferencias: PreferenciaEntity[] = [];
 
   constructor(
     public globaluser: GlobalUserService,

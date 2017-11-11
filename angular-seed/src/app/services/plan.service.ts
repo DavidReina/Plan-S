@@ -56,6 +56,10 @@ export class PlanService extends APIService{
         return this.get(this.resourceUrl+"/preferences");
     }
 
+    getPreferenceById(id:number): Observable<PreferenciaEntity>{
+        return this.get(this.resourceUrl+"/preferences/"+id);
+    }
+
 
 
 }

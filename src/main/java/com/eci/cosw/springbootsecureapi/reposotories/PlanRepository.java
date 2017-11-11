@@ -48,5 +48,8 @@ public interface PlanRepository extends JpaRepository<PlanEntity,Integer> {
     @Query(value ="SELECT * FROM preferencia", nativeQuery = true )
     List<Object[]> getPreferencias ();
 
+    @Query(value ="SELECT * FROM preferencia WHERE id_preferencia=:id", nativeQuery = true )
+    List<Object[]> getPreferenciasById (@Param("id") long id);
+
 
 }

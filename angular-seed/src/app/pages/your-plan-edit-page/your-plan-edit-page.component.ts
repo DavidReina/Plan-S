@@ -9,6 +9,7 @@ import {DatePipe} from "@angular/common";
 import {Plan} from "../../models/plan";
 import {UsuarioEntity} from "../../models/UsuarioEntity";
 import {UsersService} from "../../services/users.service";
+import {PreferenciaEntity} from "../../models/PreferenciaEntity";
 
 @Component({
   selector: 'app-your-plan-edit-page',
@@ -22,6 +23,9 @@ export class YourPlanEditPageComponent implements OnInit {
     private fechainicio: String;
     private fechafinal: String;
     private usuarios: UsuarioEntity[] = [];
+    private preferencias: PreferenciaEntity[] = [];
+    private preferenciaSeleccionada:PreferenciaEntity;
+    private i:number;
 
 
     constructor(public globalPlan:GlobalPlanService, public formBuilder:FormBuilder, public router: Router, public planService: PlanService, public globalUser: GlobalUserService,
@@ -32,6 +36,15 @@ export class YourPlanEditPageComponent implements OnInit {
 
     ngOnInit() {
 
+        this.planService.getPreferences().subscribe(planResponse => {
+            this.preferencias = planResponse;
+            this.preferenciaSeleccionada=this.preferencias[this.globalPlan.plan.detallePreferencia-1];
+
+            this.preferencias.splice(this.globalPlan.plan.detallePreferencia-1,1);
+            this.preferencias.splice(this.preferencias.length,0,this.preferenciaSeleccionada);
+
+        })
+
         this.fechainicio=new Date(this.globalPlan.plan.fechaInicio-18000000).toISOString().slice(0,16);
         this.fechafinal=new Date(this.globalPlan.plan.fechaFinal-18000000).toISOString().slice(0,16);
 
@@ -41,7 +54,8 @@ export class YourPlanEditPageComponent implements OnInit {
             ubicacion: this.globalPlan.plan.ubicacion,
             fechainicio: this.fechainicio,
             fechafinal: this.fechafinal,
-            costo: this.globalPlan.plan.costoPromedio
+            costo: this.globalPlan.plan.costoPromedio,
+            preferencia: ['']
         });
 
         this.userService.getAsistentesPlan(this.globalPlan.plan.idPlan).subscribe(usuarioResponse => {
@@ -58,6 +72,8 @@ export class YourPlanEditPageComponent implements OnInit {
         this.plan.fechaInicio = new Date(this.userForm.get('fechainicio').value).getTime();
         this.plan.fechaFinal = new Date(this.userForm.get('fechafinal').value).getTime();
         this.plan.costoPromedio = this.userForm.get('costo').value;
+        console.log(this.userForm.get('preferencia').value);
+        this.plan.detallePreferencia=this.userForm.get('preferencia').value;
 
 
         this.planService.updatePlan(

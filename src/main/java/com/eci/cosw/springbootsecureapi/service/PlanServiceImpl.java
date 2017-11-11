@@ -74,7 +74,19 @@ public class PlanServiceImpl implements PlanService {
             listaPref.add(pe);
         }
 
-        return listaPref;}
+        return listaPref;
+    }
+
+    public PreferenciaEntity getPreferenciasById (Long id){
+
+        PreferenciaEntity pe = new PreferenciaEntity();
+        List<Object[]> objs= plans.getPreferenciasById(id);
+        String bi = objs.get(0)[0].toString();
+        System.out.println(objs.get(0)[1]);
+        pe.setIdPreferencia(Long.valueOf(bi).longValue());
+        pe.setNombre(objs.get(0)[1].toString());
+        return pe;
+    }
 
 }
 

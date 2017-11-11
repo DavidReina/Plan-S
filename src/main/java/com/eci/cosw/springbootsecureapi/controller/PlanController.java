@@ -69,8 +69,14 @@ public class PlanController {
     @RequestMapping( value = "/plans/preferences", method = RequestMethod.GET )
     public List<PreferenciaEntity> getPreferencias(){
 
-        System.out.println("getpreferencias controller");
         return planService.getPreferencias();
+
+    }
+
+    @RequestMapping( value = "/plans/preferences/{id}", method = RequestMethod.GET )
+    public PreferenciaEntity getPreferenciasById(@PathVariable("id") Long id){
+
+        return planService.getPreferenciasById(id);
 
     }
 
