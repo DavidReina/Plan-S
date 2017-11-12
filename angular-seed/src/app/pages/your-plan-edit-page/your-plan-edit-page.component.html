@@ -35,7 +35,7 @@
     <div class="form-group">
       <label for="preferencia">Preferencia Plan</label>
       <select  formControlName="preferencia" class="form-control input-lg" id="preferencia">
-        <option *ngFor="let preferencia of preferencias; let i = index" [ngValue]="preferencia.idPreferencia" [selected]="true ? true : null">{{preferencia.nombre}}</option>
+        <option *ngFor="let preferencia of preferencias; let i = index" [value]="preferencia.nombre" [selected]="true ? true : null">{{preferencia.nombre}}</option>
       </select>
     </div>
 

@@ -25,7 +25,7 @@ export class YourPlanEditPageComponent implements OnInit {
     private usuarios: UsuarioEntity[] = [];
     private preferencias: PreferenciaEntity[] = [];
     private preferenciaSeleccionada:PreferenciaEntity;
-    private i:number;
+    private nombre:string;
 
 
     constructor(public globalPlan:GlobalPlanService, public formBuilder:FormBuilder, public router: Router, public planService: PlanService, public globalUser: GlobalUserService,
@@ -72,9 +72,16 @@ export class YourPlanEditPageComponent implements OnInit {
         this.plan.fechaInicio = new Date(this.userForm.get('fechainicio').value).getTime();
         this.plan.fechaFinal = new Date(this.userForm.get('fechafinal').value).getTime();
         this.plan.costoPromedio = this.userForm.get('costo').value;
-        console.log(this.userForm.get('preferencia').value);
-        this.plan.detallePreferencia=this.userForm.get('preferencia').value;
 
+        this.nombre=this.userForm.get('preferencia').value;
+
+        for (let preference of this.preferencias) {
+            if(preference.nombre==this.nombre){
+                this.plan.detallePreferencia=preference.idPreferencia;
+            }
+        }
+
+        console.log(this.plan.detallePreferencia);
 
         this.planService.updatePlan(
             this.plan
