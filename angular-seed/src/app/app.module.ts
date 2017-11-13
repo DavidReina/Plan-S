@@ -42,6 +42,8 @@ import { YourPlanEditPageComponent } from './pages/your-plan-edit-page/your-plan
 import { PlanSearchPageComponent } from './pages/plan-search-page/plan-search-page.component';
 import {Search} from "./models/search";
 import { RefreshSearchPageComponent } from './pages/refresh-search-page/refresh-search-page.component';
+import {CheckboxListValueAccessor} from "./checkbox-list-value-accesor";
+import {NumberString} from "./models/NumberString";
 
 const ROUTES = [
   { path: '', component: HomePageComponent },
@@ -133,6 +135,7 @@ const ROUTES = [
     YourPlanEditPageComponent,
     PlanSearchPageComponent,
     RefreshSearchPageComponent,
+    CheckboxListValueAccessor
   ],
   imports: [
     BrowserModule,
@@ -160,6 +163,7 @@ const ROUTES = [
       GlobalPlanService,
       Plan,
       NumberPair,
+      NumberString,
       DatePipe,
       GlobalSearchService,
       Search,

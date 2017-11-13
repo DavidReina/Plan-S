@@ -1,9 +1,11 @@
 package com.eci.cosw.springbootsecureapi.controller;
 
+import com.eci.cosw.springbootsecureapi.model.NumberString;
 import com.eci.cosw.springbootsecureapi.model.UsuarioEntity;
 import com.eci.cosw.springbootsecureapi.service.UserService;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import jdk.nashorn.internal.parser.JSONParser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.http.ResponseEntity;
@@ -77,8 +79,9 @@ public class UserController
 
     @RequestMapping( value = "/users", method = RequestMethod.POST )
     public ResponseEntity<UsuarioEntity> setUser(@RequestBody UsuarioEntity user){
-            System.out.println(user.getNombres());
-            userService.registerUser(user);
+            System.out.println(user.getIdUsuario());
+            user=userService.registerUser(user);
+            System.out.println(user.getIdUsuario());
             return new ResponseEntity<UsuarioEntity>(user,HttpStatus.OK);
     }
 
@@ -134,5 +137,13 @@ public class UserController
     public List<UsuarioEntity> getUserSubscribedList(@PathVariable("idplan") Long idplan){
         return userService.getAsistentes(idplan);
     }
+
+    @RequestMapping(method = RequestMethod.POST, value = "/users/userPreferences")
+    public ResponseEntity<NumberString> preferenceUser(@RequestBody NumberString NumbStr) {
+        System.out.println(NumbStr.getStr());
+        userService.setPreferenceUser(NumbStr.getNumber(), NumbStr.getStr());
+        return new ResponseEntity<>(NumbStr,HttpStatus.OK);
+    }
+
 
 }

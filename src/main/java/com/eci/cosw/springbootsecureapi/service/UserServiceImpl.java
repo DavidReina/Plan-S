@@ -28,9 +28,11 @@ public class UserServiceImpl implements UserService {
 
 
     @Override
-    public void registerUser(UsuarioEntity user) {
+    public UsuarioEntity registerUser(UsuarioEntity user) {
         int registros = userRepo.numeroRegistros()+1;
         userRepo.registrarUsuario(registros, user.getApellidos(),user.getContrasena(),user.getEmail(),user.getNombres(),user.getNumeroId(),user.getTipoId(),user.getUsuario());
+        user.setIdUsuario(registros);
+        return user;
     }
 
     @Override
@@ -55,6 +57,14 @@ public class UserServiceImpl implements UserService {
     @Override
     public UsuarioEntity getUserByEmail(String email) {
         return userRepo.getUsuarioByEmail(email);
+    }
+
+
+    @Override
+    public void setPreferenceUser(Long id, List<String> preferencia) {
+        for(int i=0; i<preferencia.size(); i++){
+            userRepo.setPreferenceUser(id,preferencia.get(i));
+        }
     }
 
 }

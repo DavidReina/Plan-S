@@ -149,12 +149,16 @@ var _a, _b, _c, _d, _e;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__pages_plan_search_page_plan_search_page_component__ = __webpack_require__("../../../../../src/app/pages/plan-search-page/plan-search-page.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__models_search__ = __webpack_require__("../../../../../src/app/models/search.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__pages_refresh_search_page_refresh_search_page_component__ = __webpack_require__("../../../../../src/app/pages/refresh-search-page/refresh-search-page.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__checkbox_list_value_accesor__ = __webpack_require__("../../../../../src/app/checkbox-list-value-accesor.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__models_NumberString__ = __webpack_require__("../../../../../src/app/models/NumberString.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -278,6 +282,7 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_35__pages_your_plan_edit_page_your_plan_edit_page_component__["a" /* YourPlanEditPageComponent */],
             __WEBPACK_IMPORTED_MODULE_36__pages_plan_search_page_plan_search_page_component__["a" /* PlanSearchPageComponent */],
             __WEBPACK_IMPORTED_MODULE_38__pages_refresh_search_page_refresh_search_page_component__["a" /* RefreshSearchPageComponent */],
+            __WEBPACK_IMPORTED_MODULE_39__checkbox_list_value_accesor__["a" /* CheckboxListValueAccessor */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -305,6 +310,7 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_29__common_global_plan_service__["a" /* GlobalPlanService */],
             __WEBPACK_IMPORTED_MODULE_27__models_plan__["a" /* Plan */],
             __WEBPACK_IMPORTED_MODULE_31__models_NumberPair__["a" /* NumberPair */],
+            __WEBPACK_IMPORTED_MODULE_40__models_NumberString__["a" /* NumberString */],
             __WEBPACK_IMPORTED_MODULE_32__angular_common__["d" /* DatePipe */],
             __WEBPACK_IMPORTED_MODULE_30__common_global_search_service__["a" /* GlobalSearchService */],
             __WEBPACK_IMPORTED_MODULE_37__models_search__["a" /* Search */],
@@ -315,6 +321,98 @@ AppModule = __decorate([
 ], AppModule);
 
 //# sourceMappingURL=app.module.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/checkbox-list-value-accesor.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export CHECKBOX_LIST_VALUE_ACCESSOR */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckboxListValueAccessor; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/**
+ * @author Taylor DH Smith <tdsmith@safetyweb.org>
+ */
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var CHECKBOX_LIST_VALUE_ACCESSOR = {
+    provide: __WEBPACK_IMPORTED_MODULE_1__angular_forms__["d" /* NG_VALUE_ACCESSOR */],
+    useExisting: Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_24" /* forwardRef */])(function () { return CheckboxListValueAccessor; }),
+    multi: true
+};
+var CheckboxListValueAccessor = (function () {
+    function CheckboxListValueAccessor(renderer, elementRef) {
+        this.renderer = renderer;
+        this.elementRef = elementRef;
+        // This holds onto a copy of the incoming array (from the form control).
+        // We need it in order to do array operations after a change.
+        // TODO: Not super happy about doing it this way, but it's reliable and I don't have another good idea yet.
+        this.arrayRef = [];
+        this.onChange = function (_) { };
+        this.onTouched = function () { };
+    }
+    CheckboxListValueAccessor.prototype.internalChange = function (checked) {
+        var pos = this.arrayRef.indexOf(this.value);
+        if (pos === -1 && checked) {
+            this.arrayRef.push(this.value);
+        }
+        else if (pos > -1 && !checked) {
+            this.arrayRef.splice(pos, 1);
+        }
+        this.onChange(this.arrayRef);
+    };
+    CheckboxListValueAccessor.prototype.setInputValue = function (checked) {
+        this.renderer.setElementProperty(this.elementRef.nativeElement, "checked", checked);
+    };
+    CheckboxListValueAccessor.prototype.writeValue = function (array) {
+        if (array === null || array === undefined || !Array.isArray(array)) {
+            return this.setInputValue(false);
+        }
+        this.arrayRef = array;
+        var containsThis = (array.indexOf(this.value) > -1);
+        return this.setInputValue(containsThis);
+    };
+    CheckboxListValueAccessor.prototype.registerOnChange = function (fn) {
+        this.onChange = fn;
+    };
+    CheckboxListValueAccessor.prototype.registerOnTouched = function (fn) {
+        this.onTouched = fn;
+    };
+    CheckboxListValueAccessor.prototype.setDisabledState = function (isDisabled) {
+        this.renderer.setElementProperty(this.elementRef.nativeElement, "disabled", isDisabled);
+    };
+    return CheckboxListValueAccessor;
+}());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* Input */])(),
+    __metadata("design:type", Object)
+], CheckboxListValueAccessor.prototype, "value", void 0);
+CheckboxListValueAccessor = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* Directive */])({
+        selector: "\n    input[type=checkbox][formControl][asList],\n    input[type=checkbox][formControlName][asList],\n    input[type=checkbox][ngModel][asList]\n",
+        host: {
+            "(change)": "internalChange($event.target.checked)",
+            "(blur)": "onTouched()"
+        },
+        providers: [CHECKBOX_LIST_VALUE_ACCESSOR]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["_1" /* Renderer */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["_1" /* Renderer */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ElementRef */]) === "function" && _b || Object])
+], CheckboxListValueAccessor);
+
+var _a, _b;
+//# sourceMappingURL=checkbox-list-value-accesor.js.map
 
 /***/ }),
 
@@ -722,6 +820,26 @@ var NumberPair = (function () {
 }());
 
 //# sourceMappingURL=NumberPair.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/models/NumberString.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NumberString; });
+var NumberString = (function () {
+    function NumberString() {
+    }
+    NumberString.prototype.setNumberPair = function (user, plan) {
+        this.num = user;
+        this.str = plan;
+        console.log(this.str);
+    };
+    return NumberString;
+}());
+
+//# sourceMappingURL=NumberString.js.map
 
 /***/ }),
 
@@ -1375,7 +1493,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/register-user-page/user-edit-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n  <h2>Registrarse</h2>\r\n  <form [formGroup]=\"userForm\" (ngSubmit)=\"onSubmit()\" novalidate>\r\n    \r\n\t<div class=\"form-group\">\r\n      <label for=\"email\">Email</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"email\" formControlName=\"email\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"contrasena\">Nueva Contraseña</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"contrasena\" formControlName=\"contrasena\" required>\r\n    </div>\r\n\r\n    <p class=\"text-danger mt-1\" *ngIf=\"errorString\">{{errorString}}</p>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"confirmcontrasena\">Confirmar Contraseña</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"confirmcontrasena\" formControlName=\"confirmcontrasena\" required>\r\n    </div>\r\n\r\n  <div class=\"form-group\">\r\n      <label for=\"nombres\">Nombre</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"nombres\" formControlName=\"nombres\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"apellidos\">Apellido</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"apellidos\" formControlName=\"apellidos\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n    <label for=\"usuario\">Username</label>\r\n    <input type=\"text\" class=\"form-control\" id=\"usuario\" formControlName=\"usuario\" required>\r\n  </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"imagen\">Subir Foto de Perfil</label><br>\r\n      <input type=\"file\" class=\"form-control\" id=\"imagen\" formControlName=\"imagen\">\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"tipoid\">Tipo Identificacion</label>\r\n      <select formControlName=\"tipoid\" class=\"form-control input-lg\" id=\"tipoid\">\r\n        <option value=\"CC\">CC</option>\r\n        <option value=\"TI\">TI</option>\r\n        <option value=\"CE\">CE</option>\r\n      </select>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"numero_id\">Numero Identificacion</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"numero_id\" formControlName=\"numero_id\" required>\r\n    </div>\r\n    \r\n    <button type=\"submit\" class=\"btn btn-success\">Registrarse</button>\r\n    <p class=\"text-danger mt-1\" *ngIf=\"errorCreate\">{{errorCreate}}</p>\r\n\r\n  </form>\r\n</div>\r\n"
+module.exports = "<div class=\"container\">\r\n  <h2>Registrarse</h2>\r\n  <br>\r\n  {{userForm.value | json}}\r\n  <br>\r\n\r\n  <form [formGroup]=\"userForm\" (ngSubmit)=\"onSubmit()\" novalidate>\r\n    \r\n\t<div class=\"form-group\">\r\n      <label for=\"email\">Email</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"email\" formControlName=\"email\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"contrasena\">Nueva Contraseña</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"contrasena\" formControlName=\"contrasena\" required>\r\n    </div>\r\n\r\n    <p class=\"text-danger mt-1\" *ngIf=\"errorString\">{{errorString}}</p>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"confirmcontrasena\">Confirmar Contraseña</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"confirmcontrasena\" formControlName=\"confirmcontrasena\" required>\r\n    </div>\r\n\r\n  <div class=\"form-group\">\r\n      <label for=\"nombres\">Nombre</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"nombres\" formControlName=\"nombres\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"apellidos\">Apellido</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"apellidos\" formControlName=\"apellidos\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"tipoid\">Tipo Identificacion</label>\r\n      <select formControlName=\"tipoid\" class=\"form-control input-lg\" id=\"tipoid\">\r\n        <option value=\"CC\" selected>CC</option>\r\n        <option value=\"TI\">TI</option>\r\n        <option value=\"CE\">CE</option>\r\n      </select>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"numero_id\">Numero Identificacion</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"numero_id\" formControlName=\"numero_id\" required>\r\n    </div>\r\n\r\n    <div >\r\n      <ul>\r\n        <li *ngFor=\"let preferencia of preferencias\">\r\n          <label>\r\n            <input type=\"checkbox\" formControlName=\"preferencias\" asList [value]=\"preferencia.nombre\">\r\n            {{preferencia.nombre}}\r\n          </label>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n    \r\n    <button type=\"submit\" class=\"btn btn-success\">Registrarse</button>\r\n    <p class=\"text-danger mt-1\" *ngIf=\"errorCreate\">{{errorCreate}}</p>\r\n\r\n  </form>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -1388,6 +1506,8 @@ module.exports = "<div class=\"container\">\r\n  <h2>Registrarse</h2>\r\n  <form
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_users_service__ = __webpack_require__("../../../../../src/app/services/users.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_plan_service__ = __webpack_require__("../../../../../src/app/services/plan.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_NumberString__ = __webpack_require__("../../../../../src/app/models/NumberString.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1401,14 +1521,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
 var UserEditPageComponent = (function () {
-    function UserEditPageComponent(usersService, formBuilder, router) {
+    function UserEditPageComponent(usersService, formBuilder, planService, router) {
         this.usersService = usersService;
         this.formBuilder = formBuilder;
+        this.planService = planService;
         this.router = router;
         this.responseStatus = [];
+        this.preferencias = [];
     }
     UserEditPageComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.planService.getPreferences().subscribe(function (planResponse) {
+            _this.preferencias = planResponse;
+        });
         this.userForm = this.formBuilder.group({
             email: '',
             contrasena: '',
@@ -1416,18 +1544,25 @@ var UserEditPageComponent = (function () {
             nombres: '',
             apellidos: '',
             usuario: '',
-            tipo_id: '',
-            numero_id: ''
+            tipoid: '',
+            numero_id: '',
+            preferencias: [[]]
         });
     };
     UserEditPageComponent.prototype.onSubmit = function () {
         var _this = this;
+        console.log("preferencias: " + this.userForm.get('preferencias').value);
         if (this.userForm.get('contrasena').value != this.userForm.get('confirmcontrasena').value) {
             this.errorString = "Porfavor asegurese que el campo de nueva contraseña y confirmar contraseña sean iguales";
         }
         else {
-            this.usersService.create(0, this.userForm.get('email').value, this.userForm.get('contrasena').value, this.userForm.get('nombres').value, this.userForm.get('apellidos').value, this.userForm.get('usuario').value, this.userForm.get('tipo_id').value, new Blob, this.userForm.get('numero_id').value).subscribe(function (serverResponse) {
-                _this.router.navigate(['/signin']);
+            this.usersService.create(0, this.userForm.get('email').value, this.userForm.get('contrasena').value, this.userForm.get('nombres').value, this.userForm.get('apellidos').value, this.userForm.get('usuario').value, this.userForm.get('tipoid').value, new Blob, this.userForm.get('numero_id').value).subscribe(function (serverResponse) {
+                console.log("Register User JSON: " + JSON.stringify(serverResponse));
+                console.log(_this.userForm.get('preferencias').value);
+                console.log(serverResponse.idUsuario);
+                _this.numstr = new __WEBPACK_IMPORTED_MODULE_5__models_NumberString__["a" /* NumberString */]();
+                _this.numstr.setNumberPair(serverResponse.idUsuario, _this.userForm.get('preferencias').value);
+                _this.usersService.registerPreferences(_this.numstr).subscribe(function (responce) { return _this.router.navigate(['/signin']); });
             }, function (error) {
                 _this.errorCreate = "Error Registrando: " + error.message;
             });
@@ -1441,10 +1576,10 @@ UserEditPageComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/pages/register-user-page/user-edit-page.component.html"),
         styles: [__webpack_require__("../../../../../src/app/pages/register-user-page/user-edit-page.component.css")],
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_users_service__["a" /* UsersService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_users_service__["a" /* UsersService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _c || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_users_service__["a" /* UsersService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_users_service__["a" /* UsersService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__services_plan_service__["a" /* PlanService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_plan_service__["a" /* PlanService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _d || Object])
 ], UserEditPageComponent);
 
-var _a, _b, _c;
+var _a, _b, _c, _d;
 //# sourceMappingURL=user-edit-page.component.js.map
 
 /***/ }),
@@ -2101,9 +2236,7 @@ var YourPlanEditPageComponent = (function () {
             var preference = _a[_i];
             if (preference.nombre == this.nombre) {
                 this.plan.detallePreferencia = preference.idPreferencia;
-                console.log(preference.idPreferencia);
             }
-            console.log(preference.nombre + " " + this.plan.detallePreferencia + " " + this.preferenciaSeleccionada.nombre);
         }
         console.log(this.plan.detallePreferencia);
         this.planService.updatePlan(this.plan).subscribe(function (serverResponse) {
@@ -2514,6 +2647,12 @@ var UsersService = (function (_super) {
     };
     UsersService.prototype.getAsistentesPlan = function (idplan) {
         return this.get(this.resourceUrl + "/asistentes/" + idplan);
+    };
+    UsersService.prototype.registerPreferences = function (numstr) {
+        console.log(JSON.stringify(numstr));
+        return this.post(this.resourceUrl + '/userPreferences', JSON.stringify(numstr), { credentials: false }).map(function (loginResponse) {
+            return loginResponse;
+        });
     };
     return UsersService;
 }(__WEBPACK_IMPORTED_MODULE_1__common_api_service__["a" /* APIService */]));

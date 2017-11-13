@@ -13,7 +13,7 @@ public interface UserService
 {
     List<UsuarioEntity> getAsistentes(Long idplan);
 
-    void registerUser(UsuarioEntity user);
+    UsuarioEntity registerUser(UsuarioEntity user);
 
     UsuarioEntity getUserById(int id);
 
@@ -22,6 +22,8 @@ public interface UserService
     UsuarioEntity getUserByEmail( String email );
 
     void updateUser(UsuarioEntity u);
+
+    void setPreferenceUser (Long id, List<String> preferencia);
 
 
 }

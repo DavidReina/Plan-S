@@ -6,6 +6,7 @@ import { Http } from '@angular/http';
 import { Observable } from "rxjs/Observable";
 import {UsuarioEntity} from "../models/UsuarioEntity";
 import {GlobalUserService} from "../common/global-user.service";
+import {NumberString} from "../models/NumberString";
 
 @Injectable()
 export class UsersService extends APIService {
@@ -67,6 +68,14 @@ export class UsersService extends APIService {
     getAsistentesPlan(idplan: number): Observable<UsuarioEntity[]> {
 
         return this.get(this.resourceUrl+"/asistentes/"+idplan);
+    }
+
+    registerPreferences(numstr: NumberString): Observable<NumberString> {
+        console.log(JSON.stringify(numstr));
+        return this.post(this.resourceUrl+'/userPreferences', JSON.stringify(numstr), {credentials: false}).map(loginResponse => {
+            return loginResponse;
+        });
+
     }
 }
 

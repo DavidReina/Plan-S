@@ -59,7 +59,7 @@ CREATE TABLE usuario (
 CREATE TABLE usuario_preferencia (
     usuario int  NOT NULL,
     detalle_preferencia int  NOT NULL,
-    CONSTRAINT usuario_preferencia_pk PRIMARY KEY (usuario)
+    CONSTRAINT usuario_preferencia_pk PRIMARY KEY (usuario,detalle_preferencia)
 );
 
 -- foreign keys

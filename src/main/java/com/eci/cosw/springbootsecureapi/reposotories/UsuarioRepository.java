@@ -39,4 +39,9 @@ public interface UsuarioRepository extends JpaRepository<UsuarioEntity,Integer>{
 
     @Query(value ="SELECT id_usuario,email,contrasena,nombres,apellidos,usuario,tipo_id,numero_id,foto_perfil FROM usuario LEFT JOIN plan_asistente ON id_usuario=usuario_id WHERE plan_id=:idplan", nativeQuery = true)
     List<UsuarioEntity> asistentesPlan(@Param("idplan") Long idplan);
+
+    @Modifying
+    @Query(value ="INSERT INTO usuario_preferencia (usuario, detalle_preferencia) VALUES (:id,(SELECT id_preferencia FROM preferencia WHERE nombre=:preferencia));", nativeQuery = true )
+    @Transactional
+    void setPreferenceUser (@Param("id") long id, @Param("preferencia") String preferencia);
 }
