@@ -79,9 +79,7 @@ public class UserController
 
     @RequestMapping( value = "/users", method = RequestMethod.POST )
     public ResponseEntity<UsuarioEntity> setUser(@RequestBody UsuarioEntity user){
-            System.out.println(user.getIdUsuario());
             user=userService.registerUser(user);
-            System.out.println(user.getIdUsuario());
             return new ResponseEntity<UsuarioEntity>(user,HttpStatus.OK);
     }
 
@@ -139,10 +137,10 @@ public class UserController
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "/users/userPreferences")
-    public ResponseEntity<NumberString> preferenceUser(@RequestBody NumberString NumbStr) {
-        System.out.println(NumbStr.getStr());
-        userService.setPreferenceUser(NumbStr.getNumber(), NumbStr.getStr());
-        return new ResponseEntity<>(NumbStr,HttpStatus.OK);
+    public ResponseEntity<NumberString> preferenceUser(@RequestBody List<NumberString> NumbStr) {
+        System.out.println(NumbStr.get(0).getNumber());
+        userService.setPreferenceUser(NumbStr);
+        return new ResponseEntity<NumberString>(NumbStr.get(0),HttpStatus.OK);
     }
 
 

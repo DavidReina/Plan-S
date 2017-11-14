@@ -1,15 +1,17 @@
 export class NumberString{
 
-    public num: number;
-    public str: string[];
+    public number: number;
+    public str: string;
 
     constructor() {
 
     }
 
-    setNumberPair (user:number, plan: string[]){
-        this.num=user;
+    setNumberPair (user:number, plan: string){
+        this.number=user;
         this.str=plan;
-        console.log(this.str);
     }
+
+
+
 }

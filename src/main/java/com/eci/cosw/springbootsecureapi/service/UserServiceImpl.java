@@ -1,5 +1,6 @@
 package com.eci.cosw.springbootsecureapi.service;
 
+import com.eci.cosw.springbootsecureapi.model.NumberString;
 import com.eci.cosw.springbootsecureapi.model.UsuarioEntity;
 import com.eci.cosw.springbootsecureapi.reposotories.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -61,9 +62,9 @@ public class UserServiceImpl implements UserService {
 
 
     @Override
-    public void setPreferenceUser(Long id, List<String> preferencia) {
-        for(int i=0; i<preferencia.size(); i++){
-            userRepo.setPreferenceUser(id,preferencia.get(i));
+    public void setPreferenceUser(List<NumberString> preferenceUsuario) {
+        for(int i=0; i<preferenceUsuario.size(); i++){
+            userRepo.setPreferenceUser(preferenceUsuario.get(i).getNumber(),preferenceUsuario.get(i).getStr());
         }
     }
 

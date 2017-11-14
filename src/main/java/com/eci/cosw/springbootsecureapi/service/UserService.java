@@ -1,5 +1,6 @@
 package com.eci.cosw.springbootsecureapi.service;
 
+import com.eci.cosw.springbootsecureapi.model.NumberString;
 import com.eci.cosw.springbootsecureapi.model.UsuarioEntity;
 
 import java.util.List;
@@ -23,7 +24,7 @@ public interface UserService
 
     void updateUser(UsuarioEntity u);
 
-    void setPreferenceUser (Long id, List<String> preferencia);
+    void setPreferenceUser (List<NumberString> preferenceUsuario);
 
 
 }

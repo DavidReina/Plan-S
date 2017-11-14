@@ -19,7 +19,9 @@ export class UserEditPageComponent implements OnInit {
     private errorString: String;
     private errorCreate: String;
     private preferencias: PreferenciaEntity[] = [];
-    private numstr: NumberString;
+    private numstr: NumberString[] = [];
+    private preferenciasSelect: string[] = [];
+    private numberString: NumberString;
 
     constructor(public usersService: UsersService,
                 public formBuilder: FormBuilder,
@@ -70,8 +72,12 @@ export class UserEditPageComponent implements OnInit {
                         console.log("Register User JSON: "+JSON.stringify(serverResponse));
                         console.log(this.userForm.get('preferencias').value);
                         console.log(serverResponse.idUsuario);
-                        this.numstr = new NumberString();
-                        this.numstr.setNumberPair(serverResponse.idUsuario,this.userForm.get('preferencias').value);
+                        this.preferenciasSelect=this.userForm.get('preferencias').value;
+                        for(let pref of this.preferenciasSelect){
+                            this.numberString = new NumberString();
+                            this.numberString.setNumberPair(serverResponse.idUsuario, pref);
+                            this.numstr.push(this.numberString);
+                        }
                         console.log(this.numstr);
                         this.usersService.registerPreferences(this.numstr).subscribe(responce => this.router.navigate(
                             ['/signin']));

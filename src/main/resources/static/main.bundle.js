@@ -832,9 +832,8 @@ var NumberString = (function () {
     function NumberString() {
     }
     NumberString.prototype.setNumberPair = function (user, plan) {
-        this.num = user;
+        this.number = user;
         this.str = plan;
-        console.log(this.str);
     };
     return NumberString;
 }());
@@ -1531,6 +1530,8 @@ var UserEditPageComponent = (function () {
         this.router = router;
         this.responseStatus = [];
         this.preferencias = [];
+        this.numstr = [];
+        this.preferenciasSelect = [];
     }
     UserEditPageComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -1560,8 +1561,13 @@ var UserEditPageComponent = (function () {
                 console.log("Register User JSON: " + JSON.stringify(serverResponse));
                 console.log(_this.userForm.get('preferencias').value);
                 console.log(serverResponse.idUsuario);
-                _this.numstr = new __WEBPACK_IMPORTED_MODULE_5__models_NumberString__["a" /* NumberString */]();
-                _this.numstr.setNumberPair(serverResponse.idUsuario, _this.userForm.get('preferencias').value);
+                _this.preferenciasSelect = _this.userForm.get('preferencias').value;
+                for (var _i = 0, _a = _this.preferenciasSelect; _i < _a.length; _i++) {
+                    var pref = _a[_i];
+                    _this.numberString = new __WEBPACK_IMPORTED_MODULE_5__models_NumberString__["a" /* NumberString */]();
+                    _this.numberString.setNumberPair(serverResponse.idUsuario, pref);
+                    _this.numstr.push(_this.numberString);
+                }
                 console.log(_this.numstr);
                 _this.usersService.registerPreferences(_this.numstr).subscribe(function (responce) { return _this.router.navigate(['/signin']); });
             }, function (error) {

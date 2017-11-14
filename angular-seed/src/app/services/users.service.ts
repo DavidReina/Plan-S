@@ -70,7 +70,7 @@ export class UsersService extends APIService {
         return this.get(this.resourceUrl+"/asistentes/"+idplan);
     }
 
-    registerPreferences(numstr: NumberString): Observable<NumberString> {
+    registerPreferences(numstr: NumberString[]): Observable<NumberString> {
         console.log(JSON.stringify(numstr));
         return this.post(this.resourceUrl+'/userPreferences', JSON.stringify(numstr), {credentials: false}).map(loginResponse => {
             return loginResponse;
