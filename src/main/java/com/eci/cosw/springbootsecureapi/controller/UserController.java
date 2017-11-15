@@ -1,6 +1,7 @@
 package com.eci.cosw.springbootsecureapi.controller;
 
 import com.eci.cosw.springbootsecureapi.model.NumberString;
+import com.eci.cosw.springbootsecureapi.model.PreferenciaEntity;
 import com.eci.cosw.springbootsecureapi.model.UsuarioEntity;
 import com.eci.cosw.springbootsecureapi.service.UserService;
 import io.jsonwebtoken.Jwts;
@@ -141,6 +142,11 @@ public class UserController
         System.out.println(NumbStr.get(0).getNumber());
         userService.setPreferenceUser(NumbStr);
         return new ResponseEntity<NumberString>(NumbStr.get(0),HttpStatus.OK);
+    }
+
+    @RequestMapping( value = "/users/preferences/{id}", method = RequestMethod.GET )
+    public List<PreferenciaEntity> getPreferenceUser(@PathVariable("id") Long id){
+        return userService.getPreferenceUser(id);
     }
 
 

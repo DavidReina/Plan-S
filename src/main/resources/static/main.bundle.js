@@ -1094,7 +1094,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/modify-user-page/modify-user-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n  <h2>Modifica tu Usuario</h2>\r\n  <form [formGroup]=\"userForm\" (ngSubmit)=\"onSubmit()\" novalidate>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"email\">Email</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"email\" formControlName=\"email\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"nombres\">Nombre</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"nombres\" formControlName=\"nombres\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"apellidos\">Apellido</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"apellidos\" formControlName=\"apellidos\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"usuario\">Username</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"usuario\" formControlName=\"usuario\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"tipo_id\">Tipo Identificacion</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"tipo_id\" formControlName=\"tipo_id\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"numero_id\">Numero Identificacion</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"numero_id\" formControlName=\"numero_id\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"contrasena\">Nueva Contraseña</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"contrasena\" formControlName=\"contrasena\" required>\r\n    </div>\r\n\r\n    <p class=\"text-danger mt-1\" *ngIf=\"errorString\">{{errorString}}</p>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"confirmcontrasena\">Confirmar Contraseña</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"confirmcontrasena\" formControlName=\"confirmcontrasena\" required>\r\n    </div>\r\n\r\n    <button type=\"submit\" class=\"btn btn-success\">Actualizar Perfil</button>\r\n    <p class=\"text-danger mt-1\" *ngIf=\"errorUpdate\">{{errorUpdate}}</p>\r\n\r\n  </form>\r\n</div>"
+module.exports = "<div class=\"container\">\r\n  <h2>Modifica tu Usuario</h2>\r\n\r\n  <br>\r\n  {{userForm.value | json}}\r\n  <br>\r\n\r\n  <form [formGroup]=\"userForm\" (ngSubmit)=\"onSubmit()\" novalidate>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"email\">Email</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"email\" formControlName=\"email\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"contrasena\">Nueva Contraseña</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"contrasena\" formControlName=\"contrasena\" required>\r\n    </div>\r\n\r\n    <p class=\"text-danger mt-1\" *ngIf=\"errorString\">{{errorString}}</p>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"confirmcontrasena\">Confirmar Contraseña</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"confirmcontrasena\" formControlName=\"confirmcontrasena\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"nombres\">Nombre</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"nombres\" formControlName=\"nombres\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"apellidos\">Apellido</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"apellidos\" formControlName=\"apellidos\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"tipoid\">Tipo Identificacion</label>\r\n      <select formControlName=\"tipoid\" class=\"form-control input-lg\" id=\"tipoid\">\r\n        <option value=\"CC\" [selected]=\" this.globalUser.usuarioLogin.tipoId == 'cc'\">CC</option>\r\n        <option value=\"TI\" [selected]=\" this.globalUser.usuarioLogin.tipoId == 'ti'\">TI</option>\r\n        <option value=\"CE\" [selected]=\" this.globalUser.usuarioLogin.tipoId == 'ce'\">CE</option>\r\n      </select>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"numero_id\">Numero Identificacion</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"numero_id\" formControlName=\"numero_id\" required>\r\n    </div>\r\n\r\n    <div >\r\n      <ul>\r\n        <li *ngFor=\"let preferencia of preferencias\">\r\n          <label>\r\n            <input type=\"checkbox\" formControlName=\"preferencias\" asList [value]=\"preferencia.nombre\">\r\n            {{preferencia.nombre}}\r\n          </label>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n\r\n    <button type=\"submit\" class=\"btn btn-success\">Registrarse</button>\r\n    <p class=\"text-danger mt-1\" *ngIf=\"errorCreate\">{{errorCreate}}</p>\r\n\r\n  </form>\r\n\r\n</div>"
 
 /***/ }),
 
@@ -1108,6 +1108,7 @@ module.exports = "<div class=\"container\">\r\n  <h2>Modifica tu Usuario</h2>\r\
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__common_global_user_service__ = __webpack_require__("../../../../../src/app/common/global-user.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_users_service__ = __webpack_require__("../../../../../src/app/services/users.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_plan_service__ = __webpack_require__("../../../../../src/app/services/plan.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1122,24 +1123,44 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var ModifyUserPageComponent = (function () {
-    function ModifyUserPageComponent(usersService, globalUser, formBuilder, router) {
+    function ModifyUserPageComponent(usersService, planService, globalUser, formBuilder, router) {
         this.usersService = usersService;
+        this.planService = planService;
         this.globalUser = globalUser;
         this.formBuilder = formBuilder;
         this.router = router;
+        this.preferencias = [];
+        this.usrPreferences = [];
+        this.usrPrefStr = [];
     }
     ModifyUserPageComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.planService.getPreferences().subscribe(function (planResponse) {
+            _this.preferencias = planResponse;
+        });
+        this.usersService.getUserPreferences(this.globalUser.usuarioLogin.idUsuario).subscribe(function (rsp) {
+            _this.usrPreferences = rsp;
+            for (var _i = 0, _a = _this.usrPreferences; _i < _a.length; _i++) {
+                var pref = _a[_i];
+                _this.usrPrefStr.push(pref.nombre);
+            }
+            _this.userForm.get('preferencias').setValue(_this.usrPrefStr);
+            console.log(_this.usrPrefStr);
+        });
         this.userForm = this.formBuilder.group({
             email: this.globalUser.usuarioLogin.email,
             nombres: this.globalUser.usuarioLogin.nombres,
             apellidos: this.globalUser.usuarioLogin.apellidos,
             usuario: this.globalUser.usuarioLogin.usuario,
-            tipo_id: this.globalUser.usuarioLogin.tipoId,
+            tipoid: '',
             numero_id: this.globalUser.usuarioLogin.numeroId,
             contrasena: '',
-            confirmcontrasena: ''
+            confirmcontrasena: '',
+            preferencias: [[]]
         });
+        this.userForm.get('tipoid').setValue(this.globalUser.usuarioLogin.tipoId);
     };
     ModifyUserPageComponent.prototype.onSubmit = function () {
         var _this = this;
@@ -1147,7 +1168,7 @@ var ModifyUserPageComponent = (function () {
             this.errorString = "Porfavor asegurese que el campo de nueva contraseña y confirmar contraseña sean iguales";
         }
         else {
-            this.usersService.update(this.globalUser.usuarioLogin.idUsuario, this.userForm.get('email').value, this.userForm.get('contrasena').value, this.userForm.get('nombres').value, this.userForm.get('apellidos').value, this.userForm.get('usuario').value, this.userForm.get('tipo_id').value, new Blob, this.userForm.get('numero_id').value).subscribe(function (serverResponse) {
+            this.usersService.update(this.globalUser.usuarioLogin.idUsuario, this.userForm.get('email').value, this.userForm.get('contrasena').value, this.userForm.get('nombres').value, this.userForm.get('apellidos').value, this.userForm.get('usuario').value, this.userForm.get('tipoid').value, new Blob, this.userForm.get('numero_id').value).subscribe(function (serverResponse) {
                 _this.router.navigate(['../userreview']);
             }, function (error) {
                 _this.errorUpdate = "Error Actualizando: " + error.message;
@@ -1162,10 +1183,10 @@ ModifyUserPageComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/pages/modify-user-page/modify-user-page.component.html"),
         styles: [__webpack_require__("../../../../../src/app/pages/modify-user-page/modify-user-page.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_4__services_users_service__["a" /* UsersService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_users_service__["a" /* UsersService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__common_global_user_service__["a" /* GlobalUserService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__common_global_user_service__["a" /* GlobalUserService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_4__services_users_service__["a" /* UsersService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_users_service__["a" /* UsersService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_5__services_plan_service__["a" /* PlanService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__services_plan_service__["a" /* PlanService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__common_global_user_service__["a" /* GlobalUserService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__common_global_user_service__["a" /* GlobalUserService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _e || Object])
 ], ModifyUserPageComponent);
 
-var _a, _b, _c, _d;
+var _a, _b, _c, _d, _e;
 //# sourceMappingURL=modify-user-page.component.js.map
 
 /***/ }),
@@ -1492,7 +1513,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/register-user-page/user-edit-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n  <h2>Registrarse</h2>\r\n  <br>\r\n  {{userForm.value | json}}\r\n  <br>\r\n\r\n  <form [formGroup]=\"userForm\" (ngSubmit)=\"onSubmit()\" novalidate>\r\n    \r\n\t<div class=\"form-group\">\r\n      <label for=\"email\">Email</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"email\" formControlName=\"email\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"contrasena\">Nueva Contraseña</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"contrasena\" formControlName=\"contrasena\" required>\r\n    </div>\r\n\r\n    <p class=\"text-danger mt-1\" *ngIf=\"errorString\">{{errorString}}</p>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"confirmcontrasena\">Confirmar Contraseña</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"confirmcontrasena\" formControlName=\"confirmcontrasena\" required>\r\n    </div>\r\n\r\n  <div class=\"form-group\">\r\n      <label for=\"nombres\">Nombre</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"nombres\" formControlName=\"nombres\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"apellidos\">Apellido</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"apellidos\" formControlName=\"apellidos\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"tipoid\">Tipo Identificacion</label>\r\n      <select formControlName=\"tipoid\" class=\"form-control input-lg\" id=\"tipoid\">\r\n        <option value=\"CC\" selected>CC</option>\r\n        <option value=\"TI\">TI</option>\r\n        <option value=\"CE\">CE</option>\r\n      </select>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"numero_id\">Numero Identificacion</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"numero_id\" formControlName=\"numero_id\" required>\r\n    </div>\r\n\r\n    <div >\r\n      <ul>\r\n        <li *ngFor=\"let preferencia of preferencias\">\r\n          <label>\r\n            <input type=\"checkbox\" formControlName=\"preferencias\" asList [value]=\"preferencia.nombre\">\r\n            {{preferencia.nombre}}\r\n          </label>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n    \r\n    <button type=\"submit\" class=\"btn btn-success\">Registrarse</button>\r\n    <p class=\"text-danger mt-1\" *ngIf=\"errorCreate\">{{errorCreate}}</p>\r\n\r\n  </form>\r\n</div>\r\n"
+module.exports = "<div class=\"container\">\r\n  <h2>Registrarse</h2>\r\n  <br>\r\n  {{userForm.value | json}}\r\n  <br>\r\n\r\n  <form [formGroup]=\"userForm\" (ngSubmit)=\"onSubmit()\" novalidate>\r\n    \r\n\t<div class=\"form-group\">\r\n      <label for=\"email\">Email</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"email\" formControlName=\"email\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"contrasena\">Nueva Contraseña</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"contrasena\" formControlName=\"contrasena\" required>\r\n    </div>\r\n\r\n    <p class=\"text-danger mt-1\" *ngIf=\"errorString\">{{errorString}}</p>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"confirmcontrasena\">Confirmar Contraseña</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"confirmcontrasena\" formControlName=\"confirmcontrasena\" required>\r\n    </div>\r\n\r\n  <div class=\"form-group\">\r\n      <label for=\"nombres\">Nombre</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"nombres\" formControlName=\"nombres\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"apellidos\">Apellido</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"apellidos\" formControlName=\"apellidos\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"tipoid\">Tipo Identificacion</label>\r\n      <select formControlName=\"tipoid\" class=\"form-control input-lg\" id=\"tipoid\">\r\n        <option value=\"CC\" [selected]=\"true\">CC</option>\r\n        <option value=\"TI\">TI</option>\r\n        <option value=\"CE\">CE</option>\r\n      </select>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"numero_id\">Numero Identificacion</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"numero_id\" formControlName=\"numero_id\" required>\r\n    </div>\r\n\r\n    <div >\r\n      <ul>\r\n        <li *ngFor=\"let preferencia of preferencias\">\r\n          <label>\r\n            <input type=\"checkbox\" formControlName=\"preferencias\" asList [value]=\"preferencia.nombre\">\r\n            {{preferencia.nombre}}\r\n          </label>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n    \r\n    <button type=\"submit\" class=\"btn btn-success\">Registrarse</button>\r\n    <p class=\"text-danger mt-1\" *ngIf=\"errorCreate\">{{errorCreate}}</p>\r\n\r\n  </form>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -2660,6 +2681,10 @@ var UsersService = (function (_super) {
         return this.post(this.resourceUrl + '/userPreferences', JSON.stringify(numstr), { credentials: false }).map(function (loginResponse) {
             return loginResponse;
         });
+    };
+    UsersService.prototype.getUserPreferences = function (id) {
+        console.log(id);
+        return this.get(this.resourceUrl + "/preferences/" + id);
     };
     return UsersService;
 }(__WEBPACK_IMPORTED_MODULE_1__common_api_service__["a" /* APIService */]));

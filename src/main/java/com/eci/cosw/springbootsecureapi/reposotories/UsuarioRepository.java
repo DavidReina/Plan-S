@@ -1,6 +1,7 @@
 package com.eci.cosw.springbootsecureapi.reposotories;
 
 import com.eci.cosw.springbootsecureapi.model.PlanEntity;
+import com.eci.cosw.springbootsecureapi.model.PreferenciaEntity;
 import com.eci.cosw.springbootsecureapi.model.UsuarioEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
@@ -44,4 +45,13 @@ public interface UsuarioRepository extends JpaRepository<UsuarioEntity,Integer>{
     @Query(value ="INSERT INTO usuario_preferencia (usuario, detalle_preferencia) VALUES (:id,(SELECT id_preferencia FROM preferencia WHERE nombre=:preferencia));", nativeQuery = true )
     @Transactional
     void setPreferenceUser (@Param("id") long id, @Param("preferencia") String preferencia);
+
+    @Modifying
+    @Query(value ="DELETE FROM usuario_preferencia WHERE usuario=:id;", nativeQuery = true )
+    @Transactional
+    void deletePreferenceUser (@Param("id") long id);
+
+    @Query(value ="SELECT id_preferencia,nombre FROM usuario_preferencia INNER JOIN preferencia ON detalle_preferencia=id_preferencia WHERE usuario=:id", nativeQuery = true)
+    List<Object[]> getPreferenceUser(@Param("id") Long id);
+
 }

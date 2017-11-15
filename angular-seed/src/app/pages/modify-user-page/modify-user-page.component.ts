@@ -3,6 +3,8 @@ import {FormGroup, FormBuilder} from "@angular/forms";
 import {Router} from "@angular/router";
 import {GlobalUserService} from "../../common/global-user.service";
 import {UsersService} from "../../services/users.service";
+import {PreferenciaEntity} from "../../models/PreferenciaEntity";
+import {PlanService} from "../../services/plan.service";
 
 @Component({
   selector: 'app-modify-user-page',
@@ -13,19 +15,40 @@ export class ModifyUserPageComponent implements OnInit {
   private userForm: FormGroup;
   private errorString: String;
   private errorUpdate: String;
-  constructor(public usersService: UsersService, public globalUser: GlobalUserService, public formBuilder:FormBuilder, public router: Router) { }
+  private preferencias: PreferenciaEntity[] = [];
+  private usrPreferences: PreferenciaEntity[]=[];
+  private usrPrefStr: String[]=[];
+  constructor(public usersService: UsersService, public planService: PlanService, public globalUser: GlobalUserService, public formBuilder:FormBuilder, public router: Router) { }
 
   ngOnInit() {
+
+      this.planService.getPreferences().subscribe(planResponse => {
+          this.preferencias = planResponse;
+      })
+
+      this.usersService.getUserPreferences(this.globalUser.usuarioLogin.idUsuario).subscribe(rsp=> {this.usrPreferences=rsp;
+          for(let pref of this.usrPreferences){
+              this.usrPrefStr.push(pref.nombre);
+          }
+          this.userForm.get('preferencias').setValue(this.usrPrefStr);
+          console.log(this.usrPrefStr);
+      })
+
+
+
       this.userForm = this.formBuilder.group({
           email: this.globalUser.usuarioLogin.email,
           nombres: this.globalUser.usuarioLogin.nombres,
           apellidos: this.globalUser.usuarioLogin.apellidos,
           usuario: this.globalUser.usuarioLogin.usuario,
-          tipo_id: this.globalUser.usuarioLogin.tipoId,
+          tipoid: '',
           numero_id: this.globalUser.usuarioLogin.numeroId,
           contrasena: '',
-          confirmcontrasena: ''
+          confirmcontrasena: '',
+          preferencias: [[]]
       });
+
+      this.userForm.get('tipoid').setValue(this.globalUser.usuarioLogin.tipoId);
   }
 
     onSubmit() {
@@ -39,7 +62,7 @@ export class ModifyUserPageComponent implements OnInit {
                 this.userForm.get('nombres').value,
                 this.userForm.get('apellidos').value,
                 this.userForm.get('usuario').value,
-                this.userForm.get('tipo_id').value,
+                this.userForm.get('tipoid').value,
                 new Blob,
                 this.userForm.get('numero_id').value
             ).subscribe(serverResponse => {

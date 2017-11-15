@@ -7,6 +7,7 @@ import { Observable } from "rxjs/Observable";
 import {UsuarioEntity} from "../models/UsuarioEntity";
 import {GlobalUserService} from "../common/global-user.service";
 import {NumberString} from "../models/NumberString";
+import {PreferenciaEntity} from "../models/PreferenciaEntity";
 
 @Injectable()
 export class UsersService extends APIService {
@@ -75,7 +76,13 @@ export class UsersService extends APIService {
         return this.post(this.resourceUrl+'/userPreferences', JSON.stringify(numstr), {credentials: false}).map(loginResponse => {
             return loginResponse;
         });
-
     }
+
+    getUserPreferences(id:number): Observable<PreferenciaEntity[]>{
+        console.log(id);
+        return this.get(this.resourceUrl+"/preferences/"+id)
+    }
+
+
 }
 

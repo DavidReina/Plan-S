@@ -1,12 +1,14 @@
 package com.eci.cosw.springbootsecureapi.service;
 
 import com.eci.cosw.springbootsecureapi.model.NumberString;
+import com.eci.cosw.springbootsecureapi.model.PreferenciaEntity;
 import com.eci.cosw.springbootsecureapi.model.UsuarioEntity;
 import com.eci.cosw.springbootsecureapi.reposotories.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -66,6 +68,23 @@ public class UserServiceImpl implements UserService {
         for(int i=0; i<preferenceUsuario.size(); i++){
             userRepo.setPreferenceUser(preferenceUsuario.get(i).getNumber(),preferenceUsuario.get(i).getStr());
         }
+    }
+
+    @Override
+    public List<PreferenciaEntity> getPreferenceUser(Long id) {
+        System.out.println(id);
+        List<PreferenciaEntity> listaPref = new ArrayList<PreferenciaEntity>();
+        List<Object[]> objs= userRepo.getPreferenceUser(id);
+
+        for(int i=0;i<objs.size();i++){
+            PreferenciaEntity pe = new PreferenciaEntity();
+            String bi = objs.get(i)[0].toString();
+            pe.setIdPreferencia(Long.valueOf(bi).longValue());
+            pe.setNombre(objs.get(i)[1].toString());
+            listaPref.add(pe);
+        }
+        System.out.println(listaPref.get(0).getNombre());
+        return listaPref;
     }
 
 }
