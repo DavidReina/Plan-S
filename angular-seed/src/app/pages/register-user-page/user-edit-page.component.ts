@@ -79,7 +79,7 @@ export class UserEditPageComponent implements OnInit {
                             this.numstr.push(this.numberString);
                         }
                         console.log(this.numstr);
-                        this.usersService.registerPreferences(this.numstr).subscribe(responce => this.router.navigate(
+                    this.usersService.registerPreferences(this.numstr).subscribe(response => this.router.navigate(
                             ['/signin']));
                 },
                 error => {

@@ -83,6 +83,13 @@ export class UsersService extends APIService {
         return this.get(this.resourceUrl+"/preferences/"+id)
     }
 
+    updateUserPreferences(numstr: NumberString[]): Observable<NumberString>{
+        console.log(JSON.stringify(numstr));
+        return this.post(this.resourceUrl+'/updateUserPreferences', JSON.stringify(numstr), {credentials: false}).map(loginResponse => {
+            return loginResponse;
+        });
+    }
+
 
 }
 

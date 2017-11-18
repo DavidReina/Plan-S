@@ -5,6 +5,7 @@ import {GlobalUserService} from "../../common/global-user.service";
 import {UsersService} from "../../services/users.service";
 import {PreferenciaEntity} from "../../models/PreferenciaEntity";
 import {PlanService} from "../../services/plan.service";
+import {NumberString} from "../../models/NumberString";
 
 @Component({
   selector: 'app-modify-user-page',
@@ -18,6 +19,10 @@ export class ModifyUserPageComponent implements OnInit {
   private preferencias: PreferenciaEntity[] = [];
   private usrPreferences: PreferenciaEntity[]=[];
   private usrPrefStr: String[]=[];
+  private preferenciasSelect: string[] = [];
+  private numberString: NumberString;
+  private numstr: NumberString[] = [];
+
   constructor(public usersService: UsersService, public planService: PlanService, public globalUser: GlobalUserService, public formBuilder:FormBuilder, public router: Router) { }
 
   ngOnInit() {
@@ -66,8 +71,16 @@ export class ModifyUserPageComponent implements OnInit {
                 new Blob,
                 this.userForm.get('numero_id').value
             ).subscribe(serverResponse => {
-                    this.router.navigate(
-                        ['../userreview']);
+                    this.usrPreferences = [];
+                    this.preferenciasSelect=this.userForm.get('preferencias').value;
+                    for(let pref of this.preferenciasSelect){
+                        this.numberString = new NumberString();
+                        this.numberString.setNumberPair(serverResponse.idUsuario, pref);
+                        this.numstr.push(this.numberString);
+                    }
+                    this.usersService.updateUserPreferences(this.numstr).subscribe(response =>
+                        this.router.navigate(
+                        ['../userreview']));
                 },
                 error => {
                     this.errorUpdate = "Error Actualizando: "+error.message;

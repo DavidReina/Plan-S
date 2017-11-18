@@ -47,7 +47,7 @@ public interface UsuarioRepository extends JpaRepository<UsuarioEntity,Integer>{
     void setPreferenceUser (@Param("id") long id, @Param("preferencia") String preferencia);
 
     @Modifying
-    @Query(value ="DELETE FROM usuario_preferencia WHERE usuario=:id;", nativeQuery = true )
+    @Query(value ="DELETE FROM usuario_preferencia WHERE usuario=:id", nativeQuery = true )
     @Transactional
     void deletePreferenceUser (@Param("id") long id);
 

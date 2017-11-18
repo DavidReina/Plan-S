@@ -149,5 +149,12 @@ public class UserController
         return userService.getPreferenceUser(id);
     }
 
+    @RequestMapping(method = RequestMethod.POST, value = "/users/updateUserPreferences")
+    public ResponseEntity<NumberString> updatePreferenceUser(@RequestBody List<NumberString> NumbStr) {
+        System.out.println(NumbStr.get(0).getNumber());
+        userService.updatePreferences(NumbStr);
+        return new ResponseEntity<NumberString>(NumbStr.get(0),HttpStatus.OK);
+    }
+
 
 }

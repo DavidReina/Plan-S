@@ -51,7 +51,6 @@ export class YourPlanEditPageComponent implements OnInit {
         this.userForm = this.formBuilder.group({
             nombre: this.globalPlan.plan.nombre,
             descripcion: this.globalPlan.plan.descripcion,
-            ubicacion: this.globalPlan.plan.ubicacion,
             fechainicio: this.fechainicio,
             fechafinal: this.fechafinal,
             costo: this.globalPlan.plan.costoPromedio,
@@ -68,7 +67,6 @@ export class YourPlanEditPageComponent implements OnInit {
         this.plan.idPlan = this.globalPlan.plan.idPlan;
         this.plan.nombre = this.userForm.get('nombre').value;
         this.plan.descripcion = this.userForm.get('descripcion').value;
-        this.plan.ubicacion = this.userForm.get('ubicacion').value;
         this.plan.fechaInicio = new Date(this.userForm.get('fechainicio').value).getTime();
         this.plan.fechaFinal = new Date(this.userForm.get('fechafinal').value).getTime();
         this.plan.costoPromedio = this.userForm.get('costo').value;

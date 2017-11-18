@@ -87,4 +87,18 @@ public class UserServiceImpl implements UserService {
         return listaPref;
     }
 
+    public void updatePreferences(List<NumberString> preferenciaUsuario){
+
+        System.out.println("Entro antes");
+
+        userRepo.deletePreferenceUser(preferenciaUsuario.get(0).getNumber());
+
+        System.out.println("Entro mitad");
+
+        this.setPreferenceUser(preferenciaUsuario);
+
+        System.out.println("Entro final");
+
+    }
+
 }

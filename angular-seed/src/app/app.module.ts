@@ -45,6 +45,8 @@ import { RefreshSearchPageComponent } from './pages/refresh-search-page/refresh-
 import {CheckboxListValueAccessor} from "./checkbox-list-value-accesor";
 import {NumberString} from "./models/NumberString";
 
+import { AgmCoreModule } from '@agm/core';
+
 const ROUTES = [
   { path: '', component: HomePageComponent },
   { path: 'signin', component: SingInPageComponent },
@@ -138,6 +140,10 @@ const ROUTES = [
     CheckboxListValueAccessor
   ],
   imports: [
+    AgmCoreModule.forRoot({
+          apiKey: "AIzaSyD_JiIJTUQeTzDa4C4Pk_q80Jat08zBzeM",
+          libraries: ["places"]
+    }),
     BrowserModule,
     NgbModule.forRoot(),
     RouterModule.forRoot(ROUTES),

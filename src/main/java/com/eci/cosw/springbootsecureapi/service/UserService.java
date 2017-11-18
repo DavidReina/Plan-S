@@ -29,5 +29,7 @@ public interface UserService
 
     List<PreferenciaEntity> getPreferenceUser (Long id);
 
+    void updatePreferences(List<NumberString> preferencieUsuario);
+
 
 }
