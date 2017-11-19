@@ -151,12 +151,14 @@ var _a, _b, _c, _d, _e;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__pages_refresh_search_page_refresh_search_page_component__ = __webpack_require__("../../../../../src/app/pages/refresh-search-page/refresh-search-page.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__checkbox_list_value_accesor__ = __webpack_require__("../../../../../src/app/checkbox-list-value-accesor.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__models_NumberString__ = __webpack_require__("../../../../../src/app/models/NumberString.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__agm_core__ = __webpack_require__("../../../../@agm/core/index.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -285,11 +287,15 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_39__checkbox_list_value_accesor__["a" /* CheckboxListValueAccessor */]
         ],
         imports: [
+            __WEBPACK_IMPORTED_MODULE_41__agm_core__["a" /* AgmCoreModule */].forRoot({
+                apiKey: "AIzaSyD_JiIJTUQeTzDa4C4Pk_q80Jat08zBzeM",
+                libraries: ["places"]
+            }),
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_10__ng_bootstrap_ng_bootstrap__["a" /* NgbModule */].forRoot(),
             __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* RouterModule */].forRoot(ROUTES),
-            __WEBPACK_IMPORTED_MODULE_3__angular_forms__["b" /* FormsModule */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_forms__["e" /* ReactiveFormsModule */],
+            __WEBPACK_IMPORTED_MODULE_3__angular_forms__["c" /* FormsModule */],
+            __WEBPACK_IMPORTED_MODULE_3__angular_forms__["f" /* ReactiveFormsModule */],
             __WEBPACK_IMPORTED_MODULE_13__angular_http__["c" /* HttpModule */]
         ],
         providers: [
@@ -348,7 +354,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var CHECKBOX_LIST_VALUE_ACCESSOR = {
-    provide: __WEBPACK_IMPORTED_MODULE_1__angular_forms__["d" /* NG_VALUE_ACCESSOR */],
+    provide: __WEBPACK_IMPORTED_MODULE_1__angular_forms__["e" /* NG_VALUE_ACCESSOR */],
     useExisting: Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_24" /* forwardRef */])(function () { return CheckboxListValueAccessor; }),
     multi: true
 };
@@ -906,7 +912,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "agm-map {\r\n    height: 300px;\r\n}", ""]);
 
 // exports
 
@@ -919,7 +925,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/create-plan-page/create-plan-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n  <h2>Nuevo Plan</h2>\r\n  <form [formGroup]=\"userForm\" (ngSubmit)=\"onSubmit()\" novalidate>\r\n    \r\n\t<div class=\"form-group\">\r\n      <label for=\"nombre\">Nombre</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"nombre\" formControlName=\"nombre\" required>\r\n    </div>\r\n\t\r\n\t<div class=\"form-group\">\r\n      <label for=\"descripcion\">Descripcion</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"descripcion\" formControlName=\"descripcion\" required>\r\n    </div>\r\n\r\n  <div class=\"form-group\">\r\n      <label for=\"ubicacion\">Ubicacion</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"ubicacion\" formControlName=\"ubicacion\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"fechainicio\">Fecha de Inicio</label>\r\n      <input type=\"datetime-local\" class=\"form-control\" id=\"fechainicio\" formControlName=\"fechainicio\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"fechafinal\">Fecha de Finalización</label>\r\n      <input type=\"datetime-local\" class=\"form-control\" id=\"fechafinal\" formControlName=\"fechafinal\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"costo\">Costo Promedio</label>\r\n      <input type=\"number\" class=\"form-control\" id=\"costo\" formControlName=\"costo\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"preferencia\">Preferencia Plan</label>\r\n      <select  formControlName=\"preferencia\" class=\"form-control input-lg\" id=\"preferencia\">\r\n        <option *ngFor=\"let preferencia of preferencias; let i = index\" value={{i+1}}>{{preferencia.nombre}}</option>\r\n      </select>\r\n    </div>\r\n\r\n      <button type=\"submit\" class=\"btn btn-success\">Crear Tu Plan!</button>\r\n      <p class=\"text-danger mt-1\" *ngIf=\"errorString\">{{errorString}}</p>\r\n\r\n  </form>\r\n</div>\r\n"
+module.exports = "<div class=\"container\">\r\n  <h2>Nuevo Plan</h2>\r\n  <form [formGroup]=\"userForm\" (ngSubmit)=\"onSubmit()\" novalidate>\r\n    \r\n\t<div class=\"form-group\">\r\n      <label for=\"nombre\">Nombre</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"nombre\" formControlName=\"nombre\" required>\r\n    </div>\r\n\t\r\n\t<div class=\"form-group\">\r\n      <label for=\"descripcion\">Descripcion</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"descripcion\" formControlName=\"descripcion\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"searchControl\">Ubicacion</label>\r\n      <input placeholder=\"search for location\" autocorrect=\"off\" id=\"searchControl\" autocapitalize=\"off\" spellcheck=\"off\" type=\"text\" class=\"form-control\" #search [formControl]=\"searchControl\">\r\n    </div>\r\n    <agm-map [latitude]=\"latitude\" [longitude]=\"longitude\" [scrollwheel]=\"false\" [zoom]=\"zoom\">\r\n      <agm-marker [latitude]=\"latitude\" [longitude]=\"longitude\"></agm-marker>\r\n    </agm-map>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"fechainicio\">Fecha de Inicio</label>\r\n      <input type=\"datetime-local\" class=\"form-control\" id=\"fechainicio\" formControlName=\"fechainicio\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"fechafinal\">Fecha de Finalización</label>\r\n      <input type=\"datetime-local\" class=\"form-control\" id=\"fechafinal\" formControlName=\"fechafinal\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"costo\">Costo Promedio</label>\r\n      <input type=\"number\" class=\"form-control\" id=\"costo\" formControlName=\"costo\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"preferencia\">Preferencia Plan</label>\r\n      <select  formControlName=\"preferencia\" class=\"form-control input-lg\" id=\"preferencia\">\r\n        <option *ngFor=\"let preferencia of preferencias; let i = index\" value={{i+1}}>{{preferencia.nombre}}</option>\r\n      </select>\r\n    </div>\r\n\r\n      <button type=\"submit\" class=\"btn btn-success\">Crear Tu Plan!</button>\r\n      <p class=\"text-danger mt-1\" *ngIf=\"errorString\">{{errorString}}</p>\r\n\r\n  </form>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -935,6 +941,7 @@ module.exports = "<div class=\"container\">\r\n  <h2>Nuevo Plan</h2>\r\n  <form 
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_plan__ = __webpack_require__("../../../../../src/app/models/plan.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_global_user_service__ = __webpack_require__("../../../../../src/app/common/global-user.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_common__ = __webpack_require__("../../../common/@angular/common.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__agm_core__ = __webpack_require__("../../../../@agm/core/index.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -951,25 +958,59 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
+
 var CreatePlanPageComponent = (function () {
-    function CreatePlanPageComponent(globaluser, planService, formBuilder, router, date, plan) {
+    function CreatePlanPageComponent(globaluser, planService, formBuilder, router, date, plan, mapsAPILoader, ngZone) {
         this.globaluser = globaluser;
         this.planService = planService;
         this.formBuilder = formBuilder;
         this.router = router;
         this.date = date;
         this.plan = plan;
+        this.mapsAPILoader = mapsAPILoader;
+        this.ngZone = ngZone;
         this.preferencias = [];
     }
     CreatePlanPageComponent.prototype.ngOnInit = function () {
         var _this = this;
+        //set google maps defaults
+        this.zoom = 4;
+        this.latitude = 39.8282;
+        this.longitude = -98.5795;
+        //create search FormControl
+        this.searchControl = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormControl */]();
+        //set current position
+        this.setCurrentPosition();
         this.planService.getPreferences().subscribe(function (planResponse) {
             _this.preferencias = planResponse;
+        });
+        //load Places Autocomplete
+        this.mapsAPILoader.load().then(function () {
+            var autocomplete = new google.maps.places.Autocomplete(_this.searchElementRef.nativeElement, {
+                types: ["address"]
+            });
+            autocomplete.addListener("place_changed", function () {
+                _this.ngZone.run(function () {
+                    console.log();
+                    //get the place result
+                    var place = autocomplete.getPlace();
+                    //verify result
+                    if (place.geometry === undefined || place.geometry === null) {
+                        return;
+                    }
+                    //set latitude, longitude and zoom
+                    _this.address = place.formatted_address;
+                    _this.latitude = place.geometry.location.lat();
+                    _this.longitude = place.geometry.location.lng();
+                    _this.zoom = 12;
+                });
+            });
         });
         this.userForm = this.formBuilder.group({
             nombre: '',
             descripcion: '',
-            ubicacion: '',
             fechainicio: '',
             fechafinal: '',
             costo: '',
@@ -980,8 +1021,8 @@ var CreatePlanPageComponent = (function () {
         var _this = this;
         this.plan.nombre = this.userForm.get('nombre').value;
         this.plan.descripcion = this.userForm.get('descripcion').value;
-        this.plan.ubicacion = this.userForm.get('ubicacion').value;
-        console.log(this.userForm.get('fechainicio').value);
+        this.plan.ubicacion = this.latitude.toString() + "," + this.longitude.toString() + "," + this.address;
+        console.log(this.plan.ubicacion);
         this.plan.fechaInicio = new Date(this.userForm.get('fechainicio').value).getTime();
         this.plan.fechaFinal = new Date(this.userForm.get('fechafinal').value).getTime();
         this.plan.costoPromedio = this.userForm.get('costo').value;
@@ -995,18 +1036,32 @@ var CreatePlanPageComponent = (function () {
         });
         this.router.navigate(['planes']);
     };
+    CreatePlanPageComponent.prototype.setCurrentPosition = function () {
+        var _this = this;
+        if ("geolocation" in navigator) {
+            navigator.geolocation.getCurrentPosition(function (position) {
+                _this.latitude = position.coords.latitude;
+                _this.longitude = position.coords.longitude;
+                _this.zoom = 12;
+            });
+        }
+    };
     return CreatePlanPageComponent;
 }());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ViewChild */])("search"),
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ElementRef */]) === "function" && _a || Object)
+], CreatePlanPageComponent.prototype, "searchElementRef", void 0);
 CreatePlanPageComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-create-plan-page',
         template: __webpack_require__("../../../../../src/app/pages/create-plan-page/create-plan-page.component.html"),
         styles: [__webpack_require__("../../../../../src/app/pages/create-plan-page/create-plan-page.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_5__common_global_user_service__["a" /* GlobalUserService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__common_global_user_service__["a" /* GlobalUserService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_plan_service__["a" /* PlanService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_plan_service__["a" /* PlanService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_6__angular_common__["d" /* DatePipe */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__angular_common__["d" /* DatePipe */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_4__models_plan__["a" /* Plan */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__models_plan__["a" /* Plan */]) === "function" && _f || Object])
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_5__common_global_user_service__["a" /* GlobalUserService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__common_global_user_service__["a" /* GlobalUserService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__services_plan_service__["a" /* PlanService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_plan_service__["a" /* PlanService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_6__angular_common__["d" /* DatePipe */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__angular_common__["d" /* DatePipe */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_4__models_plan__["a" /* Plan */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__models_plan__["a" /* Plan */]) === "function" && _g || Object, typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_7__agm_core__["b" /* MapsAPILoader */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_7__agm_core__["b" /* MapsAPILoader */]) === "function" && _h || Object, typeof (_j = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["R" /* NgZone */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["R" /* NgZone */]) === "function" && _j || Object])
 ], CreatePlanPageComponent);
 
-var _a, _b, _c, _d, _e, _f;
+var _a, _b, _c, _d, _e, _f, _g, _h, _j;
 //# sourceMappingURL=create-plan-page.component.js.map
 
 /***/ }),
@@ -2179,7 +2234,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "agm-map {\r\n    height: 300px;\r\n}", ""]);
 
 // exports
 
@@ -2192,7 +2247,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/your-plan-edit-page/your-plan-edit-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n  <h2>Edita: {{this.globalPlan.plan.nombre}}</h2>\r\n  <form [formGroup]=\"userForm\" (ngSubmit)=\"onSubmit()\" novalidate>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"nombre\">Nombre</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"nombre\" formControlName=\"nombre\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"descripcion\">Descripcion</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"descripcion\" formControlName=\"descripcion\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"ubicacion\">Ubicacion</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"ubicacion\" formControlName=\"ubicacion\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"fechainicio\">Fecha Inicio</label>\r\n      <input type=\"datetime-local\" class=\"form-control\" id=\"fechainicio\" formControlName=\"fechainicio\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"fechafinal\">Fecha Final</label>\r\n      <input type=\"datetime-local\" class=\"form-control\" id=\"fechafinal\" formControlName=\"fechafinal\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"costo\">Costo Promedio</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"costo\" formControlName=\"costo\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"preferencia\">Preferencia Plan</label>\r\n      <select  formControlName=\"preferencia\" class=\"form-control input-lg\" id=\"preferencia\">\r\n        <option *ngFor=\"let preferencia of preferencias; let i = index\" [value]=\"preferencia.nombre\" [selected]=\"true ? true : null\">{{preferencia.nombre}}</option>\r\n      </select>\r\n    </div>\r\n\r\n    <button type=\"submit\" class=\"btn btn-success\">Guardar tu edicion</button>\r\n    <p class=\"text-danger mt-1\" *ngIf=\"errorString\">{{errorString}}</p>\r\n\r\n  </form>\r\n\r\n  <h2>Asistentes al plan</h2>\r\n  <table class=\"table table-bordered\">\r\n    <thead>\r\n    <tr>\r\n      <th>Usuario</th>\r\n      <th>Correo</th>\r\n      <th>Nombres</th>\r\n      <th>Apellidos</th>\r\n    </tr>\r\n    </thead>\r\n    <tr *ngFor=\"let user of usuarios\" >\r\n      <td>{{user.usuario}}</td>\r\n      <td>{{user.email}}</td>\r\n      <td>{{user.nombres}}</td>\r\n      <td>{{user.apellidos}}</td>\r\n    </tr>\r\n  </table>\r\n\r\n</div>\r\n"
+module.exports = "<div class=\"container\">\r\n  <h2>Edita: {{this.globalPlan.plan.nombre}}</h2>\r\n  <form [formGroup]=\"userForm\" (ngSubmit)=\"onSubmit()\" novalidate>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"nombre\">Nombre</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"nombre\" formControlName=\"nombre\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"descripcion\">Descripcion</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"descripcion\" formControlName=\"descripcion\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"searchControl\">Ubicacion</label>\r\n      <input placeholder=\"search for location\" autocorrect=\"off\" id=\"searchControl\" autocapitalize=\"off\" spellcheck=\"off\" type=\"text\" class=\"form-control\" #search [formControl]=\"searchControl\">\r\n    </div>\r\n    <agm-map [latitude]=\"latitude\" [longitude]=\"longitude\" [scrollwheel]=\"false\" [zoom]=\"zoom\">\r\n      <agm-marker [latitude]=\"latitude\" [longitude]=\"longitude\"></agm-marker>\r\n    </agm-map>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"fechainicio\">Fecha Inicio</label>\r\n      <input type=\"datetime-local\" class=\"form-control\" id=\"fechainicio\" formControlName=\"fechainicio\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"fechafinal\">Fecha Final</label>\r\n      <input type=\"datetime-local\" class=\"form-control\" id=\"fechafinal\" formControlName=\"fechafinal\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"costo\">Costo Promedio</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"costo\" formControlName=\"costo\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"preferencia\">Preferencia Plan</label>\r\n      <select  formControlName=\"preferencia\" class=\"form-control input-lg\" id=\"preferencia\">\r\n        <option *ngFor=\"let preferencia of preferencias; let i = index\" [value]=\"preferencia.nombre\" [selected]=\"true ? true : null\">{{preferencia.nombre}}</option>\r\n      </select>\r\n    </div>\r\n\r\n    <button type=\"submit\" class=\"btn btn-success\">Guardar tu edicion</button>\r\n    <p class=\"text-danger mt-1\" *ngIf=\"errorString\">{{errorString}}</p>\r\n\r\n  </form>\r\n\r\n  <h2>Asistentes al plan</h2>\r\n  <table class=\"table table-bordered\">\r\n    <thead>\r\n    <tr>\r\n      <th>Usuario</th>\r\n      <th>Correo</th>\r\n      <th>Nombres</th>\r\n      <th>Apellidos</th>\r\n    </tr>\r\n    </thead>\r\n    <tr *ngFor=\"let user of usuarios\" >\r\n      <td>{{user.usuario}}</td>\r\n      <td>{{user.email}}</td>\r\n      <td>{{user.nombres}}</td>\r\n      <td>{{user.apellidos}}</td>\r\n    </tr>\r\n  </table>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -2210,6 +2265,7 @@ module.exports = "<div class=\"container\">\r\n  <h2>Edita: {{this.globalPlan.pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_NumberPair__ = __webpack_require__("../../../../../src/app/models/NumberPair.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_plan__ = __webpack_require__("../../../../../src/app/models/plan.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_users_service__ = __webpack_require__("../../../../../src/app/services/users.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__agm_core__ = __webpack_require__("../../../../@agm/core/index.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2228,8 +2284,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
+
 var YourPlanEditPageComponent = (function () {
-    function YourPlanEditPageComponent(globalPlan, formBuilder, router, planService, globalUser, numberPair, plan, userService) {
+    function YourPlanEditPageComponent(globalPlan, formBuilder, router, planService, globalUser, numberPair, plan, userService, mapsAPILoader, ngZone) {
         this.globalPlan = globalPlan;
         this.formBuilder = formBuilder;
         this.router = router;
@@ -2238,11 +2297,41 @@ var YourPlanEditPageComponent = (function () {
         this.numberPair = numberPair;
         this.plan = plan;
         this.userService = userService;
+        this.mapsAPILoader = mapsAPILoader;
+        this.ngZone = ngZone;
         this.usuarios = [];
         this.preferencias = [];
     }
     YourPlanEditPageComponent.prototype.ngOnInit = function () {
         var _this = this;
+        //set google maps defaults
+        this.zoom = 4;
+        this.latitude = 39.8282;
+        this.longitude = -98.5795;
+        //create search FormControl
+        this.searchControl = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormControl */]();
+        //set current position
+        this.setCurrentPosition();
+        //load Places Autocomplete
+        this.mapsAPILoader.load().then(function () {
+            var autocomplete = new google.maps.places.Autocomplete(_this.searchElementRef.nativeElement, {
+                types: ["address"]
+            });
+            autocomplete.addListener("place_changed", function () {
+                _this.ngZone.run(function () {
+                    //get the place result
+                    var place = autocomplete.getPlace();
+                    //verify result
+                    if (place.geometry === undefined || place.geometry === null) {
+                        return;
+                    }
+                    //set latitude, longitude and zoom
+                    _this.latitude = place.geometry.location.lat();
+                    _this.longitude = place.geometry.location.lng();
+                    _this.zoom = 12;
+                });
+            });
+        });
         this.planService.getPreferences().subscribe(function (planResponse) {
             _this.preferencias = planResponse;
             _this.preferenciaSeleccionada = _this.preferencias[_this.globalPlan.plan.detallePreferencia - 1];
@@ -2254,7 +2343,6 @@ var YourPlanEditPageComponent = (function () {
         this.userForm = this.formBuilder.group({
             nombre: this.globalPlan.plan.nombre,
             descripcion: this.globalPlan.plan.descripcion,
-            ubicacion: this.globalPlan.plan.ubicacion,
             fechainicio: this.fechainicio,
             fechafinal: this.fechafinal,
             costo: this.globalPlan.plan.costoPromedio,
@@ -2269,10 +2357,10 @@ var YourPlanEditPageComponent = (function () {
         this.plan.idPlan = this.globalPlan.plan.idPlan;
         this.plan.nombre = this.userForm.get('nombre').value;
         this.plan.descripcion = this.userForm.get('descripcion').value;
-        this.plan.ubicacion = this.userForm.get('ubicacion').value;
         this.plan.fechaInicio = new Date(this.userForm.get('fechainicio').value).getTime();
         this.plan.fechaFinal = new Date(this.userForm.get('fechafinal').value).getTime();
         this.plan.costoPromedio = this.userForm.get('costo').value;
+        this.plan.ubicacion = this.latitude.toString() + "," + this.longitude.toString();
         this.nombre = this.userForm.get('preferencia').value;
         for (var _i = 0, _a = this.preferencias; _i < _a.length; _i++) {
             var preference = _a[_i];
@@ -2287,18 +2375,32 @@ var YourPlanEditPageComponent = (function () {
             _this.errorString = "Error Desuscribiendo: " + error.message;
         });
     };
+    YourPlanEditPageComponent.prototype.setCurrentPosition = function () {
+        var _this = this;
+        if ("geolocation" in navigator) {
+            navigator.geolocation.getCurrentPosition(function (position) {
+                _this.latitude = position.coords.latitude;
+                _this.longitude = position.coords.longitude;
+                _this.zoom = 12;
+            });
+        }
+    };
     return YourPlanEditPageComponent;
 }());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_16" /* ViewChild */])("search"),
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ElementRef */]) === "function" && _a || Object)
+], YourPlanEditPageComponent.prototype, "searchElementRef", void 0);
 YourPlanEditPageComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-your-plan-edit-page',
         template: __webpack_require__("../../../../../src/app/pages/your-plan-edit-page/your-plan-edit-page.component.html"),
         styles: [__webpack_require__("../../../../../src/app/pages/your-plan-edit-page/your-plan-edit-page.component.css")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__common_global_plan_service__["a" /* GlobalPlanService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__common_global_plan_service__["a" /* GlobalPlanService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__services_plan_service__["a" /* PlanService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_plan_service__["a" /* PlanService */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_5__common_global_user_service__["a" /* GlobalUserService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__common_global_user_service__["a" /* GlobalUserService */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_6__models_NumberPair__["a" /* NumberPair */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__models_NumberPair__["a" /* NumberPair */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_7__models_plan__["a" /* Plan */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_7__models_plan__["a" /* Plan */]) === "function" && _g || Object, typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_8__services_users_service__["a" /* UsersService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_8__services_users_service__["a" /* UsersService */]) === "function" && _h || Object])
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__common_global_plan_service__["a" /* GlobalPlanService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__common_global_plan_service__["a" /* GlobalPlanService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormBuilder */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_4__services_plan_service__["a" /* PlanService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_plan_service__["a" /* PlanService */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_5__common_global_user_service__["a" /* GlobalUserService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__common_global_user_service__["a" /* GlobalUserService */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_6__models_NumberPair__["a" /* NumberPair */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__models_NumberPair__["a" /* NumberPair */]) === "function" && _g || Object, typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_7__models_plan__["a" /* Plan */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_7__models_plan__["a" /* Plan */]) === "function" && _h || Object, typeof (_j = typeof __WEBPACK_IMPORTED_MODULE_8__services_users_service__["a" /* UsersService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_8__services_users_service__["a" /* UsersService */]) === "function" && _j || Object, typeof (_k = typeof __WEBPACK_IMPORTED_MODULE_9__agm_core__["b" /* MapsAPILoader */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_9__agm_core__["b" /* MapsAPILoader */]) === "function" && _k || Object, typeof (_l = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["R" /* NgZone */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["R" /* NgZone */]) === "function" && _l || Object])
 ], YourPlanEditPageComponent);
 
-var _a, _b, _c, _d, _e, _f, _g, _h;
+var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l;
 //# sourceMappingURL=your-plan-edit-page.component.js.map
 
 /***/ }),

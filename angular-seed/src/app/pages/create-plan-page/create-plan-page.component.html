@@ -12,10 +12,13 @@
       <input type="text" class="form-control" id="descripcion" formControlName="descripcion" required>
     </div>
 
-  <div class="form-group">
-      <label for="ubicacion">Ubicacion</label>
-      <input type="text" class="form-control" id="ubicacion" formControlName="ubicacion" required>
+    <div class="form-group">
+      <label for="searchControl">Ubicacion</label>
+      <input placeholder="search for location" autocorrect="off" id="searchControl" autocapitalize="off" spellcheck="off" type="text" class="form-control" #search [formControl]="searchControl">
     </div>
+    <agm-map [latitude]="latitude" [longitude]="longitude" [scrollwheel]="false" [zoom]="zoom">
+      <agm-marker [latitude]="latitude" [longitude]="longitude"></agm-marker>
+    </agm-map>
 
     <div class="form-group">
       <label for="fechainicio">Fecha de Inicio</label>
