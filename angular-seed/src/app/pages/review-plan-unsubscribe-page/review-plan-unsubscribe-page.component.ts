@@ -29,7 +29,7 @@ export class ReviewPlanUnsubscribePageComponent implements OnInit {
         this.userForm = this.formBuilder.group({
             nombre: this.globalPlan.plan.nombre,
             descripcion: this.globalPlan.plan.descripcion,
-            ubicacion: this.globalPlan.plan.ubicacion,
+            ubicacion: this.globalPlan.plan.ubicacion.split("|")[0],
             fechainicio: this.date.transform(this.globalPlan.plan.fechaInicio,'short'),
             fechafinal: this.date.transform(this.globalPlan.plan.fechaFinal, 'short'),
             costo: this.globalPlan.plan.costoPromedio

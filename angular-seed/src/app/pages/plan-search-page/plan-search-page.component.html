@@ -10,7 +10,7 @@
   </thead>
   <tr *ngFor="let plan of planes; let i = index" (click)="setClickedRow(i)" [class.active]="i == selectedRow" >
     <td>{{plan.nombre}}</td>
-    <td>{{plan.ubicacion}}</td>
+    <td>{{plan.ubicacion.split("|")[0]}}</td>
     <td>{{plan.fechaInicio | date:'short'}}</td>
     <td>{{plan.costoPromedio}}</td>
   </tr>

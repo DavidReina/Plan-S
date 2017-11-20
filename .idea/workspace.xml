@@ -2,62 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b42e717-13fe-4957-aee1-e6427cccfe7d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.0.2/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.0.2/fileHashes/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.0.2/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.0.2/fileHashes/fileHashes.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_2_0_0_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_autoconfigure_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_autoconfigure_2_0_0_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_2_0_0_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_aop_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_aop_2_0_0_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_data_jpa_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_data_jpa_2_0_0_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_jdbc_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_jdbc_2_0_0_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_json_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_json_2_0_0_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_logging_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_logging_2_0_0_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_test_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_test_2_0_0_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_tomcat_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_tomcat_2_0_0_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_web_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_web_2_0_0_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_2_0_0_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_autoconfigure_2_0_0_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_test_autoconfigure_2_0_0_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aop_5_0_2_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aop_5_0_2_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aspects_5_0_2_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aspects_5_0_2_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_beans_5_0_2_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_beans_5_0_2_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_context_5_0_2_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_context_5_0_2_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_core_5_0_2_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_core_5_0_2_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_expression_5_0_2_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_expression_5_0_2_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jcl_5_0_2_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jcl_5_0_2_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jdbc_5_0_2_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jdbc_5_0_2_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_orm_5_0_2_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_orm_5_0_2_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_test_5_0_2_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_test_5_0_2_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_tx_5_0_2_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_tx_5_0_2_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_web_5_0_2_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_web_5_0_2_BUILD_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_webmvc_5_0_2_BUILD_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_webmvc_5_0_2_BUILD_SNAPSHOT.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/dist/inline.bundle.js" afterPath="$PROJECT_DIR$/angular-seed/dist/inline.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlanS_pg_create_2017-10-04_18-15.sql" afterPath="$PROJECT_DIR$/PlanS_pg_create_2017-10-04_18-15.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/dist/inline.bundle.js.map" afterPath="$PROJECT_DIR$/angular-seed/dist/inline.bundle.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/dist/main.bundle.js" afterPath="$PROJECT_DIR$/angular-seed/dist/main.bundle.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/dist/main.bundle.js.map" afterPath="$PROJECT_DIR$/angular-seed/dist/main.bundle.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/dist/styles.bundle.js" afterPath="$PROJECT_DIR$/angular-seed/dist/styles.bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/dist/vendor.bundle.js" afterPath="$PROJECT_DIR$/angular-seed/dist/vendor.bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/dist/vendor.bundle.js.map" afterPath="$PROJECT_DIR$/angular-seed/dist/vendor.bundle.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/create-plan-page/create-plan-page.component.css" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/create-plan-page/create-plan-page.component.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/create-plan-page/create-plan-page.component.html" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/create-plan-page/create-plan-page.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/create-plan-page/create-plan-page.component.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/create-plan-page/create-plan-page.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/modify-user-page/modify-user-page.component.html" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/modify-user-page/modify-user-page.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/register-user-page/user-edit-page.component.html" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/register-user-page/user-edit-page.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/plan-search-page/plan-search-page.component.html" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/plan-search-page/plan-search-page.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/planes-recomendados-page/task-list-page.component.html" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/planes-recomendados-page/task-list-page.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/review-plan-unsubscribe-page/review-plan-unsubscribe-page.component.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/review-plan-unsubscribe-page/review-plan-unsubscribe-page.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/your-plan-edit-page/your-plan-edit-page.component.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/your-plan-edit-page/your-plan-edit-page.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/resources/static/inline.bundle.js" afterPath="$PROJECT_DIR$/out/production/resources/static/inline.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/your-plans-page/your-plans-page.component.html" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/your-plans-page/your-plans-page.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/your-subscribed-plan-page/your-subscribed-plan-page.component.html" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/your-subscribed-plan-page/your-subscribed-plan-page.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/resources/static/inline.bundle.js.map" afterPath="$PROJECT_DIR$/out/production/resources/static/inline.bundle.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/resources/static/main.bundle.js" afterPath="$PROJECT_DIR$/out/production/resources/static/main.bundle.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/resources/static/main.bundle.js.map" afterPath="$PROJECT_DIR$/out/production/resources/static/main.bundle.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/resources/static/styles.bundle.js" afterPath="$PROJECT_DIR$/out/production/resources/static/styles.bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/resources/static/vendor.bundle.js" afterPath="$PROJECT_DIR$/out/production/resources/static/vendor.bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/resources/static/vendor.bundle.js.map" afterPath="$PROJECT_DIR$/out/production/resources/static/vendor.bundle.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/inline.bundle.js" afterPath="$PROJECT_DIR$/src/main/resources/static/inline.bundle.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/inline.bundle.js.map" afterPath="$PROJECT_DIR$/src/main/resources/static/inline.bundle.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/main.bundle.js" afterPath="$PROJECT_DIR$/src/main/resources/static/main.bundle.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/main.bundle.js.map" afterPath="$PROJECT_DIR$/src/main/resources/static/main.bundle.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/styles.bundle.js" afterPath="$PROJECT_DIR$/src/main/resources/static/styles.bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendor.bundle.js" afterPath="$PROJECT_DIR$/src/main/resources/static/vendor.bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/vendor.bundle.js.map" afterPath="$PROJECT_DIR$/src/main/resources/static/vendor.bundle.js.map" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -76,31 +39,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="user-edit-page.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/register-user-page/user-edit-page.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="your-plan-edit-page.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/your-plan-edit-page/your-plan-edit-page.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="20" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="modify-user-page.component.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/modify-user-page/modify-user-page.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="420">
+              <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -109,8 +52,8 @@
       <file leaf-file-name="your-plan-edit-page.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/your-plan-edit-page/your-plan-edit-page.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1771">
-              <caret line="27" column="31" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+            <state relative-caret-position="336">
+              <caret line="125" column="29" lean-forward="false" selection-start-line="125" selection-start-column="29" selection-end-line="125" selection-end-column="29" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -118,42 +61,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create-plan-page.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/create-plan-page/create-plan-page.component.html">
+      <file leaf-file-name="your-plans-page.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/your-plans-page/your-plans-page.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+            <state relative-caret-position="252">
+              <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create-plan-page.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/create-plan-page/create-plan-page.component.ts">
+      <file leaf-file-name="task-list-page.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/planes-recomendados-page/task-list-page.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="126" column="41" lean-forward="false" selection-start-line="126" selection-start-column="41" selection-end-line="126" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="252">
+              <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user-review-page.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/user-review-page/user-review-page.component.html">
+      <file leaf-file-name="plan-search-page.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/plan-search-page/plan-search-page.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-              <folding>
-                <marker date="1511044325887" expanded="true" signature="695:836" ph="..." />
-              </folding>
+            <state relative-caret-position="336">
+              <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user-list-page.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/user-list-page/user-list-page.component.html">
+      <file leaf-file-name="your-subscribed-plan-page.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/your-subscribed-plan-page/your-subscribed-plan-page.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="review-plan-unsubscribe-page.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/review-plan-unsubscribe-page/review-plan-unsubscribe-page.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -162,22 +111,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="your-plan-edit-page.component.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/your-plan-edit-page/your-plan-edit-page.component.css">
+      <file leaf-file-name="review-plan-unsubscribe-page.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/review-plan-unsubscribe-page/review-plan-unsubscribe-page.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="285">
+              <caret line="31" column="67" lean-forward="false" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create-plan-page.component.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/create-plan-page/create-plan-page.component.css">
+      <file leaf-file-name="review-plan-unsubscribe-page.component.spec.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/review-plan-unsubscribe-page/review-plan-unsubscribe-page.component.spec.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#73#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create-plan-page.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/create-plan-page/create-plan-page.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="112" column="72" lean-forward="false" selection-start-line="112" selection-start-column="72" selection-end-line="112" selection-end-column="72" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -191,6 +156,12 @@
         <option value="TypeScript File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>errorstring</find>
+      <find>error</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -631,12 +602,17 @@
         <option value="$PROJECT_DIR$/angular-seed/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/angular-seed/src/app/pages/your-plan-edit-page/your-plan-edit-page.component.html" />
         <option value="$PROJECT_DIR$/angular-seed/src/app/pages/your-plan-edit-page/your-plan-edit-page.component.css" />
-        <option value="$PROJECT_DIR$/angular-seed/src/app/pages/create-plan-page/create-plan-page.component.html" />
         <option value="$PROJECT_DIR$/angular-seed/src/app/pages/create-plan-page/create-plan-page.component.css" />
-        <option value="$PROJECT_DIR$/angular-seed/src/app/pages/your-plan-edit-page/your-plan-edit-page.component.ts" />
-        <option value="$PROJECT_DIR$/angular-seed/src/app/pages/create-plan-page/create-plan-page.component.ts" />
         <option value="$PROJECT_DIR$/angular-seed/src/app/pages/register-user-page/user-edit-page.component.html" />
         <option value="$PROJECT_DIR$/angular-seed/src/app/pages/modify-user-page/modify-user-page.component.html" />
+        <option value="$PROJECT_DIR$/angular-seed/src/app/pages/create-plan-page/create-plan-page.component.html" />
+        <option value="$PROJECT_DIR$/angular-seed/src/app/pages/create-plan-page/create-plan-page.component.ts" />
+        <option value="$PROJECT_DIR$/angular-seed/src/app/pages/your-plan-edit-page/your-plan-edit-page.component.ts" />
+        <option value="$PROJECT_DIR$/angular-seed/src/app/pages/your-plans-page/your-plans-page.component.html" />
+        <option value="$PROJECT_DIR$/angular-seed/src/app/pages/your-subscribed-plan-page/your-subscribed-plan-page.component.html" />
+        <option value="$PROJECT_DIR$/angular-seed/src/app/pages/review-plan-unsubscribe-page/review-plan-unsubscribe-page.component.ts" />
+        <option value="$PROJECT_DIR$/angular-seed/src/app/pages/planes-recomendados-page/task-list-page.component.html" />
+        <option value="$PROJECT_DIR$/angular-seed/src/app/pages/plan-search-page/plan-search-page.component.html" />
       </list>
     </option>
   </component>
@@ -672,7 +648,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -739,7 +715,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="register-user-page" type="462c0819:PsiDirectoryNode" />
+              <item name="plan-search-page" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Plan-S" type="b2602c69:ProjectViewProjectNode" />
@@ -748,7 +724,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="user-list-page" type="462c0819:PsiDirectoryNode" />
+              <item name="planes-recomendados-page" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Plan-S" type="b2602c69:ProjectViewProjectNode" />
@@ -757,7 +733,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="user-review-page" type="462c0819:PsiDirectoryNode" />
+              <item name="review-plan-unsubscribe-page" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Plan-S" type="b2602c69:ProjectViewProjectNode" />
@@ -767,6 +743,24 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="your-plan-edit-page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Plan-S" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Plan-S" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="angular-seed" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="your-plans-page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Plan-S" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Plan-S" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="angular-seed" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="your-subscribed-plan-page" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Plan-S" type="b2602c69:ProjectViewProjectNode" />
@@ -843,7 +837,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -999,11 +993,12 @@
       <workItem from="1510803977707" duration="1396000" />
       <workItem from="1511029129983" duration="1723000" />
       <workItem from="1511044401335" duration="7928000" />
+      <workItem from="1511129931098" duration="5667000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93656000" />
+    <option name="totallyTimeSpent" value="99323000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1025,8 +1020,8 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32990867" sideWeight="0.71979165" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32990867" sideWeight="0.71979165" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26145834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1053,41 +1048,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="148" column="45" lean-forward="false" selection-start-line="148" selection-start-column="45" selection-end-line="148" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/common/api.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/plan-search-page/plan-search-page.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/register-user-page/user-edit-page.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/your-plans-page/your-plans-page.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/angular-seed/src/app/models/UsuarioEntity.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1106,13 +1066,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/your-plans-page/your-plans-page.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1201,13 +1154,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/planes-recomendados-page/task-list-page.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/angular-seed/src/app/models/NumberPair.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1233,7 +1179,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1248,7 +1193,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1256,7 +1200,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="65" column="8" lean-forward="false" selection-start-line="65" selection-start-column="8" selection-end-line="76" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1285,7 +1228,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="49" column="19" lean-forward="false" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1293,7 +1235,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="986">
           <caret line="71" column="45" lean-forward="false" selection-start-line="71" selection-start-column="45" selection-end-line="71" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1301,7 +1242,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="31" column="16" lean-forward="false" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1309,7 +1249,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2176">
           <caret line="152" column="50" lean-forward="false" selection-start-line="152" selection-start-column="50" selection-end-line="152" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1317,15 +1256,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1575">
           <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/modify-user-page/modify-user-page.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1659">
-          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1333,13 +1263,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1575">
           <caret line="82" column="41" lean-forward="false" selection-start-line="82" selection-start-column="41" selection-end-line="82" selection-end-column="41" />
-          <folding>
-            <marker date="1511044325887" expanded="true" signature="650:3462" ph="{...}" />
-            <marker date="1511044325887" expanded="true" signature="1628:3459" ph="{...}" />
-            <marker date="1511044325887" expanded="true" signature="1951:3448" ph="{...}" />
-            <marker date="1511044325887" expanded="true" signature="2446:3313" ph="{...}" />
-            <marker date="1511044325887" expanded="true" signature="3340:3435" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1348,19 +1271,11 @@
         <state relative-caret-position="2058">
           <caret line="149" column="16" lean-forward="false" selection-start-line="149" selection-start-column="16" selection-end-line="149" selection-end-column="16" />
           <folding>
-            <element signature="e#0#58#0" expanded="true" />
+            <element signature="e#0#58#0" expanded="false" />
             <marker date="1511044325871" expanded="true" signature="5417:5556" ph="[...]" />
             <marker date="1511044325871" expanded="true" signature="5577:5731" ph="{&quot;provide&quot;: INITIAL_CONFIG...}" />
             <marker date="1511044325871" expanded="true" signature="5626:5725" ph="{&quot;apiURL&quot;: 'http://localhost:8080'...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/your-plan-edit-page/your-plan-edit-page.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="20" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1380,34 +1295,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/create-plan-page/create-plan-page.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/create-plan-page/create-plan-page.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="126" column="41" lean-forward="false" selection-start-line="126" selection-start-column="41" selection-end-line="126" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/your-plan-edit-page/your-plan-edit-page.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1771">
-          <caret line="27" column="31" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/user-review-page/user-review-page.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -1415,14 +1302,6 @@
           <folding>
             <marker date="1511044325887" expanded="true" signature="695:836" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/user-list-page/user-list-page.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1434,10 +1313,122 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/user-list-page/user-list-page.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/modify-user-page/modify-user-page.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="60" column="28" lean-forward="false" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/modify-user-page/modify-user-page.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/create-plan-page/create-plan-page.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="19" column="63" lean-forward="false" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/create-plan-page/create-plan-page.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="112" column="72" lean-forward="false" selection-start-line="112" selection-start-column="72" selection-end-line="112" selection-end-column="72" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/your-subscribed-plan-page/your-subscribed-plan-page.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/review-plan-unsubscribe-page/review-plan-unsubscribe-page.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/review-plan-unsubscribe-page/review-plan-unsubscribe-page.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/review-plan-unsubscribe-page/review-plan-unsubscribe-page.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="31" column="67" lean-forward="false" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/your-plan-edit-page/your-plan-edit-page.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="125" column="29" lean-forward="false" selection-start-line="125" selection-start-column="29" selection-end-line="125" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/your-plan-edit-page/your-plan-edit-page.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/your-plans-page/your-plans-page.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/planes-recomendados-page/task-list-page.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/plan-search-page/plan-search-page.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
           <folding />
         </state>
       </provider>

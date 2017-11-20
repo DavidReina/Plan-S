@@ -30,6 +30,7 @@ export class YourPlanEditPageComponent implements OnInit {
     private preferencias: PreferenciaEntity[] = [];
     private preferenciaSeleccionada:PreferenciaEntity;
     private nombre:string;
+    private strsplit:string[];
 
     public latitude: number;
     public longitude: number;
@@ -48,16 +49,18 @@ export class YourPlanEditPageComponent implements OnInit {
 
     ngOnInit() {
 
+        this.strsplit = this.globalPlan.plan.ubicacion.split("|");
+
         //set google maps defaults
-        this.zoom = 4;
-        this.latitude = 39.8282;
-        this.longitude = -98.5795;
+        this.zoom = 12;
+        this.latitude = parseFloat(this.strsplit[1]);
+        this.longitude = parseFloat(this.strsplit[2]);
+        this.address = this.strsplit[0];
 
         //create search FormControl
         this.searchControl = new FormControl();
 
-        //set current position
-        this.setCurrentPosition();
+        this.searchControl.setValue(this.strsplit[0]);
 
         //load Places Autocomplete
         this.mapsAPILoader.load().then(() => {
@@ -118,7 +121,7 @@ export class YourPlanEditPageComponent implements OnInit {
         this.plan.fechaFinal = new Date(this.userForm.get('fechafinal').value).getTime();
         this.plan.costoPromedio = this.userForm.get('costo').value;
 
-        this.plan.ubicacion=this.address+","+this.latitude.toString()+","+this.longitude.toString();
+        this.plan.ubicacion=this.address+"|"+this.latitude.toString()+"|"+this.longitude.toString();
 
         this.nombre=this.userForm.get('preferencia').value;
 
@@ -140,16 +143,6 @@ export class YourPlanEditPageComponent implements OnInit {
                 this.errorString = "Error Desuscribiendo: "+error.message;
             });
 
-    }
-
-    private setCurrentPosition() {
-        if ("geolocation" in navigator) {
-            navigator.geolocation.getCurrentPosition((position) => {
-                this.latitude = position.coords.latitude;
-                this.longitude = position.coords.longitude;
-                this.zoom = 12;
-            });
-        }
     }
 
 }

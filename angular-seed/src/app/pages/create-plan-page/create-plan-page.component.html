@@ -16,6 +16,9 @@
       <label for="searchControl">Ubicacion</label>
       <input placeholder="search for location" autocorrect="off" id="searchControl" autocapitalize="off" spellcheck="off" type="text" class="form-control" #search [formControl]="searchControl">
     </div>
+
+    <p class="text-danger mt-1" *ngIf="errorPlace">{{errorPlace}}</p>
+
     <agm-map [latitude]="latitude" [longitude]="longitude" [scrollwheel]="false" [zoom]="zoom">
       <agm-marker [latitude]="latitude" [longitude]="longitude"></agm-marker>
     </agm-map>

@@ -925,7 +925,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/create-plan-page/create-plan-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n  <h2>Nuevo Plan</h2>\r\n  <form [formGroup]=\"userForm\" (ngSubmit)=\"onSubmit()\" novalidate>\r\n    \r\n\t<div class=\"form-group\">\r\n      <label for=\"nombre\">Nombre</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"nombre\" formControlName=\"nombre\" required>\r\n    </div>\r\n\t\r\n\t<div class=\"form-group\">\r\n      <label for=\"descripcion\">Descripcion</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"descripcion\" formControlName=\"descripcion\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"searchControl\">Ubicacion</label>\r\n      <input placeholder=\"search for location\" autocorrect=\"off\" id=\"searchControl\" autocapitalize=\"off\" spellcheck=\"off\" type=\"text\" class=\"form-control\" #search [formControl]=\"searchControl\">\r\n    </div>\r\n    <agm-map [latitude]=\"latitude\" [longitude]=\"longitude\" [scrollwheel]=\"false\" [zoom]=\"zoom\">\r\n      <agm-marker [latitude]=\"latitude\" [longitude]=\"longitude\"></agm-marker>\r\n    </agm-map>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"fechainicio\">Fecha de Inicio</label>\r\n      <input type=\"datetime-local\" class=\"form-control\" id=\"fechainicio\" formControlName=\"fechainicio\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"fechafinal\">Fecha de Finalización</label>\r\n      <input type=\"datetime-local\" class=\"form-control\" id=\"fechafinal\" formControlName=\"fechafinal\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"costo\">Costo Promedio</label>\r\n      <input type=\"number\" class=\"form-control\" id=\"costo\" formControlName=\"costo\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"preferencia\">Preferencia Plan</label>\r\n      <select  formControlName=\"preferencia\" class=\"form-control input-lg\" id=\"preferencia\">\r\n        <option *ngFor=\"let preferencia of preferencias; let i = index\" value={{i+1}}>{{preferencia.nombre}}</option>\r\n      </select>\r\n    </div>\r\n\r\n      <button type=\"submit\" class=\"btn btn-success\">Crear Tu Plan!</button>\r\n      <p class=\"text-danger mt-1\" *ngIf=\"errorString\">{{errorString}}</p>\r\n\r\n  </form>\r\n</div>\r\n"
+module.exports = "<div class=\"container\">\r\n  <h2>Nuevo Plan</h2>\r\n  <form [formGroup]=\"userForm\" (ngSubmit)=\"onSubmit()\" novalidate>\r\n    \r\n\t<div class=\"form-group\">\r\n      <label for=\"nombre\">Nombre</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"nombre\" formControlName=\"nombre\" required>\r\n    </div>\r\n\t\r\n\t<div class=\"form-group\">\r\n      <label for=\"descripcion\">Descripcion</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"descripcion\" formControlName=\"descripcion\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"searchControl\">Ubicacion</label>\r\n      <input placeholder=\"search for location\" autocorrect=\"off\" id=\"searchControl\" autocapitalize=\"off\" spellcheck=\"off\" type=\"text\" class=\"form-control\" #search [formControl]=\"searchControl\">\r\n    </div>\r\n\r\n    <p class=\"text-danger mt-1\" *ngIf=\"errorPlace\">{{errorPlace}}</p>\r\n\r\n    <agm-map [latitude]=\"latitude\" [longitude]=\"longitude\" [scrollwheel]=\"false\" [zoom]=\"zoom\">\r\n      <agm-marker [latitude]=\"latitude\" [longitude]=\"longitude\"></agm-marker>\r\n    </agm-map>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"fechainicio\">Fecha de Inicio</label>\r\n      <input type=\"datetime-local\" class=\"form-control\" id=\"fechainicio\" formControlName=\"fechainicio\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"fechafinal\">Fecha de Finalización</label>\r\n      <input type=\"datetime-local\" class=\"form-control\" id=\"fechafinal\" formControlName=\"fechafinal\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"costo\">Costo Promedio</label>\r\n      <input type=\"number\" class=\"form-control\" id=\"costo\" formControlName=\"costo\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"preferencia\">Preferencia Plan</label>\r\n      <select  formControlName=\"preferencia\" class=\"form-control input-lg\" id=\"preferencia\">\r\n        <option *ngFor=\"let preferencia of preferencias; let i = index\" value={{i+1}}>{{preferencia.nombre}}</option>\r\n      </select>\r\n    </div>\r\n\r\n      <button type=\"submit\" class=\"btn btn-success\">Crear Tu Plan!</button>\r\n      <p class=\"text-danger mt-1\" *ngIf=\"errorString\">{{errorString}}</p>\r\n\r\n  </form>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -975,6 +975,7 @@ var CreatePlanPageComponent = (function () {
     }
     CreatePlanPageComponent.prototype.ngOnInit = function () {
         var _this = this;
+        this.autocompleted = true;
         //set google maps defaults
         this.zoom = 4;
         this.latitude = 39.8282;
@@ -1002,6 +1003,7 @@ var CreatePlanPageComponent = (function () {
                     }
                     //set latitude, longitude and zoom
                     _this.address = place.formatted_address;
+                    _this.autocompleted = false;
                     _this.latitude = place.geometry.location.lat();
                     _this.longitude = place.geometry.location.lng();
                     _this.zoom = 12;
@@ -1019,22 +1021,27 @@ var CreatePlanPageComponent = (function () {
     };
     CreatePlanPageComponent.prototype.onSubmit = function () {
         var _this = this;
-        this.plan.nombre = this.userForm.get('nombre').value;
-        this.plan.descripcion = this.userForm.get('descripcion').value;
-        this.plan.ubicacion = this.latitude.toString() + "," + this.longitude.toString() + "," + this.address;
-        console.log(this.plan.ubicacion);
-        this.plan.fechaInicio = new Date(this.userForm.get('fechainicio').value).getTime();
-        this.plan.fechaFinal = new Date(this.userForm.get('fechafinal').value).getTime();
-        this.plan.costoPromedio = this.userForm.get('costo').value;
-        this.plan.creadorPlan = this.globaluser.usuarioLogin.idUsuario;
-        this.plan.detallePreferencia = this.userForm.get('preferencia').value;
-        this.plan.imagenPlan = new Blob;
-        this.planService.createPlan(this.plan).subscribe(function (serverResponse) {
-            _this.router.navigate(['/yourplans']);
-        }, function (error) {
-            _this.errorString = "Error Suscribiendo: " + error.message;
-        });
-        this.router.navigate(['planes']);
+        if (this.autocompleted) {
+            this.errorPlace = "Porfavor seleccione un lugar basandose en la lista desplegada para ubicar la direccion del plan.";
+        }
+        else {
+            this.plan.nombre = this.userForm.get('nombre').value;
+            this.plan.descripcion = this.userForm.get('descripcion').value;
+            this.plan.ubicacion = this.address + "|" + this.latitude.toString() + "|" + this.longitude.toString();
+            console.log(this.plan.ubicacion);
+            this.plan.fechaInicio = new Date(this.userForm.get('fechainicio').value).getTime();
+            this.plan.fechaFinal = new Date(this.userForm.get('fechafinal').value).getTime();
+            this.plan.costoPromedio = this.userForm.get('costo').value;
+            this.plan.creadorPlan = this.globaluser.usuarioLogin.idUsuario;
+            this.plan.detallePreferencia = this.userForm.get('preferencia').value;
+            this.plan.imagenPlan = new Blob;
+            this.planService.createPlan(this.plan).subscribe(function (serverResponse) {
+                _this.router.navigate(['/yourplans']);
+            }, function (error) {
+                _this.errorString = "Error Suscribiendo: " + error.message;
+            });
+            this.router.navigate(['planes']);
+        }
     };
     CreatePlanPageComponent.prototype.setCurrentPosition = function () {
         var _this = this;
@@ -1149,7 +1156,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/modify-user-page/modify-user-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n  <h2>Modifica tu Usuario</h2>\r\n\r\n  <br>\r\n  {{userForm.value | json}}\r\n  <br>\r\n\r\n  <form [formGroup]=\"userForm\" (ngSubmit)=\"onSubmit()\" novalidate>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"email\">Email</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"email\" formControlName=\"email\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"contrasena\">Nueva Contraseña</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"contrasena\" formControlName=\"contrasena\" required>\r\n    </div>\r\n\r\n    <p class=\"text-danger mt-1\" *ngIf=\"errorString\">{{errorString}}</p>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"confirmcontrasena\">Confirmar Contraseña</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"confirmcontrasena\" formControlName=\"confirmcontrasena\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"usuario\">Nombre Usuario</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"usuario\" formControlName=\"usuario\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"nombres\">Nombre</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"nombres\" formControlName=\"nombres\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"apellidos\">Apellido</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"apellidos\" formControlName=\"apellidos\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"tipoid\">Tipo Identificacion</label>\r\n      <select formControlName=\"tipoid\" class=\"form-control input-lg\" id=\"tipoid\">\r\n        <option value=\"CC\" [selected]=\" this.globalUser.usuarioLogin.tipoId == 'cc'\">CC</option>\r\n        <option value=\"TI\" [selected]=\" this.globalUser.usuarioLogin.tipoId == 'ti'\">TI</option>\r\n        <option value=\"CE\" [selected]=\" this.globalUser.usuarioLogin.tipoId == 'ce'\">CE</option>\r\n      </select>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"numero_id\">Numero Identificacion</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"numero_id\" formControlName=\"numero_id\" required>\r\n    </div>\r\n\r\n    <div >\r\n      <ul>\r\n        <li *ngFor=\"let preferencia of preferencias\">\r\n          <label>\r\n            <input type=\"checkbox\" formControlName=\"preferencias\" asList [value]=\"preferencia.nombre\">\r\n            {{preferencia.nombre}}\r\n          </label>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n\r\n    <button type=\"submit\" class=\"btn btn-success\">Registrarse</button>\r\n    <p class=\"text-danger mt-1\" *ngIf=\"errorCreate\">{{errorCreate}}</p>\r\n\r\n  </form>\r\n\r\n</div>"
+module.exports = "<div class=\"container\">\r\n  <h2>Modifica tu Usuario</h2>\r\n\r\n  <form [formGroup]=\"userForm\" (ngSubmit)=\"onSubmit()\" novalidate>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"email\">Email</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"email\" formControlName=\"email\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"contrasena\">Nueva Contraseña</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"contrasena\" formControlName=\"contrasena\" required>\r\n    </div>\r\n\r\n    <p class=\"text-danger mt-1\" *ngIf=\"errorString\">{{errorString}}</p>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"confirmcontrasena\">Confirmar Contraseña</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"confirmcontrasena\" formControlName=\"confirmcontrasena\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"usuario\">Nombre Usuario</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"usuario\" formControlName=\"usuario\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"nombres\">Nombre</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"nombres\" formControlName=\"nombres\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"apellidos\">Apellido</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"apellidos\" formControlName=\"apellidos\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"tipoid\">Tipo Identificacion</label>\r\n      <select formControlName=\"tipoid\" class=\"form-control input-lg\" id=\"tipoid\">\r\n        <option value=\"CC\" [selected]=\" this.globalUser.usuarioLogin.tipoId == 'cc'\">CC</option>\r\n        <option value=\"TI\" [selected]=\" this.globalUser.usuarioLogin.tipoId == 'ti'\">TI</option>\r\n        <option value=\"CE\" [selected]=\" this.globalUser.usuarioLogin.tipoId == 'ce'\">CE</option>\r\n      </select>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"numero_id\">Numero Identificacion</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"numero_id\" formControlName=\"numero_id\" required>\r\n    </div>\r\n\r\n    <div >\r\n      <ul>\r\n        <li *ngFor=\"let preferencia of preferencias\">\r\n          <label>\r\n            <input type=\"checkbox\" formControlName=\"preferencias\" asList [value]=\"preferencia.nombre\">\r\n            {{preferencia.nombre}}\r\n          </label>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n\r\n    <button type=\"submit\" class=\"btn btn-success\">Registrarse</button>\r\n    <p class=\"text-danger mt-1\" *ngIf=\"errorCreate\">{{errorCreate}}</p>\r\n\r\n  </form>\r\n\r\n</div>"
 
 /***/ }),
 
@@ -1342,7 +1349,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/plan-search-page/plan-search-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h2>Resultado Busqueda {{this.globalsearch.search.search}}</h2><br>\r\n<table class=\"table table-bordered\">\r\n  <thead>\r\n  <tr>\r\n    <th>Nombre</th>\r\n    <th>Ubicacion</th>\r\n    <th>Fecha (MM/DD/AAAA)</th>\r\n    <th>Costo Promedio</th>\r\n  </tr>\r\n  </thead>\r\n  <tr *ngFor=\"let plan of planes; let i = index\" (click)=\"setClickedRow(i)\" [class.active]=\"i == selectedRow\" >\r\n    <td>{{plan.nombre}}</td>\r\n    <td>{{plan.ubicacion}}</td>\r\n    <td>{{plan.fechaInicio | date:'short'}}</td>\r\n    <td>{{plan.costoPromedio}}</td>\r\n  </tr>\r\n</table>\r\n"
+module.exports = "<h2>Resultado Busqueda {{this.globalsearch.search.search}}</h2><br>\r\n<table class=\"table table-bordered\">\r\n  <thead>\r\n  <tr>\r\n    <th>Nombre</th>\r\n    <th>Ubicacion</th>\r\n    <th>Fecha (MM/DD/AAAA)</th>\r\n    <th>Costo Promedio</th>\r\n  </tr>\r\n  </thead>\r\n  <tr *ngFor=\"let plan of planes; let i = index\" (click)=\"setClickedRow(i)\" [class.active]=\"i == selectedRow\" >\r\n    <td>{{plan.nombre}}</td>\r\n    <td>{{plan.ubicacion.split(\"|\")[0]}}</td>\r\n    <td>{{plan.fechaInicio | date:'short'}}</td>\r\n    <td>{{plan.costoPromedio}}</td>\r\n  </tr>\r\n</table>\r\n"
 
 /***/ }),
 
@@ -1430,7 +1437,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/planes-recomendados-page/task-list-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h2>Planes Recomendados Para Ti</h2><br>\r\n<table class=\"table table-bordered\">\r\n <thead>\r\n   <tr>\r\n     <th>Nombre</th>\r\n     <th>Ubicacion</th>\r\n     <th>Fecha (MM/DD/AAAA)</th>\r\n     <th>Costo Promedio</th>\r\n   </tr>\r\n </thead>\r\n <tr *ngFor=\"let plan of planes; let i = index\" (click)=\"setClickedRow(i)\" [class.active]=\"i == selectedRow\" >\r\n   <td>{{plan.nombre}}</td>\r\n   <td>{{plan.ubicacion}}</td>\r\n   <td>{{plan.fechaInicio | date:'short'}}</td>\r\n   <td>{{plan.costoPromedio}}</td>\r\n </tr>\r\n</table>"
+module.exports = "<h2>Planes Recomendados Para Ti</h2><br>\r\n<table class=\"table table-bordered\">\r\n <thead>\r\n   <tr>\r\n     <th>Nombre</th>\r\n     <th>Ubicacion</th>\r\n     <th>Fecha (MM/DD/AAAA)</th>\r\n     <th>Costo Promedio</th>\r\n   </tr>\r\n </thead>\r\n <tr *ngFor=\"let plan of planes; let i = index\" (click)=\"setClickedRow(i)\" [class.active]=\"i == selectedRow\" >\r\n   <td>{{plan.nombre}}</td>\r\n   <td>{{plan.ubicacion.split(\"|\")[0]}}</td>\r\n   <td>{{plan.fechaInicio | date:'short'}}</td>\r\n   <td>{{plan.costoPromedio}}</td>\r\n </tr>\r\n</table>"
 
 /***/ }),
 
@@ -1582,7 +1589,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/register-user-page/user-edit-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n  <h2>Registrarse</h2>\r\n  <br>\r\n  {{userForm.value | json}}\r\n  <br>\r\n\r\n  <form [formGroup]=\"userForm\" (ngSubmit)=\"onSubmit()\" novalidate>\r\n    \r\n\t<div class=\"form-group\">\r\n      <label for=\"email\">Email</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"email\" formControlName=\"email\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"contrasena\">Nueva Contraseña</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"contrasena\" formControlName=\"contrasena\" required>\r\n    </div>\r\n\r\n    <p class=\"text-danger mt-1\" *ngIf=\"errorString\">{{errorString}}</p>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"confirmcontrasena\">Confirmar Contraseña</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"confirmcontrasena\" formControlName=\"confirmcontrasena\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"usuario\">Nombre Usuario</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"usuario\" formControlName=\"usuario\" required>\r\n    </div>\r\n\r\n  <div class=\"form-group\">\r\n      <label for=\"nombres\">Nombre</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"nombres\" formControlName=\"nombres\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"apellidos\">Apellido</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"apellidos\" formControlName=\"apellidos\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"tipoid\">Tipo Identificacion</label>\r\n      <select formControlName=\"tipoid\" class=\"form-control input-lg\" id=\"tipoid\">\r\n        <option value=\"CC\" [selected]=\"true\">CC</option>\r\n        <option value=\"TI\">TI</option>\r\n        <option value=\"CE\">CE</option>\r\n      </select>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"numero_id\">Numero Identificacion</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"numero_id\" formControlName=\"numero_id\" required>\r\n    </div>\r\n\r\n    <div >\r\n      <ul>\r\n        <li *ngFor=\"let preferencia of preferencias\">\r\n          <label>\r\n            <input type=\"checkbox\" formControlName=\"preferencias\" asList [value]=\"preferencia.nombre\">\r\n            {{preferencia.nombre}}\r\n          </label>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n    \r\n    <button type=\"submit\" class=\"btn btn-success\">Registrarse</button>\r\n    <p class=\"text-danger mt-1\" *ngIf=\"errorCreate\">{{errorCreate}}</p>\r\n\r\n  </form>\r\n</div>\r\n"
+module.exports = "<div class=\"container\">\r\n  <h2>Registrarse</h2>\r\n\r\n  <form [formGroup]=\"userForm\" (ngSubmit)=\"onSubmit()\" novalidate>\r\n    \r\n\t<div class=\"form-group\">\r\n      <label for=\"email\">Email</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"email\" formControlName=\"email\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"contrasena\">Nueva Contraseña</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"contrasena\" formControlName=\"contrasena\" required>\r\n    </div>\r\n\r\n    <p class=\"text-danger mt-1\" *ngIf=\"errorString\">{{errorString}}</p>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"confirmcontrasena\">Confirmar Contraseña</label>\r\n      <input type=\"password\" class=\"form-control\" id=\"confirmcontrasena\" formControlName=\"confirmcontrasena\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"usuario\">Nombre Usuario</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"usuario\" formControlName=\"usuario\" required>\r\n    </div>\r\n\r\n  <div class=\"form-group\">\r\n      <label for=\"nombres\">Nombre</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"nombres\" formControlName=\"nombres\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"apellidos\">Apellido</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"apellidos\" formControlName=\"apellidos\" required>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"tipoid\">Tipo Identificacion</label>\r\n      <select formControlName=\"tipoid\" class=\"form-control input-lg\" id=\"tipoid\">\r\n        <option value=\"CC\" [selected]=\"true\">CC</option>\r\n        <option value=\"TI\">TI</option>\r\n        <option value=\"CE\">CE</option>\r\n      </select>\r\n    </div>\r\n\r\n    <div class=\"form-group\">\r\n      <label for=\"numero_id\">Numero Identificacion</label>\r\n      <input type=\"text\" class=\"form-control\" id=\"numero_id\" formControlName=\"numero_id\" required>\r\n    </div>\r\n\r\n    <div >\r\n      <ul>\r\n        <li *ngFor=\"let preferencia of preferencias\">\r\n          <label>\r\n            <input type=\"checkbox\" formControlName=\"preferencias\" asList [value]=\"preferencia.nombre\">\r\n            {{preferencia.nombre}}\r\n          </label>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n    \r\n    <button type=\"submit\" class=\"btn btn-success\">Registrarse</button>\r\n    <p class=\"text-danger mt-1\" *ngIf=\"errorCreate\">{{errorCreate}}</p>\r\n\r\n  </form>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -1870,7 +1877,7 @@ var ReviewPlanUnsubscribePageComponent = (function () {
         this.userForm = this.formBuilder.group({
             nombre: this.globalPlan.plan.nombre,
             descripcion: this.globalPlan.plan.descripcion,
-            ubicacion: this.globalPlan.plan.ubicacion,
+            ubicacion: this.globalPlan.plan.ubicacion.split("|")[0],
             fechainicio: this.date.transform(this.globalPlan.plan.fechaInicio, 'short'),
             fechafinal: this.date.transform(this.globalPlan.plan.fechaFinal, 'short'),
             costo: this.globalPlan.plan.costoPromedio
@@ -2304,14 +2311,15 @@ var YourPlanEditPageComponent = (function () {
     }
     YourPlanEditPageComponent.prototype.ngOnInit = function () {
         var _this = this;
+        this.strsplit = this.globalPlan.plan.ubicacion.split("|");
         //set google maps defaults
-        this.zoom = 4;
-        this.latitude = 39.8282;
-        this.longitude = -98.5795;
+        this.zoom = 12;
+        this.latitude = parseFloat(this.strsplit[1]);
+        this.longitude = parseFloat(this.strsplit[2]);
+        this.address = this.strsplit[0];
         //create search FormControl
         this.searchControl = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormControl */]();
-        //set current position
-        this.setCurrentPosition();
+        this.searchControl.setValue(this.strsplit[0]);
         //load Places Autocomplete
         this.mapsAPILoader.load().then(function () {
             var autocomplete = new google.maps.places.Autocomplete(_this.searchElementRef.nativeElement, {
@@ -2326,6 +2334,7 @@ var YourPlanEditPageComponent = (function () {
                         return;
                     }
                     //set latitude, longitude and zoom
+                    _this.address = place.formatted_address;
                     _this.latitude = place.geometry.location.lat();
                     _this.longitude = place.geometry.location.lng();
                     _this.zoom = 12;
@@ -2360,7 +2369,7 @@ var YourPlanEditPageComponent = (function () {
         this.plan.fechaInicio = new Date(this.userForm.get('fechainicio').value).getTime();
         this.plan.fechaFinal = new Date(this.userForm.get('fechafinal').value).getTime();
         this.plan.costoPromedio = this.userForm.get('costo').value;
-        this.plan.ubicacion = this.latitude.toString() + "," + this.longitude.toString();
+        this.plan.ubicacion = this.address + "|" + this.latitude.toString() + "|" + this.longitude.toString();
         this.nombre = this.userForm.get('preferencia').value;
         for (var _i = 0, _a = this.preferencias; _i < _a.length; _i++) {
             var preference = _a[_i];
@@ -2374,16 +2383,6 @@ var YourPlanEditPageComponent = (function () {
         }, function (error) {
             _this.errorString = "Error Desuscribiendo: " + error.message;
         });
-    };
-    YourPlanEditPageComponent.prototype.setCurrentPosition = function () {
-        var _this = this;
-        if ("geolocation" in navigator) {
-            navigator.geolocation.getCurrentPosition(function (position) {
-                _this.latitude = position.coords.latitude;
-                _this.longitude = position.coords.longitude;
-                _this.zoom = 12;
-            });
-        }
     };
     return YourPlanEditPageComponent;
 }());
@@ -2426,7 +2425,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/your-plans-page/your-plans-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h2>Planes Creados Por Ti</h2><br>\r\n<table class=\"table table-bordered\">\r\n  <thead>\r\n  <tr>\r\n    <th>Nombre</th>\r\n    <th>Ubicacion</th>\r\n    <th>Fecha (MM/DD/AAAA)</th>\r\n    <th>Costo Promedio</th>\r\n  </tr>\r\n  </thead>\r\n  <tr *ngFor=\"let plan of planes; let i = index\" (click)=\"setClickedRow(i)\" [class.active]=\"i == selectedRow\" >\r\n    <td>{{plan.nombre}}</td>\r\n    <td>{{plan.ubicacion}}</td>\r\n    <td>{{plan.fechaInicio | date:'short'}}</td>\r\n    <td>{{plan.costoPromedio}}</td>\r\n  </tr>\r\n</table>"
+module.exports = "<h2>Planes Creados Por Ti</h2><br>\r\n<table class=\"table table-bordered\">\r\n  <thead>\r\n  <tr>\r\n    <th>Nombre</th>\r\n    <th>Ubicacion</th>\r\n    <th>Fecha (MM/DD/AAAA)</th>\r\n    <th>Costo Promedio</th>\r\n  </tr>\r\n  </thead>\r\n  <tr *ngFor=\"let plan of planes; let i = index\" (click)=\"setClickedRow(i)\" [class.active]=\"i == selectedRow\" >\r\n    <td>{{plan.nombre}}</td>\r\n    <td>{{plan.ubicacion.split(\"|\")[0]}}</td>\r\n    <td>{{plan.fechaInicio | date:'short'}}</td>\r\n    <td>{{plan.costoPromedio}}</td>\r\n  </tr>\r\n</table>"
 
 /***/ }),
 
@@ -2511,7 +2510,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/pages/your-subscribed-plan-page/your-subscribed-plan-page.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h2>Planes a los que te has suscrito</h2><br>\r\n<table class=\"table table-bordered\">\r\n  <thead>\r\n  <tr>\r\n    <th>Nombre</th>\r\n    <th>Ubicacion</th>\r\n    <th>Fecha (MM/DD/AAAA)</th>\r\n    <th>Costo Promedio</th>\r\n  </tr>\r\n  </thead>\r\n  <tr *ngFor=\"let plan of planes; let i = index\" (click)=\"setClickedRow(i)\" [class.active]=\"i == selectedRow\" >\r\n    <td>{{plan.nombre}}</td>\r\n    <td>{{plan.ubicacion}}</td>\r\n    <td>{{plan.fechaInicio | date:'short'}}</td>\r\n    <td>{{plan.costoPromedio}}</td>\r\n  </tr>\r\n</table>"
+module.exports = "<h2>Planes a los que te has suscrito</h2><br>\r\n<table class=\"table table-bordered\">\r\n  <thead>\r\n  <tr>\r\n    <th>Nombre</th>\r\n    <th>Ubicacion</th>\r\n    <th>Fecha (MM/DD/AAAA)</th>\r\n    <th>Costo Promedio</th>\r\n  </tr>\r\n  </thead>\r\n  <tr *ngFor=\"let plan of planes; let i = index\" (click)=\"setClickedRow(i)\" [class.active]=\"i == selectedRow\" >\r\n    <td>{{plan.nombre}}</td>\r\n    <td>{{plan.ubicacion.split(\"|\")[0]}}</td>\r\n    <td>{{plan.fechaInicio | date:'short'}}</td>\r\n    <td>{{plan.costoPromedio}}</td>\r\n  </tr>\r\n</table>"
 
 /***/ }),
 

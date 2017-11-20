@@ -19,6 +19,7 @@ import { MapsAPILoader } from '@agm/core';
 export class CreatePlanPageComponent implements OnInit {
    private userForm: FormGroup;
    private errorString: String;
+   private errorPlace:String;
    private preferencias: PreferenciaEntity[] = [];
 
     public latitude: number;
@@ -26,6 +27,7 @@ export class CreatePlanPageComponent implements OnInit {
     public searchControl: FormControl;
     public zoom: number;
     public address: string;
+    public autocompleted: boolean;
 
     @ViewChild("search")
     public searchElementRef: ElementRef;
@@ -44,7 +46,7 @@ export class CreatePlanPageComponent implements OnInit {
   }
 
   ngOnInit() {
-
+      this.autocompleted=true;
       //set google maps defaults
       this.zoom = 4;
       this.latitude = 39.8282;
@@ -79,6 +81,7 @@ export class CreatePlanPageComponent implements OnInit {
 
                   //set latitude, longitude and zoom
                   this.address = place.formatted_address;
+                  this.autocompleted=false;
                   this.latitude = place.geometry.location.lat();
                   this.longitude = place.geometry.location.lng();
                   this.zoom = 12;
@@ -100,27 +103,33 @@ export class CreatePlanPageComponent implements OnInit {
   }
 
   onSubmit() {
-    this.plan.nombre = this.userForm.get('nombre').value;
-    this.plan.descripcion = this.userForm.get('descripcion').value;
-    this.plan.ubicacion=this.address+","+this.latitude.toString()+","+this.longitude.toString();
 
-    console.log(this.plan.ubicacion);
+    if(this.autocompleted){
+        this.errorPlace="Porfavor seleccione un lugar basandose en la lista desplegada para ubicar la direccion del plan.";
+    }
+    else{
+        this.plan.nombre = this.userForm.get('nombre').value;
+        this.plan.descripcion = this.userForm.get('descripcion').value;
+        this.plan.ubicacion=this.address+"|"+this.latitude.toString()+"|"+this.longitude.toString();
 
-    this.plan.fechaInicio = new Date(this.userForm.get('fechainicio').value).getTime();
-    this.plan.fechaFinal = new Date(this.userForm.get('fechafinal').value).getTime()
-    this.plan.costoPromedio = this.userForm.get('costo').value;
-    this.plan.creadorPlan = this.globaluser.usuarioLogin.idUsuario;
-    this.plan.detallePreferencia=this.userForm.get('preferencia').value;
-    this.plan.imagenPlan= new Blob;
+        console.log(this.plan.ubicacion);
 
-    this.planService.createPlan(this.plan).subscribe(serverResponse=>{
-        this.router.navigate(['/yourplans']);
-    }, error=>{
-        this.errorString = "Error Suscribiendo: "+error.message;
-    });
-  
- 
-    this.router.navigate(['planes']);
+        this.plan.fechaInicio = new Date(this.userForm.get('fechainicio').value).getTime();
+        this.plan.fechaFinal = new Date(this.userForm.get('fechafinal').value).getTime()
+        this.plan.costoPromedio = this.userForm.get('costo').value;
+        this.plan.creadorPlan = this.globaluser.usuarioLogin.idUsuario;
+        this.plan.detallePreferencia=this.userForm.get('preferencia').value;
+        this.plan.imagenPlan= new Blob;
+
+        this.planService.createPlan(this.plan).subscribe(serverResponse=>{
+            this.router.navigate(['/yourplans']);
+        }, error=>{
+            this.errorString = "Error Suscribiendo: "+error.message;
+        });
+
+
+        this.router.navigate(['planes']);
+    }
   }
 
     private setCurrentPosition() {
