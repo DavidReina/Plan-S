@@ -2,10 +2,12 @@
   <library name="Gradle: org.springframework:spring-webmvc:5.0.2.BUILD-SNAPSHOT">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.2.BUILD-SNAPSHOT/8607b339dcb7c657a6d3580d855f1e585cef4430/spring-webmvc-5.0.2.BUILD-SNAPSHOT.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.2.BUILD-SNAPSHOT/c6f3359b5f3ecef4f09ac57fa2f09d21432a6e81/spring-webmvc-5.0.2.BUILD-SNAPSHOT.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.2.BUILD-SNAPSHOT/3a110a68487239ff2000f3d6c98b46d3e8fb6bd7/spring-webmvc-5.0.2.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.2.BUILD-SNAPSHOT/ed3da9a8e6cc452ca281a35628a9b0fb29ca8737/spring-webmvc-5.0.2.BUILD-SNAPSHOT-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

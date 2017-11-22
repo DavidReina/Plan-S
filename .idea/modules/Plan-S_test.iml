@@ -27,7 +27,7 @@
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-jdbc:2.0.0.BUILD-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter:2.0.0.BUILD-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-tomcat:2.0.0.BUILD-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Gradle: org.hibernate.validator:hibernate-validator:6.0.4.Final" level="project" />
+    <orderEntry type="library" name="Gradle: org.hibernate.validator:hibernate-validator:6.0.5.Final" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-webmvc:5.0.2.BUILD-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-web:5.0.2.BUILD-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.9.2" level="project" />
@@ -58,7 +58,7 @@
     <orderEntry type="library" name="Gradle: org.springframework:spring-test:5.0.2.BUILD-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-expression:5.0.2.BUILD-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-core:5.0.2.BUILD-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Gradle: org.aspectj:aspectjrt:1.8.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.aspectj:aspectjrt:1.8.13" level="project" />
     <orderEntry type="library" name="Gradle: com.jayway.jsonpath:json-path:2.4.0" level="project" />
     <orderEntry type="library" name="Gradle: com.zaxxer:HikariCP:2.7.3" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-logging:2.0.0.BUILD-SNAPSHOT" level="project" />
@@ -85,7 +85,7 @@
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.9.0" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.9.2" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-jcl:5.0.2.BUILD-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Gradle: org.aspectj:aspectjweaver:1.8.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.aspectj:aspectjweaver:1.8.13" level="project" />
     <orderEntry type="library" name="Gradle: net.minidev:json-smart:2.3" level="project" />
     <orderEntry type="library" name="Gradle: net.bytebuddy:byte-buddy:1.7.9" level="project" />
     <orderEntry type="library" name="Gradle: net.bytebuddy:byte-buddy-agent:1.7.9" level="project" />

@@ -2,10 +2,12 @@
   <library name="Gradle: org.springframework:spring-web:5.0.2.BUILD-SNAPSHOT">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.0.2.BUILD-SNAPSHOT/f32d994b0aa9cf28698afd3073ea60d968808a46/spring-web-5.0.2.BUILD-SNAPSHOT.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.0.2.BUILD-SNAPSHOT/7088c59a049fdca5ecf6d74a0e6d43584cb01368/spring-web-5.0.2.BUILD-SNAPSHOT.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.0.2.BUILD-SNAPSHOT/367ac32c2e0021d452e9d510f190686c8adb72fc/spring-web-5.0.2.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.0.2.BUILD-SNAPSHOT/20c63a25fcb3b6b9eb5d1bea3a9bd0d5589b0270/spring-web-5.0.2.BUILD-SNAPSHOT-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
