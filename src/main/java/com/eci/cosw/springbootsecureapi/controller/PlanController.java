@@ -69,7 +69,7 @@ public class PlanController {
     }
 
     @RequestMapping( value = "/plans/search/{planname}/{iduser}", method = RequestMethod.GET )
-    public List<PlanEntity> getUserSubscribedList(@PathVariable("planname") String planname, @PathVariable("iduser") Long iduser){
+    public List<PlanEntity> getSearchPlanList(@PathVariable("planname") String planname, @PathVariable("iduser") Long iduser){
         return planService.searchPlan(planname,iduser);
     }
 
