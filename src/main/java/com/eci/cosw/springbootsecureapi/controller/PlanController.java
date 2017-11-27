@@ -24,7 +24,16 @@ public class PlanController {
             return new ArrayList<PlanEntity>();
         }
         else{
-            return planService.getPlanNotUserList(id);
+            List<PlanEntity> subscribedList = planService.getUserSubscribeList(id);
+            List<PlanEntity> RecomendedList = planService.getPlanNotUserList(id);
+
+            for(int i = 0; i<subscribedList.size(); i++){
+                if(RecomendedList.contains(subscribedList.get(i))){
+                    RecomendedList.remove(subscribedList.get(i));
+                }
+            }
+
+            return RecomendedList;
         }
 
     }
