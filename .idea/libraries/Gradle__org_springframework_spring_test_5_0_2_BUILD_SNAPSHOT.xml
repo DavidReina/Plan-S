@@ -2,12 +2,12 @@
   <library name="Gradle: org.springframework:spring-test:5.0.2.BUILD-SNAPSHOT">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.0.2.BUILD-SNAPSHOT/bc8edd8eb3c9203f405124fe95866c7b37b6d9d5/spring-test-5.0.2.BUILD-SNAPSHOT.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.0.2.BUILD-SNAPSHOT/c204cf3a8e23dad4207d811e6735557c286620ac/spring-test-5.0.2.BUILD-SNAPSHOT.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.0.2.BUILD-SNAPSHOT/b4ae11806db88f2fe7d23d711a9a11b789eca694/spring-test-5.0.2.BUILD-SNAPSHOT.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.0.2.BUILD-SNAPSHOT/d8bb62659089c4d7653dd97397d543b3c5f6109/spring-test-5.0.2.BUILD-SNAPSHOT-sources.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.0.2.BUILD-SNAPSHOT/1ce97be1d105f680f756f5df0121c368b564f146/spring-test-5.0.2.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.0.2.BUILD-SNAPSHOT/b02dd0bfd68cc42728d8ebe9b1c918188047fe19/spring-test-5.0.2.BUILD-SNAPSHOT-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

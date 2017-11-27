@@ -2,12 +2,12 @@
   <library name="Gradle: org.springframework:spring-expression:5.0.2.BUILD-SNAPSHOT">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.0.2.BUILD-SNAPSHOT/d466eb05f270afb548a5b8f0e8f4b272de55f72d/spring-expression-5.0.2.BUILD-SNAPSHOT.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.0.2.BUILD-SNAPSHOT/4ba69d3710c34520bc0722ff398f94e92bf9d819/spring-expression-5.0.2.BUILD-SNAPSHOT.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.0.2.BUILD-SNAPSHOT/a3d3c15321ca1a108d7526582fe8b0233e28f1eb/spring-expression-5.0.2.BUILD-SNAPSHOT.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.0.2.BUILD-SNAPSHOT/c9bae81abb7283c6e22718a75cb71b6e3e0e5b04/spring-expression-5.0.2.BUILD-SNAPSHOT-sources.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.0.2.BUILD-SNAPSHOT/96612780aab87dccc98c6525e951f6919faeea0d/spring-expression-5.0.2.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.0.2.BUILD-SNAPSHOT/9e9f7ccbd9c6396627dc7edb9052aaf0b18146ef/spring-expression-5.0.2.BUILD-SNAPSHOT-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

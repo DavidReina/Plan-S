@@ -2,12 +2,12 @@
   <library name="Gradle: org.springframework:spring-aop:5.0.2.BUILD-SNAPSHOT">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.0.2.BUILD-SNAPSHOT/a1d3c20787cb784c5d2ef0514e44cae287ef06b9/spring-aop-5.0.2.BUILD-SNAPSHOT.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.0.2.BUILD-SNAPSHOT/b67b00b99a91e4fa36912202886c9da5c0ce19ab/spring-aop-5.0.2.BUILD-SNAPSHOT.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.0.2.BUILD-SNAPSHOT/2bdd42cfd499ae448864cf3459f48af004b0dc37/spring-aop-5.0.2.BUILD-SNAPSHOT.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.0.2.BUILD-SNAPSHOT/82e35f6839c5a304d38a2b76a65dc13f06c7ccf9/spring-aop-5.0.2.BUILD-SNAPSHOT-sources.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.0.2.BUILD-SNAPSHOT/54a260757e3c5828772b618961e6758e44e78a23/spring-aop-5.0.2.BUILD-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.0.2.BUILD-SNAPSHOT/98ebf30dd7d6c458ce6344fcd2ccda1229a54432/spring-aop-5.0.2.BUILD-SNAPSHOT-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

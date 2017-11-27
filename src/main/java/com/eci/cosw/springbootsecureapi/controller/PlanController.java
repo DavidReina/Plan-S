@@ -9,6 +9,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -19,7 +20,13 @@ public class PlanController {
 
     @RequestMapping( value = "/plans/notuser/{id}", method = RequestMethod.GET )
     public List<PlanEntity> getPlanNotUser(@PathVariable("id") Long id){
-        return planService.getPlanNotUserList(id);
+        if(id==0){
+            return new ArrayList<PlanEntity>();
+        }
+        else{
+            return planService.getPlanNotUserList(id);
+        }
+
     }
 
     @RequestMapping( value = "/plans", method = RequestMethod.POST )

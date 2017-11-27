@@ -106,6 +106,9 @@ ALTER TABLE usuario_preferencia ADD CONSTRAINT usuario_preferencia_detalle_prefe
     
 ;
 
+ALTER TABLE usuario
+ADD CONSTRAINT UC_email UNIQUE (email);
+
 INSERT INTO preferencia (id_preferencia,nombre) VALUES (1, 'Musica Clasica');
 INSERT INTO preferencia (id_preferencia,nombre) VALUES (2, 'Musica pop');
 INSERT INTO preferencia (id_preferencia,nombre) VALUES (3, 'Musica rock');

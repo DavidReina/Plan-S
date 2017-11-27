@@ -70,6 +70,8 @@ public class UserController
 
         UsuarioEntity usuario = userService.getUserById(id);
 
+        usuario.setContrasena("private");
+
         if(usuario == null){
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
