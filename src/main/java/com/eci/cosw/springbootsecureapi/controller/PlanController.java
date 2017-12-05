@@ -87,8 +87,8 @@ public class PlanController {
     @RequestMapping( value = "/plans/search/{planname}/{iduser}", method = RequestMethod.GET )
     public List<PlanEntity> getSearchPlanList(@PathVariable("planname") String planname, @PathVariable("iduser") Long iduser){
 
-        List<PlanEntity> subscribedList = planService.searchPlan(planname,iduser);
-        List<PlanEntity> RecomendedList = planService.getPlanNotUserList(iduser);
+        List<PlanEntity> subscribedList = planService.getUserSubscribeList(iduser);
+        List<PlanEntity> RecomendedList = planService.searchPlan(planname,iduser);
         List<PlanEntity> NonRepetiviveList = new ArrayList<PlanEntity>();
 
         for(int i = 0; i<subscribedList.size(); i++){
