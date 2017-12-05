@@ -26,14 +26,21 @@ public class PlanController {
         else{
             List<PlanEntity> subscribedList = planService.getUserSubscribeList(id);
             List<PlanEntity> RecomendedList = planService.getPlanNotUserList(id);
+            List<PlanEntity> NonRepetiviveList = new ArrayList<PlanEntity>();
 
             for(int i = 0; i<subscribedList.size(); i++){
-                if(RecomendedList.contains(subscribedList.get(i))){
+                while(RecomendedList.contains(subscribedList.get(i))){
                     RecomendedList.remove(subscribedList.get(i));
                 }
             }
 
-            return RecomendedList;
+            for(int i=0;i<RecomendedList.size();i++){
+                if(!NonRepetiviveList.contains(RecomendedList.get(i))){
+                    NonRepetiviveList.add(RecomendedList.get(i));
+                }
+            }
+
+            return NonRepetiviveList;
         }
 
     }
@@ -79,7 +86,24 @@ public class PlanController {
 
     @RequestMapping( value = "/plans/search/{planname}/{iduser}", method = RequestMethod.GET )
     public List<PlanEntity> getSearchPlanList(@PathVariable("planname") String planname, @PathVariable("iduser") Long iduser){
-        return planService.searchPlan(planname,iduser);
+
+        List<PlanEntity> subscribedList = planService.searchPlan(planname,iduser);
+        List<PlanEntity> RecomendedList = planService.getPlanNotUserList(iduser);
+        List<PlanEntity> NonRepetiviveList = new ArrayList<PlanEntity>();
+
+        for(int i = 0; i<subscribedList.size(); i++){
+            while(RecomendedList.contains(subscribedList.get(i))){
+                RecomendedList.remove(subscribedList.get(i));
+            }
+        }
+
+        for(int i=0;i<RecomendedList.size();i++){
+            if(!NonRepetiviveList.contains(RecomendedList.get(i))){
+                NonRepetiviveList.add(RecomendedList.get(i));
+            }
+        }
+
+        return NonRepetiviveList;
     }
 
     @RequestMapping( value = "/plans/preferences", method = RequestMethod.GET )
