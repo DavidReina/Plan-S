@@ -19,7 +19,7 @@ public class PlanEntity {
     private int costoPromedio;
     private int creadorPlan;
     private int detallePreferencia;
-    private Blob imagenPlan;
+    private String imagenPlan;
 
     @Id
     @Column(name = "id_plan")
@@ -111,13 +111,14 @@ public class PlanEntity {
         this.detallePreferencia = detallePreferencia;
     }
 
+    @Basic
     @Column(name = "imagen_plan")
     @JsonIgnore
-    public Blob getImagenPlan() {
+    public String getImagenPlan() {
         return imagenPlan;
     }
 
-    public void setImagenPlan(Blob imagenPlan) {
+    public void setImagenPlan(String imagenPlan) {
         this.imagenPlan = imagenPlan;
     }
 

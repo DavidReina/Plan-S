@@ -9,7 +9,7 @@ export class Plan {
     public costoPromedio: number;
     public creadorPlan: number;
     public detallePreferencia: number;
-    public imagenPlan: Blob;
+    public imagenPlan: String;
 
     constructor() {
 

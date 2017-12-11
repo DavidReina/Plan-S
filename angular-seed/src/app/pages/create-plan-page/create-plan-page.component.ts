@@ -119,7 +119,7 @@ export class CreatePlanPageComponent implements OnInit {
         this.plan.costoPromedio = this.userForm.get('costo').value;
         this.plan.creadorPlan = this.globaluser.usuarioLogin.idUsuario;
         this.plan.detallePreferencia=this.userForm.get('preferencia').value;
-        this.plan.imagenPlan= new Blob;
+        this.plan.imagenPlan= "";
 
         this.planService.createPlan(this.plan).subscribe(serverResponse=>{
             this.router.navigate(['/yourplans']);
