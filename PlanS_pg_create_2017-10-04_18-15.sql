@@ -22,7 +22,7 @@ CREATE TABLE plan (
     costo_promedio int  NOT NULL,
     creador_plan int  NOT NULL,
     detalle_preferencia int  NOT NULL,
-	imagen_plan TEXT,
+	imagen_plan MEDIUMTEXT,
     CONSTRAINT plan_pk PRIMARY KEY (id_plan)
 );
 
@@ -51,7 +51,7 @@ CREATE TABLE usuario (
     usuario varchar(100)  NOT NULL,
     tipo_id varchar(100)  NOT NULL,
 	numero_id varchar(100)  NOT NULL,
-    foto_perfil TEXT,
+    foto_perfil MEDIUMTEXT,
     CONSTRAINT usuario_pk PRIMARY KEY (id_usuario)
 );
 

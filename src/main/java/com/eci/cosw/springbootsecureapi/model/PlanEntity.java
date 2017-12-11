@@ -113,7 +113,6 @@ public class PlanEntity {
 
     @Basic
     @Column(name = "imagen_plan")
-    @JsonIgnore
     public String getImagenPlan() {
         return imagenPlan;
     }
