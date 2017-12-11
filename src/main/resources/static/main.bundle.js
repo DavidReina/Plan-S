@@ -1234,7 +1234,7 @@ var ModifyUserPageComponent = (function () {
             this.errorString = "Porfavor asegurese que el campo de nueva contraseña y confirmar contraseña sean iguales";
         }
         else {
-            this.usersService.update(this.globalUser.usuarioLogin.idUsuario, this.userForm.get('email').value, this.userForm.get('contrasena').value, this.userForm.get('nombres').value, this.userForm.get('apellidos').value, this.userForm.get('usuario').value, this.userForm.get('tipoid').value, new Blob, this.userForm.get('numero_id').value).subscribe(function (serverResponse) {
+            this.usersService.update(this.globalUser.usuarioLogin.idUsuario, this.userForm.get('email').value, this.userForm.get('contrasena').value, this.userForm.get('nombres').value, this.userForm.get('apellidos').value, this.userForm.get('usuario').value, this.userForm.get('tipoid').value, "", this.userForm.get('numero_id').value).subscribe(function (serverResponse) {
                 _this.usrPreferences = [];
                 _this.preferenciasSelect = _this.userForm.get('preferencias').value;
                 for (var _i = 0, _a = _this.preferenciasSelect; _i < _a.length; _i++) {
@@ -1654,7 +1654,7 @@ var UserEditPageComponent = (function () {
             this.errorString = "Porfavor asegurese que el campo de nueva contraseña y confirmar contraseña sean iguales";
         }
         else {
-            this.usersService.create(0, this.userForm.get('email').value, this.userForm.get('contrasena').value, this.userForm.get('nombres').value, this.userForm.get('apellidos').value, this.userForm.get('usuario').value, this.userForm.get('tipoid').value, new Blob, this.userForm.get('numero_id').value).subscribe(function (serverResponse) {
+            this.usersService.create(0, this.userForm.get('email').value, this.userForm.get('contrasena').value, this.userForm.get('nombres').value, this.userForm.get('apellidos').value, this.userForm.get('usuario').value, this.userForm.get('tipoid').value, "", this.userForm.get('numero_id').value).subscribe(function (serverResponse) {
                 console.log("Register User JSON: " + JSON.stringify(serverResponse));
                 console.log(_this.userForm.get('preferencias').value);
                 console.log(serverResponse.idUsuario);

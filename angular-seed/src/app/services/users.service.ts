@@ -21,7 +21,7 @@ export class UsersService extends APIService {
         super(config, authService, http);
     }
 
-    create(idUsuario: number, email: string, contrasena: string, nombres: string, apellidos: string, usuario: string, tipoId: string, fotoPerfil: Blob, numeroId: string):
+    create(idUsuario: number, email: string, contrasena: string, nombres: string, apellidos: string, usuario: string, tipoId: string, fotoPerfil: string, numeroId: string):
     Observable<UsuarioEntity> {
         this.user = new UsuarioEntity;
         this.user.setUsuarioCompleto(idUsuario, email, contrasena, nombres, apellidos, usuario, tipoId, fotoPerfil, numeroId);
@@ -29,7 +29,7 @@ export class UsersService extends APIService {
         return this.post(this.resourceUrl, {idUsuario, email, contrasena, nombres, apellidos, usuario, tipoId, fotoPerfil, numeroId},  {credentials:false});}
 
 
-    update(idUsuario: number, email: string, contrasena: string, nombres: string, apellidos: string, usuario: string, tipoId: string, fotoPerfil: Blob, numeroId: string):
+    update(idUsuario: number, email: string, contrasena: string, nombres: string, apellidos: string, usuario: string, tipoId: string, fotoPerfil: string, numeroId: string):
     Observable<UsuarioEntity>{
         console.log("Update Url: "+this.resourceUrl+"/update");
         this.user = new UsuarioEntity;

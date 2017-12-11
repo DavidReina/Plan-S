@@ -68,7 +68,7 @@ export class ModifyUserPageComponent implements OnInit {
                 this.userForm.get('apellidos').value,
                 this.userForm.get('usuario').value,
                 this.userForm.get('tipoid').value,
-                new Blob,
+                "",
                 this.userForm.get('numero_id').value
             ).subscribe(serverResponse => {
                     this.usrPreferences = [];

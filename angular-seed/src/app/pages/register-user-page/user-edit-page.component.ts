@@ -66,7 +66,7 @@ export class UserEditPageComponent implements OnInit {
                 this.userForm.get('apellidos').value,
                 this.userForm.get('usuario').value,
                 this.userForm.get('tipoid').value,
-                new Blob,
+                "",
                 this.userForm.get('numero_id').value,
             ).subscribe(serverResponse => {
                         console.log("Register User JSON: "+JSON.stringify(serverResponse));

@@ -6,14 +6,14 @@
         public apellidos: string;
         public usuario: string;
         public tipoId: string;
-        public fotoPerfil: Blob;
+        public fotoPerfil: string;
         public numeroId: string;
     
         constructor() {
 
         }
 
-        public setUsuarioCompleto(idUsuario: number, email: string, contrasena: string, nombres: string, apellidos: string, usuario: string, tipoId:string , fotoPerfil:Blob, numeroId: string){
+        public setUsuarioCompleto(idUsuario: number, email: string, contrasena: string, nombres: string, apellidos: string, usuario: string, tipoId:string , fotoPerfil:string, numeroId: string){
             this.idUsuario = idUsuario;
             this.email = email;
             this.contrasena = contrasena;

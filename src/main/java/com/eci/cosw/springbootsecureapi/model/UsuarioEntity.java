@@ -18,7 +18,7 @@ public class UsuarioEntity {
     private String apellidos;
     private String usuario;
     private String tipoId;
-    private Blob fotoPerfil;
+    private String fotoPerfil;
     private String numeroId;
 
     @Id
@@ -102,14 +102,14 @@ public class UsuarioEntity {
         this.numeroId = numeroId;
     }
 
+    @Basic
     @Column(name = "foto_perfil")
-    @JsonIgnore
-    public Blob getFotoPerfil() {
+    public String getFotoPerfil() {
         return fotoPerfil;
     }
 
     @JsonIgnore
-    public void setFotoPerfil(Blob fotoPerfil) {
+    public void setFotoPerfil(String fotoPerfil) {
         this.fotoPerfil = fotoPerfil;
     }
 
