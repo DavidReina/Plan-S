@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b42e717-13fe-4957-aee1-e6427cccfe7d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/dist/inline.bundle.js.map" afterPath="$PROJECT_DIR$/angular-seed/dist/inline.bundle.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/dist/main.bundle.js" afterPath="$PROJECT_DIR$/angular-seed/dist/main.bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/dist/main.bundle.js.map" afterPath="$PROJECT_DIR$/angular-seed/dist/main.bundle.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/models/UsuarioEntity.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/models/UsuarioEntity.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/models/plan.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/models/plan.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/modify-user-page/modify-user-page.component.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/modify-user-page/modify-user-page.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/pages/register-user-page/user-edit-page.component.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/pages/register-user-page/user-edit-page.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-seed/src/app/services/users.service.ts" afterPath="$PROJECT_DIR$/angular-seed/src/app/services/users.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/model/UsuarioEntity.java" afterPath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/model/UsuarioEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/inline.bundle.js.map" afterPath="$PROJECT_DIR$/src/main/resources/static/inline.bundle.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/main.bundle.js" afterPath="$PROJECT_DIR$/src/main/resources/static/main.bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/main.bundle.js.map" afterPath="$PROJECT_DIR$/src/main/resources/static/main.bundle.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/reposotories/UsuarioRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/reposotories/UsuarioRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -32,16 +22,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PlanService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/PlanService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UsuarioEntity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/model/UsuarioEntity.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -57,16 +37,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="15" column="174" lean-forward="false" selection-start-line="15" selection-start-column="174" selection-end-line="15" selection-end-column="174" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlanEntity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/model/PlanEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="114" column="33" lean-forward="false" selection-start-line="114" selection-start-column="33" selection-end-line="114" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -102,7 +72,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modify-user-page.component.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="modify-user-page.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/modify-user-page/modify-user-page.component.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="581">
@@ -112,36 +82,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlanServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/PlanServiceImpl.java">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="55" column="17" lean-forward="false" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+            <state relative-caret-position="306">
+              <caret line="84" column="29" lean-forward="false" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="29" />
               <folding>
-                <element signature="e#1816#1817#0" expanded="true" />
-                <element signature="e#1876#1877#0" expanded="true" />
+                <element signature="method#login#0;class#UserController#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlanRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/reposotories/PlanRepository.java">
+      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="45" column="162" lean-forward="false" selection-start-line="45" selection-start-column="162" selection-end-line="45" selection-end-column="162" />
+            <state relative-caret-position="298">
+              <caret line="56" column="198" lean-forward="false" selection-start-line="56" selection-start-column="198" selection-end-line="56" selection-end-column="198" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsuarioRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/reposotories/UsuarioRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="485">
+              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding>
-                <marker date="1512965317092" expanded="true" signature="619:937" ph="SELECT id_pl... plan" />
-                <marker date="1512965317092" expanded="true" signature="1086:1127" ph="SELECT * FRO... plan" />
-                <marker date="1512965317092" expanded="true" signature="1231:1558" ph="SELECT id_pl... plan" />
-                <marker date="1512965317092" expanded="true" signature="1673:1751" ph="SELECT * FRO... plan_asistente" />
-                <marker date="1512965317092" expanded="true" signature="1918:1997" ph="insert into plan_asistente... " />
-                <marker date="1512965317092" expanded="true" signature="2154:2446" ph="SELECT id_pl... plan" />
-                <marker date="1512965317092" expanded="true" signature="2582:2658" ph="DELETE FROM " />
-                <marker date="1512965317092" expanded="true" signature="2832:3087" ph="UPDATE plan " />
-                <marker date="1512965317092" expanded="true" signature="3564:3589" ph="SELECT * FRO... preferencia" />
-                <marker date="1512965317092" expanded="true" signature="3672:3722" ph="SELECT * FRO... preferencia" />
+                <marker date="1512974691838" expanded="true" signature="637:681" ph="SELECT * FRO... usuario" />
+                <marker date="1512974691838" expanded="true" signature="942:984" ph="SELECT * FRO... usuario" />
+                <marker date="1512974691838" expanded="true" signature="1109:1331" ph="insert into usuario... " />
+                <marker date="1512974691838" expanded="true" signature="1774:1981" ph="UPDATE usuar... " />
+                <marker date="1512974691838" expanded="true" signature="2404:2441" ph="SELECT COUNT... usuario" />
+                <marker date="1512974691838" expanded="true" signature="2512:2687" ph="SELECT id_us... usuario" />
+                <marker date="1512974691838" expanded="true" signature="2815:2957" ph="INSERT INTO usuario_preferencia... " />
+                <marker date="1512974691838" expanded="true" signature="2891:2955" ph="SELECT id_pr... preferencia" />
+                <marker date="1512974691838" expanded="true" signature="3129:3178" ph="DELETE FROM " />
+                <marker date="1512974691838" expanded="true" signature="3295:3427" ph="SELECT id_pr... usuario_preferencia" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -589,8 +578,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/model/NumberString.java" />
         <option value="$PROJECT_DIR$/angular-seed/src/app/models/NumberString.ts" />
         <option value="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/reposotories/UsuarioRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/angular-seed/src/app/pages/user-review-page/user-review-page.component.html" />
         <option value="$PROJECT_DIR$/angular-seed/src/app/pages/your-plan-edit-page/your-plan-edit-page.component.html" />
         <option value="$PROJECT_DIR$/angular-seed/src/app/pages/your-plan-edit-page/your-plan-edit-page.component.css" />
@@ -617,6 +604,8 @@
         <option value="$PROJECT_DIR$/angular-seed/src/app/services/users.service.ts" />
         <option value="$PROJECT_DIR$/angular-seed/src/app/pages/register-user-page/user-edit-page.component.ts" />
         <option value="$PROJECT_DIR$/angular-seed/src/app/pages/modify-user-page/modify-user-page.component.ts" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/reposotories/UsuarioRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -629,7 +618,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/angular-seed/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1456" />
@@ -963,15 +952,15 @@
       <workItem from="1511884658817" duration="1835000" />
       <workItem from="1512410574198" duration="656000" />
       <workItem from="1512435634663" duration="4289000" />
-      <workItem from="1512961867864" duration="3947000" />
+      <workItem from="1512961867864" duration="4832000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125570000" />
+    <option name="totallyTimeSpent" value="126455000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1066,13 +1055,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1575">
-          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1230,13 +1212,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="31" column="16" lean-forward="false" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/angular-seed/src/app/pages/your-subscribed-plan-page/your-subscribed-plan-page.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1248,16 +1223,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="88" column="71" lean-forward="false" selection-start-line="88" selection-start-column="65" selection-end-line="88" selection-end-column="71" />
-          <folding>
-            <element signature="method#login#0;class#UserController#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1286,16 +1251,6 @@
           <folding>
             <element signature="e#1152#1164#0" expanded="true" />
             <element signature="e#4120#4132#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/reposotories/UsuarioRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="49" column="19" lean-forward="false" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="68" />
-          <folding>
-            <marker date="1511726011044" expanded="true" signature="3014:3063" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -1414,6 +1369,51 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="581">
           <caret line="70" column="18" lean-forward="false" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="84" column="29" lean-forward="false" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="29" />
+          <folding>
+            <element signature="method#login#0;class#UserController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/reposotories/UsuarioRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <marker date="1512974691838" expanded="true" signature="637:681" ph="SELECT * FRO... usuario" />
+            <marker date="1512974691838" expanded="true" signature="942:984" ph="SELECT * FRO... usuario" />
+            <marker date="1512974691838" expanded="true" signature="1109:1331" ph="insert into usuario... " />
+            <marker date="1512974691838" expanded="true" signature="1774:1981" ph="UPDATE usuar... " />
+            <marker date="1512974691838" expanded="true" signature="2404:2441" ph="SELECT COUNT... usuario" />
+            <marker date="1512974691838" expanded="true" signature="2512:2687" ph="SELECT id_us... usuario" />
+            <marker date="1512974691838" expanded="true" signature="2815:2957" ph="INSERT INTO usuario_preferencia... " />
+            <marker date="1512974691838" expanded="true" signature="2891:2955" ph="SELECT id_pr... preferencia" />
+            <marker date="1512974691838" expanded="true" signature="3129:3178" ph="DELETE FROM " />
+            <marker date="1512974691838" expanded="true" signature="3295:3427" ph="SELECT id_pr... usuario_preferencia" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/eci/cosw/springbootsecureapi/service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="56" column="198" lean-forward="false" selection-start-line="56" selection-start-column="198" selection-end-line="56" selection-end-column="198" />
           <folding />
         </state>
       </provider>

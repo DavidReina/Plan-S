@@ -33,7 +33,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public UsuarioEntity registerUser(UsuarioEntity user) {
         int registros = userRepo.numeroRegistros()+1;
-        userRepo.registrarUsuario(registros, user.getApellidos(),user.getContrasena(),user.getEmail(),user.getNombres(),user.getNumeroId(),user.getTipoId(),user.getUsuario());
+        userRepo.registrarUsuario(registros, user.getApellidos(),user.getContrasena(),user.getEmail(),user.getNombres(),user.getNumeroId(),user.getTipoId(),user.getUsuario(),user.getFotoPerfil());
         user.setIdUsuario(registros);
         return user;
     }
@@ -54,7 +54,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void updateUser(UsuarioEntity user) {
-        userRepo.updateUser(user.getIdUsuario(),user.getApellidos(),user.getContrasena(),user.getEmail(),user.getNombres(),user.getNumeroId(),user.getTipoId(),user.getUsuario());
+        userRepo.updateUser(user.getIdUsuario(),user.getApellidos(),user.getContrasena(),user.getEmail(),user.getNombres(),user.getNumeroId(),user.getTipoId(),user.getUsuario(), user.getFotoPerfil());
     }
 
     @Override
