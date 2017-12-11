@@ -107,8 +107,7 @@ public class UsuarioEntity {
     public String getFotoPerfil() {
         return fotoPerfil;
     }
-
-    @JsonIgnore
+    
     public void setFotoPerfil(String fotoPerfil) {
         this.fotoPerfil = fotoPerfil;
     }

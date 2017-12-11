@@ -93,8 +93,6 @@ public class UserController
         return new ResponseEntity<UsuarioEntity>(user,HttpStatus.OK);
     }
 
-
-
     public class Token
     {
 
